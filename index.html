@@ -1,11 +1,10 @@
-
 <!DOCTYPE html>
 <html lang="fr">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="theme-color" content="#1b1030">
-  <meta name="description" content="Bienvenue sur KatikaGames, l'univers de Katika - Ludo et Dés. Découvre nos jeux et télécharge l'application Android.">
+  <meta name="description" content="Bienvenue sur KatikaGames, l'univers de Katika - Ludo et Dés. Découvre nos jeux, le programme d'affiliation et télécharge l'application Android.">
   <title>KatikaGames | Le plaisir du jeu</title>
 
   <style>
@@ -84,6 +83,11 @@
     .nav-link {
       color: var(--muted);
       font-size: 14px;
+      transition: color .2s;
+    }
+
+    .nav-link:hover {
+      color: var(--gold);
     }
 
     .hero {
@@ -245,6 +249,41 @@
       font-size: 14px;
     }
 
+    .affiliate-panel {
+      background: linear-gradient(145deg, #24113f, #120b20);
+      border: 1px solid var(--purple);
+      border-radius: 24px;
+      padding: 28px;
+      text-align: center;
+      box-shadow: 0 15px 40px #0004;
+    }
+
+    .affiliate-panel h2 {
+      color: var(--gold);
+      font-size: clamp(26px, 4vw, 38px);
+      margin-bottom: 12px;
+    }
+
+    .affiliate-panel p {
+      color: var(--muted);
+      margin-bottom: 24px;
+    }
+
+    .affiliate-image {
+      display: block;
+      width: 100%;
+      max-width: 850px;
+      height: auto;
+      margin: 0 auto;
+      border-radius: 14px;
+      border: 1px solid #5d4074;
+    }
+
+    .affiliate-caption {
+      margin-top: 18px;
+      font-size: 14px;
+    }
+
     .download-panel {
       background: linear-gradient(130deg, #392050, #241633);
       border: 1px solid #5d4074;
@@ -303,8 +342,22 @@
         padding: 23px;
       }
 
+      nav {
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding: 12px 0;
+      }
+
       .nav-link {
         font-size: 12px;
+      }
+
+      .affiliate-panel {
+        padding: 16px 10px;
+      }
+
+      .affiliate-image {
+        border-radius: 8px;
       }
     }
   </style>
@@ -319,7 +372,10 @@
           <div class="logo">K</div>
           <div>Katika<span>Games</span></div>
         </a>
-        <a class="nav-link" href="#jeux">Découvrir les jeux</a>
+        <div style="display:flex; gap:18px; align-items:center; flex-wrap:wrap;">
+          <a class="nav-link" href="#jeux">Découvrir les jeux</a>
+          <a class="nav-link" href="#affiliation">Affiliation</a>
+        </div>
       </nav>
     </div>
   </header>
@@ -398,6 +454,29 @@
       </div>
     </section>
 
+    <section id="affiliation">
+      <div class="container">
+        <div class="affiliate-panel">
+          <h2>Programme d’affiliation Katika</h2>
+          <p>
+            Tes filleuls jouent, tu gagnes ! Découvre comment recevoir
+            20 % des commissions générées par les joueurs que tu parraines.
+          </p>
+
+          <img
+            class="affiliate-image"
+            src="affiliation-katika.png"
+            alt="Illustration du programme d’affiliation Katika et de la répartition des commissions"
+            loading="lazy"
+          >
+
+          <p class="affiliate-caption">
+            <strong>Katika, plus qu’un jeu… une opportunité !</strong>
+          </p>
+        </div>
+      </div>
+    </section>
+
     <section id="telecharger">
       <div class="container">
         <div class="download-panel">
@@ -407,7 +486,7 @@
             les jeux de Katika depuis ton téléphone.
           </p>
 
-          <!-- Le lien sera actif après publication de l'APK. -->
+          <!-- Le lien de téléchargement d'origine est conservé. -->
           <a
             class="btn btn-gold"
             href="https://github.com/yveslaurent85/katikagames-web/releases/latest/download/Katika.apk"
@@ -421,8 +500,8 @@
           </p>
 
           <p class="note">
-            Le téléchargement sera disponible après la publication
-            du fichier APK dans une version GitHub Release.
+            Le téléchargement sera disponible si le fichier Katika.apk
+            est publié dans une GitHub Release.
           </p>
         </div>
       </div>
