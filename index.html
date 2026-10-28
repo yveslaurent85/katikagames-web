@@ -1,0 +1,445 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#1b1030">
+  <meta name="description" content="Bienvenue sur KatikaGames, l'univers de Katika - Ludo et Dés. Découvre nos jeux et télécharge l'application Android.">
+  <title>KatikaGames | Le plaisir du jeu</title>
+
+  <style>
+    :root {
+      --bg: #120b20;
+      --panel: #211536;
+      --purple: #7545b5;
+      --gold: #edc66d;
+      --text: #fffaf0;
+      --muted: #c7bad9;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    .container {
+      width: min(1120px, 90%);
+      margin: auto;
+    }
+
+    header {
+      border-bottom: 1px solid #39284c;
+      background: rgba(18, 11, 32, 0.96);
+    }
+
+    nav {
+      min-height: 78px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 20px;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      font-size: 23px;
+      font-weight: 800;
+    }
+
+    .logo {
+      width: 45px;
+      height: 45px;
+      display: grid;
+      place-items: center;
+      background: linear-gradient(135deg, #f6dc91, #b8872e);
+      color: #211333;
+      border-radius: 14px;
+      font-size: 25px;
+    }
+
+    .brand span {
+      color: var(--gold);
+    }
+
+    .nav-link {
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    .hero {
+      padding: 85px 0 75px;
+      text-align: center;
+      background:
+        radial-gradient(ellipse at top, #432467 0%, transparent 65%),
+        var(--bg);
+    }
+
+    .eyebrow {
+      display: inline-block;
+      border: 1px solid #775a9a;
+      border-radius: 50px;
+      padding: 7px 15px;
+      color: var(--gold);
+      font-size: 12px;
+      letter-spacing: 2px;
+      margin-bottom: 25px;
+    }
+
+    h1 {
+      font-size: clamp(38px, 7vw, 70px);
+      line-height: 1.1;
+      margin-bottom: 22px;
+      letter-spacing: -2px;
+    }
+
+    h1 span {
+      color: var(--gold);
+    }
+
+    .intro {
+      color: var(--muted);
+      font-size: 17px;
+      max-width: 630px;
+      margin: 0 auto 30px;
+    }
+
+    .buttons {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 14px;
+      margin-bottom: 32px;
+    }
+
+    .btn {
+      display: inline-flex;
+      justify-content: center;
+      align-items: center;
+      gap: 10px;
+      border-radius: 12px;
+      padding: 15px 23px;
+      font-size: 15px;
+      font-weight: bold;
+      transition: transform .2s, opacity .2s;
+    }
+
+    .btn:hover {
+      transform: translateY(-2px);
+      opacity: .9;
+    }
+
+    .btn-gold {
+      background: linear-gradient(135deg, #f7df9d, #d3a744);
+      color: #211333;
+    }
+
+    .btn-outline {
+      border: 1px solid #755d91;
+      color: var(--text);
+    }
+
+    .note {
+      color: #a99bbd;
+      font-size: 12px;
+    }
+
+    .dice-scene {
+      display: flex;
+      justify-content: center;
+      gap: 18px;
+      margin: 42px auto 0;
+      flex-wrap: wrap;
+    }
+
+    .die {
+      width: 72px;
+      height: 72px;
+      border-radius: 18px;
+      display: grid;
+      place-items: center;
+      font-size: 40px;
+      font-weight: bold;
+      box-shadow: 0 12px 30px #0004;
+      transform: rotate(-6deg);
+    }
+
+    .die:nth-child(even) {
+      transform: rotate(7deg) translateY(10px);
+    }
+
+    .red { background: #ed515b; }
+    .green { background: #42b987; }
+    .blue { background: #4e8ef5; }
+    .yellow { background: #f4c84e; color: #38260b; }
+
+    section {
+      padding: 70px 0;
+    }
+
+    .section-heading {
+      text-align: center;
+      margin-bottom: 38px;
+    }
+
+    .section-heading h2 {
+      font-size: clamp(27px, 4vw, 40px);
+      margin-bottom: 10px;
+    }
+
+    .section-heading p {
+      color: var(--muted);
+    }
+
+    .games {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 20px;
+    }
+
+    .game-card {
+      background: linear-gradient(145deg, #291b40, #1b122b);
+      border: 1px solid #3c2a51;
+      padding: 27px;
+      border-radius: 20px;
+    }
+
+    .game-icon {
+      width: 56px;
+      height: 56px;
+      border-radius: 15px;
+      display: grid;
+      place-items: center;
+      font-size: 29px;
+      background: #38234f;
+      margin-bottom: 20px;
+    }
+
+    .game-card h3 {
+      color: var(--gold);
+      margin-bottom: 9px;
+      font-size: 20px;
+    }
+
+    .game-card p {
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    .download-panel {
+      background: linear-gradient(130deg, #392050, #241633);
+      border: 1px solid #5d4074;
+      border-radius: 25px;
+      padding: 45px 25px;
+      text-align: center;
+    }
+
+    .download-panel h2 {
+      font-size: clamp(27px, 4vw, 38px);
+      margin-bottom: 14px;
+    }
+
+    .download-panel p {
+      color: var(--muted);
+      max-width: 600px;
+      margin: 0 auto 25px;
+    }
+
+    .download-panel .btn {
+      margin: 4px;
+    }
+
+    .status {
+      margin-top: 18px;
+      color: var(--gold);
+      font-size: 12px;
+    }
+
+    footer {
+      border-top: 1px solid #39284c;
+      padding: 28px 0;
+      color: #b7a8ca;
+      font-size: 13px;
+      text-align: center;
+    }
+
+    footer p + p {
+      margin-top: 7px;
+    }
+
+    @media (max-width: 760px) {
+      .games {
+        grid-template-columns: 1fr;
+      }
+
+      .hero {
+        padding: 65px 0 55px;
+      }
+
+      section {
+        padding: 50px 0;
+      }
+
+      .game-card {
+        padding: 23px;
+      }
+
+      .nav-link {
+        font-size: 12px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <div class="container">
+      <nav>
+        <a class="brand" href="#accueil" aria-label="Accueil KatikaGames">
+          <div class="logo">K</div>
+          <div>Katika<span>Games</span></div>
+        </a>
+        <a class="nav-link" href="#jeux">Découvrir les jeux</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="accueil">
+      <div class="container">
+        <div class="eyebrow">BIENVENUE DANS NOTRE UNIVERS</div>
+
+        <h1>Le plaisir du jeu,<br><span>ensemble.</span></h1>
+
+        <p class="intro">
+          Découvre Katika – Ludo et Dés, retrouve l'esprit du jeu
+          entre amis et plonge dans un univers ludique aux couleurs
+          de KatikaGames.
+        </p>
+
+        <div class="buttons">
+          <a class="btn btn-gold" href="#telecharger">
+            ↓ Télécharger Katika
+          </a>
+          <a class="btn btn-outline" href="#jeux">
+            Découvrir les jeux →
+          </a>
+        </div>
+
+        <p class="note">Application Android · Site officiel KatikaGames</p>
+
+        <div class="dice-scene" aria-label="Les couleurs du Ludo">
+          <div class="die red">●</div>
+          <div class="die green">●</div>
+          <div class="die blue">●</div>
+          <div class="die yellow">●</div>
+        </div>
+      </div>
+    </section>
+
+    <section id="jeux">
+      <div class="container">
+        <div class="section-heading">
+          <h2>Découvre l'univers Katika</h2>
+          <p>Des jeux pour partager de bons moments.</p>
+        </div>
+
+        <div class="games">
+          <article class="game-card">
+            <div class="game-icon">🎲</div>
+            <h3>Ludo</h3>
+            <p>
+              Lance les dés, déplace tes pions et tente
+              d'atteindre l'arrivée dans une partie pleine
+              de rebondissements.
+            </p>
+          </article>
+
+          <article class="game-card">
+            <div class="game-icon">👥</div>
+            <h3>Jouer ensemble</h3>
+            <p>
+              Retrouve le plaisir du jeu en présentiel
+              ou découvre les parties en ligne proposées
+              dans l'application.
+            </p>
+          </article>
+
+          <article class="game-card">
+            <div class="game-icon">🎯</div>
+            <h3>Deux Dés</h3>
+            <p>
+              Découvre un autre jeu de l'univers Katika
+              et profite d'une expérience ludique
+              complémentaire.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="telecharger">
+      <div class="container">
+        <div class="download-panel">
+          <h2>Prêt à découvrir Katika ?</h2>
+          <p>
+            Télécharge l'application Android et découvre
+            les jeux de Katika depuis ton téléphone.
+          </p>
+
+          <!-- Le lien sera actif après publication de l'APK. -->
+          <a
+            class="btn btn-gold"
+            href="https://github.com/yveslaurent85/katikagames-web/releases/latest/download/Katika.apk"
+            id="download-button"
+          >
+            ↓ Télécharger l'application Android
+          </a>
+
+          <p class="status">
+            Version Android · Téléchargement depuis GitHub
+          </p>
+
+          <p class="note">
+            Le téléchargement sera disponible après la publication
+            du fichier APK dans une version GitHub Release.
+          </p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p><strong>KatikaGames</strong> — Le plaisir du jeu, ensemble.</p>
+      <p>© <span id="year"></span> KatikaGames. Tous droits réservés.</p>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent =
+      new Date().getFullYear();
+  </script>
+
+</body>
+</html>
