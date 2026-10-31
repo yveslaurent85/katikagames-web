@@ -486,11 +486,11 @@
             les jeux de Katika depuis ton téléphone.
           </p>
 
-          <!-- APK toujours à jour : publié automatiquement par le projet LudoPro
-               à chaque mise à jour du code. -->
+          <!-- APK toujours à jour : publié automatiquement dans les Releases de ce
+               dépôt à chaque mise à jour du code de l'application. -->
           <a
             class="btn btn-gold"
-            href="https://yveslaurent85.github.io/LudoPro/katika.apk"
+            href="https://github.com/yveslaurent85/katikagames-web/releases/latest/download/Katika.apk"
             id="download-button"
           >
             ↓ Télécharger l'application Android
@@ -520,25 +520,18 @@
     document.getElementById("year").textContent =
       new Date().getFullYear();
 
-    // Affiche la version actuelle de l'application (fichier version.json
-    // publié automatiquement avec l'APK) et force le téléchargement de la
-    // dernière version (pas de copie en cache).
+    // Affiche la version de l'application (dernière Release publiée).
     (function () {
-      var base = "https://yveslaurent85.github.io/LudoPro/";
-      fetch(base + "version.json?t=" + Date.now(), { cache: "no-store" })
+      fetch("https://api.github.com/repos/yveslaurent85/katikagames-web/releases/latest")
         .then(function (r) { return r.json(); })
         .then(function (v) {
-          var btn = document.getElementById("download-button");
-          if (v.build) btn.href = base + "katika.apk?v=" + v.build;
-          var info = document.getElementById("version-info");
-          var d = "";
-          if (v.date) {
-            var p = String(v.date).split("-");
-            if (p.length === 3) d = " · mise à jour du " + p[2] + "/" + p[1] + "/" + p[0];
-          }
-          info.textContent = "Version Android " + (v.build || "") + d;
+          var m = /(\d+)/.exec(v.name || "");
+          var d = v.published_at ? new Date(v.published_at) : null;
+          var txt = "Version Android" + (m ? " " + m[1] : "");
+          if (d && !isNaN(d)) txt += " · mise à jour du " + d.toLocaleDateString("fr-FR");
+          document.getElementById("version-info").textContent = txt;
         })
-        .catch(function () { /* on garde le lien et le texte par défaut */ });
+        .catch(function () { /* on garde le texte par défaut */ });
     })();
   </script>
 
