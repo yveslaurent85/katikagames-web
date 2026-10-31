@@ -486,22 +486,23 @@
             les jeux de Katika depuis ton téléphone.
           </p>
 
-          <!-- Le lien de téléchargement d'origine est conservé. -->
+          <!-- APK toujours à jour : publié automatiquement par le projet LudoPro
+               à chaque mise à jour du code. -->
           <a
             class="btn btn-gold"
-            href="https://github.com/yveslaurent85/katikagames-web/releases/latest/download/Katika.apk"
+            href="https://yveslaurent85.github.io/LudoPro/katika.apk"
             id="download-button"
           >
             ↓ Télécharger l'application Android
           </a>
 
-          <p class="status">
-            Version Android · Téléchargement depuis GitHub
+          <p class="status" id="version-info">
+            Application Android · dernière version
           </p>
 
           <p class="note">
-            Le téléchargement sera disponible si le fichier Katika.apk
-            est publié dans une GitHub Release.
+            Si une ancienne version est déjà installée, installe simplement
+            la nouvelle par-dessus : tes données sont conservées.
           </p>
         </div>
       </div>
@@ -518,6 +519,27 @@
   <script>
     document.getElementById("year").textContent =
       new Date().getFullYear();
+
+    // Affiche la version actuelle de l'application (fichier version.json
+    // publié automatiquement avec l'APK) et force le téléchargement de la
+    // dernière version (pas de copie en cache).
+    (function () {
+      var base = "https://yveslaurent85.github.io/LudoPro/";
+      fetch(base + "version.json?t=" + Date.now(), { cache: "no-store" })
+        .then(function (r) { return r.json(); })
+        .then(function (v) {
+          var btn = document.getElementById("download-button");
+          if (v.build) btn.href = base + "katika.apk?v=" + v.build;
+          var info = document.getElementById("version-info");
+          var d = "";
+          if (v.date) {
+            var p = String(v.date).split("-");
+            if (p.length === 3) d = " · mise à jour du " + p[2] + "/" + p[1] + "/" + p[0];
+          }
+          info.textContent = "Version Android " + (v.build || "") + d;
+        })
+        .catch(function () { /* on garde le lien et le texte par défaut */ });
+    })();
   </script>
 
 </body>
