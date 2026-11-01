@@ -1,7 +1,7 @@
 {
   "latestBuild": 1340,
   "version": "1.0.0",
-  "required": true
+  "required": true,
   "message": "Une nouvelle version de Katika est disponible. Profitez des dernières améliorations !",
   "apkUrl": "https://github.com/yveslaurent85/katikagames-web/releases/latest/download/Katika.apk"
 }
