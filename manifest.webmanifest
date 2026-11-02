@@ -1,0 +1,22 @@
+
+{
+  "id": "/",
+  "name": "KatikaGames",
+  "short_name": "Katika",
+  "description": "L'univers de Katika - Ludo et Dés",
+  "lang": "fr",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#120b20",
+  "theme_color": "#1b1030",
+  "orientation": "portrait",
+  "icons": [
+    {
+      "src": "icons/katika.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}
