@@ -1,12 +1,15 @@
+
 <!DOCTYPE html>
 <html lang="fr">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="theme-color" content="#1b1030">
+  <meta name="description" content="Bienvenue sur KatikaGames, l'univers de Katika - Ludo et Dés. Découvre nos jeux, le programme d'affiliation et installe KatikaGames sur ton téléphone.">
+
   <link rel="manifest" href="./manifest.webmanifest">
-<link rel="icon" href="./icons/katika.png" type="image/png">
-  <meta name="description" content="Bienvenue sur KatikaGames, l'univers de Katika - Ludo et Dés. Découvre nos jeux, le programme d'affiliation et télécharge l'application Android.">
+  <link rel="icon" href="./icons/katika.png" type="image/png">
+
   <title>KatikaGames | Le plaisir du jeu</title>
 
   <style>
@@ -142,6 +145,8 @@
       justify-content: center;
       align-items: center;
       gap: 10px;
+      border: none;
+      cursor: pointer;
       border-radius: 12px;
       padding: 15px 23px;
       font-size: 15px;
@@ -162,6 +167,7 @@
     .btn-outline {
       border: 1px solid #755d91;
       color: var(--text);
+      background: transparent;
     }
 
     .note {
@@ -312,7 +318,11 @@
     .status {
       margin-top: 18px;
       color: var(--gold);
-      font-size: 12px;
+      font-size: 13px;
+    }
+
+    [hidden] {
+      display: none !important;
     }
 
     footer {
@@ -374,6 +384,7 @@
           <div class="logo">K</div>
           <div>Katika<span>Games</span></div>
         </a>
+
         <div style="display:flex; gap:18px; align-items:center; flex-wrap:wrap;">
           <a class="nav-link" href="#jeux">Découvrir les jeux</a>
           <a class="nav-link" href="#affiliation">Affiliation</a>
@@ -384,8 +395,10 @@
   </header>
 
   <main>
+
     <section class="hero" id="accueil">
       <div class="container">
+
         <div class="eyebrow">BIENVENUE DANS NOTRE UNIVERS</div>
 
         <h1>Le plaisir du jeu,<br><span>ensemble.</span></h1>
@@ -400,15 +413,19 @@
           <a class="btn btn-gold" href="jouer/">
             ▶ Jouer sur le site
           </a>
-          <a class="btn btn-outline" href="#telecharger">
-            ↓ Télécharger Katika
+
+          <a class="btn btn-outline" href="#installer">
+            + Installer KatikaGames
           </a>
+
           <a class="btn btn-outline" href="#jeux">
             Découvrir les jeux →
           </a>
         </div>
 
-        <p class="note">Joue sur le site ou sur l'application Android · Site officiel KatikaGames</p>
+        <p class="note">
+          Joue directement sur le site ou ajoute KatikaGames à ton écran d'accueil.
+        </p>
 
         <div class="dice-scene" aria-label="Les couleurs du Ludo">
           <div class="die red">●</div>
@@ -416,17 +433,20 @@
           <div class="die blue">●</div>
           <div class="die yellow">●</div>
         </div>
+
       </div>
     </section>
 
     <section id="jeux">
       <div class="container">
+
         <div class="section-heading">
           <h2>Découvre l'univers Katika</h2>
           <p>Des jeux pour partager de bons moments.</p>
         </div>
 
         <div class="games">
+
           <article class="game-card">
             <div class="game-icon">🎲</div>
             <h3>Ludo</h3>
@@ -456,14 +476,17 @@
               complémentaire.
             </p>
           </article>
+
         </div>
       </div>
     </section>
 
     <section id="affiliation">
       <div class="container">
+
         <div class="affiliate-panel">
           <h2>Programme d’affiliation Katika</h2>
+
           <p>
             Tes filleuls jouent, tu gagnes ! Découvre comment recevoir
             20 % des commissions générées par les joueurs que tu parraines.
@@ -480,64 +503,39 @@
             <strong>Katika, plus qu’un jeu… une opportunité !</strong>
           </p>
         </div>
+
       </div>
     </section>
 
     <section id="installer">
-  <div class="container">
-    <div class="download-panel">
-      <h2>Emporte KatikaGames avec toi !</h2>
-
-      <p>
-        Ajoute KatikaGames à l'écran d'accueil de ton téléphone
-        pour retrouver facilement tes jeux préférés.
-      </p>
-
-      <button
-        class="btn btn-gold"
-        id="install-button"
-        type="button"
-        hidden
-      >
-        + Installer KatikaGames
-      </button>
-
-      <p class="status" id="install-info">
-        Sur Android, ouvre ce site dans Chrome, puis utilise le menu ⋮
-        et choisis « Installer l'application » ou « Ajouter à l'écran d'accueil ».
-      </p>
-    </div>
-  </div>
-</section>
       <div class="container">
+
         <div class="download-panel">
-          <h2>Prêt à découvrir Katika ?</h2>
+          <h2>Emporte KatikaGames avec toi !</h2>
+
           <p>
-            Télécharge l'application Android et découvre
-            les jeux de Katika depuis ton téléphone.
+            Ajoute KatikaGames à l'écran d'accueil de ton téléphone
+            pour retrouver facilement tes jeux préférés.
           </p>
 
-          <!-- APK toujours à jour : publié automatiquement dans les Releases de ce
-               dépôt à chaque mise à jour du code de l'application. -->
-          <a
+          <button
             class="btn btn-gold"
-            href="https://github.com/yveslaurent85/katikagames-web/releases/latest/download/Katika.apk"
-            id="download-button"
+            id="install-button"
+            type="button"
+            hidden
           >
-            ↓ Télécharger l'application Android
-          </a>
+            + Installer KatikaGames
+          </button>
 
-          <p class="status" id="version-info">
-            Application Android · dernière version
-          </p>
-
-          <p class="note">
-            Si une ancienne version est déjà installée, installe simplement
-            la nouvelle par-dessus : tes données sont conservées.
+          <p class="status" id="install-info">
+            Sur Android, ouvre ce site dans Chrome, puis utilise le menu ⋮
+            et choisis « Installer l'application » ou « Ajouter à l'écran d'accueil ».
           </p>
         </div>
+
       </div>
     </section>
+
   </main>
 
   <footer>
@@ -551,19 +549,49 @@
     document.getElementById("year").textContent =
       new Date().getFullYear();
 
-    // Affiche la version de l'application (dernière Release publiée).
-    (function () {
-      fetch("https://api.github.com/repos/yveslaurent85/katikagames-web/releases/latest")
-        .then(function (r) { return r.json(); })
-        .then(function (v) {
-          var m = /(\d+)/.exec(v.name || "");
-          var d = v.published_at ? new Date(v.published_at) : null;
-          var txt = "Version Android" + (m ? " " + m[1] : "");
-          if (d && !isNaN(d)) txt += " · mise à jour du " + d.toLocaleDateString("fr-FR");
-          document.getElementById("version-info").textContent = txt;
-        })
-        .catch(function () { /* on garde le texte par défaut */ });
-    })();
+    let deferredInstallPrompt = null;
+
+    const installButton = document.getElementById("install-button");
+    const installInfo = document.getElementById("install-info");
+
+    window.addEventListener("beforeinstallprompt", function(event) {
+      event.preventDefault();
+
+      deferredInstallPrompt = event;
+      installButton.hidden = false;
+
+      installInfo.textContent =
+        "Tu peux maintenant installer KatikaGames sur ton téléphone.";
+    });
+
+    installButton.addEventListener("click", async function() {
+      if (!deferredInstallPrompt) {
+        return;
+      }
+
+      deferredInstallPrompt.prompt();
+
+      await deferredInstallPrompt.userChoice;
+
+      deferredInstallPrompt = null;
+      installButton.hidden = true;
+    });
+
+    window.addEventListener("appinstalled", function() {
+      installInfo.textContent =
+        "KatikaGames a été ajouté à ton écran d'accueil.";
+
+      installButton.hidden = true;
+    });
+
+    if ("serviceWorker" in navigator) {
+      window.addEventListener("load", function() {
+        navigator.serviceWorker.register("./service-worker.js")
+          .catch(function(error) {
+            console.error("Erreur service worker :", error);
+          });
+      });
+    }
   </script>
 
 </body>
