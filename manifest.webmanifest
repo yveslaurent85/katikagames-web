@@ -13,9 +13,9 @@
   "orientation": "portrait",
   "icons": [
     {
-      "src": "icons/katika.svg",
-      "sizes": "any",
-      "type": "image/svg+xml",
+      "src": "icons/katika.png",
+"sizes": "1024x1024",
+"type": "image/png",
       "purpose": "any maskable"
     }
   ]
