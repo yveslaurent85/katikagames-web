@@ -4,7 +4,7 @@
   "short_name": "Katika",
   "description": "L'univers de Katika - Ludo et Dés",
   "lang": "fr",
-  "start_url": "./",
+  "start_url": "./jouer/",
   "scope": "./",
   "display": "standalone",
   "background_color": "#120b20",
