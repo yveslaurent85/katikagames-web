@@ -2,283 +2,234 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="theme-color" content="#120b20">
-  <meta name="description" content="KatikaGames : découvrez Ludo, Deux Dés et les jeux Katika.">
-  <link rel="manifest" href="./manifest.webmanifest">
-  <link rel="icon" type="image/png" href="./icon-192.png">
-  <title>KatikaGames – Le plaisir du jeu, ensemble</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#120b20">
+<meta name="description" content="KatikaGames : découvrez Ludo, Deux Dés et Songô.">
+<link rel="manifest" href="./manifest.webmanifest">
+<link rel="icon" type="image/png" href="./icon-192.png">
+<title>KatikaGames – Le plaisir du jeu, ensemble</title>
 
-  <style>
-    * { box-sizing: border-box; }
-
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background: #120b20;
-      color: #fff;
-    }
-
-    header {
-      padding: 20px 7%;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      flex-wrap: wrap;
-      gap: 15px;
-      border-bottom: 1px solid #39264e;
-    }
-
-    .brand {
-      display: flex;
-      align-items: center;
-      gap: 12px;
-      font-size: 23px;
-      font-weight: bold;
-      color: #edc66d;
-    }
-
-    .brand img {
-      width: 48px;
-      height: 48px;
-      border-radius: 12px;
-    }
-
-    nav a {
-      color: #fff;
-      text-decoration: none;
-      margin-left: 20px;
-      font-size: 14px;
-    }
-
-    .hero {
-      text-align: center;
-      padding: 85px 20px 70px;
-      background: radial-gradient(circle at top, #38234e, #120b20 70%);
-    }
-
-    .hero h1 {
-      font-size: clamp(34px, 7vw, 58px);
-      margin: 0 0 18px;
-      color: #edc66d;
-    }
-
-    .hero p {
-      max-width: 650px;
-      margin: 0 auto 30px;
-      line-height: 1.7;
-      color: #d8cde2;
-      font-size: 17px;
-    }
-
-    .buttons {
-      display: flex;
-      justify-content: center;
-      flex-wrap: wrap;
-      gap: 14px;
-    }
-
-    .btn {
-      display: inline-block;
-      padding: 15px 28px;
-      border-radius: 9px;
-      background: #edc66d;
-      color: #21152e;
-      font-weight: bold;
-      text-decoration: none;
-    }
-
-    .btn.secondary {
-      background: transparent;
-      border: 1px solid #edc66d;
-      color: #edc66d;
-    }
-
-    section {
-      padding: 55px 7%;
-      text-align: center;
-    }
-
-    section h2 {
-      color: #edc66d;
-      font-size: 30px;
-      margin-bottom: 15px;
-    }
-
-    .intro {
-      color: #cbbdd9;
-      line-height: 1.7;
-      max-width: 700px;
-      margin: auto;
-    }
-
-    .games {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-      gap: 20px;
-      margin-top: 35px;
-    }
-
-    .game {
-      background: #21152e;
-      border: 1px solid #49345e;
-      border-radius: 15px;
-      padding: 28px 20px;
-    }
-
-    .game .game-img {
-      display: block;
-      width: 170px;
-      max-width: 100%;
-      height: auto;
-      margin: 0 auto 14px;
-    }
-
-    .game .game-img-wide {
-      width: 260px;
-      margin-top: 22px;
-      margin-bottom: 36px;
-    }
-
-    .game .emoji {
-      font-size: 42px;
-    }
-
-    .game h3 {
-      color: #edc66d;
-      margin-bottom: 10px;
-    }
-
-    .game p {
-      color: #cbbdd9;
-      line-height: 1.6;
-      font-size: 14px;
-    }
-
-    .install {
-      background: #21152e;
-    }
-
-    .install p {
-      color: #d8cde2;
-      line-height: 1.8;
-      max-width: 650px;
-      margin: auto;
-    }
-
-    footer {
-      text-align: center;
-      padding: 28px 15px;
-      color: #a99bb8;
-      border-top: 1px solid #39264e;
-      font-size: 13px;
-    }
-
-    footer a {
-      color: #edc66d;
-      text-decoration: none;
-    }
-  </style>
+<style>
+*{box-sizing:border-box}
+body{margin:0;font-family:Arial,sans-serif;background:#120b20;color:#fff}
+header{padding:20px 7%;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:15px;border-bottom:1px solid #39264e}
+.brand{display:flex;align-items:center;gap:12px;font-size:23px;font-weight:bold;color:#edc66d}
+.brand img{width:48px;height:48px;border-radius:12px}
+nav{display:flex;align-items:center;flex-wrap:wrap;gap:18px}
+nav a{color:#fff;text-decoration:none;font-size:14px}
+#language{padding:10px;border-radius:8px;background:#21152e;color:#edc66d;border:1px solid #edc66d;font-weight:bold}
+.hero{text-align:center;padding:85px 20px 70px;background:radial-gradient(circle at top,#38234e,#120b20 70%)}
+.hero h1{font-size:clamp(34px,7vw,58px);margin:0 0 18px;color:#edc66d}
+.hero p{max-width:650px;margin:0 auto 30px;line-height:1.7;color:#d8cde2;font-size:17px}
+.buttons{display:flex;justify-content:center;flex-wrap:wrap;gap:14px}
+.btn{display:inline-block;padding:15px 28px;border-radius:9px;background:#edc66d;color:#21152e;font-weight:bold;text-decoration:none}
+.btn.secondary{background:transparent;border:1px solid #edc66d;color:#edc66d}
+section{padding:55px 7%;text-align:center}
+section h2{color:#edc66d;font-size:30px;margin-bottom:15px}
+.intro{color:#cbbdd9;line-height:1.7;max-width:700px;margin:auto}
+.games{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:20px;margin-top:35px}
+.game{background:#21152e;border:1px solid #49345e;border-radius:15px;padding:28px 20px}
+.game-img{display:block;width:170px;max-width:100%;height:auto;margin:0 auto 14px}
+.game-img-wide{width:260px;margin-top:22px;margin-bottom:36px}
+.game h3{color:#edc66d;margin-bottom:10px}
+.game p{color:#cbbdd9;line-height:1.6;font-size:14px}
+.install{background:#21152e}
+.install p{color:#d8cde2;line-height:1.8;max-width:650px;margin:auto}
+footer{text-align:center;padding:28px 15px;color:#a99bb8;border-top:1px solid #39264e;font-size:13px}
+[dir="rtl"]{direction:rtl}
+[dir="rtl"] nav{direction:rtl}
+@media(max-width:600px){header{justify-content:center}nav{justify-content:center}}
+</style>
 </head>
 
 <body>
+<header>
+<div class="brand">
+<img src="./icon-192.png" alt="Katika">
+KatikaGames
+</div>
+<nav>
+<a href="#jeux" data-i18n="navGames">Nos jeux</a>
+<a href="#installation" data-i18n="navInstall">Installation</a>
+<a href="#affiliation" data-i18n="navAffiliate">Affiliation</a>
+<select id="language" aria-label="Choisir la langue">
+<option value="fr">🇫🇷 Français</option>
+<option value="en">🇬🇧 English</option>
+<option value="ar">🇸🇦 العربية</option>
+<option value="zh">🇨🇳 中文</option>
+<option value="ha">🇳🇬 Hausa</option>
+</select>
+</nav>
+</header>
 
-  <header>
-    <div class="brand">
-      <img src="./icon-192.png" alt="Logo Katika">
-      KatikaGames
-    </div>
+<main>
+<div class="hero">
+<h1 data-i18n="heroTitle">Le plaisir du jeu, ensemble.</h1>
+<p data-i18n="heroText">Bienvenue dans l'univers KatikaGames ! Retrouvez vos jeux préférés, défiez vos amis et partagez des moments de divertissement.</p>
+<div class="buttons">
+<a class="btn" href="./jouer/" data-i18n="play">JOUER MAINTENANT</a>
+<a class="btn secondary" href="#jeux" data-i18n="discover">DÉCOUVRIR NOS JEUX</a>
+</div>
+</div>
 
-    <nav>
-      <a href="#jeux">Nos jeux</a>
-      <a href="#installation">Installation</a>
-      <a href="#affiliation">Affiliation</a>
-    </nav>
-  </header>
+<section id="jeux">
+<h2 data-i18n="gamesTitle">Découvrez nos jeux</h2>
+<p class="intro" data-i18n="gamesIntro">Des jeux accessibles, des défis entre amis et des moments de plaisir à partager.</p>
+<div class="games">
+<div class="game">
+<img class="game-img" width="170" height="177" src="./images/plateau_ludo_katikagames_grand.png" alt="Ludo" loading="lazy">
+<h3 data-i18n="ludo">Ludo</h3>
+<p data-i18n="ludoText">Jouez en présentiel ou en ligne avec vos amis.</p>
+</div>
+<div class="game">
+<img class="game-img" width="140" height="140" src="./images/game_deuxdes-1.png" alt="Deux dés" loading="lazy">
+<h3 data-i18n="dice">Deux Dés</h3>
+<p data-i18n="diceText">Testez votre chance dans le jeu Deux Dés.</p>
+</div>
+<div class="game">
+<img class="game-img game-img-wide" width="260" height="122" src="./images/songo_bois_grand-1.png" alt="Plateau de Songô" loading="lazy">
+<h3 data-i18n="songo">Songô</h3>
+<p data-i18n="songoText">Découvrez le Songô dans l'univers Katika.</p>
+</div>
+</div>
+<div style="margin-top:35px">
+<a class="btn" href="./jouer/" data-i18n="access">ACCÉDER AUX JEUX</a>
+</div>
+</section>
 
-  <main>
-    <div class="hero">
-      <h1>Le plaisir du jeu, ensemble.</h1>
+<section class="install" id="installation">
+<h2 data-i18n="installTitle">Emportez Katika partout</h2>
+<p data-i18n="installText">Installez Katika sur votre téléphone depuis votre navigateur compatible.</p>
+</section>
 
-      <p>
-        Bienvenue dans l'univers KatikaGames !
-        Retrouvez vos jeux préférés, défiez vos amis
-        et partagez des moments de divertissement.
-      </p>
+<section id="affiliation">
+<h2 data-i18n="affiliateTitle">Programme d'affiliation</h2>
+<p class="intro" data-i18n="affiliateText">Découvrez prochainement les informations sur notre programme d'affiliation.</p>
+</section>
+</main>
 
-      <div class="buttons">
-        <a class="btn" href="./jouer/">JOUER MAINTENANT</a>
-        <a class="btn secondary" href="#jeux">DÉCOUVRIR NOS JEUX</a>
-      </div>
-    </div>
+<footer>
+<p data-i18n="copyright">© 2026 KatikaGames – Tous droits réservés.</p>
+<p data-i18n="company">Une initiative de MECKBET SARL – Cameroun</p>
+</footer>
+<script>
+const translations = {
+fr: {
+navGames:"Nos jeux", navInstall:"Installation", navAffiliate:"Affiliation",
+heroTitle:"Le plaisir du jeu, ensemble.",
+heroText:"Bienvenue dans l'univers KatikaGames ! Retrouvez vos jeux préférés, défiez vos amis et partagez des moments de divertissement.",
+play:"JOUER MAINTENANT", discover:"DÉCOUVRIR NOS JEUX",
+gamesTitle:"Découvrez nos jeux", gamesIntro:"Des jeux accessibles, des défis entre amis et des moments de plaisir à partager.",
+ludo:"Ludo", ludoText:"Jouez en présentiel ou en ligne avec vos amis.",
+dice:"Deux Dés", diceText:"Testez votre chance dans le jeu Deux Dés.",
+songo:"Songô", songoText:"Découvrez le Songô dans l'univers Katika.",
+access:"ACCÉDER AUX JEUX", installTitle:"Emportez Katika partout",
+installText:"Installez Katika sur votre téléphone depuis votre navigateur compatible. Ouvrez le menu de Chrome puis choisissez Installer l'application ou Ajouter à l'écran d'accueil.",
+affiliateTitle:"Programme d'affiliation", affiliateText:"Découvrez prochainement les informations sur notre programme d'affiliation.",
+copyright:"© 2026 KatikaGames – Tous droits réservés.", company:"Une initiative de MECKBET SARL – Cameroun"
+},
 
-    <section id="jeux">
-      <h2>Découvrez nos jeux</h2>
-      <p class="intro">
-        Des jeux accessibles, des défis entre amis et
-        des moments de plaisir à partager.
-      </p>
+en: {
+navGames:"Our games", navInstall:"Installation", navAffiliate:"Affiliate program",
+heroTitle:"The joy of playing together.",
+heroText:"Welcome to KatikaGames! Find your favourite games, challenge your friends and share fun moments.",
+play:"PLAY NOW", discover:"DISCOVER OUR GAMES",
+gamesTitle:"Discover our games", gamesIntro:"Accessible games, friendly challenges and fun moments to share.",
+ludo:"Ludo", ludoText:"Play locally or online with your friends.",
+dice:"Two Dice", diceText:"Test your luck in the Two Dice game.",
+songo:"Songo", songoText:"Discover Songo in the Katika universe.",
+access:"ACCESS THE GAMES", installTitle:"Take Katika everywhere",
+installText:"Install Katika on your phone using a compatible browser. Open the Chrome menu and choose Install app or Add to Home screen.",
+affiliateTitle:"Affiliate program", affiliateText:"Information about our affiliate program will be available soon.",
+copyright:"© 2026 KatikaGames – All rights reserved.", company:"An initiative of MECKBET SARL – Cameroon"
+},
 
-      <div class="games">
-        <div class="game">
-          <img class="game-img" width="170" height="177" src="./images/plateau_ludo_katikagames_grand.png" alt="Plateau de Ludo KatikaGames" loading="lazy">
-          <h3>Ludo</h3>
-          <p>
-            Jouez en présentiel ou en ligne et retrouvez
-            le plaisir du Ludo avec vos amis.
-          </p>
-        </div>
+ar: {
+navGames:"ألعابنا", navInstall:"التثبيت", navAffiliate:"برنامج الشراكة",
+heroTitle:"متعة اللعب معًا.",
+heroText:"مرحبًا بكم في عالم KatikaGames! اكتشفوا ألعابكم المفضلة وتحدّوا أصدقاءكم واستمتعوا بأوقات رائعة.",
+play:"العب الآن", discover:"اكتشف ألعابنا",
+gamesTitle:"اكتشف ألعابنا", gamesIntro:"ألعاب ممتعة وتحديات بين الأصدقاء ولحظات جميلة نتشاركها.",
+ludo:"لودو", ludoText:"العبوا محليًا أو عبر الإنترنت مع أصدقائكم.",
+dice:"حجر النرد", diceText:"اختبروا حظكم في لعبة النرد.",
+songo:"سونغو", songoText:"اكتشفوا لعبة سونغو في عالم Katika.",
+access:"الدخول إلى الألعاب", installTitle:"اصطحبوا Katika معكم أينما ذهبتم",
+installText:"يمكنكم تثبيت Katika على الهاتف باستخدام متصفح متوافق. افتحوا قائمة Chrome واختاروا تثبيت التطبيق أو الإضافة إلى الشاشة الرئيسية.",
+affiliateTitle:"برنامج الشراكة", affiliateText:"ستتوفر قريبًا معلومات حول برنامج الشراكة الخاص بنا.",
+copyright:"© 2026 KatikaGames – جميع الحقوق محفوظة.", company:"مبادرة من MECKBET SARL – الكاميرون"
+},
 
-        <div class="game">
-          <img class="game-img" width="140" height="140" src="./images/game_deuxdes-1.png" alt="Deux dés" loading="lazy">
-          <h3>Deux Dés</h3>
-          <p>
-            Testez votre chance et découvrez
-            le jeu Deux Dés dans Katika.
-          </p>
-        </div>
+zh: {
+navGames:"我们的游戏", navInstall:"安装", navAffiliate:"推广合作",
+heroTitle:"一起享受游戏的乐趣。",
+heroText:"欢迎来到 KatikaGames！体验您喜爱的游戏，挑战朋友，分享欢乐时光。",
+play:"立即开始", discover:"探索我们的游戏",
+gamesTitle:"探索我们的游戏", gamesIntro:"轻松有趣的游戏、好友挑战和值得分享的快乐时光。",
+ludo:"飞行棋", ludoText:"与朋友在线或在本地一起体验飞行棋的乐趣。",
+dice:"双骰子", diceText:"试试您的运气，体验 Katika 双骰子游戏。",
+songo:"松戈棋", songoText:"在 Katika 的游戏世界中探索松戈棋。",
+access:"进入游戏", installTitle:"随时随地畅玩 Katika",
+installText:"您可以通过兼容的浏览器将 Katika 安装到手机。在 Chrome 菜单中选择安装应用或添加到主屏幕。",
+affiliateTitle:"推广合作计划", affiliateText:"我们的推广合作计划详情即将推出。",
+copyright:"© 2026 KatikaGames – 版权所有。", company:"MECKBET SARL 倡议推出 – 喀麦隆"
+},
 
-        <div class="game">
-          <img class="game-img game-img-wide" width="260" height="122" src="./images/songo_bois_grand-1.png" alt="Plateau de Songô en bois : 2 rangées de 7 cases" loading="lazy">
-          <h3>Songô</h3>
-          <p>
-            Découvrez également le Songô
-            dans l'univers Katika.
-          </p>
-        </div>
-      </div>
+ha: {
+navGames:"Wasanninmu", navInstall:"Shigarwa", navAffiliate:"Shirin haɗin gwiwa",
+heroTitle:"Jin daɗin wasa tare.",
+heroText:"Barka da zuwa duniyar KatikaGames! Ku more wasannin da kuke so, ku ƙalubalanci abokanku, ku raba lokutan farin ciki.",
+play:"FARA WASA YANZU", discover:"DUBA WASANNINMU",
+gamesTitle:"Gano wasanninmu", gamesIntro:"Wasanni masu sauƙi, ƙalubale tsakanin abokai da lokutan farin ciki.",
+ludo:"Ludo", ludoText:"Ku yi wasa tare ko ta intanet tare da abokanku.",
+dice:"Ɗan lido biyu", diceText:"Ku gwada sa'arku a wasan ɗan lido biyu na Katika.",
+songo:"Songô", songoText:"Ku gano wasan Songô a cikin duniyar Katika.",
+access:"SHIGA WASANNI", installTitle:"Ku tafi da Katika ko'ina",
+installText:"Za ku iya saka Katika a wayarku ta amfani da burauzar da ta dace. Ku buɗe menu na Chrome sannan ku zaɓi Shigar da manhaja ko Ƙara zuwa allon gida.",
+affiliateTitle:"Shirin haɗin gwiwa", affiliateText:"Za mu kawo bayanai game da shirin haɗin gwiwarmu nan ba da jimawa ba.",
+copyright:"© 2026 KatikaGames – An kiyaye duk haƙƙoƙi.", company:"Ƙirƙirar MECKBET SARL – Kamaru"
+}
+};
+</script>
+<script>
+function setLanguage(lang) {
+  const t = translations[lang] || translations.fr;
 
-      <div style="margin-top:35px">
-        <a class="btn" href="./jouer/">ACCÉDER AUX JEUX</a>
-      </div>
-    </section>
+  document.documentElement.lang = lang;
+  document.documentElement.dir = lang === "ar" ? "rtl" : "ltr";
 
-    <section class="install" id="installation">
-      <h2>Emportez Katika partout</h2>
-      <p>
-        Vous pouvez installer Katika sur votre téléphone
-        depuis votre navigateur compatible.
-        Ouvrez le menu de Chrome puis choisissez
-        « Installer l'application » ou « Ajouter à l'écran d'accueil »
-        si cette option est proposée.
-      </p>
-    </section>
+  document.querySelectorAll("[data-i18n]").forEach(element => {
+    const key = element.getAttribute("data-i18n");
 
-    <section id="affiliation">
-      <h2>Programme d'affiliation</h2>
-      <p class="intro">
-        Vous souhaitez faire connaître Katika et participer
-        à son développement ? Découvrez prochainement
-        les informations sur notre programme d'affiliation.
-      </p>
-    </section>
-  </main>
+    if (t[key]) {
+      element.textContent = t[key];
+    }
+  });
 
-  <footer>
-    <p>© 2026 KatikaGames – Tous droits réservés.</p>
-    <p>Une initiative de MECKBET SARL – Cameroun</p>
-  </footer>
+  document.getElementById("language").value = lang;
 
+  try {
+    localStorage.setItem("katika-language", lang);
+  } catch (error) {
+    console.log("Mémorisation indisponible");
+  }
+}
+
+const languageSelector = document.getElementById("language");
+
+languageSelector.addEventListener("change", function(event) {
+  setLanguage(event.target.value);
+});
+
+let savedLanguage = "fr";
+
+try {
+  savedLanguage = localStorage.getItem("katika-language") || "fr";
+} catch (error) {
+  savedLanguage = "fr";
+}
+
+setLanguage(translations[savedLanguage] ? savedLanguage : "fr");
+</script>
 </body>
 </html>
