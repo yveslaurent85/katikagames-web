@@ -30778,7 +30778,7 @@ s=a.gSk().h(0,0)
 return A.bjX(B.e.ab(s,1,s.length-1),$.bmI(),new A.b4G(),null)},
 b4G:function b4G(){},
 Kx(a){return new A.Kw(a)},
-hI(a,b){return B.h.bI(a*940,1000)},
+hI(a,b){return B.h.bI(a*950,1000)},
 bgi(a){return""+a+" FCFA"},
 cw(a,b,c){return A.buB(a,b,c)},
 buB(a,b,c){var s=0,r=A.p(t.a),q,p=2,o=[],n,m,l,k,j,i,h,g,f,e,d
@@ -110051,7 +110051,7 @@ p.push(A.r(o[0]+" "+n[0]+"  \u2013  "+n[1]+" "+o[1],l,l,B.hm,l))
 o=m.r
 if(o>0){if(j)o=A.j(u.C,"Draw: stakes refunded, no commission.")
 else{o*=2
-o=A.j("Gain : "+(""+A.hI(o,!1)+" FCFA")+" (commission 6 %)","Prize: "+(""+A.hI(o,!1)+" FCFA")+" (6 % commission)")}p.push(A.r(o,l,l,B.jg,l))}o=m.z
+o=A.j("Gain : "+(""+A.hI(o,!1)+" FCFA")+" (commission 5 %)","Prize: "+(""+A.hI(o,!1)+" FCFA")+" (5 % commission)")}p.push(A.r(o,l,l,B.jg,l))}o=m.z
 if(o>0){o=""+o+" FCFA"
 p.push(A.r(A.j("\ud83c\udfb0 Jackpot gagn\xe9 : "+o,"\ud83c\udfb0 Jackpot won: "+o),l,l,B.ej,l))}p.push(m.Q)
 return A.ai(l,A.ag(p,B.k,B.f,B.i),B.l,l,l,new A.az(r,l,q,k,l,l,B.t),l,l,l,B.cu,B.e6,l,l,1/0)}}
@@ -115316,7 +115316,7 @@ l=f.r
 k=f.x?e:new A.aDw(f)
 B.b.O(p,A.a([new A.K(B.c3,o,e),A.dL(A.a([n,A.e2(e,m,k,!l,e)],i),0,8),new A.K(B.fG,A.r(A.j("7 pile : les mises sont rendues.","Exactly 7: stakes are refunded."),e,e,B.hj,e),e)],i))}p.push(new A.K(B.c3,A.r(A.j("Adversaire","Opponent"),e,e,B.bM,e),e))
 p.push(f.a2j(f.a0B(),f.f,new A.aDx(f)))
-p.push(new A.K(B.c3,A.r(A.j("Mise de chacun (commission 6 %)","Stake each (6 % commission)"),e,e,B.bM,e),e))
+p.push(new A.K(B.c3,A.r(A.j("Mise de chacun (commission 5 %)","Stake each (5 % commission)"),e,e,B.bM,e),e))
 o=A.a([],i)
 for(h=0;h<6;++h){g=B.vo[h]
 n=f.w
@@ -122029,7 +122029,7 @@ p.push(A.r(o[0]+" "+n[0]+"  \u2013  "+n[1]+" "+o[1],l,l,B.hm,l))
 o=m.f
 if(o>0){if(j)o=A.j(u.C,"Draw: stakes refunded, no commission.")
 else{o*=2
-o=A.j("Gain : "+(""+A.hI(o,!1)+" FCFA")+" (commission 6 %)","Prize: "+(""+A.hI(o,!1)+" FCFA")+" (6 % commission)")}p.push(A.r(o,l,l,B.jg,l))}o=m.w
+o=A.j("Gain : "+(""+A.hI(o,!1)+" FCFA")+" (commission 5 %)","Prize: "+(""+A.hI(o,!1)+" FCFA")+" (5 % commission)")}p.push(A.r(o,l,l,B.jg,l))}o=m.w
 if(o>0){o=""+o+" FCFA"
 p.push(A.r(A.j("\ud83c\udfb0 Jackpot gagn\xe9 : "+o,"\ud83c\udfb0 Jackpot won: "+o),l,l,B.ej,l))}p.push(m.x)
 return A.ai(l,A.ag(p,B.k,B.f,B.i),B.l,l,l,new A.az(r,l,q,k,l,l,B.t),l,l,l,B.cu,B.e6,l,l,1/0)}}
@@ -123356,7 +123356,7 @@ if(r===0)s=0
 else s=r<100||r>25e4?-1:r
 this.e=s
 this.a.kF(s)},
-F(a){var s,r,q,p,o,n,m,l=this,k=null,j=", commission 6 %)",i=l.a,h=i.c,g=h>0?""+A.hI(h*i.d,i.e)+" FCFA":""
+F(a){var s,r,q,p,o,n,m,l=this,k=null,j=", commission 5 %)",i=l.a,h=i.c,g=h>0?""+A.hI(h*i.d,i.e)+" FCFA":""
 i=t.p
 s=A.a([],i)
 for(r=0;r<7;++r){q=B.vf[r]
