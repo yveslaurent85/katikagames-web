@@ -31868,7 +31868,7 @@ return A.c4("hostessStats",s,null)},
 aC9(a,b,c){var s=0,r=A.p(t.H)
 var $async$aC9=A.l(function(d,e){if(d===1)return A.m(e,r)
 for(;;)switch(s){case 0:s=2
-return A.h(A.c4("manualDepositRequest",A.Z(["amount",a,"phone",b,"txRef",c],t.N,t.z),null),$async$aC9)
+return A.h(A.c4("manualDepositRequest",A.Z(["amount",a,"phone",b,"txRef",c,"operator","orange"],t.N,t.z),null),$async$aC9)
 case 2:return A.n(null,r)}})
 return A.o($async$aC9,r)},
 aCa(a,b){var s=0,r=A.p(t.H)
