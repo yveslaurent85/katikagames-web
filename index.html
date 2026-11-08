@@ -42,6 +42,67 @@ footer{text-align:center;padding:28px 15px;color:#a99bb8;border-top:1px solid #3
 [dir="rtl"]{direction:rtl}
 [dir="rtl"] nav{direction:rtl}
 @media(max-width:600px){header{justify-content:center}nav{justify-content:center}}
+
+/* FENÊTRE PERSONNALISÉE D'INSTALLATION KATIKA */
+#katika-install-modal{
+  display:none;
+  position:fixed;
+  inset:0;
+  z-index:99999;
+  background:rgba(0,0,0,.82);
+  align-items:center;
+  justify-content:center;
+  padding:20px;
+}
+#katika-install-modal.visible{display:flex}
+.katika-install-card{
+  background:#21152e;
+  border:2px solid #edc66d;
+  border-radius:18px;
+  padding:27px 22px;
+  text-align:center;
+  width:100%;
+  max-width:380px;
+  box-shadow:0 10px 40px rgba(0,0,0,.5);
+}
+.katika-install-card img{
+  width:75px;
+  height:75px;
+  border-radius:16px;
+}
+.katika-install-card h2{
+  color:#edc66d;
+  margin:15px 0 10px;
+}
+.katika-install-card p{
+  color:#fff;
+  line-height:1.6;
+  font-size:14px;
+}
+.katika-install-card button{
+  width:100%;
+  padding:15px;
+  margin-top:10px;
+  border-radius:9px;
+  font-size:15px;
+  font-weight:bold;
+  cursor:pointer;
+}
+#katika-install-button{
+  background:#edc66d;
+  color:#21152e;
+  border:0;
+}
+#katika-later-button{
+  background:transparent;
+  color:white;
+  border:1px solid #edc66d;
+}
+#katika-install-help{
+  display:none;
+  color:#edc66d;
+  margin-top:15px;
+}
 </style>
 </head>
 
@@ -123,6 +184,19 @@ KatikaGames
 <p data-i18n="copyright">© 2026 KatikaGames – Tous droits réservés.</p>
 <p data-i18n="company">Une initiative de MECKBET SARL – Cameroun</p>
 </footer>
+
+<!-- FENÊTRE D'INSTALLATION -->
+<div id="katika-install-modal" role="dialog" aria-modal="true" aria-labelledby="katika-install-title">
+  <div class="katika-install-card">
+    <img src="./icon-192.png" alt="Logo Katika">
+    <h2 id="katika-install-title">Installez KATIKA !</h2>
+    <p id="katika-install-message">Retrouvez vos jeux préférés directement sur l'écran d'accueil de votre téléphone.</p>
+    <button id="katika-install-button">⬇ INSTALLER KATIKA</button>
+    <button id="katika-later-button">PLUS TARD</button>
+    <p id="katika-install-help" aria-live="polite"></p>
+  </div>
+</div>
+
 <script>
 const translations = {
 fr: {
@@ -139,7 +213,6 @@ installText:"Installez Katika sur votre téléphone depuis votre navigateur comp
 affiliateTitle:"Programme d'affiliation", affiliateText:"Découvrez prochainement les informations sur notre programme d'affiliation.",
 copyright:"© 2026 KatikaGames – Tous droits réservés.", company:"Une initiative de MECKBET SARL – Cameroun"
 },
-
 en: {
 navGames:"Our games", navInstall:"Installation", navAffiliate:"Affiliate program",
 heroTitle:"The joy of playing together.",
@@ -154,7 +227,6 @@ installText:"Install Katika on your phone using a compatible browser. Open the C
 affiliateTitle:"Affiliate program", affiliateText:"Information about our affiliate program will be available soon.",
 copyright:"© 2026 KatikaGames – All rights reserved.", company:"An initiative of MECKBET SARL – Cameroon"
 },
-
 ar: {
 navGames:"ألعابنا", navInstall:"التثبيت", navAffiliate:"برنامج الشراكة",
 heroTitle:"متعة اللعب معًا.",
@@ -169,7 +241,6 @@ installText:"يمكنكم تثبيت Katika على الهاتف باستخدام
 affiliateTitle:"برنامج الشراكة", affiliateText:"ستتوفر قريبًا معلومات حول برنامج الشراكة الخاص بنا.",
 copyright:"© 2026 KatikaGames – جميع الحقوق محفوظة.", company:"مبادرة من MECKBET SARL – الكاميرون"
 },
-
 zh: {
 navGames:"我们的游戏", navInstall:"安装", navAffiliate:"推广合作",
 heroTitle:"一起享受游戏的乐趣。",
@@ -184,7 +255,6 @@ installText:"您可以通过兼容的浏览器将 Katika 安装到手机。在 C
 affiliateTitle:"推广合作计划", affiliateText:"我们的推广合作计划详情即将推出。",
 copyright:"© 2026 KatikaGames – 版权所有。", company:"MECKBET SARL 倡议推出 – 喀麦隆"
 },
-
 ha: {
 navGames:"Wasanninmu", navInstall:"Shigarwa", navAffiliate:"Shirin haɗin gwiwa",
 heroTitle:"Jin daɗin wasa tare.",
@@ -200,20 +270,15 @@ affiliateTitle:"Shirin haɗin gwiwa", affiliateText:"Za mu kawo bayanai game da 
 copyright:"© 2026 KatikaGames – An kiyaye duk haƙƙoƙi.", company:"Ƙirƙirar MECKBET SARL – Kamaru"
 }
 };
-</script>
-<script>
+
 function setLanguage(lang) {
   const t = translations[lang] || translations.fr;
-
   document.documentElement.lang = lang;
   document.documentElement.dir = lang === "ar" ? "rtl" : "ltr";
 
   document.querySelectorAll("[data-i18n]").forEach(element => {
     const key = element.getAttribute("data-i18n");
-
-    if (t[key]) {
-      element.textContent = t[key];
-    }
+    if (t[key]) element.textContent = t[key];
   });
 
   document.getElementById("language").value = lang;
@@ -232,14 +297,106 @@ languageSelector.addEventListener("change", function(event) {
 });
 
 let savedLanguage = "fr";
-
 try {
   savedLanguage = localStorage.getItem("katika-language") || "fr";
 } catch (error) {
   savedLanguage = "fr";
 }
-
 setLanguage(translations[savedLanguage] ? savedLanguage : "fr");
+
+/* INSTALLATION PWA KATIKA */
+(function() {
+  const modal = document.getElementById("katika-install-modal");
+  const installBtn = document.getElementById("katika-install-button");
+  const laterBtn = document.getElementById("katika-later-button");
+  const help = document.getElementById("katika-install-help");
+  const message = document.getElementById("katika-install-message");
+
+  let installPrompt = null;
+  let isInstalled = false;
+
+  const isIOS = /iphone|ipad|ipod/i.test(navigator.userAgent);
+  const isStandalone =
+    window.matchMedia("(display-mode: standalone)").matches ||
+    navigator.standalone === true;
+
+  isInstalled = isStandalone;
+
+  function getDismissed() {
+    try {
+      return localStorage.getItem("katika-install-dismissed") === "yes";
+    } catch (error) {
+      return false;
+    }
+  }
+
+  function setDismissed() {
+    try {
+      localStorage.setItem("katika-install-dismissed", "yes");
+    } catch (error) {}
+  }
+
+  function showModal() {
+    if (isInstalled || getDismissed()) return;
+    modal.classList.add("visible");
+  }
+
+  window.addEventListener("beforeinstallprompt", function(event) {
+    event.preventDefault();
+    installPrompt = event;
+  });
+
+  installBtn.addEventListener("click", async function() {
+    if (installPrompt) {
+      installPrompt.prompt();
+      const choice = await installPrompt.userChoice;
+
+      if (choice.outcome === "accepted") {
+        isInstalled = true;
+        setDismissed();
+        modal.classList.remove("visible");
+      }
+
+      installPrompt = null;
+      return;
+    }
+
+    help.style.display = "block";
+
+    if (isIOS) {
+      message.textContent = "Pour installer Katika sur iPhone ou iPad, utilisez Safari.";
+      help.textContent = "1. Appuyez sur le bouton Partager de Safari. 2. Choisissez « Sur l'écran d'accueil ». 3. Appuyez sur Ajouter.";
+    } else {
+      message.textContent = "L'installation automatique n'est pas disponible pour le moment.";
+      help.textContent = "Ouvrez le menu ⋮ de Chrome, puis choisissez « Installer l'application » ou « Ajouter à l'écran d'accueil ». ";
+    }
+  });
+
+  laterBtn.addEventListener("click", function() {
+    setDismissed();
+    modal.classList.remove("visible");
+  });
+
+  window.addEventListener("appinstalled", function() {
+    isInstalled = true;
+    setDismissed();
+    modal.classList.remove("visible");
+  });
+
+  /* Enregistrement du service worker existant */
+  if ("serviceWorker" in navigator) {
+    window.addEventListener("load", function() {
+      navigator.serviceWorker.register("./service-worker.js")
+        .catch(function(error) {
+          console.log("Service Worker non enregistré :", error);
+        });
+    });
+  }
+
+  window.addEventListener("load", function() {
+    setTimeout(showModal, 1000);
+  });
+})();
 </script>
 </body>
 </html>
