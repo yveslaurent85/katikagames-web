@@ -125366,7 +125366,7 @@ var $async$$0=A.l(function(a,b){if(a===1){p.push(b)
 s=q}for(;;)switch(s){case 0:A.ad(o.a,!1).bu()
 q=3
 s=6
-return A.h(A.yk(A.f9("https://katikagames.com/tutoriel.html",0,null),B.jG),$async$$0)
+return A.h(A.yk(A.f9("https://katikagames.ychachouang.workers.dev/tutoriel.html",0,null),B.jG),$async$$0)
 case 6:q=1
 s=5
 break
