@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="fr"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Diagnostic</title>
+<style>body{font:18px system-ui,sans-serif;padding:16px;background:#fff;color:#111}p{margin:10px 0;padding:10px;border-radius:8px;background:#eee}.ok{background:#c8f7c5}.ko{background:#ffc9c9}</style>
+</head><body>
+<h2>Diagnostic tutoriel</h2>
+<p id="a" class="ko">1. Script integre : BLOQUE ou non execute</p>
+<p id="b" class="ko">2. Script externe diag.js : BLOQUE ou non charge</p>
+<p id="c" class="ko">3. tutoriel.js : pas encore teste</p>
+<p id="d" class="ko">4. Image tuto0.jpg : pas encore testee</p>
+<p id="e" class="ko">5. Synthese vocale : pas encore testee</p>
+<p id="f">Erreurs : aucune</p>
+<script>
+window.onerror=function(m,s,l,c){document.getElementById('f').textContent='Erreurs : '+m+' ('+(s||'').split('/').pop()+':'+l+')';document.getElementById('f').className='ko';};
+var a=document.getElementById('a');a.textContent='1. Script integre : OK';a.className='ok';
+var i=new Image();i.onload=function(){var d=document.getElementById('d');d.textContent='4. Image tuto0.jpg : OK ('+i.width+'px)';d.className='ok';};
+i.onerror=function(){document.getElementById('d').textContent='4. Image tuto0.jpg : ERREUR';};i.src='tuto0.jpg';
+var e=document.getElementById('e');
+e.textContent='5. Synthese vocale : '+(('speechSynthesis' in window)?'disponible':'absente');e.className=('speechSynthesis' in window)?'ok':'ko';
+</script>
+<script src="diag.js"></script>
+</body></html>
