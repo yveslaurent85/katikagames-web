@@ -11,16 +11,22 @@
   function pickVoice(){
     if(!tts)return;
     var vs=speechSynthesis.getVoices()||[];voice=null;
-    for(var i=0;i<vs.length;i++){if((vs[i].lang||'').toLowerCase().indexOf('fr')===0){voice=vs[i];if((vs[i].lang||'').toLowerCase()==='fr-fr')break;}}
+    for(var i=0;i<vs.length;i++){
+      var l=(vs[i].lang||'').toLowerCase().replace('_','-');
+      if(l.indexOf('fr')===0){voice=vs[i];if(l==='fr-fr')break;}
+    }
   }
   if(tts){pickVoice();try{speechSynthesis.onvoiceschanged=pickVoice;}catch(e){}}
   function speak(){
     if(!tts)return;
     try{
+      pickVoice();
       speechSynthesis.cancel();
       var st=M[mi].steps[si];
       var u=new SpeechSynthesisUtterance(st.say||st.c);
-      u.lang='fr-FR';u.rate=.92;if(voice)u.voice=voice;
+      u.lang='fr-FR';u.rate=.92;
+      if(voice){u.voice=voice;u.lang=voice.lang;$('hint').textContent='Voix : '+voice.name;}
+      else{$('hint').textContent='Aucune voix francaise sur ce telephone : la voix peut lire en anglais. Installe le francais dans Parametres > Gestion generale > Synthese vocale (Google), puis recharge.';}
       speechSynthesis.speak(u);
     }catch(e){}
   }
