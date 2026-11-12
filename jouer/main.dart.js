@@ -119970,8 +119970,10 @@ j=A.f(a.h(0,"id"))+"-"+A.f(k.h(0,"uid"))
 if(J.d(a.h(0,"game"),"tiah"))i=J.d(k.h(0,"total"),21)||J.d(k.h(0,"toucx"),!0)
 else i=J.d(k.h(0,"fomekou"),!0)
 if(i&&!m.q(0,j)){m.F(0,j)
-if(h.f!=null)l.fz("sfx_win.wav")}}if(h.f==null)r=!J.d(a.h(0,"status"),"playing")||r.cN(s,new A.aLO())
-else r=!1
+if(h.f!=null)l.fz("sfx_win.wav")}}q=!1
+if(h.f==null)if(!J.d(a.h(0,"status"),"waiting"))r=!J.d(a.h(0,"status"),"playing")||r.cN(s,new A.aLO())
+else r=q
+else r=q
 if(r)h.z=A.f(a.h(0,"id"))
 h.n(new A.aLP(h,a))},
 w7(){var s=0,r=A.p(t.H),q,p=2,o=[],n=this,m,l,k
