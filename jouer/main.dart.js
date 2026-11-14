@@ -32740,7 +32740,6 @@ s.p(0,"id",a)
 s.p(0,"winnerUids",b)
 s.p(0,"scores",c)
 if(e!=null)s.p(0,"fscores",e)
-if(d!=null)s.p(0,"corat",d)
 return A.b5("settleLocalGame",s,null)},
 byQ(a,b,c){return A.b5("deuxDesAct",A.Z(["gameId",a,"act",b,"seat",c],t.N,t.z),null)},
 byS(a,b,c){var s=A.B(t.N,t.z)
@@ -124612,7 +124611,7 @@ if(l<2&&e.f[l]!=null){e=e.f[l]
 e.toString
 J.bQ(m,e)}}k=m
 s=7
-return A.h(A.a2c(b,k,A.a([n.gb_().h5(0),n.gb_().h5(1)],t.t),null,null),$async$k7)
+return A.h(A.a2c(b,k,A.a([n.gb_().h5(0),n.gb_().h5(1)],t.t),!1,null),$async$k7)
 case 7:j=a1
 m=A.an(J.aY(j,"jackpot"))
 d=m==null?null:B.c.B(m)
@@ -127381,7 +127380,7 @@ if(l<d.length&&d[l]!=null){d=d[l]
 d.toString
 J.bQ(m,d)}}k=m
 s=7
-return A.h(A.a2c(a0,k,A.d_(n.gO7(),!0,t.S),null,null),$async$lT)
+return A.h(A.a2c(a0,k,A.d_(n.gO7(),!0,t.S),!1,null),$async$lT)
 case 7:j=a3
 m=A.an(J.aY(j,"jackpot"))
 c=m==null?null:B.c.B(m)
@@ -136220,7 +136219,7 @@ p=4
 k=A.a([f.a],t.s)
 j=a===0?1:0
 s=7
-return A.h(A.a2c(g,k,A.a([j,a===1?1:0],t.t),null,null),$async$Bo)
+return A.h(A.a2c(g,k,A.a([j,a===1?1:0],t.t),!1,null),$async$Bo)
 case 7:m=d
 k=A.an(J.aY(m,"jackpot"))
 i=k==null?null:B.c.B(k)
@@ -139851,7 +139850,7 @@ if(l<2&&d.f[l]!=null){d=d.f[l]
 d.toString
 J.bQ(m,d)}}k=m
 s=7
-return A.h(A.a2c(a,k,A.d_(h.b,!0,t.S),null,null),$async$m1)
+return A.h(A.a2c(a,k,A.d_(h.b,!0,t.S),!1,null),$async$m1)
 case 7:j=a2
 m=A.an(J.aY(j,"jackpot"))
 c=m==null?null:B.c.B(m)
