@@ -32719,7 +32719,7 @@ t8(a,b,c,d,e){var s=0,r=A.p(t.N),q,p
 var $async$t8=A.l(function(f,g){if(f===1)return A.m(g,r)
 for(;;)switch(s){case 0:p=A
 s=3
-return A.h(A.b6("startLocalGame",A.Z(["stake",d,"tokens",e,"names",c,"game",b,"capturePay",a],t.N,t.z),null),$async$t8)
+return A.h(A.b6("startLocalGame",A.Z(["stake",d,"tokens",e,"names",c,"game",b,"capturePay",a,"team",!1],t.N,t.z),null),$async$t8)
 case 3:q=p.aK(g.h(0,"id"))
 s=1
 break
