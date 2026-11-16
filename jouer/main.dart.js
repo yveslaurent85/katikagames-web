@@ -133526,10 +133526,10 @@ r=A.b("Pile ou Face","Heads or Tails")
 q=A.b(m,l)
 r=A.P7(A.b(j,i),B.Rs,B.WV,k,"pileface",new A.aZz(n,a),q,r)
 q=A.b("Cartes","Cards")
-q=A.P7(A.b(j,i),B.vt,B.qG,k,"cartes",new A.aZA(n,a),"TIAH \xb7 BOUBAYAH \xb7 FAP-FAP \xb7 ANTI-COTE \xb7 TCHEK",q)
+q=A.P7(A.b(j,i),B.vt,B.qG,"assets/game_cartes.png","cartes",new A.aZA(n,a),"TIAH \xb7 BOUBAYAH \xb7 FAP-FAP \xb7 ANTI-COTE \xb7 TCHEK",q)
 p=A.b("Paris par derri\xe8re","Side bets")
 o=A.b("Sports \xb7 Courses","Sports \xb7 Races")
-return A.Yc(1,A.a([h,g,s,r,q,A.P7(A.b(j,i),B.w6,B.y6,k,k,new A.aZB(n,a),o,p)],t.p),2,14,14,k,B.ks,!0)}}
+return A.Yc(1,A.a([h,g,s,r,q,A.P7(A.b(j,i),B.w6,B.y6,"assets/game_pariderriere.png",k,new A.aZB(n,a),o,p)],t.p),2,14,14,k,B.ks,!0)}}
 A.aZw.prototype={
 $0(){var s=this.a
 return s.d.$2(this.b,new A.aZv(s))},
