@@ -2,7 +2,7 @@
 // pour que les ouvertures suivantes soient quasi instantanées.
 //  - APP    : fichiers de CETTE version de l'application (renouvelés à chaque mise à jour)
 //  - ENGINE : moteur CanvasKit + polices (changent seulement avec Flutter)
-const BUILD = '97256d4086';
+const BUILD = '8d447f361b';
 const ENGINE = '371f77202a73';
 const APP = 'katika-app-' + BUILD;
 const ENG = 'katika-engine-' + ENGINE;
