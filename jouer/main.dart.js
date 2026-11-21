@@ -136988,12 +136988,12 @@ n=e.d8(6)+1
 if(!q)return n
 m=d-s
 l=s-d
-if(m>0.08){k=m>0.15
+if(m>0.2){k=m>0.3
 if(k)j=3
-else j=m>0.11?2:1
+else j=m>0.25?2:1
 for(i=0;i<j;++i){h=e.d8(6)+1
-if(h<n)n=h}if(k&&n>3)n=1+e.d8(3)}else if(l>0.08){if(l>0.15)j=3
-else j=l>0.11?2:1
+if(h<n)n=h}if(k&&n>3)n=1+e.d8(3)}else if(l>0.2){if(l>0.3)j=3
+else j=l>0.25?2:1
 for(i=0;i<j;++i){h=e.d8(6)+1
 if(h>n)n=h}}return n},
 aym(a){var s,r=this.gcO()[this.gd1()].f.length
