@@ -4446,7 +4446,7 @@ if(a<=1114111){s=a-65536
 return String.fromCharCode((B.k.f8(s,10)|55296)>>>0,s&1023|56320)}}throw A.p(A.e0(a,0,1114111,null,null))},
 bor(a,b,c,d,e,f,g,h,i){var s,r,q,p=b-1
 if(0<=a&&a<100){a+=400
-p-=4800}s=B.k.ae(h,1000)
+p-=4800}s=B.k.ad(h,1000)
 g+=B.k.bG(h-s,1000)
 r=i?Date.UTC(a,p,c,d,e,f,g):new Date(a,p,c,d,e,f,g).valueOf()
 q=!0
@@ -4462,7 +4462,7 @@ fq(a){return a.c?A.iL(a).getUTCHours()+0:A.iL(a).getHours()+0},
 fr(a){return a.c?A.iL(a).getUTCMinutes()+0:A.iL(a).getMinutes()+0},
 bvC(a){return a.c?A.iL(a).getUTCSeconds()+0:A.iL(a).getSeconds()+0},
 bvB(a){return a.c?A.iL(a).getUTCMilliseconds()+0:A.iL(a).getMilliseconds()+0},
-awz(a){return B.k.ae((a.c?A.iL(a).getUTCDay()+0:A.iL(a).getDay()+0)+6,7)+1},
+awz(a){return B.k.ad((a.c?A.iL(a).getUTCDay()+0:A.iL(a).getDay()+0)+6,7)+1},
 bJE(a){var s=a.$thrownJsError
 if(s==null)return null
 return A.aU(s)},
@@ -6684,7 +6684,7 @@ return A.byk(s,b.subarray(c,d))},
 byk(a,b){var s,r
 try{s=a.decode(b)
 return s}catch(r){}return null},
-bsl(a,b,c,d,e,f){if(B.k.ae(f,4)!==0)throw A.p(A.df("Invalid base64 padding, padded length must be multiple of four, is "+f,a,c))
+bsl(a,b,c,d,e,f){if(B.k.ad(f,4)!==0)throw A.p(A.df("Invalid base64 padding, padded length must be multiple of four, is "+f,a,c))
 if(d+e!==f)throw A.p(A.df("Invalid base64 padding, '=' not at the end",a,b))
 if(e>2)throw A.p(A.df("Invalid base64 padding, more than two '=' characters",a,b))},
 bMm(a,b,c,d,e,f,g,h){var s,r,q,p,o,n,m=h>>>2,l=3-(h&3)
@@ -7007,7 +7007,7 @@ if(b<0||b>999)throw A.p(A.e0(b,0,999,s,null))
 if(a<-864e13||a>864e13)throw A.p(A.e0(a,-864e13,864e13,"millisecondsSinceEpoch",null))
 if(a===864e13&&b!==0)throw A.p(A.hw(b,s,u.eK))
 return a},
-uJ(a){var s=B.k.ae(a,1000),r=B.k.bG(a-s,1000)
+uJ(a){var s=B.k.ad(a,1000),r=B.k.bG(a-s,1000)
 if(r<-864e13||r>864e13)A.as(A.e0(r,-864e13,864e13,"millisecondsSinceEpoch",null))
 if(r===864e13&&s!==0)A.as(A.hw(s,"microsecond",u.eK))
 return new A.b6(r,s,!1)},
@@ -11105,7 +11105,7 @@ bFW(a,b,c){return new A.VI(a,b,c,null)},
 bFY(a,b,c,d){var s=A.bG_(a)===B.bn?A.K(51,B.v.l()>>>16&255,B.v.l()>>>8&255,B.v.l()&255):null
 return new A.a3O(b,c,s,A.Vu(d,B.TT.cS(a),!0),null)},
 bN_(a,b,c){var s,r,q,p,o,n,m=b.a,l=b.b,k=b.c,j=b.d,i=[new A.aB(new A.r(k,j),new A.aF(-b.x,-b.y)),new A.aB(new A.r(m,j),new A.aF(b.z,-b.Q)),new A.aB(new A.r(m,l),new A.aF(b.e,b.f)),new A.aB(new A.r(k,l),new A.aF(-b.r,b.w))],h=B.c.ik(c,1.5707963267948966)
-for(m=4+h,l=a.r,s=h;s<m;++s){r=i[B.k.ae(s,4)]
+for(m=4+h,l=a.r,s=h;s<m;++s){r=i[B.k.ad(s,4)]
 q=r.a
 p=null
 o=r.b
@@ -14756,8 +14756,8 @@ _.at=n
 _.ax=o},
 a3U:function a3U(){},
 VO(a,b){return(A.aY(b)-A.aY(a))*12+A.b5(b)-A.b5(a)},
-bsX(a,b,c){return B.k.ae(A.awz(A.bR(a,b,1,0,0))-1-6,7)},
-Gk(a,b){if(b===2)return B.k.ae(a,4)===0&&B.k.ae(a,100)!==0||B.k.ae(a,400)===0?29:28
+bsX(a,b,c){return B.k.ad(A.awz(A.bR(a,b,1,0,0))-1-6,7)},
+Gk(a,b){if(b===2)return B.k.ad(a,4)===0&&B.k.ad(a,100)!==0||B.k.ad(a,400)===0?29:28
 return B.Ab[b-1]},
 z2:function z2(){},
 Ht:function Ht(){},
@@ -18266,7 +18266,7 @@ azq(a){var s=a.ns(t.Np)
 if(s!=null)return s
 throw A.p(A.v6(A.a([A.ok("Scaffold.of() called with a context that does not contain a Scaffold."),A.bw("No Scaffold ancestor could be found starting from the context that was passed to Scaffold.of(). This usually happens when the context provided is from the same StatefulWidget as that whose build function actually creates the Scaffold widget being sought."),A.Ww('There are several ways to avoid this problem. The simplest is to use a Builder to get a context that is "under" the Scaffold. For an example of this, please see the documentation for Scaffold.of():\n  https://api.flutter.dev/flutter/material/Scaffold/of.html'),A.Ww("A more efficient solution is to split your build function into several widgets. This introduces a new context from which you can obtain the Scaffold. In this solution, you would have an outer widget that creates the Scaffold populated by instances of your new inner widgets, and then in these inner widgets you would use Scaffold.of().\nA less elegant but more expedient solution is assign a GlobalKey to the Scaffold, then use the key.currentState property to obtain the ScaffoldState rather than using the Scaffold.of() function."),a.aQ8("The context used was")],t.F)))},
 bKi(a,b){return A.em(b,new A.azp(b),null)},
-bMF(a){var s,r,q,p=$.ak.ad$.x.h(0,a)
+bMF(a){var s,r,q,p=$.ak.ae$.x.h(0,a)
 if(p==null)return!1
 s=p.gac()
 s.toString
@@ -18705,7 +18705,7 @@ _.aP=h
 _.aS=i
 _.bu=j
 _.bY=k
-_.ad=l
+_.ae=l
 _.bv=m
 _.ao=n
 _.ca=o
@@ -19668,7 +19668,7 @@ _.aV=e2
 _.aP=e3
 _.aS=e4
 _.bY=e5
-_.ad=e6
+_.ae=e6
 _.bv=e7
 _.ao=e8
 _.ca=e9
@@ -19798,7 +19798,7 @@ _.aP=e5
 _.aS=e6
 _.bu=e7
 _.bY=e8
-_.ad=e9
+_.ae=e9
 _.bv=f0},
 aDv:function aDv(a,b){this.a=a
 this.b=b},
@@ -20238,7 +20238,7 @@ f1=A.bJc(h0.aP,h1.aP,h2)
 f2=A.bJA(h0.aS,h1.aS,h2)
 f3=A.bJK(h0.bu,h1.bu,h2)
 f4=A.bJR(h0.bY,h1.bY,h2)
-f5=A.bKs(h0.ad,h1.ad,h2)
+f5=A.bKs(h0.ae,h1.ae,h2)
 f6=A.bKu(h0.bv,h1.bv,h2)
 f7=A.bKw(h0.ao,h1.ao,h2)
 f8=A.bKT(h0.ca,h1.ca,h2)
@@ -20342,7 +20342,7 @@ _.aP=e5
 _.aS=e6
 _.bu=e7
 _.bY=e8
-_.ad=e9
+_.ae=e9
 _.bv=f0
 _.ao=f1
 _.ca=f2
@@ -21569,7 +21569,7 @@ m=r
 return A.K(B.c.am(a*255),B.c.am((m+e)*255),B.c.am((q+e)*255),B.c.am((p+e)*255))},
 Hu(a){var s,r,q,p=a.gMx()/255,o=a.gF5()/255,n=a.gJB()/255,m=Math.max(p,Math.max(o,n)),l=Math.min(p,Math.min(o,n)),k=m-l,j=a.ges(),i=A.cX()
 if(m===0)i.b=0
-else if(m===p)i.b=60*B.c.ae((o-n)/k,6)
+else if(m===p)i.b=60*B.c.ad((o-n)/k,6)
 else if(m===o)i.b=60*((n-p)/k+2)
 else if(m===n)i.b=60*((p-o)/k+4)
 i.b=isNaN(i.b5())?0:i.b5()
@@ -22786,7 +22786,7 @@ r.gaTd()
 q.bu=r.gaTd()
 q.r=!0
 r.gaUw()
-q.ad=r.gaUw()
+q.ae=r.gaUw()
 q.r=!0
 r.gaUp()
 q.bY=r.gaUp()
@@ -22897,7 +22897,7 @@ _.bp=g
 _.aV=h
 _.aP=i
 _.aS=j
-_.ad=_.bY=_.bu=null
+_.ae=_.bY=_.bu=null
 _.bv=k
 _.ao=l
 _.ca=m
@@ -23176,7 +23176,7 @@ _.aP=m
 _.aS=n
 _.bu=o
 _.bY=p
-_.ad=q
+_.ae=q
 _.bv=r
 _.dy=s
 _.b=_.fy=null
@@ -25448,7 +25448,7 @@ _.aP=e3
 _.aS=e4
 _.bu=e5
 _.bY=e6
-_.ad=e7
+_.ae=e7
 _.bv=e8
 _.ao=e9
 _.ca=f0
@@ -25572,7 +25572,7 @@ _.aV=_.bp=_.b4=_.aa=_.aJ=null
 _.aP=j
 _.aS=k
 _.bu=l
-_.bv=_.ad=_.bY=null
+_.bv=_.ae=_.bY=null
 _.ao=m},
 aAP:function aAP(a){this.a=a},
 aAV:function aAV(a){this.a=a},
@@ -27104,7 +27104,7 @@ a1S:function a1S(a,b,c,d,e,f,g,h,i,j,k,l,m,n,o,p,q,r,s,a0,a1,a2,a3,a4,a5,a6,a7,a
 _.aS$=a
 _.bu$=b
 _.bY$=c
-_.ad$=d
+_.ae$=d
 _.bv$=e
 _.ao$=f
 _.ca$=g
@@ -27522,7 +27522,7 @@ _.aP=e1
 _.aS=e2
 _.bu=e3
 _.bY=e4
-_.ad=e5
+_.ae=e5
 _.bv=e6
 _.ao=e7
 _.ca=e8
@@ -30029,7 +30029,7 @@ for(r=s.length,q=0;q<s.length;s.length===r||(0,A.w)(s),++q)s[q].Sl()
 return!0},
 bJY(a){if((a instanceof A.lB||a instanceof A.oJ)&&a.b.j(0,B.he)&&$.kS.length!==0)return A.bou()?B.iD:B.h9
 return B.h9},
-bJZ(a){if($.ak.ad$.d.c!=null)return!1
+bJZ(a){if($.ak.ae$.d.c!=null)return!1
 if((a instanceof A.lB||a instanceof A.oJ)&&a.b.j(0,B.he)&&$.kS.length!==0)return A.bou()
 return!1},
 Cu:function Cu(a,b,c,d,e,f){var _=this
@@ -30876,17 +30876,17 @@ this.b=null},
 bJW(a,b,c,d,e,f,g,h,i,j,k,l,m,n){return new A.Bp(a,b,l,i,k,n,c,m,g,d,j,f,e)},
 bJX(a){var s=null
 return new A.nc(new A.bz(s,t.A),B.b9,new A.bz(s,t.hA),s,s,a.i("nc<0>"))},
-bq_(a,b){var s=$.ak.ad$.x.h(0,a).gac()
+bq_(a,b){var s=$.ak.ae$.x.h(0,a).gac()
 s.toString
 return t.x.a(s).ec(b)},
 bz6(a,b){var s
-if($.ak.ad$.x.h(0,a)==null)return!1
-s=t.ip.a($.ak.ad$.x.h(0,a).gbq()).f
+if($.ak.ae$.x.h(0,a)==null)return!1
+s=t.ip.a($.ak.ae$.x.h(0,a).gbq()).f
 s.toString
 return t.sm.a(s).adl(A.bq_(a,b.gcs()),b.gcY())},
 bP4(a,b){var s,r,q
-if($.ak.ad$.x.h(0,a)==null)return!1
-s=t.ip.a($.ak.ad$.x.h(0,a).gbq()).f
+if($.ak.ae$.x.h(0,a)==null)return!1
+s=t.ip.a($.ak.ae$.x.h(0,a).gbq()).f
 s.toString
 t.sm.a(s)
 r=A.bq_(a,b.gcs())
@@ -31742,10 +31742,10 @@ mJ:function mJ(){},
 bxY(a,b,c,d,e,f,g,h,i,j){return new A.QN(b,f,d,e,c,h,j,g,i,a,null)},
 Ea(a){var s
 switch(A.bg().a){case 0:case 1:case 3:if(a<=3)s=a
-else{s=B.k.ae(a,3)
+else{s=B.k.ad(a,3)
 if(s===0)s=3}return s
 case 2:case 4:return Math.min(a,3)
-case 5:return a<2?a:2+B.k.ae(a,2)}},
+case 5:return a<2?a:2+B.k.ad(a,2)}},
 iq:function iq(a,b,c){var _=this
 _.e=!1
 _.d4$=a
@@ -33336,14 +33336,14 @@ blZ:function blZ(){},
 bQf(a,b,c){var s,r,q,p,o,n,m,l,k,j,i,h=null,g=A.a([],t.p)
 for(s=a*0.62,r=5.5*a,q=a*0.5,p=a*0.1,o=a*0.3,n=a*0.6,m=0;m<4;++m){if(m<b.length){l=b[m]
 l=l!=null&&l.length!==0}else l=!1
-if(l){l=B.k.ae(m+c,4)
+if(l){l=B.k.ad(m+c,4)
 k=l===0||l===3?0:9
 l=l<2?0:9
 j=b[m]
 if(j==="FORFAIT"){j=new A.aF(o,o)
 i=new A.aM(B.T,1.5,B.A,-1)
 j=A.T(h,A.ac("FORFAIT",1,h,h,h,new A.q(!0,B.e,h,h,h,h,n,B.y,h,h,h,h,h,h,h,h,h,h,h,h,h,h,h,h,h,h),h,h,h),B.l,h,h,new A.a3(B.bu,h,new A.d0(i,i,i,i),new A.bu(j,j,j,j),h,h,B.p),h,h,h,h,new A.X(q,p,q,p),h,h,h)}else{j.toString
-j=A.ac(j,1,h,h,h,new A.q(!0,B.e,h,h,h,h,s,B.y,h,h,h,h,h,h,h,h,h,h,h,h,h,h,B.a5x,h,h,h),h,h,h)}g.push(new A.fF((k+0.25)*a,(l+0.2)*a,h,h,r,a,new A.dE(!0,new A.qO(B.cF,j,h),h),h))}}for(s=3.4*a,r=a*0.4,q=a*0.35,p=a*0.12,o=t.V,m=0;m<4;++m){n=B.k.ae(m+c,4)
+j=A.ac(j,1,h,h,h,new A.q(!0,B.e,h,h,h,h,s,B.y,h,h,h,h,h,h,h,h,h,h,h,h,h,h,B.a5x,h,h,h),h,h,h)}g.push(new A.fF((k+0.25)*a,(l+0.2)*a,h,h,r,a,new A.dE(!0,new A.qO(B.cF,j,h),h),h))}}for(s=3.4*a,r=a*0.4,q=a*0.35,p=a*0.12,o=t.V,m=0;m<4;++m){n=B.k.ad(m+c,4)
 l=n===0||n===3?0:9
 n=n<2?0:9
 k=new A.aF(r,r)
@@ -33353,7 +33353,7 @@ bkA:function bkA(){},
 bq0(a){var s=A.e(a.h(0,"id"))
 return s.length>6?B.h.a7(s,0,6):s},
 b4(a){var s,r,q,p=B.k.m(a)
-for(s=p.length,r=0,q="";r<s;++r){if(r>0&&B.k.ae(s-r,3)===0)q+=" "
+for(s=p.length,r=0,q="";r<s;++r){if(r>0&&B.k.ad(s-r,3)===0)q+=" "
 q+=p[r]}return(q.charCodeAt(0)==0?q:q)+" FCFA"},
 bza(a){var s,r,q,p=A.a([],t.ff)
 for(s=0;s<4;++s){r=s===2
@@ -33412,7 +33412,7 @@ return new A.N7(A.z(t.S,t.lI),r)},
 q6(a){var s,r,q=t.ff
 if(t.j.b(a)){q=A.a([],q)
 for(s=J.ar(a);s.u();){r=B.c.A(A.aX(s.gJ()))
-q.push(new A.h7(B.k.bG(r,4),B.k.ae(r,4)))}}else q=A.a([],q)
+q.push(new A.h7(B.k.bG(r,4),B.k.ad(r,4)))}}else q=A.a([],q)
 return q},
 bpZ(a){var s
 if(a==="tiah")s="TIAH"
@@ -34475,7 +34475,7 @@ s=""+o
 o=o<10?"0"+s:s
 return""+A.bD(r)+" "+q+" \xb7 "+p+"h"+o},
 kp(a){var s,r,q,p=B.k.m(a)
-for(s=p.length,r=0,q="";r<s;++r){if(r>0&&B.k.ae(s-r,3)===0)q+=" "
+for(s=p.length,r=0,q="";r<s;++r){if(r>0&&B.k.ad(s-r,3)===0)q+=" "
 q+=p[r]}return(q.charCodeAt(0)==0?q:q)+" FCFA"},
 bOu(a){var s,r
 for(s=0;s<5;++s){r=B.mN[s]
@@ -34622,7 +34622,7 @@ this.b=b},
 aQn:function aQn(a){this.a=a},
 Sp:function Sp(){},
 kj(a){var s,r,q,p=B.k.m(a)
-for(s=p.length,r=0,q="";r<s;++r){if(r>0&&B.k.ae(s-r,3)===0)q+=" "
+for(s=p.length,r=0,q="";r<s;++r){if(r>0&&B.k.ad(s-r,3)===0)q+=" "
 q+=p[r]}return q.charCodeAt(0)==0?q:q},
 uO:function uO(a){this.a=a},
 NK:function NK(a,b,c,d){var _=this
@@ -36000,7 +36000,7 @@ _.aP=p
 _.aS=null
 _.bu=""
 _.bY=0
-_.ad=55
+_.ae=55
 _.ao=_.bv=null
 _.ca=0
 _.ce=!1
@@ -36237,7 +36237,7 @@ b_3:function b_3(a){this.a=a},
 b_h:function b_h(a){this.a=a},
 SO:function SO(){},
 bke(a,b,c){var s,r,q=J.fo(a,t.S)
-for(s=0;s<a;++s){if(b)r=43+B.k.ae(s,2)
+for(s=0;s<a;++s){if(b)r=43+B.k.ad(s,2)
 else r=c?0:-1
 q[s]=r}return q},
 yt(a){var s=A.ad(a.h(0,"stake")),r=s==null?null:B.c.A(s)
@@ -36608,7 +36608,7 @@ s=""+o
 o=o<10?"0"+s:s
 return""+A.bD(r)+" "+q+" \xb7 "+p+"h"+o},
 q9(a){var s,r,q,p=B.k.m(a)
-for(s=p.length,r=0,q="";r<s;++r){if(r>0&&B.k.ae(s-r,3)===0)q+=" "
+for(s=p.length,r=0,q="";r<s;++r){if(r>0&&B.k.ad(s-r,3)===0)q+=" "
 q+=p[r]}return(q.charCodeAt(0)==0?q:q)+" FCFA"},
 AZ:function AZ(a){this.a=a},
 avD:function avD(a){this.a=a},
@@ -36782,7 +36782,7 @@ n=""+o
 o=o<10?"0"+n:n
 return r+"/"+q+" "+p+":"+o},
 i5(a){var s,r,q,p=B.k.m(a),o=new A.dq("")
-for(s=p.length,r=0,q="";r<s;++r){if(r>0&&B.k.ae(s-r,3)===0)q=o.a=q+" "
+for(s=p.length,r=0,q="";r<s;++r){if(r>0&&B.k.ad(s-r,3)===0)q=o.a=q+" "
 q+=p[r]
 o.a=q}return o.m(0)+" FCFA"},
 Ji:function Ji(a,b){this.c=a
@@ -36986,7 +36986,7 @@ if(r!=null&&r.length!==0)return r
 s=s.b
 return s==null?"Joueur":s},
 bkd(a,b,c){var s,r,q=J.fo(a,t.S)
-for(s=0;s<a;++s){if(b)r=43+B.k.ae(s,2)
+for(s=0;s<a;++s){if(b)r=43+B.k.ad(s,2)
 else r=c?0:-1
 q[s]=r}return q},
 Td(a,b){var s=0,r=A.o(t.H),q,p,o,n
@@ -37553,7 +37553,7 @@ case"fapfap":return A.c("R\xe8gles du FAP-FAP","FAP-FAP rules")
 case"anticote":return A.c("R\xe8gles d'ANTI-COTE","ANTI-COTE rules")
 case"tchek":return A.c("R\xe8gles de TCHEK GAMES","TCHEK GAMES rules")
 case"cartes":return A.c("Jeux de cartes","Card games")}return A.c("R\xe8gles","Rules")},
-bAJ(a){var s="TIAH (2 \xe0 6 joueurs) : atteins 21 sans d\xe9passer.\n\u2022 Chacun re\xe7oit 2 cartes. 10 cartes sont pos\xe9es ouvertes au milieu.\n\u2022 Chacun son tour, un joueur ouvre ses cartes : les cartes du milieu, dans l'ordre, viennent \xe0 lui tant que le total reste \xe0 21 ou moins. On ne saute jamais une carte.\n\u2022 Le meilleur total (21 maximum) gagne. Deux as en main = TOUCX (22) : il bat tout.\n\u2022 \xc9galit\xe9 : le gain est partag\xe9. Chaque joueur a 10 secondes pour agir.\n\u2022 Mise : le gagnant prend la cagnotte moins la commission de Katika. Des paris entre joueurs (duel) sont possibles pendant la manche.\n\u2022 Pari CHAT : avant le d\xe9part, chaque joueur choisit un CHAT (1ER CHAT = 1re carte du milieu, 2\xc8ME CHAT = la suivante, etc.) avec la m\xeame mise. La carte de plus grande valeur gagne la cagnotte (commission 5 %). \xc9galit\xe9 : la cagnotte est partag\xe9e. Un CHAT qui n'existe pas est rembours\xe9.",r="TIAH (2-6 players): reach 21 without going over.\n\u2022 Everyone gets 2 cards. 10 cards are laid face up in the middle.\n\u2022 In turn, a player opens his cards: the middle cards, in order, come to him while his total stays at 21 or less. A card is never skipped.\n\u2022 The best total (21 max) wins. Two aces = TOUCX (22): beats everything.\n\u2022 Tie: the prize is shared. Each player has 10 seconds to act.\n\u2022 Stakes: the winner takes the pot minus Katika's commission. Duel bets are possible during the round.\n\u2022 CHAT bet: before the start, each player picks a CHAT (1ST CHAT = first middle card, 2ND CHAT = the next, etc.) with the same stake. The highest card value wins the pot (5% commission). Tie: the pot is shared. A CHAT that does not exist is refunded.",q="Familles : Carreau = Zing \xb7 Tr\xe8fle = Tchaka \xb7 C\u0153ur = Koubi \xb7 Pique = Black.",p="Suits: Diamonds = Zing \xb7 Clubs = Tchaka \xb7 Hearts = Koubi \xb7 Spades = Black.",o="BOUBAYAH (2 \xe0 6 joueurs) : le plus gros total gagne.\n\u2022 Chacun re\xe7oit 3 cartes simples puis 2 cartes BOUBAYAH, cach\xe9es jusqu'\xe0 l'ouverture.\n\u2022 Seul le total des 2 cartes BOUBAYAH compte. FOMEKOU (deux 3) bat tout ; il sort un peu plus souvent que le hasard pur (environ 6 % par joueur et par manche).\n\u2022 Les joueurs ouvrent leurs cartes \xe0 tour de r\xf4le (10 secondes chacun).\n\u2022 \xc9galit\xe9 : le gain est partag\xe9.\n\u2022 Mise : le gagnant prend la cagnotte moins la commission de Katika. Paris possibles : duel et D\xe9fi F\xe9tiche 13.",n="BOUBAYAH (2-6 players): the highest total wins.\n\u2022 Everyone gets 3 plain cards then 2 BOUBAYAH cards, hidden until opened.\n\u2022 Only the total of the 2 BOUBAYAH cards counts. FOMEKOU (two 3s) beats everything; it comes up a bit more often than pure chance (about 6% per player each round).\n\u2022 Players open their cards in turn (10 seconds each).\n\u2022 Tie: the prize is shared.\n\u2022 Stakes: the winner takes the pot minus Katika's commission. Bets: duel and Fetish 13 challenge.",m="FAP-FAP (2 \xe0 4 joueurs, en ligne uniquement)\n\u2022 31 cartes (3 \xe0 10, sans le 10 de pique), 5 cartes chacun, 5 plis.\n\u2022 Il faut fournir la famille demand\xe9e si on peut. Le plus haut de la famille demand\xe9e gagne le pli et entame le suivant.\n\u2022 Combinaisons d\xe8s la distribution (la meilleure gagne tout de suite) : quatre 7 > total 16 (quatre 3 et un 4) > trois 7 > quatre cartes du m\xeame num\xe9ro (le plus petit num\xe9ro gagne) > total de 21 ou moins. \xc9galit\xe9 : le 1er apr\xe8s le distributeur.\n\u2022 Sinon, le gagnant du dernier pli gagne ; avec un 3 : COURAT, gain doubl\xe9.\n\u2022 10 secondes par carte. 2 \xd7 la mise est bloqu\xe9e : victoire normale = tu r\xe9cup\xe8res ta mise et le gagnant prend les mises adverses.\n\u2022 \xc0 3 ou 4 joueurs : localisation obligatoire et 150 m minimum entre les joueurs ; capture d'\xe9cran bloqu\xe9e sur Android.",l="FAP-FAP (2-4 players, online only)\n\u2022 31 cards (3 to 10, no 10 of spades), 5 cards each, 5 tricks.\n\u2022 Follow the led suit if you can. The highest card of the led suit wins the trick and leads the next.\n\u2022 Deal combinations win at once: four 7s > total 16 (four 3s and a 4) > three 7s > four of a kind (lowest number wins) > total of 21 or less. Tie: first after the dealer.\n\u2022 Otherwise the last trick winner wins; with a 3: COURAT, double win.\n\u2022 10 seconds per card. 2 x stake is locked: normal win = you get your stake back and the winner takes the others.\n\u2022 With 3-4 players: location required and 150 m minimum between players; screenshots blocked on Android.",k="ANTI-COTE (2 \xe0 5 joueurs, en ligne uniquement)\n\u2022 3 cartes chacun, plus (joueurs + 1) cartes ouvertes au milieu.\n\u2022 Chacun joue 1 carte de la famille de la 1re carte du milieu (sinon n'importe laquelle). Le plus haut ouvre en premier, puis chacun ouvre ses 2 cartes : les cartes du milieu viennent \xe0 lui tant que son total reste \u2264 21.\n\u2022 Victoires imm\xe9diates \xe0 la distribution : trois 7 > brelan (le plus petit) > total 10 > total 11.\n\u2022 THOUX : deux as restants. Trois 7 pris au milieu : CORAT. Un 3 seul de la famille jou\xe9e : CORAT. Sinon le plus haut total gagne (THIAH = 21).\n\u2022 CORAT : chaque adversaire paie 2 mises. Total inf\xe9rieur \xe0 18 = Korat\xe9 (paie 2 mises si le gagnant a 18 ou plus).\n\u2022 \xc9galit\xe9 : tout le monde rejoue et remet sa mise, les Korat\xe9s le double (cagnotte) ; le vainqueur prend tout.\n\u2022 10 secondes par action. \xc0 3 joueurs ou plus : localisation obligatoire, 150 m minimum.\n\u2022 D\xe9fis : pendant la cr\xe9ation de la table, deux joueurs peuvent se d\xe9fier en misant entre eux. Le gagnant de la manche gagne son d\xe9fi ; si un tiers gagne, le meilleur total gagne le d\xe9fi.\n\u2022 Pari CHAT : avant le d\xe9part, chaque joueur choisit un CHAT (1ER CHAT = 1re carte du milieu, 2\xc8ME CHAT = la suivante, etc.) avec la m\xeame mise. La carte de plus grande valeur gagne la cagnotte (commission 5 %). \xc9galit\xe9 : la cagnotte est partag\xe9e. Un CHAT qui n'existe pas est rembours\xe9.",j="ANTI-COTE (2-5 players, online only)\n\u2022 3 cards each, plus (players + 1) cards face up in the middle.\n\u2022 Everyone plays 1 card of the suit of the first middle card (otherwise any). The highest opens first, then everyone opens his 2 cards: middle cards come to him while his total stays <= 21.\n\u2022 Instant wins on the deal: three 7s > three of a kind (lowest) > total 10 > total 11.\n\u2022 THOUX: two aces left. Three 7s taken from the middle: CORAT. A lone 3 of the led suit: CORAT. Otherwise the highest total wins (THIAH = 21).\n\u2022 CORAT: each opponent pays 2 stakes. Total under 18 = Korat\xe9 (pays 2 stakes if the winner has 18 or more).\n\u2022 Tie: everyone replays and re-stakes, Korat\xe9 players double (jackpot); the winner takes all.\n\u2022 10 seconds per action. With 3+ players: location required, 150 m minimum.\n\u2022 Challenges: while the table is being created, two players can bet against each other. The round winner wins his challenge; if a third player wins, the best total wins it.\n\u2022 CHAT bet: before the start, each player picks a CHAT (1ST CHAT = first middle card, 2ND CHAT = the next, etc.) with the same stake. The highest card value wins the pot (5% commission). Tie: the pot is shared. A CHAT that does not exist is refunded.",i="TCHEK GAMES (2 \xe0 4 joueurs, en ligne uniquement)\n\u2022 54 cartes (2 jokers), 4 cartes chacun. Se d\xe9barrasser de toutes ses cartes en premier.\n\u2022 On pose une carte de la m\xeame famille ou du m\xeame num\xe9ro que la derni\xe8re. Pioche volontaire possible (1 carte, le tour s'arr\xeate).\n\u2022 AS : le suivant passe son tour. 7 : +2 cartes. Joker : +4 cartes (rouge sur carte rouge, noir sur carte noire). Les p\xe9nalit\xe9s se cumulent ; on riposte avec un 7 ou un joker, sinon on pioche tout et on perd son tour.\n\u2022 J : se pose sur toutes les familles et permet de choisir librement la famille suivante.\n\u2022 TCHEK : \xe0 annoncer en posant l'avant-derni\xe8re carte, sinon +1 carte. La derni\xe8re carte peut \xeatre n'importe laquelle.\n\u2022 10 secondes par tour. \xc0 3 ou 4 joueurs : localisation obligatoire, 150 m minimum entre joueurs.\n\u2022 D\xe9fis : pendant la cr\xe9ation de la table, deux joueurs peuvent se d\xe9fier en misant entre eux. Le gagnant de la manche gagne son d\xe9fi ; si un tiers gagne, celui qui a le moins de cartes \xe0 la fin gagne le d\xe9fi.",h="TCHEK GAMES (2-4 players, online only)\n\u2022 54 cards (2 jokers), 4 cards each. Be the first to get rid of all your cards.\n\u2022 Play a card of the same suit or number as the last one. You may draw 1 card voluntarily (your turn ends).\n\u2022 ACE: next player skips. 7: +2 cards. Joker: +4 cards (red on red, black on black). Penalties stack; reply with a 7 or a joker, otherwise draw them all and lose your turn.\n\u2022 J: can be played on any suit and lets you freely choose the next suit.\n\u2022 TCHEK: call it when playing your second-to-last card, otherwise +1 card. Any card can be the last one.\n\u2022 10 seconds per turn. With 3-4 players: location required, 150 m minimum between players.\n\u2022 Challenges: while the table is being created, two players can bet against each other. The round winner wins his challenge; if a third player wins, the one with the fewest cards left wins it."
+bAJ(a){var s="TIAH (2 \xe0 6 joueurs) : atteins 21 sans d\xe9passer.\n\u2022 Chacun re\xe7oit 2 cartes. 10 cartes sont pos\xe9es ouvertes au milieu.\n\u2022 Chacun son tour, un joueur ouvre ses cartes : les cartes du milieu, dans l'ordre, viennent \xe0 lui tant que le total reste \xe0 21 ou moins. On ne saute jamais une carte.\n\u2022 Le meilleur total (21 maximum) gagne. Deux as en main = TOUCX (22) : il bat tout.\n\u2022 \xc9galit\xe9 : le gain est partag\xe9. Chaque joueur a 10 secondes pour agir.\n\u2022 Mise : le gagnant prend la cagnotte moins la commission de Katika. Des paris entre joueurs (duel) sont possibles pendant la manche.\n\u2022 Pari CHAT : avant le d\xe9part, chaque joueur choisit un CHAT (1ER CHAT = 1re carte du milieu, 2\xc8ME CHAT = la suivante, etc.) avec la m\xeame mise. La carte de plus grande valeur gagne la cagnotte (commission 5 %). \xc9galit\xe9 : la cagnotte est partag\xe9e. Un CHAT qui n'existe pas est rembours\xe9.",r="TIAH (2-6 players): reach 21 without going over.\n\u2022 Everyone gets 2 cards. 10 cards are laid face up in the middle.\n\u2022 In turn, a player opens his cards: the middle cards, in order, come to him while his total stays at 21 or less. A card is never skipped.\n\u2022 The best total (21 max) wins. Two aces = TOUCX (22): beats everything.\n\u2022 Tie: the prize is shared. Each player has 10 seconds to act.\n\u2022 Stakes: the winner takes the pot minus Katika's commission. Duel bets are possible during the round.\n\u2022 CHAT bet: before the start, each player picks a CHAT (1ST CHAT = first middle card, 2ND CHAT = the next, etc.) with the same stake. The highest card value wins the pot (5% commission). Tie: the pot is shared. A CHAT that does not exist is refunded.",q="Familles : Carreau = Zing \xb7 Tr\xe8fle = Tchaka \xb7 C\u0153ur = Koubi \xb7 Pique = Black.",p="Suits: Diamonds = Zing \xb7 Clubs = Tchaka \xb7 Hearts = Koubi \xb7 Spades = Black.",o="BOUBAYAH (2 \xe0 6 joueurs) : le plus gros total gagne.\n\u2022 Chacun re\xe7oit 3 cartes simples puis 2 cartes BOUBAYAH, cach\xe9es jusqu'\xe0 l'ouverture.\n\u2022 Seul le total des 2 cartes BOUBAYAH compte. MILLION (deux 3) bat tout ; il sort un peu plus souvent que le hasard pur (environ 6 % par joueur et par manche).\n\u2022 Les joueurs ouvrent leurs cartes \xe0 tour de r\xf4le (10 secondes chacun).\n\u2022 \xc9galit\xe9 : le gain est partag\xe9.\n\u2022 Mise : le gagnant prend la cagnotte moins la commission de Katika. Paris possibles : duel et D\xe9fi F\xe9tiche 13.",n="BOUBAYAH (2-6 players): the highest total wins.\n\u2022 Everyone gets 3 plain cards then 2 BOUBAYAH cards, hidden until opened.\n\u2022 Only the total of the 2 BOUBAYAH cards counts. MILLION (two 3s) beats everything; it comes up a bit more often than pure chance (about 6% per player each round).\n\u2022 Players open their cards in turn (10 seconds each).\n\u2022 Tie: the prize is shared.\n\u2022 Stakes: the winner takes the pot minus Katika's commission. Bets: duel and Fetish 13 challenge.",m="FAP-FAP (2 \xe0 4 joueurs, en ligne uniquement)\n\u2022 31 cartes (3 \xe0 10, sans le 10 de pique), 5 cartes chacun, 5 plis.\n\u2022 Il faut fournir la famille demand\xe9e si on peut. Le plus haut de la famille demand\xe9e gagne le pli et entame le suivant.\n\u2022 Combinaisons d\xe8s la distribution (la meilleure gagne tout de suite) : quatre 7 > total 16 (quatre 3 et un 4) > trois 7 > quatre cartes du m\xeame num\xe9ro (le plus petit num\xe9ro gagne) > total de 21 ou moins. \xc9galit\xe9 : le 1er apr\xe8s le distributeur.\n\u2022 Sinon, le gagnant du dernier pli gagne ; avec un 3 : COURAT, gain doubl\xe9.\n\u2022 10 secondes par carte. 2 \xd7 la mise est bloqu\xe9e : victoire normale = tu r\xe9cup\xe8res ta mise et le gagnant prend les mises adverses.\n\u2022 \xc0 3 ou 4 joueurs : localisation obligatoire et 150 m minimum entre les joueurs ; capture d'\xe9cran bloqu\xe9e sur Android.",l="FAP-FAP (2-4 players, online only)\n\u2022 31 cards (3 to 10, no 10 of spades), 5 cards each, 5 tricks.\n\u2022 Follow the led suit if you can. The highest card of the led suit wins the trick and leads the next.\n\u2022 Deal combinations win at once: four 7s > total 16 (four 3s and a 4) > three 7s > four of a kind (lowest number wins) > total of 21 or less. Tie: first after the dealer.\n\u2022 Otherwise the last trick winner wins; with a 3: COURAT, double win.\n\u2022 10 seconds per card. 2 x stake is locked: normal win = you get your stake back and the winner takes the others.\n\u2022 With 3-4 players: location required and 150 m minimum between players; screenshots blocked on Android.",k="ANTI-COTE (2 \xe0 5 joueurs, en ligne uniquement)\n\u2022 3 cartes chacun, plus (joueurs + 1) cartes ouvertes au milieu.\n\u2022 Chacun joue 1 carte de la famille de la 1re carte du milieu (sinon n'importe laquelle). Le plus haut ouvre en premier, puis chacun ouvre ses 2 cartes : les cartes du milieu viennent \xe0 lui tant que son total reste \u2264 21.\n\u2022 Victoires imm\xe9diates \xe0 la distribution : trois 7 > brelan (le plus petit) > total 10 > total 11.\n\u2022 THOUX : deux as restants. Trois 7 pris au milieu : CORAT. Un 3 seul de la famille jou\xe9e : CORAT. Sinon le plus haut total gagne (THIAH = 21).\n\u2022 CORAT : chaque adversaire paie 2 mises. Total inf\xe9rieur \xe0 18 = Korat\xe9 (paie 2 mises si le gagnant a 18 ou plus).\n\u2022 \xc9galit\xe9 : tout le monde rejoue et remet sa mise, les Korat\xe9s le double (cagnotte) ; le vainqueur prend tout.\n\u2022 10 secondes par action. \xc0 3 joueurs ou plus : localisation obligatoire, 150 m minimum.\n\u2022 D\xe9fis : pendant la cr\xe9ation de la table, deux joueurs peuvent se d\xe9fier en misant entre eux. Le gagnant de la manche gagne son d\xe9fi ; si un tiers gagne, le meilleur total gagne le d\xe9fi.\n\u2022 Pari CHAT : avant le d\xe9part, chaque joueur choisit un CHAT (1ER CHAT = 1re carte du milieu, 2\xc8ME CHAT = la suivante, etc.) avec la m\xeame mise. La carte de plus grande valeur gagne la cagnotte (commission 5 %). \xc9galit\xe9 : la cagnotte est partag\xe9e. Un CHAT qui n'existe pas est rembours\xe9.",j="ANTI-COTE (2-5 players, online only)\n\u2022 3 cards each, plus (players + 1) cards face up in the middle.\n\u2022 Everyone plays 1 card of the suit of the first middle card (otherwise any). The highest opens first, then everyone opens his 2 cards: middle cards come to him while his total stays <= 21.\n\u2022 Instant wins on the deal: three 7s > three of a kind (lowest) > total 10 > total 11.\n\u2022 THOUX: two aces left. Three 7s taken from the middle: CORAT. A lone 3 of the led suit: CORAT. Otherwise the highest total wins (THIAH = 21).\n\u2022 CORAT: each opponent pays 2 stakes. Total under 18 = Korat\xe9 (pays 2 stakes if the winner has 18 or more).\n\u2022 Tie: everyone replays and re-stakes, Korat\xe9 players double (jackpot); the winner takes all.\n\u2022 10 seconds per action. With 3+ players: location required, 150 m minimum.\n\u2022 Challenges: while the table is being created, two players can bet against each other. The round winner wins his challenge; if a third player wins, the best total wins it.\n\u2022 CHAT bet: before the start, each player picks a CHAT (1ST CHAT = first middle card, 2ND CHAT = the next, etc.) with the same stake. The highest card value wins the pot (5% commission). Tie: the pot is shared. A CHAT that does not exist is refunded.",i="TCHEK GAMES (2 \xe0 4 joueurs, en ligne uniquement)\n\u2022 54 cartes (2 jokers), 4 cartes chacun. Se d\xe9barrasser de toutes ses cartes en premier.\n\u2022 On pose une carte de la m\xeame famille ou du m\xeame num\xe9ro que la derni\xe8re. Pioche volontaire possible (1 carte, le tour s'arr\xeate).\n\u2022 AS : le suivant passe son tour. 7 : +2 cartes. Joker : +4 cartes (rouge sur carte rouge, noir sur carte noire). Les p\xe9nalit\xe9s se cumulent ; on riposte avec un 7 ou un joker, sinon on pioche tout et on perd son tour.\n\u2022 J : se pose sur toutes les familles et permet de choisir librement la famille suivante.\n\u2022 TCHEK : \xe0 annoncer en posant l'avant-derni\xe8re carte, sinon +1 carte. La derni\xe8re carte peut \xeatre n'importe laquelle.\n\u2022 10 secondes par tour. \xc0 3 ou 4 joueurs : localisation obligatoire, 150 m minimum entre joueurs.\n\u2022 D\xe9fis : pendant la cr\xe9ation de la table, deux joueurs peuvent se d\xe9fier en misant entre eux. Le gagnant de la manche gagne son d\xe9fi ; si un tiers gagne, celui qui a le moins de cartes \xe0 la fin gagne le d\xe9fi.",h="TCHEK GAMES (2-4 players, online only)\n\u2022 54 cards (2 jokers), 4 cards each. Be the first to get rid of all your cards.\n\u2022 Play a card of the same suit or number as the last one. You may draw 1 card voluntarily (your turn ends).\n\u2022 ACE: next player skips. 7: +2 cards. Joker: +4 cards (red on red, black on black). Penalties stack; reply with a 7 or a joker, otherwise draw them all and lose your turn.\n\u2022 J: can be played on any suit and lets you freely choose the next suit.\n\u2022 TCHEK: call it when playing your second-to-last card, otherwise +1 card. Any card can be the last one.\n\u2022 10 seconds per turn. With 3-4 players: location required, 150 m minimum between players.\n\u2022 Challenges: while the table is being created, two players can bet against each other. The round winner wins his challenge; if a third player wins, the one with the fewest cards left wins it."
 switch(a){case"ludo":return u.h
 case"deuxdes":return u.F
 case"tiah":return A.c(s,r)+"\n\n"+A.c(q,p)
@@ -37571,7 +37571,7 @@ this.a=c},
 amK:function amK(a,b){this.a=a
 this.b=b},
 tP(a){var s,r,q,p=B.k.m(a)
-for(s=p.length,r=0,q="";r<s;++r){if(r>0&&B.k.ae(s-r,3)===0)q+=" "
+for(s=p.length,r=0,q="";r<s;++r){if(r>0&&B.k.ad(s-r,3)===0)q+=" "
 q+=p[r]}return q.charCodeAt(0)==0?q:q},
 byz(a){var s=null,r=A.a0(18),q=A.K(31,B.e.l()>>>16&255,B.e.l()>>>8&255,B.e.l()&255),p=A.b9(B.aE,1)
 return A.T(s,A.F(a,B.u,B.f,B.i,0,B.n),B.l,s,s,new A.a3(q,s,p,r,s,s,B.p),s,s,s,B.dH,B.bP,s,s,1/0)},
@@ -38164,7 +38164,7 @@ this.b=b},
 baY:function baY(a){this.a=a},
 baZ:function baZ(a){this.a=a},
 yq(a){var s,r,q,p=B.k.m(a)
-for(s=p.length,r=0,q="";r<s;++r){if(r>0&&B.k.ae(s-r,3)===0)q+=" "
+for(s=p.length,r=0,q="";r<s;++r){if(r>0&&B.k.ad(s-r,3)===0)q+=" "
 q+=p[r]}return q.charCodeAt(0)==0?q:q},
 ni:function ni(a,b,c,d,e){var _=this
 _.c=a
@@ -38292,7 +38292,7 @@ s=""+o
 o=o<10?"0"+s:s
 return""+A.bD(r)+" "+q+" "+A.aY(r)+" \u2022 "+p+"h"+o},
 Tf(a){var s,r,q,p=B.k.m(a)
-for(s=p.length,r=0,q="";r<s;++r){if(r>0&&B.k.ae(s-r,3)===0)q+=" "
+for(s=p.length,r=0,q="";r<s;++r){if(r>0&&B.k.ad(s-r,3)===0)q+=" "
 q+=p[r]}return(q.charCodeAt(0)==0?q:q)+" FCFA"},
 xn:function xn(a){this.a=a},
 RE:function RE(a,b,c){var _=this
@@ -38500,7 +38500,7 @@ bhb:function bhb(a){this.a=a},
 bhc:function bhc(a,b){this.a=a
 this.b=b},
 nJ(a){var s,r,q,p=B.k.m(a)
-for(s=p.length,r=0,q="";r<s;++r){if(r>0&&B.k.ae(s-r,3)===0)q+=" "
+for(s=p.length,r=0,q="";r<s;++r){if(r>0&&B.k.ad(s-r,3)===0)q+=" "
 q+=p[r]}return q.charCodeAt(0)==0?q:q},
 xz:function xz(a){this.a=a},
 Sc:function Sc(a,b,c){var _=this
@@ -38540,7 +38540,7 @@ this.b=b},
 bhX:function bhX(a){this.a=a},
 bhS:function bhS(a){this.a=a},
 i9(a){var s,r,q,p=B.k.m(Math.abs(a)),o=new A.dq("")
-for(s=p.length,r=0,q="";r<s;++r){if(r>0&&B.k.ae(s-r,3)===0)q=o.a=q+" "
+for(s=p.length,r=0,q="";r<s;++r){if(r>0&&B.k.ad(s-r,3)===0)q=o.a=q+" "
 q+=p[r]
 o.a=q}s=a<0?"-":""
 return s+o.m(0)+" FCFA"},
@@ -38720,7 +38720,7 @@ n===$&&A.b()
 for(s=0;s<=7;s=q){r=b[s]
 q=s+1
 p=b[q]
-if(r<n&&n<p){o=B.c.ae(n+c[s],360)
+if(r<n&&n<p){o=B.c.ad(n+c[s],360)
 return o<0?o+360:o}}return n},
 fz:function fz(){},
 bIF(a){return a.d?$.brd():$.bre()},
@@ -40193,7 +40193,7 @@ bnS(a){var s=Math.pow(Math.abs(a),0.42)
 return A.n0(a)*400*s/(s+27.13)},
 bnT(a){var s=A.bo8(a,B.a55),r=A.bnS(s[0]),q=A.bnS(s[1]),p=A.bnS(s[2])
 return Math.atan2((r+q-2*p)/9,(11*r+-12*q+p)/11)},
-bHW(a,b){var s,r,q,p,o,n=B.k.ae(b,4)<=1?0:100,m=(b&1)===0?0:100
+bHW(a,b){var s,r,q,p,o,n=B.k.ad(b,4)<=1?0:100,m=(b&1)===0?0:100
 if(b<4){s=(a-n*0.7152-m*0.0722)/0.2126
 r=0<=s&&s<=100
 q=t.n
@@ -40216,7 +40216,7 @@ r=q
 s=m
 k=s
 p=!0
-continue}if(o||B.c.ae(l-r+25.132741228718345,6.283185307179586)<B.c.ae(q-r+25.132741228718345,6.283185307179586)){if(B.c.ae(b-r+25.132741228718345,6.283185307179586)<B.c.ae(l-r+25.132741228718345,6.283185307179586)){q=l
+continue}if(o||B.c.ad(l-r+25.132741228718345,6.283185307179586)<B.c.ad(q-r+25.132741228718345,6.283185307179586)){if(B.c.ad(b-r+25.132741228718345,6.283185307179586)<B.c.ad(l-r+25.132741228718345,6.283185307179586)){q=l
 s=m}else{r=l
 k=m}o=!1}}return A.a([k,s],t.zg)},
 bHT(a0,a1){var s,r,q,p,o,n,m,l,k,j,i,h,g,f,e,d=A.bHU(a0,a1),c=d[0],b=A.bnT(c),a=d[1]
@@ -40236,7 +40236,7 @@ h=a[1]
 g=c[2]
 f=A.a([q+(p-q)*j,i+(h-i)*j,g+(a[2]-g)*j],s)
 e=A.bnT(f)
-if(B.c.ae(a1-b+25.132741228718345,6.283185307179586)<B.c.ae(e-b+25.132741228718345,6.283185307179586)){n=l
+if(B.c.ad(a1-b+25.132741228718345,6.283185307179586)<B.c.ad(e-b+25.132741228718345,6.283185307179586)){n=l
 a=f}else{o=l
 b=e
 c=f}}}}return A.a([(c[0]+a[0])/2,(c[1]+a[1])/2,(c[2]+a[2])/2],s)},
@@ -40291,7 +40291,7 @@ return c},
 asR(a,b,c){if(c<a)return a
 else if(c>b)return b
 return c},
-Ik(a){a=B.c.ae(a,360)
+Ik(a){a=B.c.ad(a,360)
 return a<0?a+360:a},
 bo8(a,b){var s,r,q,p,o=a[0],n=b[0],m=n[0],l=a[1],k=n[1],j=a[2]
 n=n[2]
@@ -42392,7 +42392,7 @@ return A.h(A.d6(o.decode({frameIndex:p.w,completeFramesOnly:!1}),t.m),$async$ho)
 case 3:n=b
 if(p.f){n.image.close()
 throw A.p(A.Ab(u.aL+p.c))}m=n.image
-p.w=B.k.ae(p.w+1,p.d)
+p.w=B.k.ad(p.w+1,p.d)
 q=m
 s=1
 break
@@ -44369,9 +44369,9 @@ return Math.abs(b- -3*a)>1},
 aBw(a){var s,r,q,p,o,n,m=this
 if($.bU().geu()===B.hV)return!1
 if(m.a4s(a.deltaX,a.wheelDeltaX)||m.a4s(a.deltaY,a.wheelDeltaY))return!1
-if(!(B.c.ae(a.deltaX,120)===0&&B.c.ae(a.deltaY,120)===0)){s=a.wheelDeltaX
-if(B.c.ae(s==null?1:s,120)===0){s=a.wheelDeltaY
-s=B.c.ae(s==null?1:s,120)===0}else s=!1}else s=!0
+if(!(B.c.ad(a.deltaX,120)===0&&B.c.ad(a.deltaY,120)===0)){s=a.wheelDeltaX
+if(B.c.ad(s==null?1:s,120)===0){s=a.wheelDeltaY
+s=B.c.ad(s==null?1:s,120)===0}else s=!1}else s=!0
 if(s){s=a.deltaX
 r=m.c
 q=r==null
@@ -47984,7 +47984,7 @@ B.ed.b2(s,c)
 B.ed.b2(s,b)
 return s.qB()}}
 A.aFD.prototype={
-pJ(a){var s,r,q=this.b,p=B.k.ae(q.b,a)
+pJ(a){var s,r,q=this.b,p=B.k.ad(q.b,a)
 if(p!==0)for(s=a-p,r=0;r<s;++r)q.hq(0)},
 qB(){var s=this.b
 return J.U0(B.aS.gde(s.a),0,s.b*s.a.BYTES_PER_ELEMENT)}}
@@ -48000,7 +48000,7 @@ s=q.a
 r=J.bmI(B.bR.gde(s),s.byteOffset+q.b,a)
 q.b=q.b+8*a
 return r},
-pJ(a){var s=this.b,r=B.k.ae(s,a)
+pJ(a){var s=this.b,r=B.k.ad(s,a)
 if(r!==0)this.b=s+(a-r)}}
 A.I6.prototype={
 O(){return"LineBreakType."+this.b}}
@@ -51159,7 +51159,7 @@ return((p*9007199254740992|0)+(p*3542243181176521|0))*599197+r*1259&536870911},
 a1(a,b){return a+b},
 ai(a,b){return a-b},
 aq(a,b){return a*b},
-ae(a,b){var s=a%b
+ad(a,b){var s=a%b
 if(s===0)return 0
 if(s>0)return s
 if(b<0)return s-b
@@ -54866,13 +54866,13 @@ continue}}throw A.p(A.df("Invalid base64 data",a1,r))}if(p!=null){e=B.h.a7(a1,q,
 e=p.a+=e
 d=e.length
 if(o>=0)A.bsl(a1,n,a3,o,m,d)
-else{c=B.k.ae(d-1,4)+1
+else{c=B.k.ad(d-1,4)+1
 if(c===1)throw A.p(A.df(a0,a1,a3))
 while(c<4){e+="="
 p.a=e;++c}}e=p.a
 return B.h.mx(a1,a2,a3,e.charCodeAt(0)==0?e:e)}b=a3-a2
 if(o>=0)A.bsl(a1,n,a3,o,m,b)
-else{c=B.k.ae(b,4)
+else{c=B.k.ad(b,4)
 if(c===1)throw A.p(A.df(a0,a1,a3))
 if(c>1)a1=B.h.mx(a1,a3,a3,c===2?"==":"=")}return a1}}
 A.af6.prototype={
@@ -55454,7 +55454,7 @@ $0(){var s=this
 return A.as(A.c_("("+s.a+", "+s.b+", "+s.c+", "+s.d+", "+s.e+", "+s.f+", "+s.r+", "+s.w+")",null))},
 $S:173}
 A.b6.prototype={
-hb(a){var s=1000,r=B.k.ae(a,s),q=B.k.bG(a-r,s),p=this.b+r,o=B.k.ae(p,s)
+hb(a){var s=1000,r=B.k.ad(a,s),q=B.k.bG(a-r,s),p=this.b+r,o=B.k.ad(p,s)
 return new A.b6(A.hx(this.a+B.k.bG(p-o,s)+q,o),o,this.c)},
 eE(a){return A.eh(0,this.b-a.b,this.a-a.a)},
 j(a,b){if(b==null)return!1
@@ -57177,7 +57177,7 @@ if(J.am(b)!==A.I(this))return!1
 return b instanceof A.ii&&b.a===this.a},
 gC(a){return this.a},
 m(a){var s=this.a
-if(B.k.ae(s,100)!==0)return"FontWeight("+s+")"
+if(B.k.ad(s,100)!==0)return"FontWeight("+s+")"
 s=B.a7j.h(0,this.guE())
 s.toString
 return s}}
@@ -58366,7 +58366,7 @@ A.Dr.prototype={
 bx(a){var s
 if(a.length===0)throw A.p(A.c_("A collectionPath must be a non-empty string.",null))
 else if(B.h.p(a,"//"))throw A.p(A.c_('A collection path must not contain "//".',null))
-else if((A.rr(a).a.length&1)!==1)throw A.p(A.c_(u.k,null))
+else if((A.rr(a).a.length&1)!==1)throw A.p(A.c_(u.f,null))
 s=this.a
 return A.bxC(this.b,s.a.bx(B.b.aF(s.b.a,"/")+"/"+a))},
 fD(){var s=0,r=A.o(t.__),q,p=this,o,n
@@ -58420,7 +58420,7 @@ giV(){var s=this,r=s.c
 return r==null?s.c=A.bnE().Kb(s.d,s.f):r},
 bx(a){if(a.length===0)throw A.p(A.c_("A collection path must be a non-empty string.",null))
 else if(B.h.p(a,"//"))throw A.p(A.c_('A collection path must not contain "//".',null))
-else if((A.rr(a).a.length&1)!==1)throw A.p(A.c_(u.k,null))
+else if((A.rr(a).a.length&1)!==1)throw A.p(A.c_(u.f,null))
 return A.bxC(this,this.giV().bx(a))},
 nL(a,b){return this.aXB(a,b,b)},
 aXB(a,b,c){var s=0,r=A.o(c),q,p=this,o
@@ -62288,7 +62288,7 @@ break}return s},
 hV(a){return(this.h6(a+0.001)-this.h6(a-0.001))/0.002},
 p_(a){return a>this.b}}
 A.b7W.prototype={
-h6(a){var s,r,q,p=this,o=a+p.w,n=p.r,m=B.c.ae(o/n,1),l=(B.c.ik(o,n)&1)===1
+h6(a){var s,r,q,p=this,o=a+p.w,n=p.r,m=B.c.ad(o/n,1),l=(B.c.ik(o,n)&1)===1
 n=p.d&&l
 s=p.f
 r=p.c
@@ -62685,7 +62685,7 @@ r.translate(b.a/2,b.b/2)
 q=j.b.x
 q===$&&A.b()
 p=B.c.hj(8*q)
-for(q=j.e,o=8*q,n=j.f,q=q<1,m=j.c,l=0;l<o;++l){k=B.k.ae(l-p,8)
+for(q=j.e,o=8*q,n=j.f,q=q<1,m=j.c,l=0;l<o;++l){k=B.k.ad(l-p,8)
 s.r=m.e3(q?147:B.a4R[k]).gt()
 a.dj(n,s)
 r.rotate(45,0,0)}r.restore()},
@@ -63624,7 +63624,7 @@ k=n
 for(s=b.b,r=s+p,j=0,i=0;i<q;++i){if(B.k.ik(i,o)!==j)++j
 $.ah()
 h=new A.fj(B.bm,B.be,B.bZ,B.c8,B.bF)
-h.r=A.a_(f[j],f[j+1],B.k.ae(i,o)/o).gt()
+h.r=A.a_(f[j],f[j+1],B.k.ad(i,o)/o).gt()
 g=m+k*i-1
 a.dR(new A.H(g,s,g+1,r),h)}}}
 A.VG.prototype={
@@ -63838,7 +63838,7 @@ A.Nu.prototype={
 aDx(a){var s=a.d
 if(s!=null&&s!==0)if(s>0)this.a3L()
 else this.a3I()},
-a3I(){var s=this,r=$.ak.ad$.x.h(0,s.r)
+a3I(){var s=this,r=$.ak.ae$.x.h(0,s.r)
 r=r==null?null:r.gac()
 t.aA.a(r)
 if(r instanceof A.y9){r=r.U
@@ -63852,7 +63852,7 @@ r=r.k1$
 r.b=!0
 r.a.push(s.gIz())
 s.e=s.f+1}},
-a3L(){var s=this,r=$.ak.ad$.x.h(0,s.r)
+a3L(){var s=this,r=$.ak.ae$.x.h(0,s.r)
 r=r==null?null:r.gac()
 t.aA.a(r)
 if(r instanceof A.y9){r=r.V
@@ -64659,7 +64659,7 @@ r=$.fT()
 s.$flags&2&&A.be(s,13)
 s.setFloat64(0,a,B.c1===r)
 q.apr(q.e)},
-mZ(a){var s=B.k.ae(this.b,a)
+mZ(a){var s=B.k.ad(this.b,a)
 if(s!==0)this.zE($.bCN(),0,a-s)},
 qB(){var s,r=this
 if(r.c)throw A.p(A.bc("done() must not be called more than once on the same "+A.I(r).m(0)+"."))
@@ -64690,7 +64690,7 @@ s=q.a
 r=J.bmI(B.bR.gde(s),s.byteOffset+q.b,a)
 q.b=q.b+8*a
 return r},
-mZ(a){var s=this.b,r=B.k.ae(s,a)
+mZ(a){var s=this.b,r=B.k.ad(s,a)
 if(r!==0)this.b=s+(a-r)}}
 A.m_.prototype={
 gC(a){var s=this
@@ -66411,7 +66411,7 @@ r.gtA().nK()
 s=(r.d+1)%20
 r.d=s
 r.e[s]=new A.PE(a,b)},
-wy(a){var s,r,q,p=this.d+a,o=B.k.ae(p,20),n=B.k.ae(p-1,20)
+wy(a){var s,r,q,p=this.d+a,o=B.k.ad(p,20),n=B.k.ad(p-1,20)
 p=this.e
 s=p[o]
 r=p[n]
@@ -66424,7 +66424,7 @@ s=m.wy(-2).aq(0,0.6).a1(0,m.wy(-1).aq(0,0.35)).a1(0,m.wy(0).aq(0,0.05))
 r=m.e
 q=m.d
 p=r[q]
-for(o=null,n=1;n<=20;++n){o=r[B.k.ae(q+n,20)]
+for(o=null,n=1;n<=20;++n){o=r[B.k.ad(q+n,20)]
 if(o!=null)break}if(o==null||p==null)return B.MI
 else return new A.t8(s,1,new A.b7(p.a.a-o.a.a),p.b.ai(0,o.b))}}
 A.Ay.prototype={
@@ -66434,7 +66434,7 @@ s=m.wy(-2).aq(0,0.15).a1(0,m.wy(-1).aq(0,0.65)).a1(0,m.wy(0).aq(0,0.2))
 r=m.e
 q=m.d
 p=r[q]
-for(o=null,n=1;n<=20;++n){o=r[B.k.ae(q+n,20)]
+for(o=null,n=1;n<=20;++n){o=r[B.k.ad(q+n,20)]
 if(o!=null)break}if(o==null||p==null)return B.MI
 else return new A.t8(s,1,new A.b7(p.a.a-o.a.a),p.b.ai(0,o.b))}}
 A.a1X.prototype={
@@ -66866,7 +66866,7 @@ s.sbf(null)
 return s},
 b1(a,b){b.sbZ(a.R(t.I).w)}}
 A.a8i.prototype={
-cG(a){var s=a.Un(1/0),r=this.G$
+cH(a){var s=a.Un(1/0),r=this.G$
 return a.bc(r.aj(B.ae,s,r.gc0()))},
 df(a,b){var s,r,q=this,p=a.Un(1/0),o=q.G$
 if(o==null)return null
@@ -67101,7 +67101,7 @@ S(){return new A.MV(new A.bz("BottomSheet child",t.A),A.aK(t.C))},
 aUS(){return this.d.$0()},
 aaC(a){return this.e.$1(a)}}
 A.MV.prototype={
-ga0F(){var s=$.ak.ad$.x.h(0,this.d).gac()
+ga0F(){var s=$.ak.ae$.x.h(0,this.d).gac()
 s.toString
 return t.x.a(s).gB().b},
 aqn(a){this.n(new A.aKN(this))
@@ -67225,7 +67225,7 @@ bo(a){return 0},
 bj(a){return 0},
 bn(a){return 0},
 bi(a){return 0},
-cG(a){return new A.E(A.D(1/0,a.a,a.b),A.D(1/0,a.c,a.d))},
+cH(a){return new A.E(A.D(1/0,a.a,a.b),A.D(1/0,a.c,a.d))},
 df(a,b){var s,r,q,p,o,n=this.G$
 if(n==null)return null
 s=this.a2N(a)
@@ -67763,7 +67763,7 @@ if(q!=null){s=b.$2(q,a)
 q=s.a
 r=this.H
 return a.bc(new A.E(Math.max(q,r.a),Math.max(s.b,r.b)))}return B.a7},
-cG(a){return this.a19(a,A.hs())},
+cH(a){return this.a19(a,A.hs())},
 df(a,b){var s,r,q=this.G$
 if(q==null)return null
 s=q.eA(a,b)
@@ -69380,7 +69380,7 @@ o=s}else{s=q.h(0,B.da)
 s.toString
 o=s}n=o.gB().j3(B.q)
 return a.C9(new A.b7_(o,n),b,A.asT(n))},
-cG(a){return this.Pg(a,A.hs()).a},
+cH(a){return this.Pg(a,A.hs()).a},
 df(a,b){var s,r=this.Pg(a,A.hs()),q=this.cD$.h(0,B.da)
 q.toString
 q=A.ui(q.eA(r.e,b),(r.c-r.f.b+r.w.b)/2)
@@ -71036,7 +71036,7 @@ if(p.d){s=p.b
 r=p.c
 q=b?r:s
 return(p.a-2)*s+2*r-a-q}return a},
-EY(a){var s,r=this,q=r.a,p=B.k.ae(a,q),o=p===0||p===q-1,n=r.b,m=r.c,l=Math.max(0,(p-1)*n+m)
+EY(a){var s,r=this,q=r.a,p=B.k.ad(a,q),o=p===0||p===q-1,n=r.b,m=r.c,l=Math.max(0,(p-1)*n+m)
 q=B.k.ik(a,q)
 s=r.avB(l,o)
 if(o)n=m
@@ -71076,7 +71076,7 @@ if(r!=null){switch(r.a){case 0:case 3:q=B.ev
 break
 case 1:case 2:q=B.eu
 break
-default:q=B.JE}s=$.ak.ad$.d.c.e
+default:q=B.JE}s=$.ak.ae$.d.c.e
 s.toString
 A.boE(s,0,q,B.bg,B.a_)}}},
 D(b7){var s,r,q,p,o,n,m,l,k,j,i,h,g,f,e,d,c,b,a,a0,a1,a2,a3,a4,a5,a6,a7,a8,a9,b0,b1,b2,b3=this,b4=null,b5=A.S(b7),b6=A.c5(b7,B.a4,t.v)
@@ -71156,7 +71156,7 @@ h=A.ki(b7)
 h=h.gv3()}h=new A.zn(h,!0,B.kj,b4)}else h=B.kj
 B.b.jG(a7,0,h)
 h=m.length
-if(!(a6<h))h=a6===h&&B.k.ae(h,7)===0
+if(!(a6<h))h=a6===h&&B.k.ad(h,7)===0
 else h=!0
 if(h){b3.a.toString
 b0=A.bR(r,q,a6-o,0,0)
@@ -71948,7 +71948,7 @@ this.d=A.cq(B.o2,s,null)}else{r=A.D(0.5+(p+1)*n,0,1)
 q=A.D(r+1.5*n,0,1)
 s.toString
 this.d=A.cq(new A.dJ(r,q,B.ap),s,null)}},
-aub(a){var s,r=$.ak.ad$.d.a.b
+aub(a){var s,r=$.ak.ae$.d.a.b
 switch((r==null?A.xW():r).a){case 0:r=!1
 break
 case 1:r=!0
@@ -71968,7 +71968,7 @@ this.a8()},
 D(a){var s,r,q=this,p=null,o=q.a,n=o.c,m=o.w,l=n.f_[m],k=o.e
 l=new A.aj(p,n.lk,new A.A(k,l,p),p)
 s=m===n.G
-r=$.ak.ad$.d.a.b
+r=$.ak.ae$.d.a.b
 if(r==null)r=A.xW()
 o=q.a.y
 if(r===B.qN)n=A.apn(l,s?A.S(a).CW:p,p)
@@ -73093,7 +73093,7 @@ m=A.bx5(a)
 s=A.Tv(a,o)
 r=A.aqy(a,t.zd)
 r.toString
-q=$.ak.ad$.x.h(0,p.d).gac()
+q=$.ak.ae$.x.h(0,p.d).gac()
 q.toString
 q=new A.HJ(s,r,t.x.a(q),p.gazi())
 q.saK(n)
@@ -73410,7 +73410,7 @@ s.ct(B.H,!(q.ka(r)||q.kd(r)))
 q.gdD().a2(q.guw())},
 a_(){this.anZ()
 this.Dv()
-$.ak.ad$.d.a.f.F(0,this.gacU())},
+$.ak.ae$.d.a.f.F(0,this.gacU())},
 aI(a){var s,r,q,p,o=this
 o.aZ(a)
 s=a.R8
@@ -73443,7 +73443,7 @@ s===$&&A.b()
 s.k()
 r.o3()}}o.XH(B.jk,!1,o.f)}o.XG()},
 k(){var s,r=this
-$.ak.ad$.d.a.f.N(0,r.gacU())
+$.ak.ae$.d.a.f.N(0,r.gacU())
 r.gdD().P(r.guw())
 s=r.x
 if(s!=null){s.I$=$.ae()
@@ -73567,7 +73567,7 @@ q.toString
 q=(r.ka(q)||r.kd(q))&&r.Q
 break A}if(B.n6===s){q=r.Q
 break A}q=null}return q},
-XG(){var s=$.ak.ad$.d.a.b
+XG(){var s=$.ak.ae$.d.a.b
 switch((s==null?A.xW():s).a){case 0:s=!1
 break
 case 1:s=this.gaIJ()
@@ -74433,7 +74433,7 @@ p=o.eA(r,B.Z)
 o=q-(p==null?o.aj(B.ae,r,o.gc0()).b:p)
 break
 default:o=null}return o+s.b},
-cG(a){return a.bc(this.R1(a,A.bAn(),A.hs()).e)},
+cH(a){return a.bc(this.R1(a,A.bAn(),A.hs()).e)},
 bJ(){var s,r,q,p,o,n,m,l,k,j,i,h,g,f,e,d,c,b,a,a0,a1,a2=this,a3=null,a4=t.k.a(A.G.prototype.ga0.call(a2))
 a2.ar=null
 s=a2.R1(a4,A.bRx(),A.mp())
@@ -75671,7 +75671,7 @@ a4G(a,b,c){return this.a4H(a,b,c,null)},
 df(a,b){var s=this.a4G(A.jy(),A.hs(),a),r=this.cD$.h(0,B.dV)
 r.toString
 return A.ui(r.eA(s.a,b),s.c)},
-cG(a){return a.bc(this.a4G(A.jy(),A.hs(),a).b)},
+cH(a){return a.bc(this.a4G(A.jy(),A.hs(),a).b)},
 bJ(){var s=this,r=t.k,q=s.a4H(A.blj(),A.mp(),r.a(A.G.prototype.ga0.call(s)),A.bRK())
 s.fy=r.a(A.G.prototype.ga0.call(s)).bc(q.b)},
 aH(a,b){var s,r=new A.b7l(a,b),q=this.cD$
@@ -75863,7 +75863,7 @@ break B}r=j}m=r}if(o){h=A.dY(a)
 return A.agy(new A.QT(p,m,!0,j),k.a.as,new A.rT(m,h,j))}g.toString
 return new A.P1(p,m,h.Q,h.as,h.f,g,q,h.x,B.aq,h.at,j,j)}}
 A.b0C.prototype={
-$1(a){var s,r=$.ak.ad$.x.h(0,this.a.d).gac()
+$1(a){var s,r=$.ak.ae$.x.h(0,this.a.d).gac()
 r.toString
 t.zd.a(r)
 s=r.aD
@@ -75965,7 +75965,7 @@ jL(a){return new A.eO(B.Py,t.az)},
 NQ(a){return!1},
 m(a){return"DefaultMaterialLocalizations.delegate(en_US)"}}
 A.VV.prototype={
-avD(a,b){if(b===2){if(B.k.ae(a,4)===0&&B.k.ae(a,100)!==0||B.k.ae(a,400)===0)return 29
+avD(a,b){if(b===2){if(B.k.ad(a,4)===0&&B.k.ad(a,100)!==0||B.k.ad(a,400)===0)return 29
 return 28}return B.Ab[b-1]},
 uu(a,b){var s=b?B.uv:B.fz
 switch(s.a){case 4:return this.Dd(a.gLc()===0?12:a.gLc())
@@ -76008,7 +76008,7 @@ s=B.k.m(Math.abs(a))
 r=a<0?"-":""
 q=s.length-1
 for(p=0;p<=q;++p){r+=s[p]
-if(p<q&&B.k.ae(q-p,3)===0)r+=","}return r.charCodeAt(0)==0?r:r},
+if(p<q&&B.k.ad(q-p,3)===0)r+=","}return r.charCodeAt(0)==0?r:r},
 aRv(a,b){var s=new A.dq(""),r=this.uu(a,!1)
 s.a=r
 r+=":"
@@ -76491,7 +76491,7 @@ s.sbf(null)
 return s},
 b1(a,b){b.H=this.e}}
 A.a8w.prototype={
-cG(a){var s=this.G$
+cH(a){var s=this.G$
 s=s==null?null:s.aj(B.ae,a,s.gc0())
 return s==null?B.a7:s},
 df(a,b){var s=this.G$
@@ -76651,8 +76651,8 @@ this.On()},
 gtM(){return this.qH}}
 A.b5H.prototype={
 $1(a){var s=this.a.G,r=this.b,q=s[r]
-if($.ak.ad$.x.h(0,q)!=null){s=s[r]
-s=$.ak.ad$.x.h(0,s)
+if($.ak.ae$.x.h(0,q)!=null){s=s[r]
+s=$.ak.ae$.x.h(0,s)
 s.toString
 A.boE(s,0,B.JE,B.bg,B.ai)}},
 $S:6}
@@ -78674,7 +78674,7 @@ Sz(a){var s=this
 s.n(new A.bbg(s))
 s.as=null
 s.a.toString},
-apm(a){var s,r=this.x,q=$.ak.ad$.x.h(0,r).R(t.I).w
+apm(a){var s,r=this.x,q=$.ak.ae$.x.h(0,r).R(t.I).w
 switch(a.a.a){case 2:s=!0
 break
 case 3:s=!1
@@ -78683,7 +78683,7 @@ case 1:s=q===B.b3
 break
 case 0:s=q===B.as
 break
-default:s=null}r=$.ak.ad$.x.h(0,r).gac()
+default:s=null}r=$.ak.ae$.x.h(0,r).gac()
 r.toString
 t.Sq.a(r)
 return s?r.adw():r.abB()},
@@ -78959,8 +78959,8 @@ this.BP()},
 skG(a){if(a===this.bY)return
 this.bY=a
 this.BP()},
-saia(a){if(a.j(0,this.ad))return
-this.ad=a
+saia(a){if(a.j(0,this.ae))return
+this.ae=a
 this.aT()},
 sh5(a){var s,r,q=this
 if(J.d(a,q.bv))return
@@ -79158,7 +79158,7 @@ bi(a){var s=this.bu.a
 s.toString
 return Math.max(s,this.gRn())},
 gkR(){return!0},
-cG(a){var s,r=a.b
+cH(a){var s,r=a.b
 r=r<1/0?r:144+this.gRo()
 s=a.d
 if(!(s<1/0)){s=this.bu.a
@@ -79216,7 +79216,7 @@ a9=a6.U
 a9===$&&A.b()
 if(a9.gb_()!==B.am){q=a6.bu
 q.CW.toString
-if(a6.ad.gab(0))a6.gB()
+if(a6.ae.gab(0))a6.gB()
 b=b0.gc9()
 a9=new A.b_(0,24,t._).a9(a9.gt())
 $.ah()
@@ -79247,7 +79247,7 @@ if(i!=null&&h!=null)a8=a8.aPa(new A.bC(new A.E(i,h),t.j7))
 c=a6.ce
 a3=a6.aa
 a4=a6.bY
-a5=a6.ad
+a5=a6.ae
 if(a5.gab(0))a5=a6.gB()
 q.aW_(b0,k,m,d,a9,a6.Y,a6,a5,a8,c,a4,a3)},
 a0c(a,b){var s,r,q,p,o,n,m,l,k,j=this
@@ -79358,7 +79358,7 @@ q.P(s)
 r.aoi()},
 aH(a,b){var s=this.U.z
 if(s!=null)s.$2(a,b)},
-cG(a){return new A.E(A.D(0,a.a,a.b),A.D(0,a.c,a.d))},
+cH(a){return new A.E(A.D(0,a.a,a.b),A.D(0,a.c,a.d))},
 k(){var s=this.v
 s===$&&A.b()
 s.k()
@@ -80901,7 +80901,7 @@ break
 default:s=null}r=s.a
 q=s.b
 if(i.d===B.Ld){s=i.f[b]
-p=$.ak.ad$.x.h(0,s).gB().a
+p=$.ak.ae$.x.h(0,s).gB().a
 o=i.r[b].W(i.ay)
 r+=(q-r-(p+o.gdG()))/2+o.a
 q=r+p}o=i.e
@@ -81933,7 +81933,7 @@ c2=a4.aE
 c3=a4.aa
 c4=a4.b4
 c5=a4.bY
-c6=a4.ad
+c6=a4.ae
 c7=$.bro()
 r=A.CD(p,A.btf(a0.cy,d,d0,c3,a0.ay,B.ig,c4,c5,c6,m,b,b5,e,i,h,b4,c0,!0,d1,a5,!0,a0.fy,l,!0,b1,a4.ca,q,d0.y,r.a,a0.w,c7,a0.fr,a0.fx,B.b9,a0.cx,a0.CW,b0,a7,a8,d0.gaK1(),d0.gaK3(),a9,b2,b3,g,!a1,!0,"editable",!0,d1,c1,b8,c2,b9,a3,a6,b6,b7,a0.k1,a2,a0.db,a0.dx,k,a0.Q,n,!0,a0.as,a0.y,a0.ax,d1,a0.x,d1,B.b_,a0.id,a0.ao))
 d0.a.toString
@@ -82071,7 +82071,7 @@ p=a.gwS()
 o=n.R8
 s=s.Y
 o=A.bth()
-return A.CD(r,A.cl(n.dx,n.V,n.ax,n.U,n.ad,n.aS,n.aP,n.af,p,n.x1,n.x2,n.ry,n.aa,n.to,n.rx,q,n.aV,n.Y,!0,n.fx,s!==!1,n.k1,n.f,n.d,n.bv,n.RG,n.p4,n.y2,n.r,n.b3,n.k2,n.fy,n.go,n.id,n.al,n.db,n.cy,n.aJ,new A.aDv(a,n.c),n.p2,n.p3,n.k3,n.k4,n.ok,n.p1,n.CW,n.e,n.bu,n.X,n.xr,n.y1,n.aW,n.v,o,B.fc,n.cx,B.tM,B.tN,n.ar,n.ay,n.y,n.x,n.bY,n.z,n.Q,n.at,n.as,n.w,n.ch,n.aE))},
+return A.CD(r,A.cl(n.dx,n.V,n.ax,n.U,n.ae,n.aS,n.aP,n.af,p,n.x1,n.x2,n.ry,n.aa,n.to,n.rx,q,n.aV,n.Y,!0,n.fx,s!==!1,n.k1,n.f,n.d,n.bv,n.RG,n.p4,n.y2,n.r,n.b3,n.k2,n.fy,n.go,n.id,n.al,n.db,n.cy,n.aJ,new A.aDv(a,n.c),n.p2,n.p3,n.k3,n.k4,n.ok,n.p1,n.CW,n.e,n.bu,n.X,n.xr,n.y1,n.aW,n.v,o,B.fc,n.cx,B.tM,B.tN,n.ar,n.ay,n.y,n.x,n.bY,n.z,n.Q,n.at,n.as,n.w,n.ch,n.aE))},
 $S:391}
 A.aDv.prototype={
 $1(a){var s
@@ -82615,7 +82615,7 @@ l=c==null?h.al:c
 k=d==null?h.af:d
 j=g==null?h.aP:g
 i=a1==null?h.dw:a1
-return A.boV(h.p2,h.d,n,h.a,h.p4,h.R8,h.RG,h.rx,h.ry,h.aD,h.to,h.as,h.at,h.x1,h.x2,h.xr,h.y1,r,h.b,h.y2,h.aU,h.aG,h.aW,h.ay,h.ch,h.v,h.U,h.V,m,h.Y,h.c,l,k,h.CW,h.cx,h.cy,h.db,h.ar,q,h.cm,s,h.b3,h.f,h.aE,h.aJ,h.aa,h.b4,h.bp,h.aV,j,h.r,h.w,h.aS,h.dx,h.dy,h.fr,h.k3,p,h.bu,h.bY,h.fx,h.x,h.ad,h.bv,h.fy,h.ao,h.go,h.ca,h.ce,h.id,h.y,h.d5,h.c1,i,h.dS,o,h.H,h.E,h.I,h.p1,h.k1,!0,h.Q)},
+return A.boV(h.p2,h.d,n,h.a,h.p4,h.R8,h.RG,h.rx,h.ry,h.aD,h.to,h.as,h.at,h.x1,h.x2,h.xr,h.y1,r,h.b,h.y2,h.aU,h.aG,h.aW,h.ay,h.ch,h.v,h.U,h.V,m,h.Y,h.c,l,k,h.CW,h.cx,h.cy,h.db,h.ar,q,h.cm,s,h.b3,h.f,h.aE,h.aJ,h.aa,h.b4,h.bp,h.aV,j,h.r,h.w,h.aS,h.dx,h.dy,h.fr,h.k3,p,h.bu,h.bY,h.fx,h.x,h.ae,h.bv,h.fy,h.ao,h.go,h.ca,h.ce,h.id,h.y,h.d5,h.c1,i,h.dS,o,h.H,h.E,h.I,h.p1,h.k1,!0,h.Q)},
 aPq(a,b){var s=null
 return this.Uq(s,s,s,s,s,s,s,a,s,b)},
 aP8(a){var s=null
@@ -82625,7 +82625,7 @@ return this.Uq(s,s,s,s,a,s,s,s,s,s)},
 j(a,b){var s=this
 if(b==null)return!1
 if(J.am(b)!==A.I(s))return!1
-return b instanceof A.l2&&A.Ez(b.d,s.d)&&b.a===s.a&&A.Ez(b.c,s.c)&&b.e.j(0,s.e)&&b.f===s.f&&b.r.j(0,s.r)&&b.w===s.w&&b.x.j(0,s.x)&&b.y===s.y&&b.Q.j(0,s.Q)&&b.as.j(0,s.as)&&b.at.j(0,s.at)&&b.ax.j(0,s.ax)&&b.ay.j(0,s.ay)&&b.ch.j(0,s.ch)&&b.CW.j(0,s.CW)&&b.cx.j(0,s.cx)&&b.cy.j(0,s.cy)&&b.db.j(0,s.db)&&b.dx.j(0,s.dx)&&b.dy.j(0,s.dy)&&b.fr.j(0,s.fr)&&b.fx.j(0,s.fx)&&b.fy.j(0,s.fy)&&b.go.j(0,s.go)&&b.id.j(0,s.id)&&b.k1.j(0,s.k1)&&b.k2.j(0,s.k2)&&b.k3.j(0,s.k3)&&b.k4.j(0,s.k4)&&b.ok.j(0,s.ok)&&b.p1.j(0,s.p1)&&J.d(b.p2,s.p2)&&b.p3.j(0,s.p3)&&b.p4.j(0,s.p4)&&b.R8.j(0,s.R8)&&b.RG.j(0,s.RG)&&b.rx.j(0,s.rx)&&b.ry.j(0,s.ry)&&b.to.j(0,s.to)&&b.x1.j(0,s.x1)&&b.x2.j(0,s.x2)&&b.xr.j(0,s.xr)&&b.y1.j(0,s.y1)&&b.y2.j(0,s.y2)&&b.aU.j(0,s.aU)&&b.aW.j(0,s.aW)&&b.v.j(0,s.v)&&b.U.j(0,s.U)&&b.V.j(0,s.V)&&b.X.j(0,s.X)&&b.Y.j(0,s.Y)&&b.al.j(0,s.al)&&b.af.j(0,s.af)&&b.ar.j(0,s.ar)&&b.b3.j(0,s.b3)&&b.aE.j(0,s.aE)&&b.aJ.j(0,s.aJ)&&b.aa.j(0,s.aa)&&b.b4.j(0,s.b4)&&b.bp.j(0,s.bp)&&b.aV.j(0,s.aV)&&b.aP.j(0,s.aP)&&b.aS.j(0,s.aS)&&b.bu.j(0,s.bu)&&b.bY.j(0,s.bY)&&b.ad.j(0,s.ad)&&b.bv.j(0,s.bv)&&b.ao.j(0,s.ao)&&b.ca.j(0,s.ca)&&b.ce.j(0,s.ce)&&b.d5.j(0,s.d5)&&b.c1.j(0,s.c1)&&b.dw.j(0,s.dw)&&b.dS.j(0,s.dS)&&b.H.j(0,s.H)&&b.E.j(0,s.E)&&b.I.j(0,s.I)&&b.aD.j(0,s.aD)&&b.aG.j(0,s.aG)&&b.cm.j(0,s.cm)},
+return b instanceof A.l2&&A.Ez(b.d,s.d)&&b.a===s.a&&A.Ez(b.c,s.c)&&b.e.j(0,s.e)&&b.f===s.f&&b.r.j(0,s.r)&&b.w===s.w&&b.x.j(0,s.x)&&b.y===s.y&&b.Q.j(0,s.Q)&&b.as.j(0,s.as)&&b.at.j(0,s.at)&&b.ax.j(0,s.ax)&&b.ay.j(0,s.ay)&&b.ch.j(0,s.ch)&&b.CW.j(0,s.CW)&&b.cx.j(0,s.cx)&&b.cy.j(0,s.cy)&&b.db.j(0,s.db)&&b.dx.j(0,s.dx)&&b.dy.j(0,s.dy)&&b.fr.j(0,s.fr)&&b.fx.j(0,s.fx)&&b.fy.j(0,s.fy)&&b.go.j(0,s.go)&&b.id.j(0,s.id)&&b.k1.j(0,s.k1)&&b.k2.j(0,s.k2)&&b.k3.j(0,s.k3)&&b.k4.j(0,s.k4)&&b.ok.j(0,s.ok)&&b.p1.j(0,s.p1)&&J.d(b.p2,s.p2)&&b.p3.j(0,s.p3)&&b.p4.j(0,s.p4)&&b.R8.j(0,s.R8)&&b.RG.j(0,s.RG)&&b.rx.j(0,s.rx)&&b.ry.j(0,s.ry)&&b.to.j(0,s.to)&&b.x1.j(0,s.x1)&&b.x2.j(0,s.x2)&&b.xr.j(0,s.xr)&&b.y1.j(0,s.y1)&&b.y2.j(0,s.y2)&&b.aU.j(0,s.aU)&&b.aW.j(0,s.aW)&&b.v.j(0,s.v)&&b.U.j(0,s.U)&&b.V.j(0,s.V)&&b.X.j(0,s.X)&&b.Y.j(0,s.Y)&&b.al.j(0,s.al)&&b.af.j(0,s.af)&&b.ar.j(0,s.ar)&&b.b3.j(0,s.b3)&&b.aE.j(0,s.aE)&&b.aJ.j(0,s.aJ)&&b.aa.j(0,s.aa)&&b.b4.j(0,s.b4)&&b.bp.j(0,s.bp)&&b.aV.j(0,s.aV)&&b.aP.j(0,s.aP)&&b.aS.j(0,s.aS)&&b.bu.j(0,s.bu)&&b.bY.j(0,s.bY)&&b.ae.j(0,s.ae)&&b.bv.j(0,s.bv)&&b.ao.j(0,s.ao)&&b.ca.j(0,s.ca)&&b.ce.j(0,s.ce)&&b.d5.j(0,s.d5)&&b.c1.j(0,s.c1)&&b.dw.j(0,s.dw)&&b.dS.j(0,s.dS)&&b.H.j(0,s.H)&&b.E.j(0,s.E)&&b.I.j(0,s.I)&&b.aD.j(0,s.aD)&&b.aG.j(0,s.aG)&&b.cm.j(0,s.cm)},
 gC(a){var s=this,r=s.d,q=A.v(r),p=A.a2(new A.c8(r,q.i("c8<1>")),t.X)
 B.b.M(p,new A.bS(r,q.i("bS<2>")))
 p.push(s.a)
@@ -82697,7 +82697,7 @@ p.push(s.aP)
 p.push(s.aS)
 p.push(s.bu)
 p.push(s.bY)
-p.push(s.ad)
+p.push(s.ae)
 p.push(s.bv)
 p.push(s.ao)
 p.push(s.ca)
@@ -82922,10 +82922,10 @@ A.aSl.prototype={
 $1(a){var s,r=A.aw(this.a,B.va,t.Lq)
 r.toString
 switch(r.ch.a){case 0:case 1:r=this.b
-return r.MH(B.k.ae(r.a+a,24))
+return r.MH(B.k.ad(r.a+a,24))
 case 2:r=this.b
 s=(r.a<12?B.cs:B.dE)===B.cs?0:12
-return r.MH(s+B.k.ae(r.gLc()+a,12))}},
+return r.MH(s+B.k.ad(r.gLc()+a,12))}},
 $S:397}
 A.aSk.prototype={
 $0(){var s=A.aw(this.a,B.fa,t.Lq)
@@ -82982,9 +82982,9 @@ r.toString
 q=r.as
 p=j.De(q)
 r=q.b
-o=q.Xj(B.k.ae(r+1,60))
+o=q.Xj(B.k.ad(r+1,60))
 n=j.De(o)
-m=q.Xj(B.k.ae(r-1,60))
+m=q.Xj(B.k.ad(r-1,60))
 l=j.De(m)
 j=A.aw(a,B.v8,s)
 j.toString
@@ -83010,7 +83010,7 @@ A.NC.prototype={
 a8k(a){var s,r,q=t.Lq,p=A.aw(a,B.fL,q)
 p.toString
 s=p.as
-r=s.MH(B.k.ae(s.a+12,24))
+r=s.MH(B.k.ad(s.a+12,24))
 p=this.c
 if(p!=null)p.$1(r)
 else{q=A.aw(a,B.fa,q)
@@ -83143,7 +83143,7 @@ if(q!=null){s=b.$2(q,a)
 q=s.a
 r=this.H
 return a.bc(new A.E(Math.max(q,r.a),Math.max(s.b,r.b)))}return B.a7},
-cG(a){return this.a8e(a,A.hs())},
+cH(a){return this.a8e(a,A.hs())},
 df(a,b){var s,r=this.G$
 if(r==null)return null
 s=r.eA(a,b)
@@ -83198,7 +83198,7 @@ a.fs(e,l.x,p)
 a.fs(n,k,p)
 p.c=l.f
 a.iz(e,n,p)
-s=B.c.ae(o,-6.283185307179586/q.length)
+s=B.c.ad(o,-6.283185307179586/q.length)
 if(s>0.1&&s<0.45){p.r=l.r.gt()
 a.fs(n,2,p)}m=A.lS(n,k)
 k=a.c
@@ -83307,23 +83307,23 @@ switch(s.e.a){case 0:r=24
 break
 case 1:break
 case 2:break
-default:r=null}switch(s.d.a){case 0:s=B.c.ae(a.a/r,r)
+default:r=null}switch(s.d.a){case 0:s=B.c.ad(a.a/r,r)
 break
-case 1:s=B.c.ae(a.b/60,60)
+case 1:s=B.c.ad(a.b/60,60)
 break
-default:s=null}return B.c.ae(1.5707963267948966-s*6.283185307179586,6.283185307179586)},
-Qk(a,b,c){var s,r,q=B.c.ae(0.25-B.c.ae(a,6.283185307179586)/6.283185307179586,1),p=this.a
-switch(p.d.a){case 0:switch(p.e.a){case 0:s=B.k.ae(B.c.am(q*24),24)
+default:s=null}return B.c.ad(1.5707963267948966-s*6.283185307179586,6.283185307179586)},
+Qk(a,b,c){var s,r,q=B.c.ad(0.25-B.c.ad(a,6.283185307179586)/6.283185307179586,1),p=this.a
+switch(p.d.a){case 0:switch(p.e.a){case 0:s=B.k.ad(B.c.am(q*24),24)
 break
-case 1:s=B.k.ae(B.c.am(q*12),12)
+case 1:s=B.k.ad(B.c.am(q*12),12)
 if(b<0.5)s+=12
 break
-case 2:s=B.k.ae(B.c.am(q*12),12)
+case 2:s=B.k.ad(B.c.am(q*12),12)
 s+=(p.c.a<12?B.cs:B.dE)===B.cs?0:12
 break
 default:s=null}return p.c.MH(s)
-case 1:r=B.k.ae(B.c.am(q*60),60)
-if(c)r=B.k.ae(B.k.bG(r+2,5)*5,60)
+case 1:r=B.k.ad(B.c.am(q*60),60)
+if(c)r=B.k.ad(B.k.bG(r+2,5)*5,60)
 return p.c.Xj(r)}},
 a52(a){var s,r,q=this,p=q.x
 p===$&&A.b()
@@ -83516,7 +83516,7 @@ s=o.at
 s.toString
 r=n.ai(0,s)
 s=o.ax.geW()
-q=B.c.ae(Math.atan2(r.a,r.b)-1.5707963267948966,6.283185307179586)
+q=B.c.ad(Math.atan2(r.a,r.b)-1.5707963267948966,6.283185307179586)
 p=A.D((r.gdu()-(s/2-28-28))/28,0,1)
 if(this.b)q=o.tc(o.Qk(q,p,!0))
 n=o.w
@@ -83574,7 +83574,7 @@ q=r.y
 p=q==null
 if(!(((p?A.v(r).i("at.T").a(q):q).a<12?B.cs:B.dE)===B.dE&&s!==12))r=((p?A.v(r).i("at.T").a(q):q).a<12?B.cs:B.dE)===B.cs&&s===12
 else r=!0
-return r?B.k.ae(s+12,24):s}return o},
+return r?B.k.ad(s+12,24):s}return o},
 a5v(a){var s,r=null
 if(a==null)return r
 s=A.ek(a,r)
@@ -83800,8 +83800,8 @@ $S:0}
 A.aXb.prototype={
 $0(){var s=!1,r=this.a.f
 r===$&&A.b()
-if(r.gbI()){s=$.ak.ad$.d.c
-s=(s==null?null:s.e)!=null}if(s){s=$.ak.ad$.d.c.e
+if(r.gbI()){s=$.ak.ae$.d.c
+s=(s==null?null:s.e)!=null}if(s){s=$.ak.ae$.d.c.e
 s.toString
 A.bs4(s,B.oW,t.lL)}},
 $S:0}
@@ -85231,7 +85231,7 @@ return null},
 $S:3}
 A.mP.prototype={
 yI(){var s=this,r=s.d,q=(1-Math.abs(2*r-1))*s.c,p=s.b
-return A.bOa(s.a,p,q,q*(1-Math.abs(B.c.ae(p/60,2)-1)),r-q/2)},
+return A.bOa(s.a,p,q,q*(1-Math.abs(B.c.ad(p/60,2)-1)),r-q/2)},
 j(a,b){var s=this
 if(b==null)return!1
 if(s===b)return!0
@@ -87419,7 +87419,7 @@ s.toString
 p.fy=p.cd=r.bc(s)
 p.Jq()
 if(p.gB().a<o.b.a||p.gB().b<o.b.b)p.e8=!0},
-cG(a){var s,r,q=this,p=q.G$
+cH(a){var s,r,q=this,p=q.G$
 if(p!=null)s=a.a>=a.b&&a.c>=a.d
 else s=!0
 if(s)return new A.E(A.D(0,a.a,a.b),A.D(0,a.c,a.d))
@@ -87712,8 +87712,8 @@ bo(a){return 0},
 bj(a){return 0},
 bn(a){return 0},
 bi(a){return 0},
-ash(a){return this.cG(a)},
-cG(a){return B.a7},
+ash(a){return this.cH(a)},
+cH(a){return B.a7},
 eA(a,b){return this.aj(B.fQ,new A.aB(a,b),this.gvY())},
 ase(a){return this.df(a.a,a.b)},
 df(a,b){return null},
@@ -87744,7 +87744,7 @@ if(p!=null)p.a5(0)
 q=q.d
 if(q!=null)q.a5(0)}if(m&&s.gb9()!=null){s.Wp()
 return}s.al6()},
-uY(){this.fy=this.cG(t.k.a(A.G.prototype.ga0.call(this)))},
+uY(){this.fy=this.cH(t.k.a(A.G.prototype.ga0.call(this)))},
 bJ(){},
 cF(a,b){var s=this
 if(s.fy.p(0,b))if(s.d6(a,b)||s.kw(b)){a.F(0,new A.up(b,s))
@@ -87864,7 +87864,7 @@ return 0},
 bi(a){var s=A.o1(1/0,a),r=s.bc(new A.E(A.D(1/0,s.a,s.b),A.D(1/0,s.c,s.d))).b
 if(isFinite(r))return r
 return 0},
-cG(a){return a.bc(new A.E(A.D(1/0,a.a,a.b),A.D(1/0,a.c,a.d)))},
+cH(a){return a.bc(new A.E(A.D(1/0,a.a,a.b),A.D(1/0,a.c,a.d)))},
 bJ(){var s=this,r=t.k.a(A.G.prototype.ga0.call(s))
 s.fy=r.bc(new A.E(A.D(1/0,r.a,r.b),A.D(1/0,r.c,r.d)))
 s.v.ar6(s.gB(),s.a6$)},
@@ -88065,7 +88065,7 @@ s=q.gk_()
 s.I$=r
 s.E$=0
 q.aS.k()
-s=q.ad
+s=q.ae
 if(s!=null)s.k()
 if(q.bv){s=q.ao
 s.I$=r
@@ -88143,8 +88143,8 @@ r.scT(a)
 s.bY=s.bu=null
 s.a3()
 s.bs()},
-gor(){var s,r=null,q=this.ad
-if(q==null)q=this.ad=A.xe(r,B.c5,r,r,r,r,B.J,r,r,B.eF,B.b_)
+gor(){var s,r=null,q=this.ae
+if(q==null)q=this.ae=A.xe(r,B.c5,r,r,r,r,B.J,r,r,B.eF,B.b_)
 s=this.aS
 q.scT(s.e)
 q.srb(s.r)
@@ -88628,7 +88628,7 @@ case 0:case 1:case 3:case 5:s=q.I
 r=q.aS.ds().gbF()
 q.f_=new A.H(0,2,s,2+(r-4))
 break}},
-cG(a){var s,r,q,p,o=this,n=a.a,m=a.b,l=o.vP(m,n),k=l.a,j=null,i=l.b
+cH(a){var s,r,q,p,o=this,n=a.a,m=a.b,l=o.vP(m,n),k=l.a,j=null,i=l.b
 j=i
 s=k
 r=o.gor()
@@ -88802,7 +88802,7 @@ aB(a){this.ee(a)
 this.v.a2(this.ge1())},
 av(){this.v.P(this.ge1())
 this.ef()},
-cG(a){return new A.E(A.D(1/0,a.a,a.b),A.D(1/0,a.c,a.d))}}
+cH(a){return new A.E(A.D(1/0,a.a,a.b),A.D(1/0,a.c,a.d))}}
 A.rE.prototype={}
 A.Ro.prototype={
 sL8(a){if(J.d(a,this.w))return
@@ -88946,7 +88946,7 @@ bj(a){return 1e5},
 bi(a){return 1e5},
 gkR(){return!0},
 kw(a){return!0},
-cG(a){return a.bc(B.adB)},
+cH(a){return a.bc(B.adB)},
 aH(a,b){var s,r,q,p,o,n,m,l,k,j=this
 try{p=a.gc9()
 o=j.gB()
@@ -89150,7 +89150,7 @@ if(h!=null){f=r.h(0,k)
 return h+(f==null?s:f)}g=k.b
 g.toString
 k=o.a(g).aA$}return d},
-cG(a){return A.aKf(this.GM(a,A.jy(),A.hs()).a,this.v)},
+cH(a){return A.aKf(this.GM(a,A.jy(),A.hs()).a,this.v)},
 GM(a3,a4,a5){var s,r,q,p,o,n,m,l,k,j,i,h,g,f,e,d,c,b=this,a=null,a0=b.Qf(new A.E(A.D(1/0,a3.a,a3.b),A.D(1/0,a3.c,a3.d))),a1=isFinite(a0),a2=b.Pj(a3)
 if(b.gHm())A.as(A.iE('To use CrossAxisAlignment.baseline, you must also specify which baseline to use using the "textBaseline" argument.'))
 s=new A.E(b.aE*(b.cd$-1),0)
@@ -89378,8 +89378,8 @@ saTm(a){if(a===this.bu)return
 this.bu=a
 this.aT()},
 saUl(a){return},
-sbZ(a){if(this.ad==a)return
-this.ad=a
+sbZ(a){if(this.ae==a)return
+this.ae=a
 this.a4N()},
 sW3(a){return},
 Iu(a){var s,r,q=this,p=q.Y
@@ -89394,7 +89394,7 @@ bj(a){return this.Iu(A.o1(a,1/0)).a},
 bn(a){return 0},
 bi(a){return this.Iu(A.o1(1/0,a)).b},
 kw(a){return!0},
-cG(a){return this.Iu(a)},
+cH(a){return this.Iu(a)},
 bJ(){this.fy=this.Iu(t.k.a(A.G.prototype.ga0.call(this)))},
 aB(a){this.ee(a)},
 av(){this.ef()},
@@ -89856,7 +89856,7 @@ n=B.fQ.ea(o,new A.aB(s,b),q)
 if(n!=null)return n+l
 n=B.ae.ea(o,s,r.gc0())
 l+=n.b}return j},
-cG(a){var s,r,q,p,o,n,m=this,l=m.a6$
+cH(a){var s,r,q,p,o,n,m=this,l=m.a6$
 switch(m.v.a){case 1:case 3:s=a.d
 r=A.fW(s,null)
 for(q=A.v(m).i("aH.1"),p=0;l!=null;){o=l.gc0()
@@ -90824,7 +90824,7 @@ r.bu=s.bu
 r.aS=s.aS
 r.y2=s.y2
 r.y1=s.y1
-r.ad=s.ad
+r.ae=s.ae
 r.bY=s.bY
 q.d=r
 q.b=!0}s=q.d
@@ -91492,7 +91492,7 @@ q.jU(r.b4)
 s=a.b
 s=r.af||r.ar===B.au?s:1/0
 q.jK(s,a.a)},
-cG(a){var s=this,r=s.gwv(),q=a.b
+cH(a){var s=this,r=s.gwv(),q=a.b
 r.jU(s.ls(q,A.hs(),A.jy()))
 q=s.af||s.ar===B.au?q:1/0
 r.jK(q,a.a)
@@ -92446,7 +92446,7 @@ h_(a){var s=this.G$
 return s==null?null:s.kM(a)},
 df(a,b){var s=this.G$
 return s==null?null:s.eA(a,b)},
-cG(a){var s=this.G$
+cH(a){var s=this.G$
 s=s==null?null:s.aj(B.ae,a,s.gc0())
 return s==null?this.Co(a):s},
 bJ(){var s=this,r=s.G$
@@ -92508,7 +92508,7 @@ return s==null?null:s.eA(this.H.qF(a),b)},
 bJ(){var s=this,r=t.k.a(A.G.prototype.ga0.call(s)),q=s.G$,p=s.H
 if(q!=null){q.cv(p.qF(r),!0)
 s.fy=s.G$.gB()}else s.fy=p.qF(r).bc(B.a7)},
-cG(a){var s=this.G$
+cH(a){var s=this.G$
 s=s==null?null:s.aj(B.ae,this.H.qF(a),s.gc0())
 return s==null?this.H.qF(a).bc(B.a7):s}}
 A.a_1.prototype={
@@ -92526,7 +92526,7 @@ return new A.av(q,p,s,r<1/0?r:A.D(this.E,s,r))},
 Bi(a,b){var s=this.G$
 if(s!=null)return a.bc(b.$2(s,this.a4E(a)))
 return this.a4E(a).bc(B.a7)},
-cG(a){return this.Bi(a,A.hs())},
+cH(a){return this.Bi(a,A.hs())},
 bJ(){this.fy=this.Bi(t.k.a(A.G.prototype.ga0.call(this)),A.mp())}}
 A.JL.prototype={
 saNj(a){if(this.H===a)return
@@ -92566,7 +92566,7 @@ else o=n
 p=a.c
 if(r<p){o=p*s
 r=p}return a.bc(new A.E(o,r))},
-cG(a){return this.aq3(a)},
+cH(a){return this.aq3(a)},
 df(a,b){return this.ZU(A.o0(this.aj(B.ae,a,this.gc0())),b)},
 bJ(){var s,r=this
 r.fy=r.aj(B.ae,t.k.a(A.G.prototype.ga0.call(r)),r.gc0())
@@ -92595,7 +92595,7 @@ a0E(a,b){var s=b.a>=b.b?null:A.axT(a.aj(B.aP,b.d,a.gbr()),this.H)
 return b.Et(null,s)},
 Bi(a,b){var s=this.G$
 return s==null?new A.E(A.D(0,a.a,a.b),A.D(0,a.c,a.d)):b.$2(s,this.a0E(s,a))},
-cG(a){return this.Bi(a,A.hs())},
+cH(a){return this.Bi(a,A.hs())},
 df(a,b){var s=this.G$
 return s==null?null:s.eA(this.a0E(s,a),b)},
 bJ(){this.fy=this.Bi(t.k.a(A.G.prototype.ga0.call(this)),A.mp())}}
@@ -93022,7 +93022,7 @@ if(s.aD==a)return
 s.aD=a
 s.H=s.cm=s.aG=null
 s.aT()},
-cG(a){var s,r=this.G$
+cH(a){var s,r=this.G$
 if(r!=null){s=r.aj(B.ae,B.jw,r.gc0())
 switch(this.E.a){case 6:return a.bc(new A.av(0,a.b,0,a.d).Cp(s))
 case 1:case 2:case 0:case 4:case 3:case 5:return a.Cp(s)}}else return new A.E(A.D(0,a.a,a.b),A.D(0,a.c,a.d))},
@@ -93177,7 +93177,7 @@ h_(a){if(this.H)return null
 return this.ald(a)},
 gkR(){return this.H},
 df(a,b){return this.H?null:this.ZU(a,b)},
-cG(a){if(this.H)return new A.E(A.D(0,a.a,a.b),A.D(0,a.c,a.d))
+cH(a){if(this.H)return new A.E(A.D(0,a.a,a.b),A.D(0,a.c,a.d))
 return this.ale(a)},
 uY(){this.al2()},
 bJ(){var s,r=this
@@ -93465,7 +93465,7 @@ if(r!=null){a.aS=r
 a.r=!0}r=s.dw
 if(r!=null){a.bu=r
 a.r=!0}r=s.H
-if(r!=null){a.ad=r
+if(r!=null){a.ae=r
 a.r=!0}r=s.dS
 if(r!=null){a.bY=r
 a.r=!0}if(s.aU!=null)a.sr0(q.gaFl())
@@ -93497,7 +93497,7 @@ return(this.v&1)===1?s.aj(B.b6,a,s.gbD()):s.aj(B.b8,a,s.gbE())},
 bi(a){var s=this.G$
 if(s==null)return 0
 return(this.v&1)===1?s.aj(B.aP,a,s.gbr()):s.aj(B.bB,a,s.gbP())},
-cG(a){var s,r,q=this.G$
+cH(a){var s,r,q=this.G$
 if(q==null)return new A.E(A.D(0,a.a,a.b),A.D(0,a.c,a.d))
 s=(this.v&1)===1?a.gKN():a
 r=q.aj(B.ae,s,q.gc0())
@@ -93512,7 +93512,7 @@ r=q.G$
 q.fy=(s&1)===1?new A.E(r.gB().b,q.G$.gB().a):r.gB()
 r=A.fp()
 r.em(q.gB().a/2,q.gB().b/2,0,1)
-r.Xp(1.5707963267948966*B.k.ae(q.v,4))
+r.Xp(1.5707963267948966*B.k.ad(q.v,4))
 r.em(-q.G$.gB().a/2,-q.G$.gB().b/2,0,1)
 q.U=r}else{s=t.k.a(A.G.prototype.ga0.call(q))
 q.fy=new A.E(A.D(0,s.a,s.b),A.D(0,s.c,s.d))}},
@@ -93655,7 +93655,7 @@ return s.gc7()+s.gcc()},
 bi(a){var s=this.gts(),r=this.G$
 if(r!=null)return r.aj(B.bB,Math.max(0,a-s.gdG()),r.gbP())+(s.gc7()+s.gcc())
 return s.gc7()+s.gcc()},
-cG(a){var s,r=this.gts(),q=this.G$
+cH(a){var s,r=this.gts(),q=this.G$
 if(q==null)return a.bc(new A.E(r.gdG(),r.gc7()+r.gcc()))
 s=q.aj(B.ae,a.qx(r),q.gc0())
 return a.bc(new A.E(r.gdG()+s.a,r.gc7()+r.gcc()+s.b))},
@@ -93704,7 +93704,7 @@ bn(a){var s=this.ZX(a),r=this.cC
 return s*(r==null?1:r)},
 bi(a){var s=this.ZV(a),r=this.cC
 return s*(r==null?1:r)},
-cG(a){var s,r,q=this,p=q.bX!=null||a.b===1/0,o=q.cC!=null||a.d===1/0,n=q.G$
+cH(a){var s,r,q=this,p=q.bX!=null||a.b===1/0,o=q.cC!=null||a.d===1/0,n=q.G$
 if(n!=null){s=n.aj(B.ae,new A.av(0,a.b,0,a.d),n.gc0())
 if(p){n=q.bX
 if(n==null)n=1
@@ -93778,7 +93778,7 @@ if(p==null)s=q.ZV(a)
 else{r=q.bX
 s=p.aj(B.bB,a*r,p.gbP())}p=q.cC
 return s/p},
-cG(a){var s=this.G$
+cH(a){var s=this.G$
 if(s!=null)return a.bc(s.aj(B.ae,this.Ay(a),s.gc0()))
 return a.bc(this.Ay(a).bc(B.a7))},
 df(a,b){var s,r,q,p,o=this,n=o.G$
@@ -93816,7 +93816,7 @@ return 0},
 bi(a){var s=A.o1(1/0,a),r=s.bc(this.H.pw(s)).b
 if(isFinite(r))return r
 return 0},
-cG(a){return a.bc(this.H.pw(a))},
+cH(a){return a.bc(this.H.pw(a))},
 df(a,b){var s,r,q,p,o,n,m=this.G$
 if(m==null)return null
 s=this.H.pp(a)
@@ -94109,7 +94109,7 @@ avZ(a){var s,r,q=this
 if(q.f){s=q.c
 r=q.e
 return q.a*s-a-r-(s-r)}return a},
-EY(a){var s=this,r=s.a,q=B.k.ae(a,r)
+EY(a){var s=this,r=s.a,q=B.k.ad(a,r)
 return new A.a0j(B.k.ik(a,r)*s.b,s.avZ(q*s.c),s.d,s.e)},
 U9(a){var s
 if(a===0)return 0
@@ -94860,7 +94860,7 @@ while(p!=null){n=A.uj(n,A.bvQ(p,q,s,r,b))
 m=p.b
 m.toString
 p=o.a(m).aA$}return n},
-cG(a){return this.a7C(a,A.hs())},
+cH(a){return this.a7C(a,A.hs())},
 a7C(a,b){var s,r,q,p,o,n,m,l,k,j,i,h,g
 if(this.cd$===0){s=a.a
 r=a.b
@@ -95361,7 +95361,7 @@ sbd(a){if(a==this.dL)return
 this.dL=a
 this.a3()},
 gkR(){return!0},
-cG(a){return new A.E(A.D(1/0,a.a,a.b),A.D(1/0,a.c,a.d))},
+cH(a){return new A.E(A.D(1/0,a.a,a.b),A.D(1/0,a.c,a.d))},
 bJ(){var s,r,q,p,o,n,m,l,k,j,i,h=this
 switch(A.bW(h.v).a){case 1:h.V.ql(h.gB().b)
 break
@@ -95737,7 +95737,7 @@ m=A.bxh(n,a,l.v)
 j.a=null
 l.a5G(p,n,m,new A.ayy(j,s,b),new A.ayz(s))
 return j.a},
-cG(a){return this.aMr(a)},
+cH(a){return this.aMr(a)},
 aMr(a){var s,r,q,p,o,n,m,l,k,j,i,h,g,f,e,d=this,c=null
 switch(d.v.a){case 0:s=a.b
 s=new A.aB(new A.av(0,s,0,1/0),s)
@@ -96346,7 +96346,7 @@ r=s!=null&&this.dy.aC(s)}else r=!1
 return r}return this.dx.aC(a)},
 nT(a,b){var s,r,q=this
 if(b==null)b=$.bmp()
-if(!q.k2.j(0,b.aW)||!q.p1.j(0,b.X)||!q.k3.j(0,b.v)||!q.k4.j(0,b.U)||!q.ok.j(0,b.V)||q.p2!==b.Y||!q.fy.j(0,b.ao)||q.p4!=b.af||q.R8!=b.p3||!J.d(q.RG,b.aJ)||q.x1!=b.aa||q.x2!=b.b4||q.xr!=b.bp||q.fr!==b.x||q.x!=b.p4||q.y1!=b.rx||q.y2!=b.ry||q.aU!=b.to||q.Q!==b.x1||q.z!==b.d||q.aW!==b.aE||q.U!==b.aU||q.al!==b.aP||q.af!==b.aS||q.k1!=b.y2||q.id!=b.y1||q.X!=b.ad||q.Y!=b.bY||!A.Ez(q.dy,b.x2))q.jv()
+if(!q.k2.j(0,b.aW)||!q.p1.j(0,b.X)||!q.k3.j(0,b.v)||!q.k4.j(0,b.U)||!q.ok.j(0,b.V)||q.p2!==b.Y||!q.fy.j(0,b.ao)||q.p4!=b.af||q.R8!=b.p3||!J.d(q.RG,b.aJ)||q.x1!=b.aa||q.x2!=b.b4||q.xr!=b.bp||q.fr!==b.x||q.x!=b.p4||q.y1!=b.rx||q.y2!=b.ry||q.aU!=b.to||q.Q!==b.x1||q.z!==b.d||q.aW!==b.aE||q.U!==b.aU||q.al!==b.aP||q.af!==b.aS||q.k1!=b.y2||q.id!=b.y1||q.X!=b.ae||q.Y!=b.bY||!A.Ez(q.dy,b.x2))q.jv()
 s=q.Q
 r=b.x1
 q.go=b.xr
@@ -96385,7 +96385,7 @@ q.al=b.aP
 q.af=b.aS
 q.ar=b.bu
 q.cy=b.c
-q.X=b.ad
+q.X=b.ae
 q.Y=b.bY
 q.aGu(a==null?B.km:a)
 if(s!==r)q.a8K()},
@@ -96981,7 +96981,7 @@ if(n.v.a.length!==0&&a.v.a.length!==0)return!1
 if(!J.d(n.b,a.b))return!1
 if(n.ga41()&&a.ga41())return!1
 if(n.aS!==B.eW||a.aS!==B.eW)return!1
-if(n.ad!=null&&a.ad!=null)return!1
+if(n.ae!=null&&a.ae!=null)return!1
 if(n.bY!=null&&a.bY!=null)return!1
 return!0},
 qk(a){var s,r,q,p=this
@@ -97039,7 +97039,7 @@ r=p.aP
 if(s!==r)if(s===B.tr)p.aP=B.tr
 else if(r===B.I)p.aP=s
 p.ar=p.ar.aCw(a.ar)
-if(p.ad==null)p.ad=a.ad
+if(p.ae==null)p.ae=a.ae
 if(p.bY==null)p.bY=a.bY
 if(p.aS===B.eW&&a.aS!==B.eW)p.aS=a.aS
 p.r=p.r||a.r}}
@@ -99228,8 +99228,8 @@ S(){return new A.Oi(new A.bz(null,t.A))}}
 A.Oi.prototype={
 a_(){this.ag()
 $.cB.rx$.push(new A.aVb(this))
-$.ak.ad$.d.a.f.F(0,this.ga3A())},
-k(){$.ak.ad$.d.a.f.N(0,this.ga3A())
+$.ak.ae$.d.a.f.F(0,this.ga3A())},
+k(){$.ak.ae$.d.a.f.N(0,this.ga3A())
 this.a8()},
 a9_(a){this.HF(new A.aV9(this))},
 axG(a){if(this.c==null)return
@@ -99284,12 +99284,12 @@ if(m){m=o.a.y
 m.toString
 p=A.L0(p,n,m)}return p}}
 A.aVb.prototype={
-$1(a){var s=$.ak.ad$.d.a.b
+$1(a){var s=$.ak.ae$.d.a.b
 if(s==null)s=A.xW()
 this.a.a9_(s)},
 $S:6}
 A.aV9.prototype={
-$0(){var s=$.ak.ad$.d.a.b
+$0(){var s=$.ak.ae$.d.a.b
 switch((s==null?A.xW():s).a){case 0:s=!1
 break
 case 1:s=!0
@@ -99337,7 +99337,7 @@ A.j7.prototype={}
 A.W6.prototype={}
 A.p6.prototype={}
 A.Zz.prototype={
-p0(a,b){var s,r,q,p,o,n=$.ak.ad$.d.c
+p0(a,b){var s,r,q,p,o,n=$.ak.ae$.d.c
 if(n==null||n.e==null)return!1
 for(s=t.vz,r=0;r<2;++r){q=B.a49[r]
 p=n.e
@@ -100775,7 +100775,7 @@ $S:260}
 A.aFu.prototype={
 $0(){var s,r=this.a,q=r.dw$
 r.dS$=!0
-s=r.ad$
+s=r.ae$
 s.toString
 r.dw$=new A.Kj(this.b,"[root]",null).TK(s,q)
 if(q==null)$.cB.V9()},
@@ -100954,7 +100954,7 @@ q=$.rR.ar$
 q.b=!0
 q.a.push(o.gad0())
 s=new A.afy(new A.a5O(r),n,A.z(t.yi,s))
-l.ad$=s
+l.ae$=s
 s.a=l.gawH()
 s=$.bG()
 s.ok=l.gaRU()
@@ -101053,9 +101053,9 @@ q.push(s)
 if(q.length===1){q=$.bG()
 q.fy=r.gauB()
 q.go=$.aL}}try{r=p.dw$
-if(r!=null)p.ad$.aNJ(r)
+if(r!=null)p.ae$.aNJ(r)
 p.alk()
-p.ad$.aRh()}finally{}r=p.ce$=!1
+p.ae$.aRh()}finally{}r=p.ce$=!1
 o=o.a
 if(o!=null)r=!(p.dy$||p.dx$===0)
 if(r){p.ce$=!0
@@ -101785,10 +101785,10 @@ o.k2=r
 o.Hh()},
 auj(){this.k3=!0
 var s=this.gSb()
-$.ak.ad$.d.P(s)
-$.ak.ad$.d.a2(s)},
+$.ak.ae$.d.P(s)
+$.ak.ae$.d.a2(s)},
 aGH(){this.k3=!1
-$.ak.ad$.d.P(this.gSb())},
+$.ak.ae$.d.P(this.gSb())},
 Hh(){var s=0,r=A.o(t.H),q=this,p,o,n
 var $async$Hh=A.k(function(a,b){if(a===1)return A.l(b,r)
 for(;;)switch(s){case 0:p=q.go
@@ -101949,8 +101949,8 @@ r.E$=0
 r=s.k2
 r===$&&A.b()
 r.b.hI(r)
-$.ak.ad$.d.P(s.gBM())
-$.ak.ad$.d.P(s.gSb())
+$.ak.ae$.d.P(s.gBM())
+$.ak.ae$.d.P(s.gSb())
 s.PG()
 s.ams()},
 aYf(a){var s,r,q,p,o,n,m=this,l=m.a,k=l.c.a
@@ -102171,11 +102171,11 @@ if(s.c!=null)if(!s.a.d.gbI()){r=s.a.d
 r=r.b&&B.b.cL(r.gdP(),A.fR())}if(r){s.a.d.eT()
 return!0}return!1},
 aKX(){this.ry=!1
-$.ak.ad$.d.P(this.gBM())},
+$.ak.ae$.d.P(this.gBM())},
 MJ(){var s=this
 if(s.a.d.gbI())s.HZ()
 else{s.ry=!0
-$.ak.ad$.d.a2(s.gBM())
+$.ak.ae$.d.a2(s.gBM())
 s.a.d.eT()}},
 a93(){var s,r,q=this
 if(q.Q!=null){s=q.a.d.gbI()
@@ -102206,7 +102206,7 @@ p.PG()
 break A}s=a.b
 o=!1
 r=s==null?null:s.ns(t.Lm)
-o=$.ak.ad$.x.h(0,p.ay)
+o=$.ak.ae$.x.h(0,p.ay)
 if(r==null)q=null
 else{q=r.c
 q.toString}o=!J.d(o,q)&&p.aHW(s)
@@ -102516,7 +102516,7 @@ gSN(){this.a.toString
 var s=this.c.R(t.I).w
 return s},
 gaM(){var s,r=this,q=r.aW
-if(q===$){s=$.ak.ad$.x.h(0,r.w).gac()
+if(q===$){s=$.ak.ae$.x.h(0,r.w).gac()
 s.toString
 t.DW.a(s)
 r.aW!==$&&A.ay()
@@ -102526,7 +102526,7 @@ jh(a,b){var s=this,r=s.a,q=r.x
 r=r.c.a
 if((q?!r.b.j(0,a.b):!r.j(0,a))&&b!==B.bq)s.Ik(!0)
 if(a.j(0,s.a.c.a)){if(!s.a.d.gbI()){s.ry=!0
-$.ak.ad$.d.a2(s.gBM())
+$.ak.ae$.d.a2(s.gBM())
 s.a.d.eT()
 if(s.Q==null)s.Q=s.Gq()}return}s.a2A(a,b,!0)},
 lc(a){var s=this.gaM(),r=this.a3_(s.mG(a))
@@ -102583,7 +102583,7 @@ s=r.v
 if(s===-1)return
 r.n(new A.ajH(r))},
 aW9(a){var s,r,q=B.a7E.h(0,a)
-if(q!=null){s=$.ak.ad$.d.c
+if(q!=null){s=$.ak.ae$.d.c
 r=s==null?null:s.e
 if(r!=null)A.nT(r,q,t.vz)}},
 gnO(){var s,r,q,p,o,n,m,l,k,j,i,h,g,f,e=this,d=e.a.bu
@@ -102950,7 +102950,7 @@ $S:2}
 A.ajz.prototype={
 $1(a){var s,r=this.a
 if(r.c!=null&&r.gaM().fy!=null){r.ry=!0
-$.ak.ad$.d.a2(r.gBM())
+$.ak.ae$.d.a2(r.gBM())
 s=r.c
 s.toString
 A.v7(s).aam(r.a.d)}},
@@ -102993,7 +102993,7 @@ $S:6}
 A.aj5.prototype={
 $1(a){var s,r,q,p,o,n,m,l,k,j,i,h=this.a
 h.x2=!1
-s=$.ak.ad$.x.h(0,h.w)
+s=$.ak.ae$.x.h(0,h.w)
 s=s==null?null:s.gac()
 t.CA.a(s)
 if(s!=null){r=s.H.gcn()
@@ -103185,7 +103185,7 @@ b2=A.aw(b2,B.dW,t.w).w
 b3=b8.V
 b4=b8.a
 b5=b4.id
-b4=b4.ad
+b4=b4.ae
 return new A.uC(b8.CW,A.bF(b7,b7,b7,new A.QA(new A.a08(new A.O2(p,n,m,b8.cx,b8.cy,k,b8.r,j,i,o,g,f,e,q,h,b,d.db,a,b7,a3,a4,a0,a2,c4,!0,a5,a6,a7,a8,b1,a9,b0,a1,b8,b2.b,b3,b5,b4,A.bxb(p,b),s),b7),r,s,new A.ajd(b8),!0,b7),!1,b7,b7,b7,!1,b7,!1,b7,b7,b7,b7,b7,b7,b7,b7,b7,b9,b7,b7,b7,b7,b7,b7,b7,b7,c1,c2,b7,b7,b7,b7,b7,b7,b7,c0,b7,b7,b7,b7,b7,b7,b7,b7,b7,b7,b7,B.I,b7),b7)},
 $S:550}
 A.ajd.prototype={
@@ -103285,7 +103285,7 @@ this.a.toString},
 k(){$.dC().r.N(0,this.d)
 this.a8()},
 gaM(){var s=this.a.e
-s=$.ak.ad$.x.h(0,s)
+s=$.ak.ae$.x.h(0,s)
 s=s==null?null:s.gac()
 return t.CA.a(s)},
 aTz(a){var s,r,q,p,o=this,n=o.gxj(),m=o.gaM()
@@ -103405,7 +103405,7 @@ ajC(){var s,r=this,q=r.r
 if(q==null)return
 s=r.r=r.e.a.c.a.b
 if(!(s.gcn()&&s.a===s.b&&s.c===q.c&&s.d===q.d))r.r=r.f=null},
-ek(a,b){var s,r,q,p,o,n,m,l,k,j=this,i=a.b||!j.e.a.aJ,h=j.e,g=$.ak.ad$.x.h(0,h.w),f=g==null?null:g.gbq()
+ek(a,b){var s,r,q,p,o,n,m,l,k,j=this,i=a.b||!j.e.a.aJ,h=j.e,g=$.ak.ae$.x.h(0,h.w),f=g==null?null:g.gbq()
 if(!(f instanceof A.O2))A.as(A.bc("_Editable must be mounted."))
 s=f.f
 g=s.b
@@ -103774,7 +103774,7 @@ aBm(a){if(a.b==null)return!1
 return!1},
 aRS(a){var s,r,q,p,o,n,m,l,k,j,i,h,g=this
 if(g.a!==!1)if(!g.aBm(a)){g.a=!1
-g.XI()}if($.ak.ad$.d.c==null)return!1
+g.XI()}if($.ak.ae$.d.c==null)return!1
 s=g.d
 r=!1
 if(s.a.a!==0){q=A.a([],t.CE)
@@ -103783,10 +103783,10 @@ for(l=o.length,k=0;k<o.length;o.length===l||(0,A.w)(o),++k)q.push(m.$1(o[k]))}sw
 case 0:r=!0
 break
 case 2:break}}if(r)return!0
-s=$.ak.ad$.d.c
+s=$.ak.ae$.d.c
 s.toString
 s=A.a([s],t.bp)
-B.b.M(s,$.ak.ad$.d.c.gdP())
+B.b.M(s,$.ak.ae$.d.c.gdP())
 q=s.length
 p=t.CE
 o=a.a
@@ -104027,7 +104027,7 @@ p=A.bnJ(k,s)
 if(b&&s===B.b.gap(p))switch(k.fr.a){case 1:s.ia()
 return!1
 case 2:o=k.gft()
-if(o!=null&&o!==$.ak.ad$.d.b){s.ia()
+if(o!=null&&o!==$.ak.ae$.d.b){s.ia()
 k=o.e
 k.toString
 A.jO(k).lS(o,!0)
@@ -104037,7 +104037,7 @@ case 0:return l.wA(B.b.gT(p),B.eu,b)
 case 3:return!1}if(!b&&s===B.b.gT(p))switch(k.fr.a){case 1:s.ia()
 return!1
 case 2:o=k.gft()
-if(o!=null&&o!==$.ak.ad$.d.b){s.ia()
+if(o!=null&&o!==$.ak.ae$.d.b){s.ia()
 k=o.e
 k.toString
 A.jO(k).lS(o,!1)
@@ -104156,7 +104156,7 @@ r=s}else r=e
 switch(r.fx.a){case 1:b.ia()
 return!1
 case 2:q=r.gft()
-if(q!=null&&q!==$.ak.ad$.d.b){o.o2(r)
+if(q!=null&&q!==$.ak.ae$.d.b){o.o2(r)
 s=o.uo$
 s.N(0,r)
 o.o2(q)
@@ -104275,7 +104275,7 @@ A.ahZ.prototype={
 $1(a){var s,r,q=this,p=q.b.a.pop().b,o=p.e
 o.toString
 o=A.k9(o,null)
-s=$.ak.ad$.d.c.e
+s=$.ak.ae$.d.c.e
 s.toString
 if(o!=A.k9(s,null)){o=q.a
 s=q.c
@@ -104362,9 +104362,9 @@ q=$.ae()
 p.d!==$&&A.ay()
 o=p.d=new A.Og(s,!1,!0,!0,!0,null,null,r,q)}return o},
 a_(){this.ag()
-$.ak.ad$.d.a2(this.ga2u())
+$.ak.ae$.d.a2(this.ga2u())
 this.a.toString},
-k(){$.ak.ad$.d.P(this.ga2u())
+k(){$.ak.ae$.d.P(this.ga2u())
 this.gcu().k()
 this.a8()},
 aI(a){var s=this
@@ -104372,7 +104372,7 @@ s.aZ(a)
 if(a.c!==s.a.c)s.gcu().fr=s.a.c},
 D(a){var s=null,r=this.gcu(),q=this.a,p=q.w
 return A.mM(!1,!1,q.f,s,!0,!0,r,!1,s,s,s,s,p,!0)},
-av4(){var s,r,q=$.ak.ad$.d.c,p=this.gcu(),o=p.fx
+av4(){var s,r,q=$.ak.ae$.d.c,p=this.gcu(),o=p.fx
 if(o==null)return
 if(q!==o){s=q==null?null:q.gnC()
 while(s!=null){r=this.a.c
@@ -104383,20 +104383,20 @@ A.a_l.prototype={
 eN(a){a.aZf(a.gcu())}}
 A.n3.prototype={}
 A.YK.prototype={
-eN(a){var s=$.ak.ad$.d.c,r=s.e
+eN(a){var s=$.ak.ae$.d.c,r=s.e
 r.toString
 return A.jO(r).lS(s,!0)},
 Xw(a,b){return b?B.iD:B.mJ}}
 A.nb.prototype={}
 A.Zw.prototype={
-eN(a){var s=$.ak.ad$.d.c,r=s.e
+eN(a){var s=$.ak.ae$.d.c,r=s.e
 r.toString
 return A.jO(r).lS(s,!1)},
 Xw(a,b){return b?B.iD:B.mJ}}
 A.jG.prototype={}
 A.Gu.prototype={
 eN(a){var s,r
-if(!this.c){s=$.ak.ad$.d.c
+if(!this.c){s=$.ak.ae$.d.c
 r=s.e
 r.toString
 A.jO(r).aSW(s,a.a)}}}
@@ -104640,7 +104640,7 @@ if(s!=null)s.k()
 r.aa$=null
 r.a8()}}
 A.j9.prototype={
-gZ(){var s,r,q,p=$.ak.ad$.x.h(0,this)
+gZ(){var s,r,q,p=$.ak.ae$.x.h(0,this)
 A:{s=p instanceof A.kb
 r=null
 if(s){q=p.ok
@@ -104881,7 +104881,7 @@ u6(){this.c2(new A.ajQ())
 this.c=null},
 Ce(a){this.c2(new A.ajN(a))
 this.c=a},
-aGX(a,b){var s,r,q=$.ak.ad$.x.h(0,a)
+aGX(a,b){var s,r,q=$.ak.ae$.x.h(0,a)
 if(q==null)return null
 s=q.gbq()
 if(!(A.I(s)===A.I(b)&&J.d(s.a,b.a)))return null
@@ -105623,14 +105623,14 @@ return s==null?new A.JB(a,b):s},
 gacL(){var s,r,q=this,p=q.Q
 if(p===$){s=q.e.c
 s.toString
-r=A.bxx(s,$.ak.ad$.x.h(0,q.c.ry))
+r=A.bxx(s,$.ak.ae$.x.h(0,q.c.ry))
 q.Q!==$&&A.ay()
 q.Q=r
 p=r}return p},
 gMQ(){var s,r,q=this,p=q.as
 if(p===$){s=q.f.c
 s.toString
-r=A.bxx(s,$.ak.ad$.x.h(0,q.d.ry))
+r=A.bxx(s,$.ak.ae$.x.h(0,q.d.ry))
 q.as!==$&&A.ay()
 q.as=r
 p=r}return p},
@@ -105692,7 +105692,7 @@ s.e.d8(s.ga3k())}r=s.f
 if(r!=null)r.k()},
 aVO(){var s,r,q,p,o,n,m,l,k,j=this,i=!j.w&&j.f.f.c!=null?t.aA.a(j.f.f.c.gac()):null
 if(i!=null&&i.y!=null&&i.fy!=null){s=j.f.d
-s=$.ak.ad$.x.h(0,s.ry)
+s=$.ak.ae$.x.h(0,s.ry)
 s=s==null?null:s.gac()
 r=A.ck(i.be(t.aA.a(s)),B.q)}else r=null
 s=r!=null
@@ -105794,7 +105794,7 @@ break A}q=null}if(q!=null)switch(q.a){case 1:if(r.gt()===0)return
 break
 case 0:if(s.gt()===1)return
 break}s=c.ry
-s=$.ak.ad$.x.h(0,s)
+s=$.ak.ae$.x.h(0,s)
 s=s==null?null:s.gac()
 t.aA.a(s)
 r=s==null?null:s.fy!=null
@@ -105815,9 +105815,9 @@ if(r)q=null
 else{p=s.d
 p===$&&A.b()
 q=p.gZ()}if(r||q==null)return
-o=$.ak.ad$.x.h(0,b1.ry)
+o=$.ak.ae$.x.h(0,b1.ry)
 n=o!=null?A.btT(o,b4,s):B.Fd
-m=$.ak.ad$.x.h(0,b2.ry)
+m=$.ak.ae$.x.h(0,b2.ry)
 l=m!=null?A.btT(m,b4,s):B.Fd
 for(s=n.giC(),s=s.gah(s),r=b0.gatb(),p=b0.a,k=b0.b,j=b3==null,i=b0.gaxA(),h=t.x8,g=t.jc,f=t.M,e=t.S,d=t.PD,c=t._,b=t.E,a=c.i("b2<b3.T>"),a0=t.k2;s.u();){a1=s.gJ()
 a2=a1.a
@@ -106631,7 +106631,7 @@ bo(a){return 0},
 bj(a){return 0},
 bn(a){return 0},
 bi(a){return 0},
-cG(a){return B.a7},
+cH(a){return B.a7},
 df(a,b){return null},
 bJ(){var s,r=this,q=t.k.a(A.G.prototype.ga0.call(r))
 r.ag7()
@@ -107918,7 +107918,7 @@ aCX(a){this.db.F(0,a.gcr())},
 az9(a){this.db.N(0,a.gcr())},
 G7(){if($.cB.x1$===B.hz){var s=this.d
 s===$&&A.b()
-s=$.ak.ad$.x.h(0,s)
+s=$.ak.ae$.x.h(0,s)
 this.n(new A.auo(s==null?null:s.xY(t.CZ)))}s=this.db
 s=A.a2(s,A.v(s).c)
 B.b.aL(s,$.ak.gaNV())},
@@ -108243,7 +108243,7 @@ j=f}c=B.fQ.ea(q,new A.aB(a1,a3),m.gvY())
 if(c!=null){if(l==null){d=c+i
 l=d}k=A.uj(k,c+(j-f))}i+=f+b.V
 h+=g.a}return h+b.v*(b.cd$-1)>a0?l:k},
-cG(a){var s,r,q,p,o,n,m,l,k,j=this,i=j.a6$
+cH(a){var s,r,q,p,o,n,m,l,k,j=this,i=j.a6$
 if(i==null)return new A.E(A.D(0,a.a,a.b),A.D(0,a.c,a.d))
 s=a.b
 r=new A.av(0,s,0,a.d)
@@ -108651,7 +108651,7 @@ s=o.aj(B.ae,a,o.gc0())}r=A.o0(s)
 q=this.gSe()
 for(o=new A.mk(this.o9().a()),p=null;o.u();)p=A.uj(p,A.bxW(o.b,s,r,q,b))
 return p},
-cG(a){var s=a.a,r=a.b,q=A.D(1/0,s,r),p=a.c,o=a.d,n=A.D(1/0,p,o)
+cH(a){var s=a.a,r=a.b,q=A.D(1/0,s,r),p=a.c,o=a.d,n=A.D(1/0,p,o)
 if(isFinite(q)&&isFinite(n))return new A.E(A.D(1/0,s,r),A.D(1/0,p,o))
 s=this.PX()
 return s.aj(B.ae,a,s.gc0())},
@@ -109032,7 +109032,7 @@ bo(a){return 0},
 bj(a){return 0},
 bn(a){return 0},
 bi(a){return 0},
-cG(a){return B.a7},
+cH(a){return B.a7},
 df(a,b){return null},
 aEl(a){this.E=null
 this.a3()},
@@ -109742,7 +109742,7 @@ m.toString
 o=a.a
 if(o==="Menu.selectedCallback"){m.gaZc().$0()
 m.gaVv()
-o=$.ak.ad$.d.c.e
+o=$.ak.ae$.d.c.e
 o.toString
 A.bs4(o,m.gaVv(),t.vz)}else if(o==="Menu.opened")m.gaZb().$0()
 else if(o==="Menu.closed")m.gaZa().$0()
@@ -109842,7 +109842,7 @@ if(p){p=r
 o=p
 n=!0}else{o=i
 n=!1
-p=!1}if(p){if(B.b.N($.kS,j)&&$.kS.length===0){$.ak.ad$.d.a.d.N(0,A.bqN())
+p=!1}if(p){if(B.b.N($.kS,j)&&$.kS.length===0){$.ak.ae$.d.a.d.N(0,A.bqN())
 p=$.eF.h2$
 p===$&&A.b()
 p.afJ(A.blG())}p=j.d
@@ -109853,7 +109853,7 @@ break A}p=s
 if(p){l=!1===(n?o:r)
 p=l}else p=!1
 if(p){j.d.Fu()
-if($.kS.length===0){$.ak.ad$.d.a.d.F(0,A.bqN())
+if($.kS.length===0){$.ak.ae$.d.a.d.F(0,A.bqN())
 p=$.eF.h2$
 p===$&&A.b()
 if(p.d){k=p.e
@@ -109958,7 +109958,7 @@ n=A.h3(k,new A.iA(new A.bfj(r,s,m.a.as),new A.dE(q,p,l),l))
 return A.KF(a)==null?n:new A.wS(l,n,l,l)},
 k(){var s,r,q=this
 $.hz.hA$.b.N(0,q.ga3C())
-if(B.b.N($.kS,q)&&$.kS.length===0){$.ak.ad$.d.a.d.N(0,A.bqN())
+if(B.b.N($.kS,q)&&$.kS.length===0){$.ak.ae$.d.a.d.N(0,A.bqN())
 s=$.eF.h2$
 s===$&&A.b()
 s.afJ(A.blG())}s=q.w
@@ -110751,7 +110751,7 @@ HG(){var s,r,q=this
 if(!q.gjJ())return
 s=new A.oP(q.gnF()===B.iX||q.R8.length!==0)
 r=$.cB
-switch(r.x1$.a){case 4:r=$.ak.ad$.x.h(0,q.ry)
+switch(r.x1$.a){case 4:r=$.ak.ae$.x.h(0,q.ry)
 if(r!=null)r.eZ(s)
 break
 case 0:case 2:case 3:case 1:r.rx$.push(new A.atO(q,s))
@@ -110790,10 +110790,10 @@ A.atQ.prototype={
 $0(){this.a.p2=this.b},
 $S:0}
 A.atO.prototype={
-$1(a){var s=this.a.ry,r=$.ak.ad$.x.h(0,s)
+$1(a){var s=this.a.ry,r=$.ak.ae$.x.h(0,s)
 r=r==null?null:r.e!=null
 if(r!==!0)return
-s=$.ak.ad$.x.h(0,s)
+s=$.ak.ae$.x.h(0,s)
 if(s!=null)s.eZ(this.b)},
 $S:6}
 A.atP.prototype={
@@ -111634,7 +111634,7 @@ r.toString
 p.UT(r-o)}if(Math.abs(s)>1e-10){o=p.fr
 o.toString
 r=p.m7()
-q=$.ak.ad$.x.h(0,p.w.Q)
+q=$.ak.ae$.x.h(0,p.w.Q)
 q.toString
 o.Kk(r,q,s)
 return s}}return 0},
@@ -111802,17 +111802,17 @@ q.dy.st(q.fr.gmr())
 if(!r&&q.fr.gmr())q.UR()},
 UR(){var s=this.fr
 s.toString
-s.abV(this.m7(),$.ak.ad$.x.h(0,this.w.Q))},
+s.abV(this.m7(),$.ak.ae$.x.h(0,this.w.Q))},
 UT(a){var s,r,q=this.fr
 q.toString
 s=this.m7()
-r=$.ak.ad$.x.h(0,this.w.Q)
+r=$.ak.ae$.x.h(0,this.w.Q)
 r.toString
 q.abW(s,r,a)},
 UN(){var s,r,q=this,p=q.fr
 p.toString
 s=q.m7()
-r=$.ak.ad$.x.h(0,q.w.Q)
+r=$.ak.ae$.x.h(0,q.w.Q)
 r.toString
 p.abU(s,r)
 q.YC()
@@ -111820,10 +111820,10 @@ q.YD()},
 aQl(){var s,r,q
 this.cy=!1
 s=this.w.Q
-if($.ak.ad$.x.h(0,s)!=null){r=this.m7()
-q=$.ak.ad$.x.h(0,s)
+if($.ak.ae$.x.h(0,s)!=null){r=this.m7()
+q=$.ak.ae$.x.h(0,s)
 q.toString
-s=$.ak.ad$.x.h(0,s)
+s=$.ak.ae$.x.h(0,s)
 if(s!=null)s.eZ(new A.wN(r,q,0))}},
 k(){var s=this,r=s.fr
 if(r!=null)r.k()
@@ -111891,9 +111891,9 @@ if(p.k4===a)return
 p.k4=a
 s=p.m7()
 r=p.w.Q
-q=$.ak.ad$.x.h(0,r)
+q=$.ak.ae$.x.h(0,r)
 q.toString
-r=$.ak.ad$.x.h(0,r)
+r=$.ak.ae$.x.h(0,r)
 if(r!=null)r.eZ(new A.a1z(a,s,q,0))},
 ki(a,b,c){var s,r,q=this,p=q.at
 p.toString
@@ -112004,7 +112004,7 @@ $2(a,b){return this.a.aNL(a,b,this.b,this.c)},
 $S:634}
 A.azN.prototype={
 $1(a){var s,r=A.v7(this.a)
-if(a.d!=null&&!r.gjF()&&r.gbI()){s=$.ak.ad$.d.c
+if(a.d!=null&&!r.gjF()&&r.gbI()){s=$.ak.ae$.d.c
 if(s!=null)s.ia()}return!1},
 $S:294}
 A.VL.prototype={
@@ -112181,7 +112181,7 @@ NK(a){var s,r=this
 if(r.ax===a)return
 r.ax=a
 s=r.as
-if($.ak.ad$.x.h(0,s)!=null){s=$.ak.ad$.x.h(0,s).gac()
+if($.ak.ae$.x.h(0,s)!=null){s=$.ak.ae$.x.h(0,s).gac()
 s.toString
 t.f1.a(s).sadt(r.ax)}},
 axf(a){this.cx=this.d.Lb(this.gatM())},
@@ -112192,7 +112192,7 @@ aHP(a){var s=this.CW
 if(s!=null)s.cb(a)},
 aHN(a){var s=this.CW
 if(s!=null)s.ac9(a)},
-a6R(){if($.ak.ad$.x.h(0,this.Q)==null)return
+a6R(){if($.ak.ae$.x.h(0,this.Q)==null)return
 var s=this.cx
 if(s!=null)s.a.jT(0)
 s=this.CW
@@ -112243,7 +112243,7 @@ s=p!==s}else s=!1
 if(s){r.d.WT(q)
 a.v8(!1)}},
 aHT(a){var s,r
-if(a.hW$===0){s=$.ak.ad$.x.h(0,this.z)
+if(a.hW$===0){s=$.ak.ae$.x.h(0,this.z)
 r=s==null?null:s.gac()
 if(r!=null)r.bs()}return!1},
 D(a){var s,r,q,p,o,n,m,l=this,k=null,j=l.d
@@ -112818,7 +112818,7 @@ ek(a,b){var s,r,q,p,o
 b.toString
 s=A.k9(b,null)
 if(s==null){r=B.b.gcB(A.Jp(b).f)
-q=$.ak.ad$.x.h(0,r.w.Q)
+q=$.ak.ae$.x.h(0,r.w.Q)
 if(q!=null)s=A.k9(q,null)
 if(s==null)return}r=s.e
 if(r!=null){p=s.d
@@ -113266,7 +113266,7 @@ s=k.x
 s===$&&A.b()
 s.bT()
 r=B.b.gcB(k.r.f)
-s=$.ak.ad$.x.h(0,k.z).gac()
+s=$.ak.ae$.x.h(0,k.z).gac()
 s.toString
 s=A.ck(t.x.a(s).be(null),a)
 k.ay=r.ac0(new A.jI(s,a,null,null),k.gatQ())
@@ -113304,7 +113304,7 @@ switch(r.a){case 0:p=new A.r(q,0)
 break
 case 1:p=new A.r(0,q)
 break
-default:p=l}o=$.ak.ad$.x.h(0,m.z).gac()
+default:p=l}o=$.ak.ae$.x.h(0,m.z).gac()
 o.toString
 n=A.GE(p,A.ck(t.x.a(o).be(l),a),l,a,q,l)
 m.ay.cb(n)
@@ -113326,7 +113326,7 @@ p=r.kN(q)
 A:{if(B.ak===p||B.aZ===p){r=b.a
 r=new A.kf(new A.r(-r.a,-r.b))
 break A}r=B.fC
-break A}q=$.ak.ad$.x.h(0,m.z).gac()
+break A}q=$.ak.ae$.x.h(0,m.z).gac()
 q.toString
 q=A.ck(t.x.a(q).be(null),a)
 switch(s.a){case 0:o=r.a.a
@@ -113353,7 +113353,7 @@ r=r.cy
 r===$&&A.b()
 q=a.b.a>r?B.eb:B.cn
 break
-default:q=null}m=$.ak.ad$.x.h(0,m.Q)
+default:q=null}m=$.ak.ae$.x.h(0,m.Q)
 m.toString
 p=A.k9(m,null)
 p.toString
@@ -113410,7 +113410,7 @@ q===$&&A.b()
 q.ct(s,r)}}else if(a instanceof A.k8)if(p.ay==null)p.HJ()
 return!1},
 aAq(a){this.VH()},
-Qo(a){var s=$.ak.ad$.x.h(0,this.z).gac()
+Qo(a){var s=$.ak.ae$.x.h(0,this.z).gac()
 s.toString
 return t.x.a(s).ec(a)},
 aAu(a){this.at=a.d
@@ -113431,7 +113431,7 @@ if(r)s.Q=!1
 if(q){s.as=!1
 s.at=null}s.vk()},
 aAo(){var s,r=this
-if($.ak.ad$.x.h(0,r.cy)==null)return
+if($.ak.ae$.x.h(0,r.cy)==null)return
 s=r.CW
 if(s!=null)s.a.jT(0)
 s=r.ay
@@ -113463,7 +113463,7 @@ case 1:r.q(0,B.apG,new A.dP(new A.ax4(s),s.ga4l(),t.Pw))
 break}r.q(0,B.apL,new A.dP(new A.ax5(s),new A.ax6(s),t.Bk))
 return r},
 W8(a,b,c){var s,r=this.z
-if($.ak.ad$.x.h(0,r)==null)return!1
+if($.ak.ae$.x.h(0,r)==null)return!1
 s=A.bq_(r,a)
 r=this.db
 r===$&&A.b()
@@ -114203,7 +114203,7 @@ if(j)return k.b}return null},
 aRT(a,b){var s,r,q,p,o,n,m,l=$.eF.h2$
 l===$&&A.b()
 s=this.auL(b,l)
-l=$.ak.ad$.d.c
+l=$.ak.ae$.d.c
 a=l==null?null:l.e
 r=A.a5T(new A.aC_(a,s))
 if(s!=null&&a!=null&&r.ju()!=null){a.R(t.L1)
@@ -114303,7 +114303,7 @@ $2(a,b){return new A.E4(this.c,b,B.o,this.a.a,null)},
 $S:654}
 A.aC3.prototype={
 $1(a){var s,r=A.v7(this.a)
-if(a.d!=null&&!r.gjF()&&r.gbI()){s=$.ak.ad$.d.c
+if(a.d!=null&&!r.gjF()&&r.gbI()){s=$.ak.ae$.d.c
 if(s!=null)s.ia()}return!1},
 $S:294}
 A.E4.prototype={
@@ -114368,7 +114368,7 @@ return s==null?0:s},
 bi(a){var s=this.G$
 s=s==null?null:s.aj(B.bB,a,s.gbP())
 return s==null?0:s},
-cG(a){var s=this.G$
+cH(a){var s=this.G$
 if(s==null)return new A.E(A.D(0,a.a,a.b),A.D(0,a.c,a.d))
 return a.bc(s.aj(B.ae,this.a7v(a),s.gc0()))},
 bJ(){var s,r,q=this,p=t.k.a(A.G.prototype.ga0.call(q)),o=q.G$
@@ -115937,21 +115937,21 @@ wd(a,b){var s=this.a,r=s.gau().gZ().gaM().jj(a),q=s.gau().gZ().gaM().H.aOE(r.a),
 p.toString
 p.jh(s.gau().gZ().a.c.a.jC(q),b)},
 ga4v(){var s=this.a.gau()
-s=$.ak.ad$.x.h(0,s)
+s=$.ak.ae$.x.h(0,s)
 s=s==null?null:s.e!=null
 return s===!0},
 gwG(){var s,r=this.a,q=r.gau()
-if($.ak.ad$.x.h(0,q)==null)s=null
+if($.ak.ae$.x.h(0,q)==null)s=null
 else{r=r.gau()
-r=$.ak.ad$.x.h(0,r)
+r=$.ak.ae$.x.h(0,r)
 r.toString
 s=A.k9(r,null)}if(s==null)r=0
 else{r=s.d.at
 r.toString}return r},
 ga6O(){var s,r=this.a,q=r.gau()
-if($.ak.ad$.x.h(0,q)==null)s=null
+if($.ak.ae$.x.h(0,q)==null)s=null
 else{r=r.gau()
-r=$.ak.ad$.x.h(0,r)
+r=$.ak.ae$.x.h(0,r)
 r.toString
 s=A.k9(r,null)}return s==null?null:s.a.c},
 aVN(){var s,r=$.eF.h2$
@@ -116949,9 +116949,9 @@ case 0:r=q.d
 break
 default:r=null}r.eT()
 break
-case 0:$.ak.ad$.d.b.mU(!1)
+case 0:$.ak.ae$.d.b.mU(!1)
 break}},
-D(a){var s=this.a,r=s.c,q=s.e,p=s.f,o=$.ak.ad$.d
+D(a){var s=this.a,r=s.c,q=s.e,p=s.f,o=$.ak.ae$.d
 return new A.ZI(r,new A.P6(r,A.bnI(A.bxu(s.d,this.d,!1),o.b,this.e),null),q,p,null)}}
 A.ZI.prototype={
 D(a){var s=this,r=s.c,q=s.e,p=s.f
@@ -117216,7 +117216,7 @@ break A}s=this.v*r
 break A}return s},
 df(a,b){var s=this.G$,r=s==null?null:s.eA(new A.av(0,a.b/this.v,0,1/0),b)
 return r==null?null:this.v*r},
-cG(a){var s=this.G$,r=s==null?null:s.aj(B.ae,new A.av(0,a.b/this.v,0,1/0),s.gc0())
+cH(a){var s=this.G$,r=s==null?null:s.aj(B.ae,new A.av(0,a.b/this.v,0,1/0),s.gc0())
 if(r==null)r=B.a7
 return a.bc(r.aq(0,this.v))},
 bJ(){var s,r=this,q=r.G$
@@ -118369,7 +118369,7 @@ case 6:case 1:return A.m(q,r)
 case 2:return A.l(o.at(-1),r)}})
 return A.n($async$BY,r)},
 eq(a){var s,r,q,p=B.k.m(Math.abs(a)),o=new A.dq("")
-for(s=p.length,r=0,q="";r<s;++r){if(r>0&&B.k.ae(s-r,3)===0)q=o.a=q+" "
+for(s=p.length,r=0,q="";r<s;++r){if(r>0&&B.k.ad(s-r,3)===0)q=o.a=q+" "
 q+=p[r]
 o.a=q}s=a<0?"-":""
 return s+o.m(0)+" FCFA"},
@@ -118408,7 +118408,7 @@ return A.T(s,A.F(A.a([A.ac(a,s,s,s,s,B.l5,s,s,s),B.bL,A.lw(A.ac(b,s,s,s,s,A.bk(s
 mN(a,b){return this.FX(a,b,B.aA)},
 aEL(){var s,r,q,p,o,n,m=this,l=null,k=A.a0(16),j=A.b9(A.bq(4287271864),1),i=A.ac("Un partenaire touche "+m.db+" % de la commission de Katika (apr\xe8s la part du parrain) sur les parties de ses filleuls.",l,l,l,l,B.aT,l,l,l),h=A.a9(A.cl(l,B.X,!1,l,!0,B.o,l,A.cp(),m.dx,l,l,l,l,l,2,A.cT(l,new A.cU(4,A.a0(12),B.x),l,l,l,l,l,l,!0,l,l,l,l,l,l,B.b0,!0,l,l,l,l,l,l,l,l,l,l,l,l,l,B.nU,"Code promo du partenaire",l,l,l,l,l,!0,l,l,l,!0,!0,!1,l,l,l,l,l,l,l,l,l,l,l,l,l,l),B.t,!0,l,!0,l,!1,l,B.a3,l,l,l,l,l,l,l,l,1,l,l,!1,"\u2022",l,l,l,l,l,!1,l,l,!1,l,!0,l,B.V,l,l,l,l,l,l,l,l,l,l,l,B.cP,!0,B.J,l,B.ad,l,l,l,l),1),g=A.d1(l,l,B.a9,l,l,l,l,l,l,B.e,l,l,l,l,l,l,l,l,l,l),f=t.p
 g=A.a([B.amp,B.az,i,B.ab,A.a1(A.a([h,B.aO,A.dw(B.Me,m.dy?l:new A.aH8(m),g)],f),B.j,B.f,B.i,0,l),B.G],f)
-if(m.cy.length===0)g.push(B.anX)
+if(m.cy.length===0)g.push(B.anW)
 for(i=m.cy,h=i.length,s=0;s<i.length;i.length===h||(0,A.w)(i),++s){r=i[s]
 q=new A.aF(12,12)
 p=A.ac(A.e(r.h(0,"code")),l,l,l,l,B.hJ,l,l,l)
@@ -118416,7 +118416,7 @@ o=r.h(0,"earned")
 o=m.eq(typeof o=="number"?B.c.A(o):0)
 n=r.h(0,"available")
 p=A.F(A.a([p,A.ac("Gagn\xe9 "+o+" \xb7 \xe0 retirer "+m.eq(typeof n=="number"?B.c.A(n):0),l,l,l,l,B.aT,l,l,l)],f),B.u,B.f,B.i,0,B.n)
-g.push(A.T(l,A.a1(A.a([new A.cm(1,B.ac,p,l),A.aT(B.an_,m.dy?l:new A.aH9(m,r),l)],f),B.j,B.f,B.i,0,l),B.l,l,l,new A.a3(B.b0,l,l,new A.bu(q,q,q,q),l,l,B.p),l,l,l,B.cI,B.VA,l,l,l))}return A.T(l,A.F(g,B.u,B.f,B.i,0,B.n),B.l,l,l,new A.a3(B.b0,l,j,k,l,l,B.p),l,l,l,B.cH,B.aG,l,l,l)},
+g.push(A.T(l,A.a1(A.a([new A.cm(1,B.ac,p,l),A.aT(B.amZ,m.dy?l:new A.aH9(m,r),l)],f),B.j,B.f,B.i,0,l),B.l,l,l,new A.a3(B.b0,l,l,new A.bu(q,q,q,q),l,l,B.p),l,l,l,B.cI,B.VA,l,l,l))}return A.T(l,A.F(g,B.u,B.f,B.i,0,B.n),B.l,l,l,new A.a3(B.b0,l,j,k,l,l,B.p),l,l,l,B.cH,B.aG,l,l,l)},
 aEJ(){var s,r,q,p,o,n,m,l,k,j,i,h,g,f,e,d,c,b=this,a=null,a0="needReferrals",a1="needWagered",a2=4292206325,a3=b.fy.h(0,"available"),a4=typeof a3=="number"?B.c.A(a3):0,a5=J.d(b.fy.h(0,"canWithdraw"),!0)
 a3=b.fy.h(0,"min")
 if((typeof a3=="number"?B.c.A(a3):0)>0){a3=b.fy.h(0,"min")
@@ -118446,7 +118446,7 @@ f=B.c.cl(q/p,0,1)
 e=A.bq(a2)
 d=n?B.a9:B.dz
 c=t.p
-d=A.a([B.anf,B.K,B.ans,k,B.ab,new A.aj(1/0,46,j,a),B.ab,h,B.az,A.FR(g,new A.r8(8,f,e,a,new A.ua(d,t.ZU),a,a,a),B.bE)],c)
+d=A.a([B.ane,B.K,B.anr,k,B.ab,new A.aj(1/0,46,j,a),B.ab,h,B.az,A.FR(g,new A.r8(8,f,e,a,new A.ua(d,t.ZU),a,a,a),B.bE)],c)
 if(!a5)d.push(new A.A(B.cI,A.ac("Retrait possible quand "+i+" filleuls ont chacun mis\xe9 au moins "+b.eq(o)+" (parties et duels), et \xe0 partir de "+b.eq(s)+" de gains.",a,a,a,a,B.aT,a,a,a),a))
 a3=A.T(a,A.F(d,B.u,B.f,B.i,0,B.n),B.l,a,a,new A.a3(B.b0,a,l,a3,a,a,B.p),a,a,a,a,B.aG,a,a,a)
 l=A.ac("R\xe9sum\xe9",a,a,a,a,B.cM,a,a,a)
@@ -118531,14 +118531,14 @@ n=A.a([m,B.az,n,l,k,B.K,A.a1(j,B.j,B.f,B.i,0,f)],i)
 if(A.e(a.h(0,"state"))==="review"){m=A.ac("\u26a0\ufe0f "+A.e(a.h(0,"reviewReason")),f,f,f,f,B.aj0,f,f,f)
 l=g.f==null
 k=A.a9(A.h1(B.am2,l?new A.aGQ(g,a):f,f),1)
-n.push(new A.A(B.dg,A.F(A.a([m,B.K,A.a1(A.a([k,B.aO,A.a9(A.cM(B.anI,l?new A.aGR(g,a):f,f),1)],i),B.j,B.f,B.i,0,f)],i),B.u,B.f,B.i,0,B.n),f))}if(g.a0g(a)){m=A.eN(f,f,f,f,f,f,f,f,f,B.bu,f,f,f,f,f,B.oQ,f,f,f,f)
+n.push(new A.A(B.dg,A.F(A.a([m,B.K,A.a1(A.a([k,B.aO,A.a9(A.cM(B.anH,l?new A.aGR(g,a):f,f),1)],i),B.j,B.f,B.i,0,f)],i),B.u,B.f,B.i,0,B.n),f))}if(g.a0g(a)){m=A.eN(f,f,f,f,f,f,f,f,f,B.bu,f,f,f,f,f,B.oQ,f,f,f,f)
 l=g.f
 k=l==null?new A.aGS(g,a):f
 n.push(new A.A(B.dg,new A.aj(1/0,f,A.oU(B.Zx,A.ac(l===A.e(a.h(0,"id"))?"Annulation\u2026":"Annuler la partie",f,f,f,f,f,f,f,f),k,m),f),f))}return A.cu(f,A.T(f,A.F(n,B.u,B.f,B.i,0,B.n),B.l,f,f,new A.a3(B.b0,f,r,d,f,f,B.p),f,f,f,B.aM,B.aX,f,f,f),B.t,!1,f,f,f,f,f,f,f,new A.aGT(g,o),f,f,f,f,f,f,f,f,f,new A.aGU(g,a),f,f,f,f,f,f)},
 apT(){var s,r,q,p,o,n,m,l,k,j,i,h,g,f,e,d,c,b,a,a0,a1,a2,a3,a4,a5,a6,a7,a8,a9,b0,b1,b2=this,b3=null,b4="En ligne",b5="Pr\xe9sentiel",b6=4285035162,b7="resume"
 if(b2.d&&b2.w.length===0)return B.c2
 s=b2.r
-if(s!=null)return A.c7(new A.A(B.cu,A.F(A.a([A.BK(s,B.ua,B.R),B.aC,A.dw(B.Mb,b2.gFW(),b3)],t.p),B.j,B.f,B.D,0,B.n),b3),b3,b3)
+if(s!=null)return A.c7(new A.A(B.cu,A.F(A.a([A.BK(s,B.ua,B.R),B.aC,A.dw(B.Ma,b2.gFW(),b3)],t.p),B.j,B.f,B.D,0,B.n),b3),b3,b3)
 if(b2.fx)return b2.aEJ()
 s=b2.w
 r=A.ab(s).i("al<1>")
@@ -118579,13 +118579,13 @@ a2=A.ac("Total gagn\xe9 "+b2.eq(b2.at)+" \xb7 d\xe9j\xe0 retir\xe9 "+b2.eq(b2.ax
 a3=A.d1(b3,b3,B.a9,A.bq(4292206325),A.bq(b6),b3,b3,b3,b3,B.e,b3,b3,b3,b3,b3,b3,b3,b3,b3,b3)
 a4=b2.CW&&!b2.cx?b2.gaMm():b3
 a5=t.p
-a3=A.a([b,B.K,B.anU,a1,B.az,a2,B.ab,new A.aj(1/0,46,A.jJ(B.r7,A.ac(b2.cx?"...":"Retirer vers mon compte",b3,b3,b3,b3,B.bT,b3,b3,b3),a4,a3),b3)],a5)
+a3=A.a([b,B.K,B.anT,a1,B.az,a2,B.ab,new A.aj(1/0,46,A.jJ(B.r7,A.ac(b2.cx?"...":"Retirer vers mon compte",b3,b3,b3,b3,B.bT,b3,b3,b3),a4,a3),b3)],a5)
 if(!b2.CW)a3.push(new A.A(B.cI,A.ac("Le bouton s'active \xe0 partir de "+b2.eq(b2.ay)+".",b3,b3,b3,b3,B.aT,b3,b3,b3),b3))
 a3.push(B.K)
 a3.push(B.amm)
 s=A.T(b3,A.F(a3,B.u,B.f,B.i,0,B.n),B.l,b3,b3,new A.a3(B.b0,b3,r,s,b3,b3,B.p),b3,b3,b3,B.cH,B.aG,b3,b3,b3)
 r=b2.aEL()
-b=A.jJ(B.amA,B.anu,new A.aGe(b2),A.d1(b3,b3,B.b0,b3,b3,b3,b3,b3,b3,B.aA,b3,b3,b3,b3,b3,b3,b3,b3,b3,b3))
+b=A.jJ(B.amz,B.ant,new A.aGe(b2),A.d1(b3,b3,B.b0,b3,b3,b3,b3,b3,b3,B.aA,b3,b3,b3,b3,b3,b3,b3,b3,b3,b3))
 a1=A.jJ(B.alt,B.am6,new A.aGf(b2),A.d1(b3,b3,B.b0,b3,b3,b3,b3,b3,b3,B.aA,b3,b3,b3,b3,b3,b3,b3,b3,b3,b3))
 a2=A.jJ(B.alU,B.alg,new A.aGp(b2),A.d1(b3,b3,B.b0,b3,b3,b3,b3,b3,b3,B.aA,b3,b3,b3,b3,b3,b3,b3,b3,b3,b3))
 a3=A.d1(b3,b3,B.b0,b3,b3,b3,b3,b3,b3,B.aA,b3,b3,b3,b3,b3,b3,b3,b3,b3,b3)
@@ -118624,7 +118624,7 @@ a4.push(A.A2(2.3,A.a([r,b,a1,a2,a3,a6,a7,a8,A.cu(b3,b2.mN("Joueurs inscrits \xb7
 if(s.p(0,b7))a4.push(A.ac("Termin\xe9es : "+j+" \xb7 En cours : "+i+" \xb7 En attente : "+h+" \xb7 Rembours\xe9es : "+g,b3,b3,b3,b3,B.aT,b3,b3,b3))
 a4.push(b2.a2v("cat","Commissions par cat\xe9gorie",b2.eq(a0)))
 if(s.p(0,"cat")){s=A.a([],a5)
-if(p.a===0)s.push(B.Mc)
+if(p.a===0)s.push(B.Mb)
 for(r=new A.dK(p,p.$ti.i("dK<1,2>")).gah(0);r.u();){b0=r.d
 b=new A.aF(12,12)
 a1=b2.p4
@@ -118652,7 +118652,7 @@ b=A.cN(r?B.mx:B.yJ,b3,b3,b3)
 a4.push(new A.aj(b3,50,A.jJ(b,A.ac(r?"Masquer l'historique des parties":"Historique des parties ("+q.length+")",b3,b3,b3,b3,B.bT,b3,b3,b3),new A.aGn(b2),s),b3))
 if(b2.e){s=A.a([B.G,B.alY,B.K],a5)
 for(r=q.length,f=0;b=q.length,f<b;q.length===r||(0,A.w)(q),++f)s.push(b2.Av(q[f]))
-if(b===0)s.push(B.Mc)
+if(b===0)s.push(B.Mb)
 B.b.M(a4,s)}if(b2.e)if(b2.z<500){s=b2.Q.h(0,"ludo")
 r=!0
 s=typeof s=="number"?B.c.A(s):0
@@ -118664,7 +118664,7 @@ if(s<b2.z){s=b2.Q.h(0,"local")
 s=typeof s=="number"?B.c.A(s):0
 s=s>=b2.z}else s=r}else s=r}else s=r}else s=!1
 else s=!1
-if(s)a4.push(new A.A(B.bO,A.h1(B.anp,new A.aGo(b2),A.eN(b3,b3,b3,b3,b3,b3,b3,b3,b3,B.e,b3,b3,b3,b3,b3,B.oR,b3,b3,b3,b3)),b3))
+if(s)a4.push(new A.A(B.bO,A.h1(B.ano,new A.aGo(b2),A.eN(b3,b3,b3,b3,b3,b3,b3,b3,b3,B.e,b3,b3,b3,b3,b3,B.oR,b3,b3,b3,b3)),b3))
 return A.pb(A.cj(a4,B.xT,B.eD,b3,!1,B.B,!1),b2.gFW())},
 D(a){var s,r=this,q=null,p=A.bf(q,q,q,B.eP,q,q,new A.aHk(a),q,q,q,q,q),o=r.fx?"\ud83d\udc51 Espace partenaire":"\ud83d\udc51 Tableau de bord"
 o=A.a9(A.ac(o,q,q,q,q,A.bk(q,q,A.bq(4279375930),q,q,q,q,q,q,q,q,22,q,q,B.U,q,q,!0,q,q,q,q,q,q,q,q),q,q,q),1)
@@ -118758,7 +118758,7 @@ J.bV(s,A.aS(m.a(r),q,p))}o.cy=s},
 $S:0}
 A.aFX.prototype={
 $1(a){var s=null
-return A.dD(A.a([A.aT(B.us,new A.aFV(a),s),A.aT(B.anN,new A.aFW(a),s)],t.p),s,B.an5,s,B.am9)},
+return A.dD(A.a([A.aT(B.us,new A.aFV(a),s),A.aT(B.anM,new A.aFW(a),s)],t.p),s,B.an4,s,B.am9)},
 $S:13}
 A.aFV.prototype={
 $0(){return A.a5(this.a,!1).ba(!1)},
@@ -118774,7 +118774,7 @@ $0(){return this.a.fr=!1},
 $S:0}
 A.aHc.prototype={
 $1(a){var s=null,r=A.ac(this.a?"Payer le gagnant ?":"Rembourser tout le monde ?",s,s,s,s,s,s,s,s),q=A.ac("Raison du signalement : "+A.e(this.b.h(0,"reviewReason")),s,s,s,s,s,s,s,s)
-return A.dD(A.a([A.aT(B.M7,new A.aHa(a),s),A.cM(B.am4,new A.aHb(a),s)],t.p),s,q,s,r)},
+return A.dD(A.a([A.aT(B.M6,new A.aHa(a),s),A.cM(B.am4,new A.aHb(a),s)],t.p),s,q,s,r)},
 $S:13}
 A.aHa.prototype={
 $0(){return A.a5(this.a,!1).ba(!1)},
@@ -118791,7 +118791,7 @@ $S:0}
 A.aGz.prototype={
 $1(a){var s=null,r=this.b
 r=A.ac(r>0?"La partie sera arr\xeat\xe9e et les mises ("+this.a.eq(r)+" par joueur) seront rembours\xe9es.":"La partie sera arr\xeat\xe9e.",s,s,s,s,s,s,s,s)
-return A.dD(A.a([A.aT(B.M7,new A.aGx(a),s),A.cM(B.amJ,new A.aGy(a),s)],t.p),s,r,s,B.anF)},
+return A.dD(A.a([A.aT(B.M6,new A.aGx(a),s),A.cM(B.amI,new A.aGy(a),s)],t.p),s,r,s,B.anE)},
 $S:13}
 A.aGx.prototype={
 $0(){return A.a5(this.a,!1).ba(!1)},
@@ -119087,7 +119087,7 @@ A.ET.prototype={
 S(){return new A.a21()}}
 A.a21.prototype={
 OC(a){var s,r,q=B.k.m(Math.abs(a)),p=a<0?"-":"",o=new A.dq(p)
-for(s=q.length,r=0;r<s;++r){if(r>0&&B.k.ae(s-r,3)===0)p=o.a=p+" "
+for(s=q.length,r=0;r<s;++r){if(r>0&&B.k.ad(s-r,3)===0)p=o.a=p+" "
 p+=q[r]
 o.a=p}return o.m(0)+" FCFA"},
 pI(a){var s=this.c
@@ -119239,7 +119239,7 @@ case 6:case 1:return A.m(q,r)
 case 2:return A.l(o.at(-1),r)}})
 return A.n($async$rY,r)},
 pU(a){var s,r,q,p=B.k.m(typeof a=="number"?B.c.A(a):0)
-for(s=p.length,r=0,q="";r<s;++r){if(r>0&&B.k.ae(s-r,3)===0)q+=" "
+for(s=p.length,r=0,q="";r<s;++r){if(r>0&&B.k.ad(s-r,3)===0)q+=" "
 q+=p[r]}return q.charCodeAt(0)==0?q:q},
 a_w(a){var s,r
 if(typeof a=="string"){s=A.oc(a)
@@ -119627,7 +119627,7 @@ else o=e.r<=15?B.d_:B.cq
 n=A.a0(12)
 m=e.r
 l=t.p
-n=A.a([A.a1(A.a([p,A.T(d,A.f("\u23f1 "+(""+B.k.bG(m,60)+":"+B.h.i3(B.k.m(B.k.ae(m,60)),2,"0")),d,d,B.aim,d),B.l,d,d,new A.a3(o,d,d,n,d,d,B.p),d,d,d,d,B.xN,d,d,d)],l),B.j,B.f,B.i,0,d),B.G],l)
+n=A.a([A.a1(A.a([p,A.T(d,A.f("\u23f1 "+(""+B.k.bG(m,60)+":"+B.h.i3(B.k.m(B.k.ad(m,60)),2,"0")),d,d,B.aim,d),B.l,d,d,new A.a3(o,d,d,n,d,d,B.p),d,d,d,d,B.xN,d,d,d)],l),B.j,B.f,B.i,0,d),B.G],l)
 for(p=e.a.Q,o=p.length,k=0;k<p.length;p.length===o||(0,A.w)(p),++k){j=p[k]
 m=new A.aF(12,12)
 i=new A.aM(B.Rp,1,B.A,-1)
@@ -119745,7 +119745,7 @@ A.a3h.prototype={
 aH(a,b){var s,r,q,p,o,n,m,l,k,j,i,h
 for(s=this.b,r=s.length,q=this.c,p=b.b+40,o=b.a,n=q*6.28*2,m=a.c,l=0;l<s.length;s.length===r||(0,A.w)(s),++l){k=s[l]
 j=k[2]
-i=B.c.ae(j/6.28+q*k[1],1.15)
+i=B.c.ad(j/6.28+q*k[1],1.15)
 h=k[0]
 j=Math.sin(n+j)
 J.bd(m.save())
@@ -119755,7 +119755,7 @@ i=k[3]
 i=A.kT(B.q,i*0.55,i)
 $.ah()
 j=new A.fj(B.bm,B.be,B.bZ,B.c8,B.bF)
-j.r=B.a0q[B.k.ae(B.c.A(k[4]),5)].gt()
+j.r=B.a0q[B.k.ad(B.c.A(k[4]),5)].gt()
 a.dR(i,j)
 m.restore()}},
 dH(a){return a.c!==this.c}}
@@ -119869,7 +119869,7 @@ o=A.a([],s)
 for(n=0;n<a8;++n){m=a9.$1(n)
 l=m.a
 k=m.b
-j=B.d3[B.k.ae(n,6)]
+j=B.d3[B.k.ad(n,6)]
 i=b0.a.f[n]
 o.push(new A.fF(l-40,k-34,a3,a3,80,a3,A.F(A.a([A.en(j,new A.J(i.length===0?"?":B.h.a7(i,0,1).toUpperCase(),B.u5,a3,a3,a3,a3),18),new A.J(i,B.ajM,a3,B.au,1,a3)],s),B.j,B.f,B.i,0,B.n),a3))}h=new A.r(a6,a7+36)
 g=A.c9(a8,0,!1,t.S)
@@ -119884,13 +119884,13 @@ a=B.c.cl((r-d*l)/a8,0,1)
 if(a<=0)continue;++e
 a0=B.jT.a9(a)
 a8=a9.$1(c)
-l=B.k.ae(b,2)
+l=B.k.ad(b,2)
 a1=A.iI(h,new A.r(a8.a+(b-2)*11,a8.b+(46+l*3)),a0)
 l=a1.a
 a8=a1.b
 k=(d&1)===0?0.5:-0.5
 f.push(new A.fF(l-17,a8-24,a3,a3,a3,a3,new A.iV(A.a1j((1-a0)*k),B.P,!0,a3,new A.fL(a3,!1,34,a3),a3),a3))}b1=b0.a.e
-l=B.c.ae(r,b1?70:260)
+l=B.c.ad(r,b1?70:260)
 b1=b1?70:260
 a2=e>0&&e<=a8?B.c.cl(1-l/b1,0,1)*3:0
 a8=b0.a.d
@@ -120115,9 +120115,9 @@ else{s=A.a([A.d3(n,n,A.f(A.c("D\xe9fier un adversaire","Challenge a rival"),n,n,
 r=o.e
 if(r)s.push(A.d3(n,n,A.f(A.c("D\xe9fi F\xe9tiche (13)","Fetish challenge (13)"),n,n,n,n),new A.bk0(m,b),m.a==="fetiche",B.r,n))
 s=A.co(B.a8,s,0,8)
-if(m.a==="duel"){q=r?u.cO:u.aZ
-q=A.c(q,r?u.b:u.A)
-r=q}else r=A.c("Le total BOUBAYAH du parieur est compar\xe9 \xe0 13. FOMEKOU compte 6 (donc \xab moins de 13 \xbb). 13 pile : mises rendues.","The bettor's BOUBAYAH total is compared with 13. FOMEKOU counts as 6 (so under 13). Exactly 13: stakes refunded.")
+if(m.a==="duel"){q=r?u.ci:u.aZ
+q=A.c(q,r?u.be:u.A)
+r=q}else r=A.c("Le total BOUBAYAH du parieur est compar\xe9 \xe0 13. MILLION compte 6 (donc \xab moins de 13 \xbb). 13 pile : mises rendues.","The bettor's BOUBAYAH total is compared with 13. MILLION counts as 6 (so under 13). Exactly 13: stakes refunded.")
 i=A.a([B.ab,s,B.K,A.f(r,n,n,B.d9,n),B.G,h.$3(A.c("Parieur","Bettor"),m.b,new A.bk1(m,i)),h.$4$exclude(A.c("Adversaire","Opponent"),m.c,new A.bk2(m),m.b)],f)
 if(m.a==="fetiche")i.push(A.a1(A.a([new A.aj(100,n,A.f(A.c("Le parieur dit","Bettor says"),n,n,B.a5,n),n),A.d3(n,n,A.f(A.c("Plus de 13","Over 13"),n,n,n,n),new A.bk3(m,b),m.d,B.r,n),B.aO,A.d3(n,n,A.f(A.c("Moins de 13","Under 13"),n,n,n,n),new A.bk4(m,b),!m.d,B.r,n)],f),B.j,B.f,B.i,0,n))
 i.push(B.G)
@@ -120485,10 +120485,10 @@ return o},
 n3(a){return J.bEt(a,0,new A.beO())},
 tE(a){var s=J.aI(a)
 return s.gK(a)===2&&s.cL(a,new A.beP())},
-A9(){var s,r,q,p,o=this,n=A.bza(!0),m=o.e.d.length,l=B.k.ae(o.f,m),k=J.fo(m,t.GG)
+A9(){var s,r,q,p,o=this,n=A.bza(!0),m=o.e.d.length,l=B.k.ad(o.f,m),k=J.fo(m,t.GG)
 for(s=t.ff,r=0;r<m;++r)k[r]=A.a([],s)
 o.r=k
-for(q=2*m,p=0;p<q;++p)o.r[B.k.ae(l+p,m)].push(n.pop())
+for(q=2*m,p=0;p<q;++p)o.r[B.k.ad(l+p,m)].push(n.pop())
 s=A.a([],s)
 p=0
 for(;;){if(!(p<10&&n.length!==0))break
@@ -120497,7 +120497,7 @@ s=A.a2(new A.cV(s,q),q.i("ai.E"))
 o.w=s
 s=t.t
 q=A.a([],s)
-for(p=0;p<m;++p)q.push(B.k.ae(l+p,m))
+for(p=0;p<m;++p)q.push(B.k.ad(l+p,m))
 o.x=q
 o.z=o.y=0
 o.at=o.as=!1
@@ -120756,7 +120756,7 @@ if(k===21||r)j=B.r
 else j=q?B.bo:B.e
 j=A.a([A.f(""+k,f,f,A.bk(f,f,j,f,f,f,f,f,f,f,f,26,f,f,B.y,f,f,!0,f,f,f,f,f,f,f,f),f)],l)
 if(r)j.push(B.alh)
-if(c[a]===21)j.push(B.amY)
+if(c[a]===21)j.push(B.amX)
 if(q)j.push(A.f(A.c("d\xe9passe","bust"),f,f,B.ag6,f))
 return A.T(f,A.a1(A.a([m,B.aF,e,A.F(j,B.j,B.f,B.i,0,B.n)],l),B.j,B.f,B.i,0,f),B.l,f,f,new A.a3(p,f,n,o,f,f,B.p),f,f,f,B.aM,B.bd,f,f,f)}}
 A.beT.prototype={
@@ -120900,7 +120900,7 @@ return s[0].a+s[1].a},
 R6(a){var s=this.x[a]
 return s[0].a===3&&s[1].a===3},
 ga8i(){var s,r,q,p,o,n=A.a([],t.t)
-for(s=1;r=this.e.d.length,s<=r;++s)n.push(B.k.ae(this.r+s,r))
+for(s=1;r=this.e.d.length,s<=r;++s)n.push(B.k.ad(this.r+s,r))
 for(r=n.length,q=this.y,p=0;p<n.length;n.length===r||(0,A.w)(n),++p){o=n[p]
 if(!B.b.p(q,o))return o}return-1},
 A9(){var s,r,q,p,o=this,n=A.bza(!1),m=o.e.d.length,l=t.GG,k=J.fo(m,l)
@@ -120909,8 +120909,8 @@ o.w=k
 k=J.fo(m,l)
 for(r=0;r<m;++r)k[r]=A.a([],s)
 o.x=k
-for(q=0;q<3;++q)for(p=0;p<m;++p)o.w[B.k.ae(o.r+1+p,m)].push(n.pop())
-for(q=0;q<2;++q)for(p=0;p<m;++p)o.x[B.k.ae(o.r+1+p,m)].push(n.pop())
+for(q=0;q<3;++q)for(p=0;p<m;++p)o.w[B.k.ad(o.r+1+p,m)].push(n.pop())
+for(q=0;q<2;++q)for(p=0;p<m;++p)o.x[B.k.ad(o.r+1+p,m)].push(n.pop())
 o.cy=!0
 o.db=30
 o.dx=-1
@@ -121045,7 +121045,7 @@ for(k=e.w[a],j=k.length,h=!p,g=0;g<k.length;k.length===j||(0,A.w)(k),++g){f=k[g]
 l.push(new A.A(B.pZ,new A.fL(f,!h||e.Q,28,d),d))}l=A.a([A.cu(d,A.a1(l,B.j,B.f,B.i,0,d),B.t,!1,d,d,d,d,d,d,d,d,d,d,d,d,d,d,d,d,d,new A.aKY(e,p,a),d,d,d,d,d,d),B.dP],i)
 for(k=e.x[a],j=k.length,g=0;g<k.length;k.length===j||(0,A.w)(k),++g)l.push(new A.A(B.md,new A.fL(k[g],s,52,d),d))
 c=A.a([c,B.G,A.a1(l,B.dB,B.f,B.i,0,d)],i)
-if(s&&e.R6(a))c.push(B.a9s)
+if(s&&e.R6(a))c.push(B.a9n)
 if(r){l=A.cR(B.fU,d,d,d,new A.bA(A.a0(14),B.x),d)
 c.push(new A.A(B.dg,new A.aj(1/0,44,A.cM(A.f(A.c("OUVRIR MON BOUBAYAH","OPEN MY BOUBAYAH"),d,d,B.aI,d),new A.aKZ(e,a),l),d),d))}return A.T(d,A.F(c,B.j,B.f,B.i,0,B.n),B.l,d,d,new A.a3(o,d,m,n,d,d,B.p),d,d,d,B.at,B.bd,d,d,d)},
 D(a){var s,r,q,p,o,n,m,l,k,j,i,h,g=this,f=null,e=new A.aL7(g),d=g.e
@@ -121067,7 +121067,7 @@ else{p=d.d[g.r]
 p=A.c("\ud83c\udccf Distributeur : "+p+" \xb7 touche les petites cartes pour les voir","\ud83c\udccf Dealer: "+p+" \xb7 tap the small cards to peek")}p=A.a([new A.A(B.aM,A.f(p,f,f,B.S,f),f)],k)
 if(g.Q){o=A.a0(18)
 l=A.a([],k)
-if(g.at)l.push(B.M6)
+if(g.at)l.push(B.Mc)
 if(r)j=A.c("\xc9galit\xe9 g\xe9n\xe9rale","General tie")
 else{j=g.as
 if(j.length===1){i=d.d
@@ -121083,7 +121083,7 @@ j=g.ay
 if(j>0)l.push(A.f(A.c("\ud83c\udfb0 Jackpot : "+A.b4(j)+" !","\ud83c\udfb0 Jackpot: "+A.b4(g.ay)+"!"),f,f,B.j4,f))
 p.push(A.T(f,A.F(l,B.j,B.f,B.i,0,B.n),B.l,f,f,new A.a3(B.dx,f,f,o,f,f,B.p),f,f,f,B.at,B.aG,f,f,f))}o=g.ch
 if(o!=null)p.push(A.a1(A.a([A.a9(A.f(o,f,f,B.ey,f),1),A.aT(A.f(A.c("R\xe9essayer","Retry"),f,f,f,f),g.gSh(),f)],k),B.j,B.f,B.i,0,f))
-for(h=1;o=g.e.d.length,h<=o;++h)p.push(g.aI_(B.k.ae(g.r+h,o)))
+for(h=1;o=g.e.d.length,h<=o;++h)p.push(g.aI_(B.k.ad(g.r+h,o)))
 o=g.cx
 if(o.length!==0){l=A.a([B.K,A.f(A.c("Historique","History"),f,f,B.nM,f)],k)
 for(o=A.ho(o,0,A.mo(8,"count",t.S),A.ab(o).c),j=o.$ti,o=new A.bO(o,o.gK(0),j.i("bO<ai.E>")),j=j.i("ai.E");o.u();){i=o.d
@@ -121132,7 +121132,7 @@ p[n]=p[n]+1}r=A.c("Manche","Round")
 q=m.f
 p=s.b
 p=new A.af(p,new A.aKS(m),A.ab(p).i("af<1,u>")).aF(0,", ")
-s=m.at?" (FOMEKOU)":" ("+m.n3(B.b.gT(s.b))+")"
+s=m.at?" (MILLION)":" ("+m.n3(B.b.gT(s.b))+")"
 B.b.jG(m.cx,0,r+" "+(q+1)+" : "+p+s)},
 $S:0}
 A.aKS.prototype={
@@ -121183,7 +121183,7 @@ r=m.e
 r=r.b>0&&$.bL?r.M6(m.as)*m.as.length:0
 n.push(A.h3(0,A.S9(r,o,new A.cW("burst-"+l,t.kK),!1,!1,o,o,0,2000,B.zY,s)))}if(m.cy&&m.e!=null){l=t.s
 s=A.a([],l)
-for(q=1;r=m.e.d,p=r.length,q<=p;++q)s.push(r[B.k.ae(m.r+q,p)])
+for(q=1;r=m.e.d,p=r.length,q<=p;++q)s.push(r[B.k.ad(m.r+q,p)])
 n.push(A.h3(0,A.NG(B.rg,32,!1,!0,A.a([A.c("Cartes ordinaires \xb7 3 par 3","Ordinary cards \xb7 3 by 3"),A.c("Cartes BOUBAYAH \xb7 2 par 2","BOUBAYAH cards \xb7 2 by 2")],l),s,new A.aL9(m),m.d)))}return A.cO(o,o,new A.cC(B.aD,o,B.aw,B.o,n,o),o)},
 $S:733}
 A.aL9.prototype={
@@ -121885,7 +121885,7 @@ d.push(A.f(A.c("Joueurs","Players")+" "+c.length+"/"+m,e,e,B.f0,e))
 d.push(B.K)
 for(q=f.as,h=0;h<c.length;++h){p=A.K(31,B.e.l()>>>16&255,B.e.l()>>>8&255,B.e.l()&255)
 o=new A.aF(14,14)
-i=A.en(B.d3[B.k.ae(h,6)],e,12)
+i=A.en(B.d3[B.k.ad(h,6)],e,12)
 g=A.e(c[h].h(0,"name"))
 i=A.a([i,B.aF,new A.cm(1,B.ac,new A.J(g+(J.d(c[h].h(0,"uid"),q)?" ("+A.c("toi","you")+")":""),B.dp,e,e,e,e),e)],s)
 if(J.d(c[h].h(0,"uid"),l))i.push(B.o0)
@@ -121968,8 +121968,8 @@ if(o&&a0.j_(a5)){s=A.a0(18)
 if(h)r=B.dx
 else r=i?B.SO:B.eh
 e=A.a([],p)
-if(a3&&J.d(a5.h(0,"toucx"),!0))e.push(B.amO)
-if(J.d(a5.h(0,"fomekou"),!0))e.push(B.M6)
+if(a3&&J.d(a5.h(0,"toucx"),!0))e.push(B.amN)
+if(J.d(a5.h(0,"fomekou"),!0))e.push(B.Mc)
 if(i)d=A.c("\xc9galit\xe9 g\xe9n\xe9rale","General tie")
 else if(h)d=A.c("Tu as gagn\xe9 !","You won!")
 else if(l.length===1)d=A.c(A.e(k.$1(B.b.gT(l)))+" gagne",A.e(k.$1(B.b.gT(l)))+" wins")
@@ -122002,7 +122002,7 @@ p=A.a0(18)
 if(g)o=B.cY
 else o=h?B.r:B.aE
 o=A.b9(o,h||g?2:1.2)
-n=A.en(B.d3[B.k.ae(r,6)],j,12)
+n=A.en(B.d3[B.k.ad(r,6)],j,12)
 m=A.e(b.h(0,"name"))
 l=i===this.as?" ("+A.c("toi","you")+")":""
 e=i===e?"  \ud83c\udccf":""
@@ -122014,13 +122014,13 @@ e=A.a([A.a1(e,B.j,B.f,B.i,0,j),B.G],k)
 if(a3)e.push(this.aKd(b,f||a2))
 else e.push(this.aqp(b,f||a2))
 if(s){if(a3)m=c?"TOUCX !":"TIAH !"
-else m="FOMEKOU !"
+else m="MILLION !"
 e.push(new A.A(B.d1,A.f(m,j,j,B.LR,j),j))}if(a3&&n&&d>21&&!c)e.push(A.f(A.c("d\xe9passe 21","over 21"),j,j,B.aiW,j))
 return A.T(j,A.F(e,B.j,B.f,B.i,0,B.n),B.l,j,j,new A.a3(q,j,o,p,j,j,B.p),j,j,j,B.at,B.bd,j,j,j)},
 aCD(a,b,c){var s,r=null,q=A.a([],t.ff),p=t.g.a(a.h(0,"pileCards"))
 p=J.ar(p==null?[]:p)
 while(p.u()){s=B.c.A(A.aX(p.gJ()))
-q.push(new A.h7(B.k.bG(s,4),B.k.ae(s,4)))}p=A.a0(16)
+q.push(new A.h7(B.k.bG(s,4),B.k.ad(s,4)))}p=A.a0(16)
 s=""+q.length
 return A.T(r,A.F(A.a([A.f(A.c("10 cartes ouvertes au milieu, dans l'ordre ("+s+")","10 open cards in the middle, in order ("+s+")"),r,r,B.f2,r),B.bL,A.f(A.c("D\xe8s qu'un joueur ouvre ses cartes, celles qui lui conviennent (sans d\xe9passer 21) partent vers lui, une par une.","As soon as a player opens, the cards that fit (without going over 21) go to him, one by one."),r,r,B.by,r),B.G,new A.y3(q,36,r)],t.p),B.u,B.f,B.i,0,B.n),B.l,r,r,new A.a3(B.aQ,r,r,p,r,r,B.p),r,r,r,B.at,B.bd,r,r,r)},
 a_T(a4,a5,a6){var s,r,q,p,o,n,m,l,k,j,i,h,g,f,e,d,c,b,a=this,a0=null,a1="targetUid",a2=A.a([],t.Y),a3=t.g.a(a4.h(0,"bets"))
@@ -122111,7 +122111,7 @@ s=p.r
 r=s!=null&&J.d(s.h(0,"status"),"playing")&&!J.d(s.h(0,"over"),!0)
 if(r&&A.e(s.h(0,"turnUid"))===p.as)q=5
 else q=r?1:2
-if(B.k.ae(p.ay,q)===0)p.wx()
+if(B.k.ad(p.ay,q)===0)p.wx()
 return null},
 $S:21}
 A.aNT.prototype={
@@ -122340,9 +122340,9 @@ A.aNo.prototype={
 $2(a,b){var s,r,q,p,o,n,m=this,l=null,k=A.aw(a,l,t.w).w,j=A.f(A.c("Nouveau pari","New bet"),l,l,B.f_,l),i=m.a,h=t.p,g=A.a([A.d3(l,l,A.f(A.c("D\xe9fier ses adversaires","Challenge rivals"),l,l,l,l),new A.aNi(i,b),i.a==="duel",B.r,l)],h),f=m.c
 if(!f)g.push(A.d3(l,l,A.f(A.c("D\xe9fi F\xe9tiche (13)","Fetish challenge (13)"),l,l,l,l),new A.aNj(i,b),i.a==="fetiche",B.r,l))
 g=A.co(B.a8,g,0,8)
-if(i.a==="duel"){s=f?u.aZ:u.cO
-s=A.c(s,f?u.A:u.b)
-f=s}else f=A.c("Ton total BOUBAYAH est compar\xe9 \xe0 13. FOMEKOU compte 6 (donc \xab moins de 13 \xbb). 13 pile : mises rendues.","Your BOUBAYAH total is compared with 13. FOMEKOU counts as 6 (so under 13). Exactly 13: stakes refunded.")
+if(i.a==="duel"){s=f?u.aZ:u.ci
+s=A.c(s,f?u.A:u.be)
+f=s}else f=A.c("Ton total BOUBAYAH est compar\xe9 \xe0 13. MILLION compte 6 (donc \xab moins de 13 \xbb). 13 pile : mises rendues.","Your BOUBAYAH total is compared with 13. MILLION counts as 6 (so under 13). Exactly 13: stakes refunded.")
 f=A.a([j,B.G,g,B.K,A.f(f,l,l,B.d9,l)],h)
 if(i.a==="duel"){j=i.b
 g=t.N
@@ -122701,7 +122701,7 @@ if(f)g.push(A.f(A.c("Le vainqueur prend la cagnotte. CORAT : chaque adversaire p
 p=A.a([new A.tn(p,a0,k,!1,j,b),new A.th(p,a0,k,j,b),B.ab,A.T(b,A.F(g,B.j,B.f,B.i,0,B.n),B.l,b,b,new A.a3(B.aQ,b,b,i,b,b,B.p),b,b,b,b,B.aG,b,b,b),new A.pl("cards",c.a.c,b),B.af,A.f(A.c("Joueurs","Players")+" "+a.length+"/"+n,b,b,B.f0,b),B.K],h)
 for(d=0;d<a.length;++d){j=A.K(31,B.e.l()>>>16&255,B.e.l()>>>8&255,B.e.l()&255)
 i=new A.aF(14,14)
-g=A.en(B.d3[B.k.ae(d,6)],b,12)
+g=A.en(B.d3[B.k.ad(d,6)],b,12)
 f=A.e(a[d].h(0,"name"))
 g=A.a([g,B.aF,new A.cm(1,B.ac,new A.J(f+(J.d(a[d].h(0,"uid"),k)?" ("+A.c("toi","you")+")":""),B.dp,b,b,b,b),b)],h)
 if(J.d(a[d].h(0,"uid"),m))g.push(B.o0)
@@ -122771,7 +122771,7 @@ b=A.e(e4.h(0,"nextId"))
 a=A.e(e4.h(0,"phase"))
 j=A.ad(e4.h(0,"fam"))
 a0=j==null?d7:B.c.A(j)
-a1=B.eS[B.k.ae(a0==null?0:a0,4)]
+a1=B.eS[B.k.ad(a0==null?0:a0,4)]
 a2=A.q6(e4.h(0,"myHand"))
 j=A.aK(t.S)
 i=t.g
@@ -122845,7 +122845,7 @@ q=A.a([],b3)
 for(p=e2.length,i=t.kK,b0=0;b0<e2.length;e2.length===p||(0,A.w)(e2),++b0){c4=e2[b0]
 b6=A.e(c4.h(0,"card"))
 b9=B.c.A(A.aX(c4.h(0,"card")))
-q.push(A.F(A.a([new A.pW(new A.fL(new A.h7(B.k.bG(b9,4),B.k.ae(b9,4)),!0,60,d7),0,new A.cW("tr-"+b6,i)),new A.J(g.$1(A.e(c4.h(0,"uid"))),B.f1,d7,d7,d7,d7)],b3),B.j,B.f,B.D,0,B.n))}b4.push(A.T(d7,A.co(B.a8,q,6,10),B.l,d7,d7,new A.a3(B.aQ,d7,d7,s,d7,d7,B.p),d7,d7,d7,B.at,B.bd,d7,d7,d7))}for(c5=0;c5<a8;++c5){e2=e3[c5]
+q.push(A.F(A.a([new A.pW(new A.fL(new A.h7(B.k.bG(b9,4),B.k.ad(b9,4)),!0,60,d7),0,new A.cW("tr-"+b6,i)),new A.J(g.$1(A.e(c4.h(0,"uid"))),B.f1,d7,d7,d7,d7)],b3),B.j,B.f,B.D,0,B.n))}b4.push(A.T(d7,A.co(B.a8,q,6,10),B.l,d7,d7,new A.a3(B.aQ,d7,d7,s,d7,d7,B.p),d7,d7,d7,B.at,B.bd,d7,d7,d7))}for(c5=0;c5<a8;++c5){e2=e3[c5]
 c6=A.e(e2.h(0,"uid"))
 c7=r&&c6===m
 c8=n&&B.b.p(h,c6)
@@ -122869,7 +122869,7 @@ p=new A.aF(16,16)
 if(c8)i=B.r
 else i=c7?B.e:B.O
 d5=new A.aM(i,2,B.A,-1)
-i=A.en(B.d3[B.k.ae(c5,6)],d7,11)
+i=A.en(B.d3[B.k.ad(c5,6)],d7,11)
 e2=A.e(e2.h(0,"name"))
 b6=c6===o?" ("+A.c("toi","you")+")":""
 b9=d2?" \xb7 "+A.c("abandon","out"):""
@@ -122932,7 +122932,7 @@ s=p.w
 r=s!=null&&J.d(s.h(0,"status"),"playing")&&!J.d(s.h(0,"over"),!0)
 if(r&&A.e(s.h(0,"turnUid"))===p.ax)q=5
 else q=r?1:2
-if(B.k.ae(p.dx,q)===0)p.fV()
+if(B.k.ad(p.dx,q)===0)p.fV()
 return null},
 $S:21}
 A.aJU.prototype={
@@ -123387,7 +123387,7 @@ if(g)h.push(A.f(A.c("Premier \xe0 poser toutes ses cartes. As : saut \xb7 7 : +2
 p=A.a([new A.tn(p,a,k,!0,d.gmV(),c),B.ab,A.T(c,A.F(h,B.j,B.f,B.i,0,B.n),B.l,c,c,new A.a3(B.aQ,c,c,j,c,c,B.p),c,c,c,c,B.aG,c,c,c),new A.pl("cards",d.a.c,c),B.af,A.f(A.c("Joueurs","Players")+" "+b.length+"/"+n,c,c,B.f0,c),B.K],i)
 for(f=0;f<b.length;++f){j=A.K(31,B.e.l()>>>16&255,B.e.l()>>>8&255,B.e.l()&255)
 h=new A.aF(14,14)
-g=A.en(B.d3[B.k.ae(f,6)],c,12)
+g=A.en(B.d3[B.k.ad(f,6)],c,12)
 e=A.e(b[f].h(0,"name"))
 g=A.a([g,B.aF,new A.cm(1,B.ac,new A.J(e+(J.d(b[f].h(0,"uid"),k)?" ("+A.c("toi","you")+")":""),B.dp,c,c,c,c),c)],i)
 if(J.d(b[f].h(0,"uid"),m))g.push(B.o0)
@@ -123517,7 +123517,7 @@ b=A.F(A.a([new A.yi(-1,62,!0,b8),B.az,A.f(A.c("Pioche","Draw")+" \xb7 "+a3,b8,b8
 a7=A.a([],p)
 if(a>=0)a7.push(new A.yi(a,62,!1,b8))
 a7.push(B.az)
-if(a0>=0)b0=A.c("Famille","Suit")+" "+B.eS[B.k.ae(a0,4)]
+if(a0>=0)b0=A.c("Famille","Suit")+" "+B.eS[B.k.ad(a0,4)]
 else b0=a1==="r"?A.c("Couleur rouge","Red colour"):A.c("Couleur noire","Black colour")
 a7.push(A.f(b0,b8,b8,A.bk(b8,b8,a1==="r"?B.bo:B.e,b8,b8,b8,b8,b8,b8,b8,b8,13,b8,b8,B.y,b8,b8,!0,b8,b8,b8,b8,b8,b8,b8,b8),b8))
 k.push(A.T(b8,A.a1(A.a([b,A.F(a7,B.j,B.f,B.D,0,B.n)],p),B.j,B.n_,B.i,0,b8),B.l,b8,b8,new A.a3(B.aQ,b8,b8,s,b8,b8,B.p),b8,b8,b8,B.at,B.aX,b8,b8,b8))
@@ -123585,7 +123585,7 @@ r=A.a0(16)
 if(h)q=B.r
 else q=i?B.e:B.O
 q=A.b9(q,2)
-p=A.en(B.d3[B.k.ae(c,6)],l,11)
+p=A.en(B.d3[B.k.ad(c,6)],l,11)
 o=A.e(b.h(0,"name"))
 n=t.p
 o=A.a([p,B.aO,A.a9(A.f(o+(k===this.ax?" ("+A.c("toi","you")+")":""),l,l,B.bS,l),1)],n)
@@ -123625,7 +123625,7 @@ s=p.w
 r=s!=null&&J.d(s.h(0,"status"),"playing")&&!J.d(s.h(0,"over"),!0)
 if(r&&A.e(s.h(0,"turnUid"))===p.ax)q=5
 else q=r?1:2
-if(B.k.ae(p.cy,q)===0)p.fV()
+if(B.k.ad(p.cy,q)===0)p.fV()
 return null},
 $S:21}
 A.bdI.prototype={
@@ -124121,7 +124121,7 @@ if(i)j.push(A.f(A.c("Victoire normale : tu r\xe9cup\xe8res ta mise et le vainque
 p=A.a([A.T(c,A.F(j,B.j,B.f,B.i,0,B.n),B.l,c,c,new A.a3(B.aQ,c,c,p,c,c,B.p),c,c,c,c,B.aG,c,c,c),new A.pl("cards",d.a.c,c),B.af,A.f(A.c("Joueurs","Players")+" "+b.length+"/"+n,c,c,B.f0,c),B.K],k)
 for(j=d.ax,g=0;g<b.length;++g){i=A.K(31,B.e.l()>>>16&255,B.e.l()>>>8&255,B.e.l()&255)
 h=new A.aF(14,14)
-f=A.en(B.d3[B.k.ae(g,6)],c,12)
+f=A.en(B.d3[B.k.ad(g,6)],c,12)
 e=A.e(b[g].h(0,"name"))
 f=A.a([f,B.aF,new A.cm(1,B.ac,new A.J(e+(J.d(b[g].h(0,"uid"),j)?" ("+A.c("toi","you")+")":""),B.dp,c,c,c,c),c)],k)
 if(J.d(b[g].h(0,"uid"),m))f.push(B.o0)
@@ -124244,14 +124244,14 @@ b1=t.kK
 while(b0.u()){b2=r.a(b0.gJ())
 b3=A.e(b2.h(0,c8))
 b4=B.c.A(A.aX(b2.h(0,c8)))
-a7.push(A.F(A.a([new A.pW(new A.fL(new A.h7(B.k.bG(b4,4),B.k.ae(b4,4)),!0,60,c5),0,new A.cW("lt-"+b3,b1)),new A.J(i.$1(A.e(b2.h(0,c9))),B.f1,c5,c5,c5,c5)],b),B.j,B.f,B.D,0,B.n))}a4.push(A.T(c5,A.F(A.a([a6,B.K,A.co(B.a8,a7,6,10)],b),B.u,B.f,B.i,0,B.n),B.l,c5,c5,new A.a3(B.aQ,c5,c5,a5,c5,c5,B.p),c5,c5,c5,B.at,B.bd,c5,c5,c5))}if(s){s=A.a0(16)
+a7.push(A.F(A.a([new A.pW(new A.fL(new A.h7(B.k.bG(b4,4),B.k.ad(b4,4)),!0,60,c5),0,new A.cW("lt-"+b3,b1)),new A.J(i.$1(A.e(b2.h(0,c9))),B.f1,c5,c5,c5,c5)],b),B.j,B.f,B.D,0,B.n))}a4.push(A.T(c5,A.F(A.a([a6,B.K,A.co(B.a8,a7,6,10)],b),B.u,B.f,B.i,0,B.n),B.l,c5,c5,new A.a3(B.aQ,c5,c5,a5,c5,c5,B.p),c5,c5,c5,B.at,B.bd,c5,c5,c5))}if(s){s=A.a0(16)
 a5=A.a([A.f(A.c("Pli en cours","Current trick"),c5,c5,B.f2,c5),B.K],b)
 if(d2.length===0)a5.push(A.f(a1!=null?A.c(A.e(i.$1(A.e(a1.h(0,"winner"))))+" a gagn\xe9 le pli pr\xe9c\xe9dent et entame.",A.e(i.$1(A.e(a1.h(0,"winner"))))+" won the previous trick and leads."):A.c(A.e(i.$1(n))+" entame et choisit la famille.",A.e(i.$1(n))+" leads and picks the suit."),c5,c5,B.e5,c5))
 else{a6=A.a([],b)
 for(a7=d2.length,b0=t.kK,b5=0;b5<d2.length;d2.length===a7||(0,A.w)(d2),++b5){b6=d2[b5]
 b1=A.e(b6.h(0,c8))
 b2=B.c.A(A.aX(b6.h(0,c8)))
-a6.push(A.F(A.a([new A.pW(new A.fL(new A.h7(B.k.bG(b2,4),B.k.ae(b2,4)),!0,60,c5),0,new A.cW("tr-"+b1,b0)),new A.J(i.$1(A.e(b6.h(0,c9))),B.f1,c5,c5,c5,c5)],b),B.j,B.f,B.D,0,B.n))}a5.push(A.co(B.a8,a6,6,10))}a4.push(A.T(c5,A.F(a5,B.u,B.f,B.i,0,B.n),B.l,c5,c5,new A.a3(B.aQ,c5,c5,s,c5,c5,B.p),c5,c5,c5,B.at,B.bd,c5,c5,c5))
+a6.push(A.F(A.a([new A.pW(new A.fL(new A.h7(B.k.bG(b2,4),B.k.ad(b2,4)),!0,60,c5),0,new A.cW("tr-"+b1,b0)),new A.J(i.$1(A.e(b6.h(0,c9))),B.f1,c5,c5,c5,c5)],b),B.j,B.f,B.D,0,B.n))}a5.push(A.co(B.a8,a6,6,10))}a4.push(A.T(c5,A.F(a5,B.u,B.f,B.i,0,B.n),B.l,c5,c5,new A.a3(B.aQ,c5,c5,s,c5,c5,B.p),c5,c5,c5,B.at,B.bd,c5,c5,c5))
 o=!1}for(s=!o,a5=c4.ax,b7=0;b7<a2;++b7){a6=d3[b7]
 b8=A.e(a6.h(0,c9))
 b9=s&&b8===n
@@ -124266,7 +124266,7 @@ b0=new A.aF(16,16)
 if(c0)b1=B.r
 else b1=b9?B.e:B.O
 c3=new A.aM(b1,2,B.A,-1)
-b1=A.en(B.d3[B.k.ae(b7,6)],c5,11)
+b1=A.en(B.d3[B.k.ad(b7,6)],c5,11)
 a6=A.e(a6.h(0,"name"))
 a6=A.a([b1,B.aO,new A.cm(1,B.ac,new A.J(a6+(b8===a5?" ("+A.c("toi","you")+")":""),B.bS,c5,c5,c5,c5),c5)],b)
 b1=c.a(d4.h(0,d0))
@@ -124278,7 +124278,7 @@ a6=A.a([A.a1(a6,B.j,B.f,B.i,0,c5)],b)
 if(c1.length!==0)B.b.M(a6,A.a([B.K,A.biU(c1)],b))
 if(r.b(d4.h(0,d1))&&A.e(r.a(d4.h(0,d1)).h(0,c9))===b8){b1=A.c("Jou\xe9 d'avance : ","Played ahead: ")
 b2=B.c.A(A.aX(r.a(d4.h(0,d1)).h(0,c8)))
-B.b.M(a6,A.a([B.K,A.a1(A.a([new A.J(b1,B.ai7,c5,c5,c5,c5),new A.fL(new A.h7(B.k.bG(b2,4),B.k.ae(b2,4)),!0,40,c5)],b),B.j,B.f,B.i,0,c5)],b))}if(o&&c2.length!==0)B.b.M(a6,A.a([B.K,new A.J(A.c("Main","Hand"),B.by,c5,c5,c5,c5),A.biU(c2)],b))
+B.b.M(a6,A.a([B.K,A.a1(A.a([new A.J(b1,B.ai7,c5,c5,c5,c5),new A.fL(new A.h7(B.k.bG(b2,4),B.k.ad(b2,4)),!0,40,c5)],b),B.j,B.f,B.i,0,c5)],b))}if(o&&c2.length!==0)B.b.M(a6,A.a([B.K,new A.J(A.c("Main","Hand"),B.by,c5,c5,c5,c5),A.biU(c2)],b))
 a4.push(A.T(c5,A.F(a6,B.u,B.f,B.i,0,B.n),B.l,c5,c5,new A.a3(a7,c5,new A.d0(c3,c3,c3,c3),new A.bu(b0,b0,b0,b0),c5,c5,B.p),c5,c5,c5,B.aM,B.bd,c5,c5,c5))}d3=A.a9(A.cj(a4,B.fl,c5,c5,!1,B.B,!1),1)
 if(o){d2=A.cR(B.d_,c5,c5,c5,new A.bA(A.a0(18),B.x),c5)
 s=c4.y?c5:new A.aUk(c4,e)
@@ -124336,7 +124336,7 @@ s=p.w
 r=s!=null&&J.d(s.h(0,"status"),"playing")&&!J.d(s.h(0,"over"),!0)
 if(r&&A.e(s.h(0,"turnUid"))===p.ax)q=5
 else q=r?1:2
-if(B.k.ae(p.cy,q)===0)p.fV()
+if(B.k.ad(p.cy,q)===0)p.fV()
 return null},
 $S:21}
 A.aUF.prototype={
@@ -124793,7 +124793,7 @@ a7=B.b.p(n,a2.h(0,b3))?B.r:B.T
 a3.push(new A.J(a4+a5+a6,new A.q(!0,a7,b0,b0,b0,b0,b0,B.y,b0,b0,b0,b0,b0,b0,b0,b0,b0,b0,b0,b0,b0,b0,b0,b0,b0,b0),b0,b0,b0,b0))}b8.push(new A.A(B.d1,A.a1(a3,B.j,B.f,B.i,0,b0),b0))}if(!c)b8.push(new A.A(B.cI,A.f(A.c("Cagnotte","Pot")+" : "+A.b4(e*p.length)+" \xb7 "+A.c(b4,b4)+" 5 %",b0,b0,B.by,b0),b0))
 if(c&&l.length!==0){s=A.a([],b)
 for(a8=0;a8<l.length;){a0=l[a8];++a8
-s.push(A.F(A.a([new A.fL(new A.h7(B.k.bG(a0,4),B.k.ae(a0,4)),!0,30,b0),new A.J(""+a8,B.akw,b0,b0,b0,b0)],b),B.j,B.f,B.D,0,B.n))}B.b.M(b8,A.a([B.G,A.co(B.jf,s,6,4)],b))}if(m){if(n.length===1){s=A.c("Gagnant","Winner")
+s.push(A.F(A.a([new A.fL(new A.h7(B.k.bG(a0,4),B.k.ad(a0,4)),!0,30,b0),new A.J(""+a8,B.akw,b0,b0,b0,b0)],b),B.j,B.f,B.D,0,B.n))}B.b.M(b8,A.a([B.G,A.co(B.jf,s,6,4)],b))}if(m){if(n.length===1){s=A.c("Gagnant","Winner")
 n=new A.hh(new A.al(p,new A.aOM(n),t.w_),new A.aON(),t.kk).p7(0)
 p=r.h(0,b5)
 A.ad(p)
@@ -126157,9 +126157,9 @@ this.gmQ().k()
 this.anP()},
 B0(a){var s=this.a.r
 return a<s.length?s[a]:"?"},
-a1G(a,b){var s=B.e1[B.k.ae(this.a.x,8)]
+a1G(a,b){var s=B.e1[B.k.ad(this.a.x,8)]
 return A.em(this.gmQ(),new A.aSI(this,a,b,s),null)},
-aup(){var s,r,q=this,p=null,o=q.a.cy,n=o.length,m=n>1,l=B.e1[B.k.ae(n===0?0:B.b.gT(o),8)],k=new A.af(o,q.gaCT(),A.ab(o).i("af<1,u>")).aF(0," & "),j=q.a,i=j.db,h=j.r.length,g=o.length===0?0:B.k.ik(A.ny(i*h,j.dy),o.length)
+aup(){var s,r,q=this,p=null,o=q.a.cy,n=o.length,m=n>1,l=B.e1[B.k.ad(n===0?0:B.b.gT(o),8)],k=new A.af(o,q.gaCT(),A.ab(o).i("af<1,u>")).aF(0," & "),j=q.a,i=j.db,h=j.r.length,g=o.length===0?0:B.k.ik(A.ny(i*h,j.dy),o.length)
 n=A.a0(22)
 j=A.b9(l,2.5)
 i=A.a([new A.bJ(1,B.a6,A.K(B.c.am(178.5),l.l()>>>16&255,l.l()>>>8&255,l.l()&255),B.q,18)],t.V)
@@ -126172,13 +126172,13 @@ else{r=""+g+" FCFA"
 r=m?A.c("Cagnotte partag\xe9e : "+r+" chacun","Pot shared: "+r+" each"):A.c("Gain : "+r,"Prize: "+r)}B.b.M(s,A.a([B.G,A.f(r,p,p,B.M2,p)],h))}r=q.a.dx
 if(r>0){r=""+r+" FCFA"
 B.b.M(s,A.a([B.K,A.f(A.c("\ud83c\udfb0 JACKPOT gagn\xe9 : "+r+" !","\ud83c\udfb0 JACKPOT won: "+r+"!"),p,p,B.l6,B.R)],h))}s.push(B.G)
-s.push(B.anm)
+s.push(B.anl)
 r=q.a.fr
 if(r!=null)B.b.M(s,A.a([B.af,r],h))
 s.push(B.af)
 s.push(new A.aj(200,44,A.h1(B.uq,new A.aSJ(q),A.eN(p,p,p,p,p,p,p,p,p,B.e,p,p,p,p,p,B.dt,p,p,p,p)),p))
 return A.ns(new A.aSK(),A.T(p,A.F(s,B.j,B.f,B.i,0,B.n),B.l,p,p,new A.a3(B.fe,p,j,n,i,p,B.p),p,p,p,p,B.bP,p,p,1/0),B.jy,B.pV,p,new A.b_(0,1,t._),t.i)},
-D(a){var s,r,q=this,p=null,o=q.a,n=o.x,m=B.e1[B.k.ae(n,8)]
+D(a){var s,r,q=this,p=null,o=q.a,n=o.x,m=B.e1[B.k.ad(n,8)]
 n=""+(n+1)
 o=""+o.r.length
 o=A.f(A.c("Lancer "+n+"/"+o,"Roll "+n+"/"+o),p,p,B.M2,p)
@@ -126246,7 +126246,7 @@ s=q.a
 p=A.dw(B.alV,!s.at&&!o?s.ch:r,p)
 s=A.eN(r,r,r,r,r,r,r,r,r,B.e,r,r,r,r,r,B.dt,r,r,r,r)
 q=q.a
-return A.F(A.a([new A.aj(220,48,p,r),B.ab,new A.aj(220,44,A.h1(B.an8,q.at&&!o?q.CW:r,s),r)],t.p),B.j,B.f,B.i,0,B.n)},
+return A.F(A.a([new A.aj(220,48,p,r),B.ab,new A.aj(220,44,A.h1(B.an7,q.at&&!o?q.CW:r,s),r)],t.p),B.j,B.f,B.i,0,B.n)},
 $S:56}
 A.aSS.prototype={
 $2(a,b){var s,r,q,p=this.a
@@ -126259,10 +126259,10 @@ $S:760}
 A.aSP.prototype={
 $1(a){var s,r,q,p,o=this,n=null,m=o.a,l=m.a,k=l.d!=null&&o.b<l.c.length?new A.aSO(m,a,o.b):n,j=A.a0(14),i=o.b,h=A.K(B.c.am(255*(i===l.x?0.2:0.1)),B.e.l()>>>16&255,B.e.l()>>>8&255,B.e.l()&255)
 l=o.c
-s=l&&B.b.p(m.a.cy,i)?B.r:B.e1[B.k.ae(i,8)]
+s=l&&B.b.p(m.a.cy,i)?B.r:B.e1[B.k.ad(i,8)]
 r=m.a
 s=A.b9(s,i===r.x||l?2.5:1)
-q=A.en(B.e1[B.k.ae(i,8)],n,9)
+q=A.en(B.e1[B.k.ad(i,8)],n,9)
 p=r.r[i]
 q=A.a([q,B.aF,A.a9(A.f(p+(l&&B.b.p(r.cy,i)?" \ud83d\udc51":""),n,n,B.dp,n),1)],t.p)
 l=m.a
@@ -127054,7 +127054,7 @@ q.push(A.d3(f,f,new A.J(A.c(p+" joueurs",p+" players"),f,f,f,f,f),new A.b1X(g,n)
 p=A.e5(new A.b1Y(),A.i1(g.gjQ()),t.S)
 m=g.e
 l=g.d
-k=A.C9(B.r,B.C,new A.b1Z(g),B.amk,B.any,g.f)
+k=A.C9(B.r,B.C,new A.b1Z(g),B.amk,B.anx,g.f)
 j=A.d1(f,f,B.a9,f,f,f,f,f,f,B.e,f,f,f,f,f,f,f,f,f,f)
 i=g.r
 h=i?f:g.gatn()
@@ -127512,7 +127512,7 @@ d.push(new A.pl("deuxdes",h.a.d,g))
 d.push(B.aC)
 for(l=0;l<f;++l){o=new A.aF(16,16)
 n=A.K(31,B.e.l()>>>16&255,B.e.l()>>>8&255,B.e.l()&255)
-m=B.e1[B.k.ae(l,8)]
+m=B.e1[B.k.ad(l,8)]
 k=new A.aM(m,1.5,B.A,-1)
 m=A.en(m,g,12)
 if(l<b.length){j=A.e(b[l].h(0,"name"))
@@ -127822,7 +127822,7 @@ b9.c=Math.max(0.8,d1)
 b9.r=A.K(B.c.am(255*(0.55*b6+0.1)),B.e.l()>>>16&255,B.e.l()>>>8&255,B.e.l()&255).gt()
 d4.ev(b3,b9)
 for(b1=B.a7q.h(0,B.k.A(a0[0])),b2=b1.length,b4=b8,c2=0;c2<b2;++c2,b4=b9){c3=b1[c2]
-c4=(B.k.ae(c3,3)-1)*0.55
+c4=(B.k.ad(c3,3)-1)*0.55
 c5=((c3/3|0)-1)*0.55
 b5=A.a([],r)
 c6=new A.ch(b4.r,B.aa,d0,d0,b5)
@@ -128098,7 +128098,7 @@ if(typeof k!="string"||k.length===0||typeof j!="string"||j.length===0)continue
 i=l.h(0,"createdAt")
 if(i instanceof A.fu){m=Date.now()
 h=i.a*1e6+B.k.bG(i.b,1000)
-g=B.k.ae(h,1000)
+g=B.k.ad(h,1000)
 g=0-g+1000*(m-A.hx(B.k.bG(h-g,1000),g))>2e7
 m=g}else m=!1
 if(m)continue
@@ -128430,11 +128430,11 @@ $1(a){return B.c.A(A.aX(a))},
 $S:52}
 A.b8v.prototype={
 $1(a){var s=this.a
-return s[B.k.ae(this.b[a],s.length)]},
+return s[B.k.ad(this.b[a],s.length)]},
 $S:783}
 A.b8w.prototype={
 $1(a){var s=this.a
-return s[B.k.ae(this.b[a],s.length)]},
+return s[B.k.ad(this.b[a],s.length)]},
 $S:20}
 A.b8t.prototype={
 $0(){var s=this.a,r=s.c
@@ -128557,7 +128557,7 @@ if(p)q=A.c("La cloche sonne quand un joueur rejoint la partie.","The bell rings 
 p=l.z!=null
 o=p?B.v:B.T
 m=p?15:12
-return A.T(k,A.a1(A.a([B.anq,B.aF,A.a9(A.ac(q,k,k,k,k,A.bk(k,k,o,k,k,k,k,k,k,k,k,m,k,k,p?B.y:B.ba,k,k,!0,k,k,k,k,k,k,k,k),k,k,k),1)],t.p),B.j,B.f,B.i,0,k),B.l,k,k,new A.a3(r,k,n,s,k,k,B.p),k,k,k,B.bO,B.xR,k,k,1/0)}s=A.d1(k,k,B.r,B.aE,B.T,k,k,k,k,B.v,k,k,k,k,new A.bA(A.a0(14),B.x),k,k,k,k,k)
+return A.T(k,A.a1(A.a([B.anp,B.aF,A.a9(A.ac(q,k,k,k,k,A.bk(k,k,o,k,k,k,k,k,k,k,k,m,k,k,p?B.y:B.ba,k,k,!0,k,k,k,k,k,k,k,k),k,k,k),1)],t.p),B.j,B.f,B.i,0,k),B.l,k,k,new A.a3(r,k,n,s,k,k,B.p),k,k,k,B.bO,B.xR,k,k,1/0)}s=A.d1(k,k,B.r,B.aE,B.T,k,k,k,k,B.v,k,k,k,k,new A.bA(A.a0(14),B.x),k,k,k,k,k)
 r=l.as
 q=r?k:l.gaIf()
 if(r)r=A.c("Cloche envoy\xe9e au cr\xe9ateur","Bell sent to the host")
@@ -129138,7 +129138,7 @@ return A.n($async$Ba,r)},
 pZ(a){var s=null,r=A.a0(18),q=A.K(31,B.e.l()>>>16&255,B.e.l()>>>8&255,B.e.l()&255),p=A.b9(B.aE,1)
 return A.T(s,A.F(a,B.u,B.f,B.i,0,B.n),B.l,s,s,new A.a3(q,s,p,r,s,s,B.p),s,s,s,B.dH,B.bP,s,s,1/0)},
 a5y(){var s=this,r=null,q=new A.aX3(s),p=t.p
-return s.pZ(A.a([B.anG,B.G,A.co(B.a8,A.a([q.$2("today","Aujourd'hui"),q.$2("7","7 jours"),q.$2("30","30 jours"),q.$2("all","Tout"),q.$3$onTap("custom","Choisir\u2026",s.gaFr())],p),8,8),B.G,A.ac(s.gaFn(),r,r,r,r,B.ahA,r,r,r)],p))},
+return s.pZ(A.a([B.anF,B.G,A.co(B.a8,A.a([q.$2("today","Aujourd'hui"),q.$2("7","7 jours"),q.$2("30","30 jours"),q.$2("all","Tout"),q.$3$onTap("custom","Choisir\u2026",s.gaFr())],p),8,8),B.G,A.ac(s.gaFn(),r,r,r,r,B.ahA,r,r,r)],p))},
 a_W(a,b){var s=null
 return this.pZ(A.a([A.ac(a,s,s,s,s,B.bk,s,s,s),B.bL,A.ac(""+b,s,s,s,s,B.ah2,s,s,s)],t.p))},
 apR(){var s,r,q,p,o,n,m,l,k,j,i=this,h=null,g=i.r,f=A.K(31,B.e.l()>>>16&255,B.e.l()>>>8&255,B.e.l()&255)
@@ -129146,7 +129146,7 @@ g=A.a9(A.cl(h,B.X,!1,h,!0,B.o,h,A.cp(),i.x,h,h,h,h,h,2,A.cT(h,new A.cU(4,A.a0(12
 f=A.d1(h,h,B.a9,h,h,h,h,h,h,B.e,h,h,h,h,h,h,h,h,h,h)
 s=t.p
 f=A.a([i.pZ(A.a([B.alX,B.az,B.amh,B.ab,A.a1(A.a([g,B.aO,A.dw(B.Me,i.r?h:new A.aWS(i),f)],s),B.j,B.f,B.i,0,h)],s)),i.a5y(),i.a_W("Joueurs inscrits par les h\xf4tesses",i.Q)],s)
-if(i.y.length===0&&!i.f)f.push(B.a9q)
+if(i.y.length===0&&!i.f)f.push(B.a9r)
 for(g=i.y,r=g.length,q=0;q<g.length;g.length===r||(0,A.w)(g),++q){p=g[q]
 o=new A.aF(14,14)
 n=A.K(31,B.e.l()>>>16&255,B.e.l()>>>8&255,B.e.l()&255)
@@ -129172,7 +129172,7 @@ s=p.h(0,m)
 p.q(0,m,(s==null?0:s)+1)}e=h.z.h(0,"code")
 l=e==null?h.a.d:e
 e=t.p
-s=h.pZ(A.a([B.alB,A.ac(A.e(l==null?"":l),g,g,g,g,B.nO,g,g,g),B.az,B.anx],e))
+s=h.pZ(A.a([B.alB,A.ac(A.e(l==null?"":l),g,g,g,g,B.nO,g,g,g),B.az,B.anw],e))
 r=h.a5y()
 q=h.z.h(0,"count")
 q=h.a_W("Inscrits sur la p\xe9riode",typeof q=="number"?B.c.A(q):0)
@@ -129180,9 +129180,9 @@ k=h.z.h(0,"total")
 s=A.a([s,r,q,h.pZ(A.a([B.amg,A.ac(""+(typeof k=="number"?B.c.A(k):0)+" inscrits",g,g,g,g,B.LN,g,g,g)],e))],e)
 if(p.a!==0){r=A.a([B.alw,B.K],e)
 for(q=new A.dK(p,p.$ti.i("dK<1,2>")).gah(0);q.u();){j=q.d
-r.push(new A.A(B.m8,A.a1(A.a([new A.cm(1,B.ac,A.ac(j.a,g,g,g,g,B.a5,g,g,g),g),A.ac(""+j.b,g,g,g,g,B.fv,g,g,g)],e),B.j,B.f,B.i,0,g),g))}s.push(h.pZ(r))}if(f.length!==0){r=A.a([B.anC,B.K],e)
+r.push(new A.A(B.m8,A.a1(A.a([new A.cm(1,B.ac,A.ac(j.a,g,g,g,g,B.a5,g,g,g),g),A.ac(""+j.b,g,g,g,g,B.fv,g,g,g)],e),B.j,B.f,B.i,0,g),g))}s.push(h.pZ(r))}if(f.length!==0){r=A.a([B.anB,B.K],e)
 for(q=f.length,o=0;o<f.length;f.length===q||(0,A.w)(f),++o){i=f[o]
-r.push(new A.A(B.m8,A.a1(A.a([new A.cm(1,B.ac,A.ac(A.e(i.h(0,"pseudo")),g,g,g,g,B.W,g,g,g),g),A.ac(new A.aWZ(i).$0(),g,g,g,g,B.d9,g,g,g)],e),B.j,B.f,B.i,0,g),g))}s.push(h.pZ(r))}if(f.length===0&&!h.f)s.push(h.pZ(A.a([B.amz],e)))
+r.push(new A.A(B.m8,A.a1(A.a([new A.cm(1,B.ac,A.ac(A.e(i.h(0,"pseudo")),g,g,g,g,B.W,g,g,g),g),A.ac(new A.aWZ(i).$0(),g,g,g,g,B.d9,g,g,g)],e),B.j,B.f,B.i,0,g),g))}s.push(h.pZ(r))}if(f.length===0&&!h.f)s.push(h.pZ(A.a([B.amy],e)))
 return A.F(s,B.u,B.f,B.i,0,B.n)},
 D(a){var s,r,q,p,o,n=this,m=null,l=n.a,k=l.c
 if(k&&l.d==null)s="\ud83d\udc81 H\xf4tesses"
@@ -129236,7 +129236,7 @@ s.f=!1},
 $S:0}
 A.aWX.prototype={
 $1(a){var s=null,r=A.ac(this.a,s,s,s,s,s,s,s,s),q=A.ac(this.b,s,s,s,s,s,s,s,s)
-return A.dD(A.a([A.aT(B.us,new A.aWV(a),s),A.dw(B.ani,new A.aWW(a),s)],t.p),s,q,s,r)},
+return A.dD(A.a([A.aT(B.us,new A.aWV(a),s),A.dw(B.anh,new A.aWW(a),s)],t.p),s,q,s,r)},
 $S:13}
 A.aWV.prototype={
 $0(){A.a5(this.a,!1).ba(!1)
@@ -129475,7 +129475,7 @@ a6X(a,b,c){var s,r,q,p,o,n,m,l=null
 if(a.length===0)return A.f(A.c("Aucun joueur disponible.","No player available."),l,l,B.S,l)
 s=A.a([],t.p)
 for(r=a.length,q=0;q<a.length;a.length===r||(0,A.w)(a),++q){p=a[q]
-o=A.en(B.zH[B.k.ae(p,4)],l,7)
+o=A.en(B.zH[B.k.ad(p,4)],l,7)
 n=this.a.d[p]
 m=this.x?l:new A.aKm(c,p)
 s.push(A.d3(o,l,new A.J(n,l,l,l,l,l),m,b===p,l,l))}return A.co(B.a8,s,4,8)},
@@ -129730,14 +129730,14 @@ D(a){if(this.c)return this.aBQ(a)
 return new A.Ow(this,null)},
 aBQ(a){var s,r=this,q=null,p=t.p,o=A.a([B.MH,B.MN],p),n=r.c
 if(!n){s=A.a([],p)
-if($.bL)s.push(A.a0X(B.YF,B.amy,new A.anT(r,a),A.rZ(q,q,A.K(36,B.e.l()>>>16&255,B.e.l()>>>8&255,B.e.l()&255),q,q,q,q,q,q,B.e,q,q,q,q,new A.bA(A.a0(20),B.x),q,q,q,q,q)))
+if($.bL)s.push(A.a0X(B.YF,B.amx,new A.anT(r,a),A.rZ(q,q,A.K(36,B.e.l()>>>16&255,B.e.l()>>>8&255,B.e.l()&255),q,q,q,q,q,q,B.e,q,q,q,q,new A.bA(A.a0(20),B.x),q,q,q,q,q)))
 s.push(B.dP)
 s.push(B.rd)
 o.push(A.a1(s,B.j,B.f,B.i,0,q))}o.push(B.K)
 o.push(A.cu(q,B.alD,B.t,!1,q,q,q,q,q,q,q,new A.anU(a),q,q,q,q,q,q,q,q,q,q,q,q,q,q,q,q))
 o.push(A.Kf(B.c5,q,q,q,B.cz,q,q,!0,q,A.dS(A.a([A.dS(q,q,q,q,q,q,q,q,q,A.bk(q,q,B.e,q,q,q,q,q,q,q,q,46,B.iw,q,B.y,q,1,!0,q,q,q,q,q,B.mO,q,q),"Kati"),A.dS(q,q,q,q,q,q,q,q,q,A.bk(q,q,B.r,q,q,q,q,q,q,q,q,46,B.iw,q,B.y,q,1,!0,q,q,q,q,q,B.mO,q,q),"ka")],t.VO),q,q,q,q,q,q,q,q,q,q),B.J,q,q,B.ah,B.b_))
 o.push(B.az)
-o.push(B.amD)
+o.push(B.amC)
 o.push(B.dO)
 if(n)o.push(new A.a6G(B.yO,"Reprendre la partie","Le pilote automatique joue en attendant",B.aR,new A.anV(a),q))
 else{p=A.a([],p)
@@ -129757,7 +129757,7 @@ return this.a?s.$1(a):new A.rh(s,null)},
 $S:11}
 A.aow.prototype={
 $1(a){var s=null,r="Notifications",q="Transactions",p=this.a,o=this.b,n=new A.aox(p,a,o),m=new A.aoy((B.c.cl(A.aw(a,s,t.w).w.a.a,0,560)-50)/2),l=A.a0(18),k=A.K(31,B.e.l()>>>16&255,B.e.l()>>>8&255,B.e.l()&255),j=A.b9(B.r,1),i=this.c,h=i==null
-i=h?B.amu:A.F(A.a([B.am8,A.e5(new A.aof(),A.i1(i.a.c.a.a),t.S)],t.p),B.j,B.f,B.i,0,B.n)
+i=h?B.amt:A.F(A.a([B.am8,A.e5(new A.aof(),A.i1(i.a.c.a.a),t.S)],t.p),B.j,B.f,B.i,0,B.n)
 l=A.T(s,i,B.l,s,s,new A.a3(k,s,j,l,s,s,B.p),s,s,s,s,B.bP,s,s,1/0)
 j=t.p
 p=A.a([m.$4(B.yW,A.c("Jeux","Games"),B.aR,new A.aog(p,a,o)),m.$4(B.qT,"Code promo",B.Sv,new A.aoh(n)),m.$4(B.Y_,A.c("Tutoriel","Tutorial"),B.d_,new A.aoo(a)),m.$4(B.r3,"Recharge",B.a9,new A.aop(n)),m.$4(B.mD,"Transf\xe9rer de l'argent",B.lH,new A.aoq(n)),m.$4(B.mG,"Retrait",B.cq,new A.aor(n)),m.$4(B.kd,A.c("Tournois","Tournaments"),B.Sd,new A.aos(n))],j)
@@ -130024,7 +130024,7 @@ s.a5e(r)}return}q.n(new A.aWC(q,a))},
 aCd(){var s,r,q=null,p=A.a([],t.p)
 for(s=0;s<4;++s){r=new A.aF(3,3)
 p.push(A.T(q,q,B.l,q,q,new A.a3(B.a2v[s],q,q,new A.bu(r,r,r,r),q,q,B.p),q,10,q,B.pZ,q,q,q,10))}p.push(B.fu)
-p.push(B.anl)
+p.push(B.ank)
 return A.a1(p,B.j,B.f,B.D,0,q)},
 Rk(){var s,r,q,p,o,n=this,m=null
 if($.bL){s=$.C
@@ -130219,15 +130219,15 @@ A.Dg.prototype={
 D(a){var s,r,q,p,o,n,m,l=this,k=null,j="NOUVEAU",i="NEW",h=A.xT(k,B.a9,B.r2,"assets/game_ludo.png","ludo",k,new A.aVT(l,a),A.c("Pr\xe9sentiel ou en ligne","Face to face or online"),"Ludo"),g=A.c("Deux d\xe9s","Two dice")
 g=A.xT(k,B.ws,B.iy,"assets/game_deuxdes.png","deuxdes",k,new A.aVU(l,a),A.c("Lance deux d\xe9s, d\xe9fie les autres","Roll two dice, challenge others"),g)
 s=A.c("Atteins 21 sans d\xe9passer","Reach 21 without going over")
-s=A.xT(A.c(j,i),B.aR,B.r0,k,"tiah",B.aqq,new A.aVV(l,a),s,"TIAH")
+s=A.xT(A.c(j,i),B.aR,B.r0,k,"tiah",B.aqr,new A.aVV(l,a),s,"TIAH")
 r=A.c("Le plus gros total gagne","Highest total wins")
-r=A.xT(A.c(j,i),B.fU,B.XC,k,"boubayah",B.aqr,new A.aVW(l,a),r,"BOUBAYAH")
+r=A.xT(A.c(j,i),B.fU,B.XC,k,"boubayah",B.aqo,new A.aVW(l,a),r,"BOUBAYAH")
 q=A.c("Plis et Corat \xb7 en ligne","Tricks and Corat \xb7 online")
-q=A.xT(A.c(j,i),B.d_,B.r0,k,"fapfap",B.aqp,new A.aVX(l,a),q,"FAP-FAP")
+q=A.xT(A.c(j,i),B.d_,B.r0,k,"fapfap",B.aqq,new A.aVX(l,a),q,"FAP-FAP")
 p=A.c("Cagnotte et Corat \xb7 en ligne","Jackpot and Corat \xb7 online")
 p=A.xT(A.c(j,i),B.lH,B.iy,k,"anticote",B.aqs,new A.aVY(l,a),p,"ANTI-COTE")
 o=A.c("D\xe9fausse-toi de tes cartes \xb7 en ligne","Shed all your cards \xb7 online")
-o=A.xT(A.c(j,i),B.x6,B.XN,k,"tchek",B.aqo,new A.aVZ(l,a),o,"TCHEK GAMES")
+o=A.xT(A.c(j,i),B.x6,B.XN,k,"tchek",B.aqp,new A.aVZ(l,a),o,"TCHEK GAMES")
 n=A.c("Paris par derri\xe8re","Side bets")
 m=A.c("Sports \xb7 Courses","Sports \xb7 Races")
 return A.A2(1,A.a([h,g,s,r,q,p,o,A.xT(A.c(j,i),B.wV,B.r_,"assets/game_pariderriere.png",k,k,new A.aW_(l,a),m,n)],t.p),2,14,14,k,B.hq,!0)}}
@@ -130401,7 +130401,7 @@ m=A.a([m,B.aF,new A.cm(1,B.ac,new A.J(q[n]===-1?A.c(k.iZ(n)+" : sans bin\xf4me",
 l=q[n]
 if(l!==-1&&n<l&&p.h(0,n)!=null&&$.bL){l=p.h(0,q[n])
 l=l==null?j:l.a
-m.push(A.aT(new A.J(l===p.h(0,n).a?A.c("1 joueur \u2713","1 player \u2713"):A.c("Je joue les 2 cases","I play both seats"),j,j,j,j,j),new A.ba3(k,n),j))}m.push(q[n]===-1?A.aT(B.Ma,new A.ba4(k,n),j):A.aT(B.j9,new A.ba5(k,n),j))
+m.push(A.aT(new A.J(l===p.h(0,n).a?A.c("1 joueur \u2713","1 player \u2713"):A.c("Je joue les 2 cases","I play both seats"),j,j,j,j,j),new A.ba3(k,n),j))}m.push(q[n]===-1?A.aT(B.M9,new A.ba4(k,n),j):A.aT(B.j9,new A.ba5(k,n),j))
 h.push(new A.A(B.bJ,A.a1(m,B.j,B.f,B.i,0,j),j))}return A.F(h,B.u,B.f,B.i,0,B.n)},
 gxk(){var s,r,q,p,o,n,m,l,k,j,i=this
 if(!$.bL)return null
@@ -130415,13 +130415,13 @@ m=n.d
 k=i.z
 j=i.Q?i.as:0
 if(m<k*l+j)return n.b}return null},
-aJl(){var s,r,q,p,o,n=this,m=null,l=t.p,k=A.a([B.kh,B.aC,B.anS,B.ab,new A.ni(n.z,n.gpz().length,!1,new A.b9V(n),m),n.wQ("Captures payantes",u.y,n.Q,new A.b9W(n))],l)
+aJl(){var s,r,q,p,o,n=this,m=null,l=t.p,k=A.a([B.kh,B.aC,B.anR,B.ab,new A.ni(n.z,n.gpz().length,!1,new A.b9V(n),m),n.wQ("Captures payantes",u.y,n.Q,new A.b9W(n))],l)
 if(n.Q){s=A.f(A.c("Montant par capture (minimum 100 FCFA)","Amount per capture (minimum 100 FCFA)"),m,m,B.cA,m)
 r=A.a([],l)
 for(q=0;q<5;++q){p=B.A9[q]
 r.push(A.d3(m,m,new A.J(""+p,m,m,m,m,m),new A.b9X(n,p),n.as===p,m,m))}r=A.co(B.a8,r,4,8)
 o=""+n.as+" FCFA"
-B.b.M(k,A.a([s,B.G,r,B.az,A.f(A.c("Chaque pion captur\xe9 : "+o+u.d,"Each captured pawn: "+o+u.B),m,m,B.ug,m)],l))}return A.F(k,B.u,B.f,B.i,0,B.n)},
+B.b.M(k,A.a([s,B.G,r,B.az,A.f(A.c("Chaque pion captur\xe9 : "+o+u.b,"Each captured pawn: "+o+u.B),m,m,B.ug,m)],l))}return A.F(k,B.u,B.f,B.i,0,B.n)},
 qh(){return this.aJs()},
 aJs(){var s=0,r=A.o(t.H),q,p=2,o=[],n=this,m,l,k,j,i,h,g,f,e,d,c,b,a,a0,a1,a2,a3,a4,a5,a6,a7,a8,a9,b0
 var $async$qh=A.k(function(b1,b2){if(b1===1){o.push(b2)
@@ -130647,7 +130647,7 @@ m=n?B.r:A.K(31,B.e.l()>>>16&255,B.e.l()>>>8&255,B.e.l()&255)
 n=n?B.i7:B.e
 h.push(new A.cm(1,B.ac,new A.A(B.xL,A.cu(l,A.T(B.P,new A.J(""+q,new A.q(!0,n,l,l,l,l,18,B.U,l,l,l,l,l,l,l,l,l,l,l,l,l,l,l,l,l,l),l,l,l,l),B.l,l,l,new A.a3(m,l,l,new A.bu(o,o,o,o),l,l,B.p),l,l,l,l,B.fj,l,l,l),B.t,!1,l,l,l,l,l,l,l,l,l,l,l,l,l,l,l,l,l,p,l,l,l,l,l,l),l),l))}return A.iJ(A.F(A.a([j,B.ab,A.a1(h,B.j,B.f,B.i,0,l)],i),B.u,B.f,B.i,0,B.n),k)},
 a5z(a,b,c,d){return this.a5A(a,b,c,d,!0)},
-D(a){var s,r,q,p=this,o=null,n=t.p,m=A.a([A.a1(A.a([A.bf(o,o,o,B.bh,o,o,new A.baj(p,a),o,o,o,o,o),B.anT],n),B.j,B.f,B.i,0,o)],n)
+D(a){var s,r,q,p=this,o=null,n=t.p,m=A.a([A.a1(A.a([A.bf(o,o,o,B.bh,o,o,new A.baj(p,a),o,o,o,o,o),B.anS],n),B.j,B.f,B.i,0,o)],n)
 if(!p.ax){s=A.a([B.hF,p.a5z("Nombre de joueurs",B.zw,p.d,new A.bak(p)),B.hF,p.a5A("Nombre de pions par joueur",B.zt,p.e,new A.bal(p),!p.w)],n)
 if(p.w)s.push(B.a9x)
 if($.bL)B.b.M(s,A.a([B.hF,p.aJl()],n))
@@ -130692,7 +130692,7 @@ $1(a){var s,r=null,q=this.a,p=this.b
 p=A.f(A.c(q.iZ(p)+", invitation !",q.iZ(p)+", you're invited!"),r,r,B.W,r)
 s=this.c
 s=A.f(A.c(q.iZ(s)+" t'invite comme bin\xf4me. Tu acceptes ?",q.iZ(s)+" invites you as a partner. Do you accept?"),r,r,B.a5,r)
-return A.dD(A.a([A.aT(B.an2,new A.b9A(a),r),A.aT(B.M9,new A.b9B(a),r)],t.p),B.dA,s,r,p)},
+return A.dD(A.a([A.aT(B.an1,new A.b9A(a),r),A.aT(B.M8,new A.b9B(a),r)],t.p),B.dA,s,r,p)},
 $S:13}
 A.b9A.prototype={
 $0(){A.a5(this.a,!1).ba(!1)
@@ -130953,7 +130953,7 @@ return s===$?this.e=this.a.d:s},
 gM5(){var s=this.f
 return s===$?this.f=this.a.e:s},
 aJy(a){var s=this.a
-if(s.w)s=43+B.k.ae(a,2)
+if(s.w)s=43+B.k.ad(a,2)
 else s=s.x?0:-1
 return s},
 gzR(){var s=this
@@ -130994,11 +130994,18 @@ if(s.a.z!=null)if(!s.fr)r=!s.giI()&&s.gcO()===s.gtj()&&new A.b6(Date.now(),0,!1)
 return r},
 ws(a){var s=this.a.at
 return s==null?-1:s[a]},
-a4u(a,b){var s=this.gcH()[a].f
-return new A.al(s,new A.aZr(b),A.ab(s).i("al<1>")).gK(0)>=2},
+a4u(a,b){var s,r,q,p,o,n,m,l,k,j,i
+if(b<0||b>=51){s=this.gcG()[a].f
+return new A.al(s,new A.aZr(b),A.ab(s).i("al<1>")).gK(0)>=2}s=this.gcG()
+r=B.k.ad(s[a].d+b,52)
+for(q=s.length,p=this.a,o=0,n=0;n<q;++n){if(n!==a){m=p.at
+m=!(m!=null&&m[a]===n)}else m=!1
+if(m)continue
+for(m=s[n],l=m.f,k=l.length,m=m.d,j=0;j<k;++j){i=l[j]
+if(i>=0&&i<51&&B.k.ad(m+i,52)===r)++o}}return o>=2},
 v9(a){var s=this,r=s.ws(a)
 return r===-1?s.fA(a):s.fA(a)+" & "+s.fA(r)},
-auX(a){return(this.a.at!=null||this.Y>1)&&B.b.cL(this.gcH()[a].f,new A.aZn())},
+auX(a){return(this.a.at!=null||this.Y>1)&&B.b.cL(this.gcG()[a].f,new A.aZn())},
 gJN(){var s=this.fy
 return s===$?this.fy=this.a.CW:s},
 aBX(){var s,r,q=this,p="[DEFAULT]",o=$.C,n=(o==null?$.C=$.aq():o).a4(p)
@@ -131060,14 +131067,14 @@ q=q.z
 s=q==null
 if(s&&p!=null&&a<p.length&&p[a].length!==0)return p[a]
 if(!s){r=B.b.dM(this.gm2(),a)
-if(r>=0&&r<q.r.length)return q.r[r]}q=this.gcH()[a].a
+if(r>=0&&r<q.r.length)return q.r[r]}q=this.gcG()[a].a
 return A.c("Joueur "+q,"Player "+A.c(q,null))},
 gyU(){var s,r,q,p,o,n=this
 if(!n.X)return null
 s=n.w
 if(s!=null)return s
 for(s=n.gn7(),r=s.length,q=0;q<s.length;s.length===r||(0,A.w)(s),++q){p=s[q]
-o=n.gcH()[p].f
+o=n.gcG()[p].f
 if(o.length!==0&&B.b.cL(o,new A.b0a()))return p}return null},
 gafn(){var s,r=A.a2(this.gn7(),t.S)
 B.b.da(r,new A.b_I(this))
@@ -131080,7 +131087,7 @@ k.aMh()
 s=k.U||k.V||k.c1!==0||k.ce
 r=k.gcO()
 q=k.v
-p=k.gcH()
+p=k.gcG()
 o=A.ab(p).i("af<1,u>")
 n=""+r+"|"+q+"|"+new A.af(p,new A.aZP(),o).aF(0,";")
 if(k.X||s||n!==k.b4){k.b4=n
@@ -131158,7 +131165,7 @@ a5N(){var s,r=this,q=A.a([],t.t)
 for(s=1;s<=6;++s)if(r.auG(s))q.push(s)
 if(q.length!==0&&r.d.dA(1000)<100)return q[r.d.dA(q.length)]
 return r.aqh()},
-aqh(){var s,r,q,p,o,n,m,l,k,j,i,h,g=this,f=g.gcO(),e=g.gcH(),d=g.v1(e[f])
+aqh(){var s,r,q,p,o,n,m,l,k,j,i,h,g=this,f=g.gcO(),e=g.gcG(),d=g.v1(e[f])
 for(s=0,r=1,q=!1,p=0;p<e.length;++p){if(p===f)continue
 if(B.b.cL(e[p].f,new A.aZi()))continue
 o=g.v1(e[p])
@@ -131177,10 +131184,10 @@ if(h<n)n=h}if(k&&n>3)n=1+e.dA(3)}else if(l>0.2){if(l>0.3)j=3
 else j=l>0.25?2:1
 for(i=0;i<j;++i){h=e.dA(6)+1
 if(h>n)n=h}}return n},
-auG(a){var s,r=this.gcH()[this.gcO()].f.length
+auG(a){var s,r=this.gcG()[this.gcO()].f.length
 for(s=0;s<r;++s)if(this.Ga(s,a))return!0
 return!1},
-a6y(){var s,r=this,q=r.gcO(),p=r.gcH()[q].f,o=A.ab(p).i("al<1>"),n=A.a2(new A.al(p,new A.aZE(),o),o.i("L.E"))
+a6y(){var s,r=this,q=r.gcO(),p=r.gcG()[q].f,o=A.ab(p).i("al<1>"),n=A.a2(new A.al(p,new A.aZE(),o),o.i("L.E"))
 if(n.length===1&&B.b.gT(n)>=0){s=56-B.b.gT(n)
 if(s>=1&&s<=6){p=r.aP
 o=p[q]
@@ -131317,7 +131324,7 @@ if(p.p3)for(o=t.t,n=t.S,m=t.j,l=0;l<4;++l){k=a0.h(0,"p"+l)
 if(!m.b(k))continue
 j=J.ci(k,new A.aZz(),n)
 i=A.a2(j,j.$ti.i("ai.E"))
-h=p.gcH()[l].f
+h=p.gcG()[l].f
 g=0
 for(;;){if(!(g<i.length&&g<h.length))break
 f=h[g]
@@ -131338,7 +131345,7 @@ else m.oj("sfx_step.wav",0.6)
 new A.aZB(p,c,b).$0()
 p.c.cR()
 s=9
-return A.h(A.eA(new A.b7(1000*p.ad),null,n),$async$Bf)
+return A.h(A.eA(new A.b7(1000*p.ae),null,n),$async$Bf)
 case 9:case 7:++b
 s=6
 break
@@ -131355,7 +131362,7 @@ a5_(){var s=this
 if(s.p1||s.p2.length===0)return
 s.Bf(B.b.jN(s.p2,0))},
 G0(a){var s,r,q,p,o,n,m,l=this,k=A.a([],t.Zb)
-for(s=l.gcH(),r=s.length,q=t.S,p=0;p<s.length;s.length===r||(0,A.w)(s),++p)k.push(A.fb(s[p].f,!0,q))
+for(s=l.gcG(),r=s.length,q=t.S,p=0;p<s.length;s.length===r||(0,A.w)(s),++p)k.push(A.fb(s[p].f,!0,q))
 o=l.X
 n=l.v
 m=l.p3
@@ -131369,7 +131376,7 @@ if(l.X)l.q2()},
 aJg(a,b){var s,r,q,p,o,n,m,l,k,j,i,h=this
 if(!h.p3){h.p3=!0
 return}for(s=!1,r=!1,q=!1,p=0;p<4;++p){o=a[p]
-n=h.gcH()[p].f
+n=h.gcG()[p].f
 m=n.length
 l=o.length
 k=0
@@ -131518,7 +131525,7 @@ h=(f==null?$.C=$.aq():f).a4("[DEFAULT]")
 A.ag(h,$.aJ(),!0)
 f=A.cf(new A.ao(h)).bx("games").c_(a3.d)
 m=A.z(t.K,t.X)
-for(l=0;l<4;++l)J.bb(m,"p"+A.e(l),n.gcH()[l].f)
+for(l=0;l<4;++l)J.bb(m,"p"+A.e(l),n.gcG()[l].f)
 J.bb(m,"cur",n.gcO())
 J.bb(m,"hasRolled",n.v)
 J.bb(m,"dice",n.y2)
@@ -131552,7 +131559,7 @@ if(a2==null)a2=-1
 c=A.a(c.slice(0),b)
 e=A.a2(e,d)
 k=A.a([i,a,a0,a1,a2,c,e],t.jl)
-for(j=0;j<4;++j)J.bV(k,n.gcH()[j].f)
+for(j=0;j<4;++j)J.bV(k,n.gcG()[j].f)
 i=n.X?1:0
 J.bV(k,i)
 J.bV(k,0)
@@ -131583,7 +131590,7 @@ s=this.gLE()===3?A.a([0,1,2],s):A.a([0,1,2,3],s)}return s},
 gn7(){var s=this.gm2(),r=A.ab(s).i("al<1>")
 s=A.a2(new A.al(s,new A.aZU(this),r),r.i("L.E"))
 return s},
-gcH(){var s,r,q=this.xr
+gcG(){var s,r,q=this.xr
 if(q===$){s=t.t
 r=A.a([new A.ik("Rouge",B.aR,B.SR,0,B.fm,A.a([-1,-1,-1,-1],s)),new A.ik("Vert",B.a9,B.Su,13,B.qW,A.a([-1,-1,-1,-1],s)),new A.ik("Jaune",B.r,B.Si,26,B.r4,A.a([-1,-1,-1,-1],s)),new A.ik("Bleu",B.cq,B.Ri,39,B.qY,A.a([-1,-1,-1,-1],s))],t.zU)
 this.xr!==$&&A.ay()
@@ -131600,7 +131607,7 @@ case 2:return B.a2I
 default:return B.a0F}},
 a_(){var s,r,q,p,o,n,m,l,k,j=this,i=null
 j.ag()
-for(s=j.gcH(),r=s.length,q=j.ga7H(),p=t.S,o=0;o<s.length;s.length===r||(0,A.w)(s),++o){n=s[o]
+for(s=j.gcG(),r=s.length,q=j.ga7H(),p=t.S,o=0;o<s.length;s.length===r||(0,A.w)(s),++o){n=s[o]
 m=j.f
 n.f=A.I9(m===$?j.f=j.a.e:m,q,!0,p)}l=j.a.as
 if(l!=null){k=0
@@ -131647,11 +131654,11 @@ return s.gwj()&&!s.v&&!s.X&&!s.U&&!s.V&&s.c1===0},
 a0e(a,b){if(a===-1)return b===6
 return a+b<=56},
 aUD(a){return this.Ga(a,this.y2)},
-Ga(a,b){var s,r,q,p,o,n,m,l,k,j=this,i=j.gcH(),h=i[j.gcO()],g=h.f[a]
+Ga(a,b){var s,r,q,p,o,n,m,l,k,j=this,i=j.gcG(),h=i[j.gcO()],g=h.f[a]
 if(!j.a0e(g,b))return!1
 s=g===-1?0:g+b
 if(s>=51)return!1
-r=B.k.ae(h.d+s,52)
+r=B.k.ad(h.d+s,52)
 if(j.gYz().p(0,r))return!1
 for(q=0;q<i.length;++q){p=j.y1
 if(p===$){p=j.y1=j.a.c
@@ -131660,17 +131667,17 @@ if(q!==p){n=j.a.at
 n=n!=null&&n[q]===o}else n=!0
 if(n)continue
 for(n=i[q].f,m=n.length,l=0;l<n.length;n.length===m||(0,A.w)(n),++l){k=n[l]
-if(k>=0&&k<51&&B.k.ae(i[q].d+k,52)===r&&!j.a4u(q,k))return!0}}return!1},
-qT(){var s,r,q,p=this,o=p.gcH()[p.gcO()],n=A.a([],t.t)
+if(k>=0&&k<51&&B.k.ad(i[q].d+k,52)===r&&!j.a4u(q,k))return!0}}return!1},
+qT(){var s,r,q,p=this,o=p.gcG()[p.gcO()],n=A.a([],t.t)
 for(s=0;r=o.f,s<r.length;++s)if(p.a0e(r[s],p.y2))n.push(s)
 r=t.V7
 q=A.a2(new A.al(n,p.gaUC(),r),r.i("L.E"))
 return p.ar&&q.length!==0?q:n},
-aQr(a){var s,r,q,p=this.gcH()[this.gcO()],o=A.aK(t.S),n=A.a([],t.t)
+aQr(a){var s,r,q,p=this.gcG()[this.gcO()],o=A.aK(t.S),n=A.a([],t.t)
 for(s=a.length,r=0;r<a.length;a.length===s||(0,A.w)(a),++r){q=a[r]
 if(o.F(0,p.f[q]))n.push(q)}return n},
 IK(a){var s=t.x
-return s.a($.ak.ad$.x.h(0,this.to).gac()).ec(A.ck(s.a($.ak.ad$.x.h(0,a).gac()).be(null),B.q))},
+return s.a($.ak.ae$.x.h(0,this.to).gac()).ec(A.ck(s.a($.ak.ae$.x.h(0,a).gac()).be(null),B.q))},
 aUV(a){var s=this
 if(a!==s.gcO()||!s.gCk())return
 s.n(new A.b_z(s,s.IK(s.x2[a])))},
@@ -131749,7 +131756,7 @@ break}p.pb(p.gcO(),B.b.gT(g))
 case 14:case 10:case 1:return A.m(q,r)}})
 return A.n($async$mC,r)},
 FZ(){var s,r=this,q=r.gn7(),p=r.gcO()
-for(s=0;s<q.length;++s){p=q[B.k.ae(B.b.dM(q,p)+1,q.length)]
+for(s=0;s<q.length;++s){p=q[B.k.ad(B.b.dM(q,p)+1,q.length)]
 if(!r.auX(p))break}r.y1=p
 r.v=!1
 r.I=u.M},
@@ -131758,7 +131765,7 @@ aUE(a2,a3){var s=0,r=A.o(t.H),q,p=this,o,n,m,l,k,j,i,h,g,f,e,d,c,b,a,a0,a1
 var $async$pb=A.k(function(a4,a5){if(a4===1)return A.l(a5,r)
 for(;;)switch(s){case 0:a1={}
 if(!p.v||p.X||p.U||p.V||p.c1!==0||p.ce||a2!==p.gcO()||p.r.p(0,a2)||!p.gwj()){s=1
-break}o=p.gcH()
+break}o=p.gcG()
 n=o[a2]
 m=n.f[a3]
 if(m===56){s=1
@@ -131778,7 +131785,7 @@ break
 case 3:p.RG.oj("sfx_step.wav",0.6)
 p.n(new A.b_s(n,a3))
 s=6
-return A.h(A.eA(A.eh(0,0,p.ad+40),null,t.z),$async$pb)
+return A.h(A.eA(A.eh(0,0,p.ae+40),null,t.z),$async$pb)
 case 6:if(p.c==null||l!==p.E){s=1
 break}s=4
 break
@@ -131788,7 +131795,7 @@ break}j.oj("sfx_step.wav",0.6)
 new A.b_t(n,a3,m,h).$0()
 p.c.cR()
 s=10
-return A.h(A.eA(new A.b7(1000*p.ad),null,i),$async$pb)
+return A.h(A.eA(new A.b7(1000*p.ae),null,i),$async$pb)
 case 10:if(p.c==null||l!==p.E){s=1
 break}case 8:++h
 s=7
@@ -131796,12 +131803,12 @@ break
 case 9:case 4:g=n.f[a3]
 a1.a=!1
 f=A.a([],t.t)
-if(g<51){e=B.k.ae(n.d+g,52)
+if(g<51){e=B.k.ad(n.d+g,52)
 if(!p.gYz().p(0,e))for(d=0;d<o.length;++d){if(d!==a2){j=p.a.at
 j=j!=null&&j[d]===a2}else j=!0
 if(j)continue
 for(c=0;j=o[d],i=j.f,c<i.length;++c){b=i[c]
-if(b>=0&&b<51&&B.k.ae(j.d+b,52)===e&&!p.a4u(d,b)){o[d].f[c]=-1
+if(b>=0&&b<51&&B.k.ad(j.d+b,52)===e&&!p.a4u(d,b)){o[d].f[c]=-1
 a1.a=!0
 f.push(d)}}}}a=B.b.cL(n.f,new A.b_u())
 if(a&&!B.b.p(p.al,a2))p.al.push(a2)
@@ -131829,23 +131836,23 @@ adm(a,b){var s=a<2?0:9,r=a===0||a===3?0:9,q=b<2?1.5:4.5,p=(b&1)===0?1.1:4.9
 return this.Si(s+q,r+p)},
 gIg(){var s,r,q=this
 if(q.a.z!=null&&!q.giI()){s=q.gHN()
-r=B.k.ae(2-(s.length===0?q.gtj():B.b.gT(s)),4)}else r=0
+r=B.k.ad(2-(s.length===0?q.gtj():B.b.gT(s)),4)}else r=0
 return r},
 Si(a,b){var s,r,q,p=b,o=a,n=0
 for(;;){s=this.a.z
 if(s!=null){s=s.c
 s=s!==!0}else s=!1
 if(s){r=this.gHN()
-s=B.k.ae(2-(r.length===0?this.gtj():B.b.gT(r)),4)}else s=0
+s=B.k.ad(2-(r.length===0?this.gtj():B.b.gT(r)),4)}else s=0
 if(!(n<s))break
 q=15-o;++n
 o=p
 p=q}return A.a([o,p],t.n)},
-q7(a){return B.k.ae(B.k.ae(a-this.gIg(),4)+4,4)},
-af_(a,b){var s,r=this,q=r.gcH()[a],p=q.f[b]
+q7(a){return B.k.ad(B.k.ad(a-this.gIg(),4)+4,4)},
+af_(a,b){var s,r=this,q=r.gcG()[a],p=q.f[b]
 if(p===56)return null
 if(p===-1)return r.adm(a,b)
-s=p>=51?r.adn(a)[p-51]:B.Aa[B.k.ae(q.d+p,52)]
+s=p>=51?r.adn(a)[p-51]:B.Aa[B.k.ad(q.d+p,52)]
 return r.Si(s[0]+0.5,s[1]+0.5)},
 aUP(a,b){var s,r,q,p,o,n,m,l,k,j,i,h,g,f,e,d=this
 if(!d.v||d.U||d.V||d.X||d.c1!==0||d.ce)return
@@ -131857,7 +131864,7 @@ o=1.8
 n=null
 m=1.2
 l=0
-for(;;){k=d.gcH()
+for(;;){k=d.gcG()
 j=d.y1
 if(j===$){j=d.y1=d.a.c
 i=j}else i=j
@@ -131873,7 +131880,7 @@ n=l}}++l}if(p!=null)d.pb(d.gcO(),p)
 else if(n!=null)d.pb(d.gcO(),n)},
 aNH(a){var s,r,q,p,o,n,m,l,k=this,j=k.gwj()&&k.v&&!k.U&&!k.V&&!k.X&&k.c1===0?k.qT():A.a([],t.t),i=A.a([],t.M4)
 for(s=k.gn7(),r=s.length,q=0;q<s.length;s.length===r||(0,A.w)(s),++q){p=s[q]
-for(o=0;o<k.gcH()[p].f.length;++o){n=k.af_(p,o)
+for(o=0;o<k.gcG()[p].f.length;++o){n=k.af_(p,o)
 i.push(new A.jr(p,o,n==null?k.adm(p,o):n))}}m=A.z(t.N,t.MI)
 for(s=i.length,q=0;q<i.length;i.length===s||(0,A.w)(i),++q){l=i[q]
 r=l.c
@@ -131891,8 +131898,8 @@ o=r[0]
 return A.a([A.f4(m,new A.dE(!0,A.ns(new A.aZV(n,l),m,B.ap,B.Uv,new A.cW("arrival_"+n.ca,t.kK),new A.b_(0,1,t._),t.i),m),s,m,q*a-p,m,o*a-p,s)],t.p)},
 aNK(a){var s,r,q,p,o,n,m,l,k,j,i,h,g,f,e=this,d=null,c=e.gyU()
 if(c==null)return B.ro
-s=e.gcH()[c]
-r=B.k.ae(c+e.gIg(),4)
+s=e.gcG()[c]
+r=B.k.ad(c+e.gIg(),4)
 q=r<2?0:9
 p=r===0||r===3?0:9
 o=a*3.2
@@ -131908,7 +131915,7 @@ h=A.b9(B.e,3)
 g=A.a([new A.bJ(0,B.a6,A.K(115,B.v.l()>>>16&255,B.v.l()>>>8&255,B.v.l()&255),B.n7,14)],t.V)
 f=t.p
 return A.a([n,A.f4(d,new A.dE(!0,A.ns(new A.b_g(),A.T(d,A.lw(new A.A(B.Vm,A.F(A.a([A.f("VICTOIRE",d,d,A.bk(d,d,B.e,d,d,d,d,d,d,d,d,a*1.15,d,d,B.y,d,d,!0,d,2,d,d,d,B.a2L,d,d),d),A.f(e.v9(c),d,d,A.bk(d,d,B.e,d,d,d,d,d,d,d,d,a*0.8,d,d,B.U,d,d,!0,d,d,d,d,d,d,d,d),d),B.bL,A.f("Katika d\xe9charge les caisses",d,d,A.bk(d,d,B.e,d,d,d,d,d,d,d,d,a*0.6,B.iw,d,B.ao,d,d,!0,d,d,d,d,d,d,d,d),d)],f),B.j,B.f,B.D,0,B.n),d),B.cF),B.l,d,d,new A.a3(d,d,h,j,g,new A.ep(B.cE,B.e9,B.bb,i,d,d),B.p),d,d,d,d,d,d,d,d),B.jU,B.ik,d,new A.b_(0,1,m),l),d),o,d,k-a*4,d,k-a*1.6,a*8)],f)},
-aNC(a){var s=this,r=null,q=s.gcH()[s.gcO()].b,p=A.a0(18),o=A.b9(q,5),n=A.a([new A.bJ(1,B.a6,A.K(166,q.l()>>>16&255,q.l()>>>8&255,q.l()&255),B.q,18),new A.bJ(0,B.a6,A.K(B.c.am(127.5),B.v.l()>>>16&255,B.v.l()>>>8&255,B.v.l()&255),B.Fu,20)],t.V)
+aNC(a){var s=this,r=null,q=s.gcG()[s.gcO()].b,p=A.a0(18),o=A.b9(q,5),n=A.a([new A.bJ(1,B.a6,A.K(166,q.l()>>>16&255,q.l()>>>8&255,q.l()&255),B.q,18),new A.bJ(0,B.a6,A.K(B.c.am(127.5),B.v.l()>>>16&255,B.v.l()>>>8&255,B.v.l()&255),B.Fu,20)],t.V)
 return A.T(r,A.FR(A.a0(13),A.r5(new A.b__(s)),B.bE),B.l,r,r,new A.a3(B.e,r,o,p,n,r,B.p),r,a,s.x1,r,r,r,r,a)},
 aNG(){var s,r,q=this,p=null,o=t.p,n=A.a([A.bvt(A.T(p,B.Z2,B.l,p,p,new A.a3(A.K(38,B.e.l()>>>16&255,B.e.l()>>>8&255,B.e.l()&255),p,A.b9(B.bI,1.5),p,p,p,B.bc),p,40,p,p,p,p,p,40),B.dA,new A.b_8(q),new A.b_9(q),p,t.N),A.a9(A.F(A.a([B.am3,A.Kf(B.c5,p,p,p,B.cz,p,p,!0,p,A.dS(A.a([A.dS(p,p,p,p,p,p,p,p,p,A.bk(p,p,B.e,p,p,p,p,p,p,p,p,28,B.iw,p,B.y,p,1,!0,p,p,p,p,p,B.mO,p,p),"Kati"),A.dS(p,p,p,p,p,p,p,p,p,A.bk(p,p,B.r,p,p,p,p,p,p,p,p,28,B.iw,p,B.y,p,1,!0,p,p,p,p,p,B.mO,p,p),"ka")],t.VO),p,p,p,p,p,p,p,p,p,p),B.J,p,p,B.ah,B.b_),B.bL,B.ame],o),B.j,B.f,B.D,0,B.n),1),A.bf(p,B.jw,p,B.r6,p,p,new A.b_a(q),B.xZ,p,p,A.c("R\xe8gles","Rules"),p),B.fu],o),m=q.a.z
 if(m!=null)B.b.M(n,A.a([new A.Kg("games",m.d,p),B.fu],o))
@@ -131922,7 +131929,7 @@ if(r.z!=null)r="Mode : En ligne"
 else r=r.at!=null?"Mode : \xc9quipes 2v2":"Mode : Pr\xe9sentiel"}n.push(A.T(p,A.a1(A.a([B.Zb,B.fu,A.F(A.a([A.f(r,p,p,B.aj9,p),A.f(A.c(""+q.gLE()+" Joueurs",""+q.gLE()+" Players"),p,p,B.afQ,p)],o),B.u,B.f,B.D,0,B.n)],o),B.j,B.f,B.D,0,p),B.l,p,p,new A.a3(B.aQ,p,s,m,p,p,B.p),p,p,p,p,B.q9,p,p,p))
 return new A.A(B.Vs,A.a1(n,B.j,B.f,B.i,0,p),p)},
 aNI(){var s,r,q,p,o,n,m,l,k,j=this,i=null,h=j.gafn(),g=A.a([],t.p)
-for(s=0;s<h.length;++s){r=j.gcH()
+for(s=0;s<h.length;++s){r=j.gcG()
 q=r[h[s]].b
 q=A.K(89,q.l()>>>16&255,q.l()>>>8&255,q.l()&255)
 p=new A.aF(12,12)
@@ -131934,7 +131941,7 @@ k=new A.aM(n.b,l,B.A,-1)
 g.push(new A.cm(1,B.ac,A.T(i,new A.qO(B.cF,new A.J(B.a1H[s]+" "+j.fA(o)+" "+B.c.am(j.v1(r[h[s]])*100)+" %",B.akG,i,i,i,i),i),B.l,i,i,new A.a3(q,i,new A.d0(k,k,k,k),new A.bu(p,p,p,p),i,i,B.p),i,i,i,B.Wf,B.k6,i,i,i),i))}return new A.A(B.Vn,A.a1(g,B.j,B.f,B.i,0,i),i)},
 af7(a0,a1){var s,r,q,p,o,n,m,l,k,j,i,h,g,f,e,d,c,b=this,a=null
 if(!B.b.p(b.gn7(),a0))return B.ae7
-s=b.gcH()[a0]
+s=b.gcG()[a0]
 r=a0===b.gcO()&&!b.X
 q=b.gM5()-s.gDa()
 p=b.v1(s)
@@ -131970,7 +131977,7 @@ l===$&&A.b()
 return A.em(l,new A.b_H(b,new A.b_D(b,r),s,r,a1,f,c,new A.aj(52,52,new A.cC(B.P,a,B.aw,B.l,k,a),a)),a)},
 abL(a){var s,r,q,p,o,n,m,l,k,j,i,h,g=this,f=null
 if(!B.b.p(g.gn7(),a))return B.ae5
-s=g.gcH()[a]
+s=g.gcG()[a]
 r=a===g.gcO()&&!g.X
 q=r&&g.gCk()&&!g.ce
 if(r)p=g.ce||g.c1!==0
@@ -131986,7 +131993,7 @@ i===$&&A.b()
 if(p)h=0.25
 else h=r?1:0.5
 return A.cu(B.aU,new A.aj(74,74,A.em(i,new A.b_n(g,q),A.iJ(new A.uQ(g.aW[a],1,B.kl,q,s.b,f),h)),j),B.t,!1,f,f,f,f,f,f,f,f,f,k,l,n,m,f,f,f,f,o,f,f,f,f,f,f)},
-aNE(){var s,r=this,q=null,p=r.gcH()[r.gcO()].b
+aNE(){var s,r=this,q=null,p=r.gcG()[r.gcO()].b
 if(r.ce){s=r.d5
 return A.f4(q,new A.dE(!0,new A.uQ(r.aW[r.gcO()],1,B.kl,!0,p,q),q),82,q,s.a,q,s.b,82)}if(r.c1===0)return B.aj
 s=r.ry
@@ -132010,7 +132017,7 @@ p=k.length
 if(p===1){k=""+r+" FCFA"
 s.push(A.f(A.c("Gain : "+k,"Prize: "+k),l,l,q.$1(16),B.R))}else for(o=""+r+" FCFA",n=0;n<k.length;k.length===p||(0,A.w)(k),++n)s.push(new A.J("\ud83c\udfc6 "+m.fA(k[n])+" : +"+o,q.$1(15),B.R,l,l,l))
 return s},
-aND(){var s,r,q,p=this,o=null,n=p.gyU(),m=n==null,l=m?B.r:p.gcH()[n].b,k=A.a0(22),j=A.b9(l,2.5),i=A.a([new A.bJ(1,B.a6,A.K(B.c.am(178.5),l.l()>>>16&255,l.l()>>>8&255,l.l()&255),B.q,18)],t.V),h=t.p,g=A.a([A.f(m?"\ud83c\udfc1 Partie termin\xe9e":"\ud83c\udfc6 "+p.v9(n)+" remporte la partie !",o,o,B.aks,B.R)],h)
+aND(){var s,r,q,p=this,o=null,n=p.gyU(),m=n==null,l=m?B.r:p.gcG()[n].b,k=A.a0(22),j=A.b9(l,2.5),i=A.a([new A.bJ(1,B.a6,A.K(B.c.am(178.5),l.l()>>>16&255,l.l()>>>8&255,l.l()&255),B.q,18)],t.V),h=t.p,g=A.a([A.f(m?"\ud83c\udfc1 Partie termin\xe9e":"\ud83c\udfc6 "+p.v9(n)+" remporte la partie !",o,o,B.aks,B.R)],h)
 if(!m&&p.a.ch>0)B.b.M(g,p.aNF(n))
 m=p.R8
 if(m>0){m=""+m+" FCFA"
@@ -132023,7 +132030,7 @@ for(s=p.gm2(),r=s.length,q=0;q<s.length;s.length===r||(0,A.w)(s),++q)m.push(p.fA
 B.b.M(g,A.a([B.ab,new A.Au(m,p.gm2(),p.a.ch,new A.b_2(p),o)],h))}g.push(B.ab)
 m=A.a([],h)
 s=p.a
-if(s.z==null&&s.ax==null)B.b.M(m,A.a([A.a9(A.dw(B.an4,p.gaXq(),A.d1(o,o,B.a9,o,o,o,o,o,o,B.e,o,o,o,o,o,o,o,o,o,o)),1),B.aF],h))
+if(s.z==null&&s.ax==null)B.b.M(m,A.a([A.a9(A.dw(B.an3,p.gaXq(),A.d1(o,o,B.a9,o,o,o,o,o,o,B.e,o,o,o,o,o,o,o,o,o,o)),1),B.aF],h))
 m.push(A.a9(A.h1(B.uq,new A.b_3(p),A.eN(o,o,o,o,o,o,o,o,o,B.e,o,o,o,o,o,B.dt,o,o,o,o)),1))
 g.push(A.a1(m,B.j,B.f,B.i,0,o))
 return A.f4(10,A.cs(!0,A.ns(new A.b_4(),A.T(o,A.F(g,B.j,B.f,B.D,0,B.n),B.l,o,o,new A.a3(B.fe,o,j,k,i,o,B.p),o,o,o,o,B.aG,o,o,o),B.jU,B.pT,o,new A.b_(0,1,t._),t.i),!0,B.C,!0,!1),o,o,12,12,o,o)},
@@ -132077,7 +132084,7 @@ A.b0a.prototype={
 $1(a){return a===56},
 $S:28}
 A.b_I.prototype={
-$2(a,b){var s=this.a,r=s.gcH(),q=r[a].gDa(),p=r[b].gDa()
+$2(a,b){var s=this.a,r=s.gcG(),q=r[a].gDa(),p=r[b].gDa()
 if(q!==p)return B.k.b7(p,q)
 return B.c.b7(s.v1(r[b]),s.v1(r[a]))},
 $S:315}
@@ -132125,14 +132132,14 @@ $S:0}
 A.aZa.prototype={
 $0(){var s,r,q,p,o,n,m,l=this,k=l.b,j=k.r,i=l.c
 j.F(0,i)
-s=k.gcH()
+s=k.gcG()
 r=t.S
 s[i].f=A.c9(k.gM5(),-1,!1,r)
 q=l.d
 if(q!==-1){j.F(0,q)
 s[q].f=A.c9(k.gM5(),-1,!1,r)}++k.E
 p=k.gm2()
-for(o=1;o<=p.length;++o){n=p[B.k.ae(B.b.dM(p,i)+o,p.length)]
+for(o=1;o<=p.length;++o){n=p[B.k.ad(B.b.dM(p,i)+o,p.length)]
 if(!j.p(0,n)){l.a.a=n
 break}}m=k.gn7()
 s=m.length
@@ -132155,7 +132162,7 @@ A.aZE.prototype={
 $1(a){return a!==56},
 $S:28}
 A.aZh.prototype={
-$1(a){var s,r=this.a,q=r.gcH()[r.gcO()].f[a]
+$1(a){var s,r=this.a,q=r.gcG()[r.gcO()].f[a]
 if(r.Ga(a,r.y2))return 1000
 s=q===-1
 if(!s&&q+r.y2===56)return 500
@@ -132163,7 +132170,7 @@ if(s)return 300
 return q},
 $S:74}
 A.aZg.prototype={
-$0(){return this.a.I=u.ci},
+$0(){return this.a.I=u.eg},
 $S:0}
 A.aZx.prototype={
 $1(a){var s=this.a
@@ -132253,13 +132260,13 @@ $0(){return this.a.V=!0},
 $S:0}
 A.aZB.prototype={
 $0(){var s=this.b,r=J.aI(s),q=this.c
-this.a.gcH()[r.h(s,0)].f[r.h(s,1)]=q
+this.a.gcG()[r.h(s,0)].f[r.h(s,1)]=q
 return q},
 $S:0}
 A.aZf.prototype={
 $0(){var s,r,q,p,o,n,m,l,k,j,i,h,g,f=null
 for(s=t.j,r=this.b,q=this.a,p=t.S,o=0;o<4;++o){n=r.h(0,"p"+o)
-if(s.b(n)){m=q.gcH()[o]
+if(s.b(n)){m=q.gcG()[o]
 l=J.ci(n,new A.aZb(),p)
 l=A.a2(l,l.$ti.i("ai.E"))
 m.f=l}}m=A.ad(r.h(0,"cur"))
@@ -132384,7 +132391,7 @@ A.b07.prototype={
 $0(){var s,r,q=this
 if(q.b.length===0){s=q.a
 r=s.y2
-s.I=r===6?u.f:""+r+" ! Aucun d\xe9placement possible."}else{s=q.a
+s.I=r===6?u.d:""+r+" ! Aucun d\xe9placement possible."}else{s=q.a
 if(s.b3&&q.c.length===1)s.I=q.d?u.dn:u.aq
 else if(q.d)s.I=u.eq
 else if(s.y2===6)s.I="Un 6 ! Sors un pion ou avance."
@@ -132442,7 +132449,7 @@ $0(){return this.a.I="Pas de nouvelle partie en ligne."},
 $S:0}
 A.b_K.prototype={
 $0(){var s,r,q,p,o,n,m,l,k
-for(s=this.a,r=s.gcH(),q=r.length,p=s.ga7H(),o=t.S,n=0;n<r.length;r.length===q||(0,A.w)(r),++n){m=r[n]
+for(s=this.a,r=s.gcG(),q=r.length,p=s.ga7H(),o=t.S,n=0;n<r.length;r.length===q||(0,A.w)(r),++n){m=r[n]
 l=s.f
 m.f=A.I9(l===$?s.f=s.a.e:l,p,!0,o)}for(r=s.aW,q=s.aP,k=0;k<4;++k){r[k]=1
 q[k]=0}s.r.a5(0)
@@ -132469,7 +132476,7 @@ s=J.aI(a2)
 r=s.gK(a2)
 q=s.dM(a2,a3)
 a2=a.a
-s=a2.gcH()
+s=a2.gcG()
 p=a3.a
 o=a3.b
 n=s[p].f[o]
@@ -132488,7 +132495,7 @@ j=h}g=j*(k?0.8:1)
 f=g*1.25
 e=k?(q-(r-1)/2)*i*0.3:0
 d=p===a2.gcO()&&B.b.p(a.d,o)
-j=A.eh(0,0,Math.min(140,a2.ad))
+j=A.eh(0,0,Math.min(140,a2.ae))
 c=a1[1]
 a1=a1[0]
 b=a2.rx
@@ -132506,7 +132513,7 @@ return A.t2(b,new A.r(0,s))},
 $S:111}
 A.aZV.prototype={
 $3(a,b,c){var s=null
-return A.eU(s,s,s,new A.UX(b,this.a.gcH()[this.b].b,s),B.a7)},
+return A.eU(s,s,s,new A.UX(b,this.a.gcG()[this.b].b,s),B.a7)},
 $S:824}
 A.b_f.prototype={
 $3(a,b,c){return A.pC(c,b)},
@@ -132515,7 +132522,7 @@ A.b_g.prototype={
 $3(a,b,c){return A.pC(c,b)},
 $S:88}
 A.b__.prototype={
-$2(a,b){var s,r,q,p,o,n=null,m=b.b/15,l=this.a,k=l.gIg(),j=l.gcH(),i=A.ab(j),h=i.i("af<1,x>"),g=h.i("ai.E"),f=A.a2(new A.af(j,new A.aZW(),h),g)
+$2(a,b){var s,r,q,p,o,n=null,m=b.b/15,l=this.a,k=l.gIg(),j=l.gcG(),i=A.ab(j),h=i.i("af<1,x>"),g=h.i("ai.E"),f=A.a2(new A.af(j,new A.aZW(),h),g)
 h=A.a2(new A.af(j,new A.aZX(),h),g)
 g=A.a([],t.wX)
 for(s=0;s<4;++s)g.push(l.adn(s))
@@ -132587,7 +132594,7 @@ $0(){return this.a.a7W(this.b,this.c)},
 $S:0}
 A.b_G.prototype={
 $1(a){var s=null
-return A.cu(B.aU,A.T(B.P,B.anP,B.l,s,s,new A.a3(A.K(89,B.v.l()>>>16&255,B.v.l()>>>8&255,B.v.l()&255),s,A.b9(B.T,1.5),s,s,s,B.bc),s,30,s,s,s,s,s,30),B.t,!1,s,s,s,s,s,s,s,s,s,s,s,s,s,s,s,s,s,new A.b_B(this.a,a,this.b),s,s,s,s,s,s)},
+return A.cu(B.aU,A.T(B.P,B.anO,B.l,s,s,new A.a3(A.K(89,B.v.l()>>>16&255,B.v.l()>>>8&255,B.v.l()&255),s,A.b9(B.T,1.5),s,s,s,B.bc),s,30,s,s,s,s,s,30),B.t,!1,s,s,s,s,s,s,s,s,s,s,s,s,s,s,s,s,s,new A.b_B(this.a,a,this.b),s,s,s,s,s,s)},
 $S:176}
 A.b_B.prototype={
 $0(){return this.a.a7W(this.b,this.c)},
@@ -132678,20 +132685,20 @@ A.b00.prototype={
 $1(a){return new A.hG(new A.b_Z(this.a,a),null)},
 $S:46}
 A.b_Z.prototype={
-$2(a,b){var s,r,q,p,o,n,m,l,k,j=null,i=this.a,h=new A.b0_(i,b),g=A.C9(j,B.C,new A.b_R(i,h),B.aly,B.an9,i.ar),f=A.C9(j,B.C,new A.b_S(i,h),B.anY,B.alC,i.b3),e=""+i.gxg()
-e=A.C9(j,B.C,new A.b_T(i,h),A.f(A.c("Si tu ne joues pas pendant "+e+" secondes, le jeu joue \xe0 ta place","If you don't play for "+e+" seconds, the game plays for you"),j,j,B.S,j),B.anW,i.aE)
+$2(a,b){var s,r,q,p,o,n,m,l,k,j=null,i=this.a,h=new A.b0_(i,b),g=A.C9(j,B.C,new A.b_R(i,h),B.aly,B.an8,i.ar),f=A.C9(j,B.C,new A.b_S(i,h),B.anX,B.alC,i.b3),e=""+i.gxg()
+e=A.C9(j,B.C,new A.b_T(i,h),A.f(A.c("Si tu ne joues pas pendant "+e+" secondes, le jeu joue \xe0 ta place","If you don't play for "+e+" seconds, the game plays for you"),j,j,B.S,j),B.anV,i.aE)
 s=t.p
 r=A.a([],s)
 for(q=B.a7e.giC(),q=q.gah(q);q.u();){p=q.gJ()
-r.push(A.d3(j,j,new A.J(p.a,j,j,j,j,j),new A.b_U(i,h,p),i.ad===p.b,j,j))}r=A.co(B.a8,r,0,8)
+r.push(A.d3(j,j,new A.J(p.a,j,j,j,j,j),new A.b_U(i,h,p),i.ae===p.b,j,j))}r=A.co(B.a8,r,0,8)
 q=A.a([],s)
 for(p=[1,2,3,4],o=p.length,n=0;n<o;++n){m=p[n]
 l=i.f
 if(l===$)l=i.f=i.a.e
 k=i.a
 k=k.z!=null||k.w?j:new A.b_V(i,h,m)
-q.push(A.d3(j,j,new A.J(""+m,j,j,j,j,j),k,l===m,j,j))}g=A.a([B.anb,B.K,g,f,e,B.az,B.amf,B.G,r,B.aC,B.am1,B.G,A.co(B.a8,q,0,8)],s)
-if(i.a.w)g.push(B.a9r)
+q.push(A.d3(j,j,new A.J(""+m,j,j,j,j,j),k,l===m,j,j))}g=A.a([B.ana,B.K,g,f,e,B.az,B.amf,B.G,r,B.aC,B.am1,B.G,A.co(B.a8,q,0,8)],s)
+if(i.a.w)g.push(B.a9s)
 g.push(B.aC)
 g.push(B.alQ)
 g.push(B.G)
@@ -132703,7 +132710,7 @@ q=i.a
 q=q.z!=null||q.at!=null?j:new A.b_W(i,h,m)
 f.push(A.d3(j,j,new A.J(""+m,j,j,j,j,j),q,l===m,j,j))}g.push(A.co(B.a8,f,0,8))
 g.push(B.K)
-g.push(B.an3)
+g.push(B.an2)
 g.push(B.aC)
 f=i.a
 if(f.z!=null)f="Mode : en ligne"
@@ -132742,7 +132749,7 @@ A.b_U.prototype={
 $1(a){return this.b.$1(new A.b_N(this.a,this.c))},
 $S:3}
 A.b_N.prototype={
-$0(){return this.a.ad=this.b.b},
+$0(){return this.a.ae=this.b.b},
 $S:0}
 A.b_V.prototype={
 $1(a){var s=this.a
@@ -132769,7 +132776,7 @@ $1(a){var s,r,q,p,o,n,m,l,k,j=null,i=t.p,h=A.a([],i)
 for(s=this.a,r=s.gafn(),q=A.ab(r).i("af<1,ik>"),r=new A.af(r,new A.b01(s),q),r=new A.bO(r,r.gK(0),q.i("bO<ai.E>")),q=q.i("ai.E");r.u();){p=r.d
 if(p==null)p=q.a(p)
 o=A.en(p.b,j,10)
-n=s.fA(B.b.dM(s.gcH(),p))
+n=s.fA(B.b.dM(s.gcG(),p))
 m=p.gDa()
 l=s.f
 if(l===$)l=s.f=s.a.e
@@ -132777,10 +132784,10 @@ p=p.gDa()
 k=s.f
 if(k===$)k=s.f=s.a.e
 h.push(new A.A(B.m9,A.a1(A.a([o,B.aF,new A.cm(1,B.ac,new A.J(n,B.W,j,j,j,j),j),new A.J(A.c(""+m+"/"+l+" arriv\xe9s",""+p+"/"+k+" finished"),B.a5,j,j,j,j)],i),B.j,B.f,B.i,0,j),j))}h=A.F(h,B.j,B.f,B.D,0,B.n)
-return A.dD(A.a([A.aT(B.ut,new A.b02(a),j)],i),B.dA,h,j,B.anh)},
+return A.dD(A.a([A.aT(B.ut,new A.b02(a),j)],i),B.dA,h,j,B.ang)},
 $S:13}
 A.b01.prototype={
-$1(a){return this.a.gcH()[a]},
+$1(a){return this.a.gcG()[a]},
 $S:833}
 A.b02.prototype={
 $0(){A.a5(this.a,!1).ba(null)
@@ -132814,7 +132821,7 @@ s.toString
 return A.a5(s,!1).bz()},
 $S:0}
 A.b_h.prototype={
-$2(a,b){var s=null,r=B.c.cl(b.b-8,180,700),q=this.a,p=q.aNG(),o=q.aNI(),n=t.p,m=A.F(A.a([q.aaq(q.q7(0),q.q7(1)),q.abK(q.q7(0),q.q7(1))],n),B.j,B.f,B.D,0,B.n),l=q.aNC(r),k=A.F(A.a([q.abK(q.q7(3),q.q7(2)),q.aaq(q.q7(3),q.q7(2))],n),B.j,B.f,B.D,0,B.n),j=q.gcH()[q.gcO()],i=A.a0(24),h=A.b9(q.X?B.aE:j.b,2.5),g=j.b,f=A.en(g,A.cN(j.e,B.e,s,18),15),e=A.dS(s,s,s,s,s,s,s,s,s,s,A.c("Au tour de : ","Turn of: ")),d=q.fA(q.gcO())
+$2(a,b){var s=null,r=B.c.cl(b.b-8,180,700),q=this.a,p=q.aNG(),o=q.aNI(),n=t.p,m=A.F(A.a([q.aaq(q.q7(0),q.q7(1)),q.abK(q.q7(0),q.q7(1))],n),B.j,B.f,B.D,0,B.n),l=q.aNC(r),k=A.F(A.a([q.abK(q.q7(3),q.q7(2)),q.aaq(q.q7(3),q.q7(2))],n),B.j,B.f,B.D,0,B.n),j=q.gcG()[q.gcO()],i=A.a0(24),h=A.b9(q.X?B.aE:j.b,2.5),g=j.b,f=A.en(g,A.cN(j.e,B.e,s,18),15),e=A.dS(s,s,s,s,s,s,s,s,s,s,A.c("Au tour de : ","Turn of: ")),d=q.fA(q.gcO())
 i=A.a([A.a9(A.T(s,A.a1(A.a([f,B.aF,A.a9(A.F(A.a([A.Kf(B.c5,s,s,s,B.cz,s,s,!0,s,A.dS(A.a([e,A.dS(s,s,s,s,s,s,s,s,s,A.bk(s,s,A.j0(g,0.12),s,s,s,s,s,s,s,s,s,s,s,B.U,s,s,!0,s,s,s,s,s,s,s,s),d)],t.VO),s,s,s,s,s,s,s,s,B.LL,s),B.J,s,s,B.ah,B.b_),A.f(q.I,2,B.au,B.f1,s)],n),B.u,B.f,B.D,0,B.n),1)],n),B.j,B.f,B.i,0,s),B.l,s,s,new A.a3(B.fe,s,h,i,s,s,B.p),s,s,s,s,B.xO,s,s,s),1)],n)
 if(!q.bp&&!q.giI())B.b.M(i,A.a([B.aO,q.ag5(B.Y1,q.gaj7())],n))
 i.push(B.aO)
@@ -133187,7 +133194,7 @@ arf(){var s,r,q,p=null,o=A.f(A.c("Montant par capture (minimum 100 FCFA)","Amoun
 for(s=0;s<5;++s){r=B.A9[s]
 m.push(A.d3(p,p,new A.J(""+r,p,p,p,p,p),new A.b22(this,r),this.ay===r,p,p))}m=A.co(B.a8,m,4,8)
 q=""+this.ay+" FCFA"
-return A.F(A.a([B.az,o,B.G,m,B.az,A.f(A.c("Chaque pion captur\xe9 : "+q+u.d,"Each captured pawn: "+q+u.B),p,p,B.ug,p)],n),B.u,B.f,B.i,0,B.n)},
+return A.F(A.a([B.az,o,B.G,m,B.az,A.f(A.c("Chaque pion captur\xe9 : "+q+u.b,"Each captured pawn: "+q+u.B),p,p,B.ug,p)],n),B.u,B.f,B.i,0,B.n)},
 D(a){var s,r,q,p,o,n,m,l,k,j,i,h,g=this,f=null,e=t.p,d=A.a([A.a1(A.a([A.bf(f,f,f,B.bh,f,f,new A.b2Y(g,a),f,f,f,f,f),B.alG],e),B.j,B.f,B.i,0,f)],e)
 if(g.CW){s=A.f("Options de jeu",f,f,B.j8,f)
 r=A.yv("Protection des portes",u.v,g.r,new A.b2Z(g))
@@ -133627,7 +133634,7 @@ a5c(a,b,c){var s=null,r=A.a([],t.p)
 if(c)r.push(B.oZ)
 if(b.length!==0)r.push(A.f(b,s,s,B.nX,B.R))
 r.push(B.dO)
-r.push(A.dw(B.ano,new A.auN(a),s))
+r.push(A.dw(B.ann,new A.auN(a),s))
 return A.cO(s,s,A.T(s,A.cs(!0,new A.A(B.cu,A.F(r,B.j,B.di,B.i,0,B.n),s),!0,B.C,!0,!0),B.l,s,s,B.co,s,1/0,s,s,s,s,s,1/0),s)},
 B4(a,b){return this.a5c(a,b,!1)},
 HY(a,b,c){return this.aBO(a,b,c)},
@@ -133672,8 +133679,8 @@ f=B.b.ck(r,new A.av3(d,g))
 k=A.en(B.eR[g],e,8)
 j=q.$1(g)
 i=p.$0()
-h=f?A.aT(B.ao8,new A.av4(n,g),e):A.aT(B.Ma,new A.av5(n,g),e)
-l.push(o.$1(A.a([k,B.aF,new A.cm(1,B.ac,new A.J(j,i,e,e,e,e),e),h],m)))}if(k<2)l.push(B.amG)}return A.F(l,B.u,B.f,B.i,0,B.n)},
+h=f?A.aT(B.ao8,new A.av4(n,g),e):A.aT(B.M9,new A.av5(n,g),e)
+l.push(o.$1(A.a([k,B.aF,new A.cm(1,B.ac,new A.J(j,i,e,e,e,e),e),h],m)))}if(k<2)l.push(B.amF)}return A.F(l,B.u,B.f,B.i,0,B.n)},
 aEa(b4,b5,b6,b7){var s,r,q,p,o,n,m,l,k,j,i,h,g,f,e,d,c,b,a,a0,a1,a2,a3,a4,a5,a6,a7=this,a8=null,a9="startOut",b0=" \u2022 position 54",b1="startDoor",b2=B.c.A(A.aX(b5.h(0,"maxPlayers"))),b3=B.c.A(A.aX(b5.h(0,"pawnCount")))
 if(b2===2)s=A.a([0,2],t.t)
 else{r=t.t
@@ -133709,7 +133716,7 @@ a1=q?" \u2022 2 vs 2":""
 a2=J.d(b5.h(0,a9),!0)?b0:""
 a3=J.d(b5.h(0,b1),!0)?" \u2022 start square":""
 a4=t.p
-a3=A.a([B.ant,B.K,A.f(A.c(""+r+"/"+g+" joueurs \u2022 "+f+" pion"+d+" chacun"+c+b+a,""+a0+"/"+g+" players \u2022 "+f+" pawn"+e+" each"+a1+a2+a3),a8,a8,B.nN,a8)],a4)
+a3=A.a([B.ans,B.K,A.f(A.c(""+r+"/"+g+" joueurs \u2022 "+f+" pion"+d+" chacun"+c+b+a,""+a0+"/"+g+" players \u2022 "+f+" pawn"+e+" each"+a1+a2+a3),a8,a8,B.nN,a8)],a4)
 if(h.length!==0)a3.push(A.f(A.c("Cr\xe9\xe9e le "+h,"Created on "+h),a8,a8,B.S,a8))
 a3.push(B.az)
 a3.push(A.f(q?"Le cr\xe9ateur lance la partie. En \xe9quipe (2 contre 2), il faut les 4 joueurs et les bin\xf4mes form\xe9s.":"Le cr\xe9ateur lance la partie quand il veut, d\xe8s 2 joueurs (m\xeame si la salle n'est pas pleine).",a8,a8,B.S,a8))
@@ -134197,7 +134204,7 @@ j=s==null?"Joueur":s}s=A.a0(18)
 r=A.K(31,B.e.l()>>>16&255,B.e.l()>>>8&255,B.e.l()&255)
 q=A.b9(B.x7,1)
 p=t.p
-o=A.a([B.anD,A.f(j,l,l,B.j1,l)],p)
+o=A.a([B.anC,A.f(j,l,l,B.j1,l)],p)
 n=k.b
 if(n!=null)o.push(A.f(n,l,l,B.S,l))
 return A.a([A.T(l,A.a1(A.a([B.R0,B.nC,A.a9(A.F(o,B.u,B.f,B.i,0,B.n),1)],p),B.j,B.f,B.i,0,l),B.l,l,l,new A.a3(r,l,q,s,l,l,B.p),l,l,l,l,B.bP,l,l,l),B.af,A.e5(new A.b3K(m),A.i1(k.a),t.S),B.af,m.Be("Recharger mon compte",new A.b3L(m)),B.af,m.Be("Jouer en ligne",new A.b3M(m)),B.af,m.Be("Historique des parties",new A.b3N(m)),B.af,m.Be("Se d\xe9connecter",m.gaIV())],p)},
@@ -134210,7 +134217,7 @@ s=q.y
 r=q.x
 m.push(A.cl(p,B.X,!1,p,!0,B.o,p,A.cp(),q.f,B.r,p,p,p,p,2,q.a2c("Mot de passe",B.yL,A.bf(p,p,p,A.cN(r?B.mE:B.mF,B.T,p,p),p,p,new A.b3F(q),p,p,p,p,p)),B.t,!0,p,!0,!s,!1,p,B.a3,p,p,p,p,p,p,p,p,1,p,p,r,"\u2022",p,p,p,p,p,!1,p,p,!1,p,!0,p,B.V,p,p,p,p,p,p,p,p,p,p,p,B.W,!0,B.J,p,B.ad,p,p,p,p))
 if(q.w){s=q.y
-B.b.M(m,A.a([B.af,A.cl(p,B.X,!1,p,!0,B.o,p,A.cp(),q.r,B.r,p,p,p,p,2,q.PT("Code promo (facultatif)",B.qT),B.t,!0,p,!0,!s,!1,p,B.a3,p,p,p,p,p,p,p,p,1,p,p,!1,"\u2022",p,p,p,p,p,!1,p,p,!1,p,!0,p,B.V,p,p,p,p,p,p,p,p,p,p,p,B.W,!0,B.J,p,B.ad,p,p,p,p),B.a9n],n))}if(!q.w){s=q.y||q.as?p:q.gava()
+B.b.M(m,A.a([B.af,A.cl(p,B.X,!1,p,!0,B.o,p,A.cp(),q.r,B.r,p,p,p,p,2,q.PT("Code promo (facultatif)",B.qT),B.t,!0,p,!0,!s,!1,p,B.a3,p,p,p,p,p,p,p,p,1,p,p,!1,"\u2022",p,p,p,p,p,!1,p,p,!1,p,!0,p,B.V,p,p,p,p,p,p,p,p,p,p,p,B.W,!0,B.J,p,B.ad,p,p,p,p),B.a9o],n))}if(!q.w){s=q.y||q.as?p:q.gava()
 m.push(new A.dU(B.hR,p,p,A.aT(A.f(q.as?o:"Mot de passe oubli\xe9 ?",p,p,B.fv,p),s,p),p))}s=q.Q
 if(s!=null)B.b.M(m,A.a([B.af,A.f(s,p,p,B.agO,p)],n))
 s=q.z
@@ -134393,7 +134400,7 @@ A.a3g.prototype={
 aH(a,b){var s,r,q,p,o,n,m,l,k,j
 for(s=this.b,r=this.c,q=b.b+40,p=b.a,o=a.c,n=0;n<80;++n){m=s[n]
 l=m.c
-k=B.c.ae(r*m.b+l,1)
+k=B.c.ad(r*m.b+l,1)
 l=Math.sin(k*6+l*6)
 J.bd(o.save())
 o.translate((m.a+l*0.03)*p,k*q-20)
@@ -135694,7 +135701,7 @@ wT(a,b,c){var s=null,r=A.a0(14),q=A.b9(A.bq(4292206325),1)
 return A.T(s,A.F(A.a([A.f(a,s,s,B.l5,s),B.bL,A.lw(A.f(b,s,s,A.bk(s,s,c,s,s,s,s,s,s,s,s,17,s,s,B.y,s,s,!0,s,s,s,s,s,s,s,s),s),B.cF)],t.p),B.u,B.f,B.D,0,B.n),B.l,s,s,new A.a3(B.b0,s,q,r,s,s,B.p),s,s,s,s,B.fk,s,s,s)},
 a8d(a,b){return this.wT(a,b,B.aA)},
 D(a){var s=this,r=null,q=s.c,p=q.gNc()===B.c.mz(q.gNc())?""+B.c.A(q.gNc())+" %":B.c.az(q.gNc(),1)+" %",o=A.a0(16),n=A.b9(B.r,1.5),m=q.f,l=t.p
-return A.F(A.a([A.T(r,A.F(A.a([A.f(q.a,r,r,B.ud,r),B.K,B.amZ,A.lw(A.f(""+q.e+" FCFA",r,r,B.M_,r),B.cF),B.az,A.f(A.c("Inscrit le "+A.bm9(m),"Joined on "+A.bm9(m)),r,r,B.aT,r)],l),B.u,B.f,B.i,0,B.n),B.l,r,r,new A.a3(B.b0,r,n,o,r,r,B.p),r,r,r,r,B.aG,r,r,1/0),B.af,A.A2(2.3,A.a([s.a8d("Parties jou\xe9es",""+q.r),s.wT("Pourcentage de victoires",p,B.r),s.wT("Parties gagn\xe9es",""+q.w,B.cW),s.wT("Parties perdues",""+q.x,B.bu),s.a8d("Total montant jou\xe9",""+q.y+" FCFA"),s.wT("Total montant gagn\xe9",""+q.z+" FCFA",B.cW),s.wT("Total montant perdu",""+q.Q+" FCFA",B.bu)],l),2,8,8,r,B.hq,!0),B.ab,B.amM],l),B.u,B.f,B.i,0,B.n)}}
+return A.F(A.a([A.T(r,A.F(A.a([A.f(q.a,r,r,B.ud,r),B.K,B.amY,A.lw(A.f(""+q.e+" FCFA",r,r,B.M_,r),B.cF),B.az,A.f(A.c("Inscrit le "+A.bm9(m),"Joined on "+A.bm9(m)),r,r,B.aT,r)],l),B.u,B.f,B.i,0,B.n),B.l,r,r,new A.a3(B.b0,r,n,o,r,r,B.p),r,r,r,r,B.aG,r,r,1/0),B.af,A.A2(2.3,A.a([s.a8d("Parties jou\xe9es",""+q.r),s.wT("Pourcentage de victoires",p,B.r),s.wT("Parties gagn\xe9es",""+q.w,B.cW),s.wT("Parties perdues",""+q.x,B.bu),s.a8d("Total montant jou\xe9",""+q.y+" FCFA"),s.wT("Total montant gagn\xe9",""+q.z+" FCFA",B.cW),s.wT("Total montant perdu",""+q.Q+" FCFA",B.bu)],l),2,8,8,r,B.hq,!0),B.ab,B.amL],l),B.u,B.f,B.i,0,B.n)}}
 A.bj3.prototype={
 $0(){return A.a5(this.a,!1).cZ()},
 $S:0}
@@ -135780,7 +135787,7 @@ case 2:return A.l(o.at(-1),r)}})
 return A.n($async$IL,r)},
 D(a){var s,r,q,p=this,o=null,n=!p.gGh()&&p.a.d.length!==0,m=n?B.bu:B.lU,l=A.K(38,m.l()>>>16&255,m.l()>>>8&255,m.l()&255),k=A.a0(14),j=A.b9(m,1),i=A.a([A.f(n?"\u26a0\ufe0f Compte suspect":"\u2705 Compte v\xe9rifi\xe9",o,o,B.LX,o)],t.p)
 if(n)for(s=p.a.d,r=s.length,q=0;q<s.length;s.length===r||(0,A.w)(s),++q)i.push(new A.J("\u2022 "+s[q],B.agT,o,o,o,o))
-if(n)i.push(B.a9o)
+if(n)i.push(B.a9p)
 i.push(B.G)
 s=A.eN(o,o,o,o,o,o,o,o,o,B.aA,o,o,o,o,o,B.oR,o,o,o,o)
 r=p.e?o:p.gaKx()
@@ -136019,38 +136026,38 @@ while(q.u())r.push(A.aS(p.a(q.gJ()),o,n))
 q=k.r.h(0,"referrals")
 m=typeof q=="number"?B.c.A(q):0
 q=t.p
-p=A.a([B.anB,B.ab],q)
+p=A.a([B.anA,B.ab],q)
 o=i!=null
 if(o)p.push(A.a1(A.a([A.a9(A.ac(i.toUpperCase(),j,j,j,j,B.afO,j,j,j),1),A.bf(j,j,j,B.Ze,j,j,new A.b5R(k,i),j,j,j,j,j)],q),B.j,B.f,B.i,0,j))
 else p.push(A.ac(h==="taken"?"Ton pseudo est d\xe9j\xe0 utilis\xe9 comme code promo par un autre joueur.":"Tu n'as pas encore de pseudo : ton code promo est ton pseudo.",j,j,j,j,B.akh,j,j,j))
 if(o){o=A.a0(12)
-B.b.M(p,A.a([B.ab,B.ao2,B.K,A.T(j,A.BK("https://katikagames.com/jouer/?ref="+A.fP(1,i,B.an,!0),B.ul,j),B.l,j,j,new A.a3(B.aQ,j,j,o,j,j,B.p),j,j,j,j,B.bd,j,j,j),B.G,A.a1(A.a([A.a9(A.oU(B.Z1,B.alx,new A.b5S(k,i),A.eN(j,j,j,j,j,j,j,j,j,B.aA,j,j,j,j,j,B.oR,j,j,j,j)),1),B.aO,A.a9(A.h_(B.z5,B.anK,new A.b5T(i),A.cR(B.fg,j,j,j,j,j)),1)],q),B.j,B.f,B.i,0,j),B.az,B.am_],q))}p.push(B.G)
+B.b.M(p,A.a([B.ab,B.ao2,B.K,A.T(j,A.BK("https://katikagames.com/jouer/?ref="+A.fP(1,i,B.an,!0),B.ul,j),B.l,j,j,new A.a3(B.aQ,j,j,o,j,j,B.p),j,j,j,j,B.bd,j,j,j),B.G,A.a1(A.a([A.a9(A.oU(B.Z1,B.alx,new A.b5S(k,i),A.eN(j,j,j,j,j,j,j,j,j,B.aA,j,j,j,j,j,B.oR,j,j,j,j)),1),B.aO,A.a9(A.h_(B.z5,B.anJ,new A.b5T(i),A.cR(B.fg,j,j,j,j,j)),1)],q),B.j,B.f,B.i,0,j),B.az,B.am_],q))}p.push(B.G)
 p.push(A.ac("Partage ton code. Quand un joueur le saisit, tu re\xe7ois "+s+" % de la commission que Katika pr\xe9l\xe8ve sur ses parties.",j,j,j,j,B.hI,j,j,j))
 if(r.length!==0){q=A.a([B.ab,A.ac("Ta commission monte avec le nombre de joueurs inscrits (tu en as "+m+") :",j,j,j,j,B.l9,j,j,j),B.az],q)
 for(o=r.length,l=0;l<r.length;r.length===o||(0,A.w)(r),++l)q.push(new A.dc(new A.b5U(k,r[l],m),j))
 B.b.M(p,q)}return k.Bh(p)},
 aJh(){var s=null,r=A.aD(this.r.h(0,"sponsor"))
-if(r!=null)return this.Bh(A.a([B.amX,B.bL,A.ac(r,s,s,s,s,B.afV,s,s,s)],t.p))
+if(r!=null)return this.Bh(A.a([B.amW,B.bL,A.ac(r,s,s,s,s,B.afV,s,s,s)],t.p))
 return this.Bh(A.a([B.amd,B.az,B.amr],t.p))},
 aql(){var s,r,q,p,o,n,m,l,k,j,i=this,h=null,g="minWithdraw"
 if(i.d){s=i.r
 s=s.gab(s)}else s=!1
 if(s)return B.c2
 s=i.f
-if(s!=null)return A.c7(new A.A(B.cu,A.F(A.a([A.ac(s,h,h,h,h,B.ua,B.R,h,h),B.aC,A.dw(B.Mb,i.ga4J(),h)],t.p),B.j,B.f,B.D,0,B.n),h),h,h)
+if(s!=null)return A.c7(new A.A(B.cu,A.F(A.a([A.ac(s,h,h,h,h,B.ua,B.R,h,h),B.aC,A.dw(B.Ma,i.ga4J(),h)],t.p),B.j,B.f,B.D,0,B.n),h),h,h)
 s=i.aCS()
 r=i.r.h(0,"referrals")
 q=t.p
-r=A.a9(A.F(A.a([B.ana,A.ac(""+(typeof r=="number"?B.c.A(r):0),h,h,h,h,B.ag9,h,h,h)],q),B.u,B.f,B.i,0,B.n),1)
+r=A.a9(A.F(A.a([B.an9,A.ac(""+(typeof r=="number"?B.c.A(r):0),h,h,h,h,B.ag9,h,h,h)],q),B.u,B.f,B.i,0,B.n),1)
 p=i.r.h(0,"earned")
-r=i.Bh(A.a([A.a1(A.a([r,A.a9(A.F(A.a([B.anv,A.lw(A.ac(""+(typeof p=="number"?B.c.A(p):0)+" FCFA",h,h,h,h,B.nO,h,h,h),B.cF)],q),B.u,B.f,B.i,0,B.n),1)],q),B.j,B.f,B.i,0,h)],q))
+r=i.Bh(A.a([A.a1(A.a([r,A.a9(A.F(A.a([B.anu,A.lw(A.ac(""+(typeof p=="number"?B.c.A(p):0)+" FCFA",h,h,h,h,B.nO,h,h,h),B.cF)],q),B.u,B.f,B.i,0,B.n),1)],q),B.j,B.f,B.i,0,h)],q))
 p=i.r.h(0,"available")
 o=typeof p=="number"?B.c.A(p):0
 p=i.r.h(0,g)
 if((typeof p=="number"?B.c.A(p):0)===0)n=500
 else{p=i.r.h(0,g)
 n=typeof p=="number"?B.c.A(p):0}m=J.d(i.r.h(0,"canWithdraw"),!0)||o>=n
-p=A.a([B.anZ,A.lw(A.ac(""+o+" FCFA",h,h,h,h,B.nO,h,h,h),B.cF),B.ab],q)
+p=A.a([B.anY,A.lw(A.ac(""+o+" FCFA",h,h,h,h,B.nO,h,h,h),B.cF),B.ab],q)
 if(m){l=A.d1(h,h,B.a9,h,h,h,h,h,h,B.e,h,h,h,h,h,h,h,h,h,h)
 k=i.e
 j=k?h:i.gaMl()
@@ -136226,7 +136233,7 @@ o=A.ac(p,k,k,k,k,k,k,k,k)
 n=s.a.a
 m=j?k:new A.b6w(l,q)
 g.push(A.d3(k,k,o,m,n===p,k,k))}p=!j
-p=A.a([h,B.af,B.anr,B.eX,A.co(B.a8,g,0,8),B.af,A.cl(k,B.X,!1,k,!0,B.o,k,A.cp(),s,k,k,k,k,k,2,l.a5V("Montant",B.mA,"FCFA"),B.t,!0,k,!0,p,!1,k,B.a3,k,k,k,k,B.cc,k,k,k,1,k,k,!1,"\u2022",k,new A.b6x(l),k,k,k,!1,k,k,!1,k,!0,k,B.V,k,k,k,k,k,k,k,k,k,k,k,B.W,!0,B.J,k,B.ad,k,k,k,k),B.af,A.cl(k,B.X,!1,k,!0,B.o,k,A.cp(),l.e,k,k,k,k,k,2,l.aGb("Num\xe9ro Orange / MTN (9 chiffres)",B.yN).aPu("",B.a5,"+237 "),B.t,!0,k,!0,p,!1,k,B.a3,k,k,k,k,B.l4,k,9,k,1,k,k,!1,"\u2022",k,k,k,k,k,!1,k,k,!1,k,!0,k,B.V,k,k,k,k,k,k,k,k,k,k,k,B.W,!0,B.J,k,B.ad,k,k,k,k)],i)
+p=A.a([h,B.af,B.anq,B.eX,A.co(B.a8,g,0,8),B.af,A.cl(k,B.X,!1,k,!0,B.o,k,A.cp(),s,k,k,k,k,k,2,l.a5V("Montant",B.mA,"FCFA"),B.t,!0,k,!0,p,!1,k,B.a3,k,k,k,k,B.cc,k,k,k,1,k,k,!1,"\u2022",k,new A.b6x(l),k,k,k,!1,k,k,!1,k,!0,k,B.V,k,k,k,k,k,k,k,k,k,k,k,B.W,!0,B.J,k,B.ad,k,k,k,k),B.af,A.cl(k,B.X,!1,k,!0,B.o,k,A.cp(),l.e,k,k,k,k,k,2,l.aGb("Num\xe9ro Orange / MTN (9 chiffres)",B.yN).aPu("",B.a5,"+237 "),B.t,!0,k,!0,p,!1,k,B.a3,k,k,k,k,B.l4,k,9,k,1,k,k,!1,"\u2022",k,k,k,k,k,!1,k,k,!1,k,!0,k,B.V,k,k,k,k,k,k,k,k,k,k,k,B.W,!0,B.J,k,B.ad,k,k,k,k)],i)
 h=l.w
 if(h!=null)B.b.M(p,A.a([B.aC,A.ac(h,k,k,k,k,B.LG,k,k,k)],i))
 if(l.r)B.b.M(p,A.a([B.af,B.zn,B.G,B.amc],i))
@@ -136557,7 +136564,7 @@ if(j){if(h)j=B.dy
 else j=a1.f<=15?B.d_:B.cq
 d=A.a0(12)
 c=a1.f
-e.push(A.T(a2,A.f("\u23f1 "+(""+B.k.bG(c,60)+":"+B.h.i3(B.k.m(B.k.ae(c,60)),2,"0")),a2,a2,B.akE,a2),B.l,a2,a2,new A.a3(j,a2,a2,d,a2,a2,B.p),a2,a2,a2,a2,B.q4,a2,a2,a2))}j=A.a([A.a1(e,B.j,B.f,B.i,0,a2)],g)
+e.push(A.T(a2,A.f("\u23f1 "+(""+B.k.bG(c,60)+":"+B.h.i3(B.k.m(B.k.ad(c,60)),2,"0")),a2,a2,B.akE,a2),B.l,a2,a2,new A.a3(j,a2,a2,d,a2,a2,B.p),a2,a2,a2,a2,B.q4,a2,a2,a2))}j=A.a([A.a1(e,B.j,B.f,B.i,0,a2)],g)
 if(m){m=""+l+" FCFA"
 j.push(new A.A(B.m7,A.f(A.c("Chaque joueur repaie sa mise ("+m+").","Each player pays the stake again ("+m+")."),a2,a2,B.S,a2),a2))}j.push(B.G)
 for(m=b0.length,b=0;b<b0.length;b0.length===m||(0,A.w)(b0),++b){a=b0[b]
@@ -136914,9 +136921,9 @@ A.bjL.prototype={
 $0(){return A.a5(this.a,!1).cZ()},
 $S:0}
 A.a2V.prototype={
-a6i(a,b,c){var s,r,q=null,p=B.k.bG(a,4),o=B.k.ae(a,4),n=o===1||o===2,m=b?B.Rb:B.e,l=A.a0(6),k=c?B.r:B.aQ
+a6i(a,b,c){var s,r,q=null,p=B.k.bG(a,4),o=B.k.ad(a,4),n=o===1||o===2,m=b?B.Rb:B.e,l=A.a0(6),k=c?B.r:B.aQ
 k=A.b9(k,c?2.5:1)
-if(b)s=B.anE
+if(b)s=B.anD
 else{s=p===11?"A":""+p
 s=A.f(s,q,q,A.bk(q,q,n?B.bu:B.aK,q,q,q,q,q,q,q,q,16,q,q,B.y,q,q,!0,q,q,q,q,q,q,q,q),q)
 r=B.eS[o]
@@ -136988,14 +136995,14 @@ m=t.p
 g=A.a([A.a9(A.f(p+o+g,h,h,B.nV,h),1)],m)
 p=!c
 if(!p||b){if(J.d(f.h(0,"toucx"),!0))o="TOUCX"
-else o=J.d(f.h(0,"fomekou"),!0)?"FOMEKOU":A.e(f.h(0,"total"))
+else o=J.d(f.h(0,"fomekou"),!0)?"MILLION":A.e(f.h(0,"total"))
 g.push(A.f(o,h,h,B.u8,h))}g=A.a1(g,B.j,B.f,B.i,0,h)
 o=A.a([],m)
 if(a3){a3=A.a([],m)
 for(l=a1.length,k=0;k<a1.length;a1.length===l||(0,A.w)(a1),++k){j=a1[k]
 a3.push(n.a6h(j,!(!p||b)))}for(l=a2.length,k=0;k<a2.length;a2.length===l||(0,A.w)(a2),++k){j=a2[k]
 a3.push(n.a6i(j,!(!p||b),!0))}B.b.M(o,a3)}else for(a3=a0.length,k=0;k<a0.length;a0.length===a3||(0,A.w)(a0),++k){j=a0[k]
-o.push(n.a6h(j,!(!p||b)))}if(a4===0)o.push(B.ane)
+o.push(n.a6h(j,!(!p||b)))}if(a4===0)o.push(B.and)
 return A.T(h,A.F(A.a([g,B.G,A.co(B.a8,o,0,0)],m),B.u,B.f,B.i,0,B.n),B.l,h,h,new A.a3(e,h,q,s,h,h,B.p),h,h,h,B.at,B.aX,h,h,h)},
 $S:858}
 A.aNU.prototype={
@@ -137409,7 +137416,7 @@ return a<10?"0"+s:s},
 $S:20}
 A.bm7.prototype={
 $1(a){var s=null,r=A.f(A.c("\ud83d\udce4 Partager la partie","\ud83d\udce4 Share the game"),s,s,s,s),q=this.a,p=A.e4(A.BK(q,B.afH,s),s,B.t,s,s,s,B.B)
-return A.dD(A.a([A.aT(A.f(A.c("Copier","Copy"),s,s,s,s),new A.bm5(q,a),s),A.dw(B.amv,new A.bm6(q),A.d1(s,s,B.fg,s,s,s,s,s,s,B.e,s,s,s,s,s,s,s,s,s,s))],t.p),s,p,s,r)},
+return A.dD(A.a([A.aT(A.f(A.c("Copier","Copy"),s,s,s,s),new A.bm5(q,a),s),A.dw(B.amu,new A.bm6(q),A.d1(s,s,B.fg,s,s,s,s,s,s,B.e,s,s,s,s,s,s,s,s,s,s))],t.p),s,p,s,r)},
 $S:13}
 A.bm5.prototype={
 $0(){var s=0,r=A.o(t.H),q=this,p
@@ -137714,7 +137721,7 @@ return s==null?0:s},
 gabo(){var s=this.b.h(0,"createdAt")
 return s instanceof A.fu?s.gym():0}}
 A.yc.prototype={
-gcH(){var s=t.g.a(this.a.h(0,"players"))
+gcG(){var s=t.g.a(this.a.h(0,"players"))
 if(s==null)s=B.E
 s=J.ci(s,new A.b8A(),t.a)
 s=A.a2(s,s.$ti.i("ai.E"))
@@ -137728,7 +137735,7 @@ return s==null?0:s},
 gNU(){var s=A.ad(this.a.h(0,"stake"))
 s=s==null?null:B.c.A(s)
 return s==null?0:s},
-Fc(a){return B.b.qQ(this.gcH(),new A.b8B(a))},
+Fc(a){return B.b.qQ(this.gcG(),new A.b8B(a))},
 VP(a){var s,r=!0
 if(a>=0){s=this.a
 if(!J.d(s.h(0,"over"),!0))if(this.gabs()<=a)r=this.gabs()===a&&J.d(s.h(0,"rolled"),!0)}return r},
@@ -137844,7 +137851,7 @@ s=a.a
 if(J.d(s.h(0,d),!0))return new A.A(B.eM,A.f(A.c("Partie termin\xe9e.","Game over."),e,e,B.bk,e),e)
 if(!(a.gNU()>0&&!J.d(s.h(0,"status"),"waiting")&&!J.d(s.h(0,d),!0)&&!a.VP(a.Fc(a.b))))return new A.A(B.eM,A.f(A.c("Tu as d\xe9j\xe0 lanc\xe9 tes d\xe9s : tu ne peux plus proposer de pari.","You already rolled: you can no longer propose a bet."),e,e,B.bk,e),e)
 r=A.a([],t.Y)
-for(q=a.gcH(),p=q.length,o=0;o<q.length;q.length===p||(0,A.w)(q),++o){n=q[o]
+for(q=a.gcG(),p=q.length,o=0;o<q.length;q.length===p||(0,A.w)(q),++o){n=q[o]
 if(!J.d(n.h(0,"uid"),f.a.d)){m=a.Fc(A.e(n.h(0,"uid")))
 l=!0
 if(m>=0)if(!J.d(s.h(0,d),!0)){k=A.ad(s.h(0,"cur"))
@@ -138896,9 +138903,9 @@ p=A.a([],j)
 for(o=J.ar(l.z);o.u();){n=o.gJ()
 m=n.h(0,"name")
 m=A.ac(m==null?"":m,k,k,k,k,B.aiS,k,k,k)
-p.push(A.n_(!1,k,!0,k,!0,k,k,k,!0,k,B.R1,k,k,k,k,new A.bgq(l,n),!1,k,k,k,k,A.ac("@"+A.e(n.h(0,"code")),k,k,k,k,B.aiP,k,k,k),k,m,k,k,k))}h.push(A.T(k,A.F(p,B.j,B.f,B.i,0,B.n),B.l,k,k,new A.a3(g,k,k,s,k,k,B.p),k,k,k,B.cI,k,k,k,k))}else if(B.h.bg(s.a.a).length>=2&&!l.Q&&l.at.length===0)h.push(B.a9p)
+p.push(A.n_(!1,k,!0,k,!0,k,k,k,!0,k,B.R1,k,k,k,k,new A.bgq(l,n),!1,k,k,k,k,A.ac("@"+A.e(n.h(0,"code")),k,k,k,k,B.aiP,k,k,k),k,m,k,k,k))}h.push(A.T(k,A.F(p,B.j,B.f,B.i,0,B.n),B.l,k,k,new A.a3(g,k,k,s,k,k,B.p),k,k,k,B.cI,k,k,k,k))}else if(B.h.bg(s.a.a).length>=2&&!l.Q&&l.at.length===0)h.push(B.a9q)
 h.push(B.dO)
-h.push(B.amT)
+h.push(B.amS)
 h.push(B.K)
 h.push(A.cl(k,B.X,!1,k,!0,B.o,k,A.cp(),l.e,k,k,k,k,k,2,l.a1v("Entre 25 et 250000"),B.t,!0,k,!0,k,!1,k,B.a3,k,k,k,k,B.cc,k,k,k,1,k,k,!1,"\u2022",k,k,k,k,k,!1,k,k,!1,k,!0,k,B.V,k,k,k,k,k,k,k,k,k,k,k,B.cP,!0,B.J,k,B.ad,k,k,k,k))
 h.push(B.eX)
@@ -138911,7 +138918,7 @@ if(g!=null)h.push(new A.A(B.cH,A.ac(g,k,k,k,k,B.ui,k,k,k),k))
 g=l.w
 if(g!=null)h.push(new A.A(B.cH,A.ac(g,k,k,k,k,B.agq,k,k,k),k))
 h.push(B.aC)
-h.push(B.amN)
+h.push(B.amM)
 return A.cO(k,k,A.T(k,A.cs(!0,A.F(A.a([new A.A(B.el,i,k),A.a9(A.cj(h,B.ek,k,k,!1,B.B,!1),1)],j),B.j,B.f,B.i,0,B.n),!0,B.C,!0,!0),B.l,k,k,B.ec,k,1/0,k,k,k,k,k,1/0),k)}}
 A.bgb.prototype={
 $0(){var s=this.a
@@ -138977,7 +138984,7 @@ s.w=null},
 $S:0}
 A.bgj.prototype={
 $1(a){var s=null,r=A.ac("Envoyer "+(""+this.a+" FCFA")+" \xe0 \xab "+this.b+" \xbb ?\nCette op\xe9ration est d\xe9finitive.",s,s,s,s,s,s,s,s)
-return A.dD(A.a([A.aT(B.us,new A.bgf(a),s),A.aT(B.anL,new A.bgg(a),s)],t.p),s,r,s,B.ao3)},
+return A.dD(A.a([A.aT(B.us,new A.bgf(a),s),A.aT(B.anK,new A.bgg(a),s)],t.p),s,r,s,B.ao3)},
 $S:13}
 A.bgf.prototype={
 $0(){return A.a5(this.a,!1).ba(!1)},
@@ -139165,7 +139172,7 @@ return A.n($async$J3,r)},
 D(a){return B.aj}}
 A.bhd.prototype={
 $1(a){var s=null,r=A.a0(18)
-return A.dD(A.a([A.aT(B.ank,new A.bhb(a),s),A.dw(B.ur,new A.bhc(this.a,a),A.d1(s,s,B.fg,s,s,s,s,s,s,B.e,s,s,s,s,s,s,s,s,s,s))],t.p),B.fX,B.ao5,new A.bA(r,B.x),B.amC)},
+return A.dD(A.a([A.aT(B.anj,new A.bhb(a),s),A.dw(B.ur,new A.bhc(this.a,a),A.d1(s,s,B.fg,s,s,s,s,s,s,B.e,s,s,s,s,s,s,s,s,s,s))],t.p),B.fX,B.ao5,new A.bA(r,B.x),B.amB)},
 $S:13}
 A.bhb.prototype={
 $0(){return A.a5(this.a,!1).bz()},
@@ -139847,7 +139854,7 @@ e=A.a0(14)
 r=A.b9(g?B.aR:A.bq(h),1)
 q=t.p
 p=A.a([A.a9(A.f(A.e(a.h(0,"name"))+" \xb7 "+A.e(a.h(0,"region")),i,i,B.aiA,i),1)],q)
-if(g)p.push(B.amP)
+if(g)p.push(B.amO)
 p=A.a1(p,B.j,B.f,B.i,0,i)
 o=f?"Partenaire : "+A.e(a.h(0,"partnerName"))+" \xb7 "+A.e(a.h(0,"rate"))+" %":"Aucun partenaire : gestion centrale"
 o=A.f(o,i,i,A.bk(i,i,f?B.r:A.bq(4284377232),i,i,i,i,i,i,i,i,13,i,i,i,i,i,!0,i,i,i,i,i,i,i,i),i)
@@ -139857,11 +139864,11 @@ m.toString
 m=A.S(m).aP8(new A.Cg(A.rZ(i,i,A.bq(h),i,A.bq(4287271864),i,i,i,i,B.e,i,i,i,i,i,i,i,i,B.LM,i)))
 l=j.f?i:new A.aIq(j,a)
 l=A.a([A.aT(A.f(f?"Changer le partenaire":"Affecter un partenaire",i,i,i,i),l,i)],q)
-if(f)l.push(A.aT(B.anj,j.f?i:new A.aIr(j,a),i))
-if(f&&d>s)l.push(A.aT(B.an6,j.f?i:new A.aIs(j,a),i))
+if(f)l.push(A.aT(B.ani,j.f?i:new A.aIr(j,a),i))
+if(f&&d>s)l.push(A.aT(B.an5,j.f?i:new A.aIs(j,a),i))
 k=j.f?i:new A.aIt(j,a,g)
 l.push(A.aT(A.f(g?"R\xe9activer":"Suspendre",i,i,i,i),k,i))
-l.push(A.aT(B.amW,new A.aIu(j,a),i))
+l.push(A.aT(B.amV,new A.aIu(j,a),i))
 l.push(A.aT(B.alH,new A.aIv(j,a),i))
 return A.T(i,A.F(A.a([p,o,n,B.K,new A.pB(m,A.co(B.a8,l,6,8),i)],q),B.u,B.f,B.i,0,B.n),B.l,i,i,new A.a3(B.b0,i,r,e,i,i,B.p),i,i,i,B.aM,B.aX,i,i,i)},
 D(a){var s,r,q,p,o,n,m,l,k,j,i=this,h=null,g=i.d,f=t.Y,e=A.a([],f),d=g==null,c=d?h:g.h(0,"zones"),b=t.g
@@ -139891,8 +139898,8 @@ p=new A.aF(14,14)
 m=A.a([new A.J(A.e(n.h(0,"name"))+" : "+A.e(n.h(0,"from"))+" \u2192 "+A.e(n.h(0,"to"))+" ("+A.e(n.h(0,"toRegion"))+")",B.akt,h,h,h,h)],s)
 if(A.e(n.h(0,"reason")).length!==0)m.push(new A.J("Raison : "+A.e(n.h(0,"reason")),B.ajK,h,h,h,h))
 l=i.f
-k=A.aT(B.M9,l?h:new A.aIB(i,n),h)
-m.push(A.a1(A.a([k,A.aT(B.M8,l?h:new A.aIC(i,n),h)],s),B.j,B.f,B.i,0,h))
+k=A.aT(B.M8,l?h:new A.aIB(i,n),h)
+m.push(A.a1(A.a([k,A.aT(B.M7,l?h:new A.aIC(i,n),h)],s),B.j,B.f,B.i,0,h))
 r.push(A.T(h,A.F(m,B.u,B.f,B.i,0,B.n),B.l,h,h,new A.a3(B.wF,h,h,new A.bu(p,p,p,p),h,h,B.p),h,h,h,B.aM,B.aX,h,h,h))}B.b.M(d,r)}c=f.length
 if(c!==0){c=A.a([new A.A(B.q2,A.f("Paiements de commission \xe0 valider ("+c+")",h,h,B.cM,h),h)],s)
 for(r=f.length,o=0;o<f.length;f.length===r||(0,A.w)(f),++o){j=f[o]
@@ -139902,8 +139909,8 @@ m=A.ad(j.h(0,"amount"))
 m=m==null?h:B.c.A(m)
 m=A.i9(m==null?0:m)
 l=i.f
-k=A.aT(B.amx,l?h:new A.aID(i,j),h)
-c.push(A.T(h,A.F(A.a([new A.J(p+" : "+m,B.akA,h,h,h,h),A.a1(A.a([k,A.aT(B.M8,l?h:new A.aIE(i,j),h)],s),B.j,B.f,B.i,0,h)],s),B.u,B.f,B.i,0,B.n),B.l,h,h,new A.a3(B.SZ,h,h,new A.bu(q,q,q,q),h,h,B.p),h,h,h,B.aM,B.aX,h,h,h))}B.b.M(d,c)}d.push(new A.A(B.q2,A.f("Villes ("+e.length+")",h,h,B.cM,h),h))
+k=A.aT(B.amw,l?h:new A.aID(i,j),h)
+c.push(A.T(h,A.F(A.a([new A.J(p+" : "+m,B.akA,h,h,h,h),A.a1(A.a([k,A.aT(B.M7,l?h:new A.aIE(i,j),h)],s),B.j,B.f,B.i,0,h)],s),B.u,B.f,B.i,0,B.n),B.l,h,h,new A.a3(B.SZ,h,h,new A.bu(q,q,q,q),h,h,B.p),h,h,h,B.aM,B.aX,h,h,h))}B.b.M(d,c)}d.push(new A.A(B.q2,A.f("Villes ("+e.length+")",h,h,B.cM,h),h))
 if(e.length===0)d.push(B.aml)
 for(f=e.length,o=0;o<e.length;e.length===f||(0,A.w)(e),++o)d.push(i.aMz(e[o]))
 f=A.pb(A.cj(d,B.xU,h,h,!1,B.B,!1),i.gC0())}return A.cO(h,h,A.T(h,A.cs(!0,A.F(A.a([b,A.a9(f,1)],s),B.j,B.f,B.i,0,B.n),!0,B.C,!0,!0),B.l,h,h,B.ec,h,1/0,h,h,h,h,h,1/0),h)}}
@@ -139953,7 +139960,7 @@ $1(a){var s,r=this,q=null,p=A.f("Partenaire de "+A.e(r.b.h(0,"name")),q,q,q,q),o
 n=n==null?q:n.h(0,"maxRate")
 s=t.p
 n=A.F(A.a([B.alm,o,A.cl(q,B.X,!1,q,!0,B.o,q,A.cp(),r.d,q,q,q,q,q,2,A.cT(q,q,q,q,q,q,q,q,!0,q,q,q,q,q,q,q,q,q,q,q,q,q,q,q,q,q,q,q,q,q,q,q,q,q,q,q,q,q,q,q,"Taux de commission (max "+A.e(n==null?10:n)+" %)",!0,!0,!1,q,q,q,q,q,q,q,q,q,q,q,q,q,q),B.t,!0,q,!0,q,!1,q,B.a3,q,q,q,q,B.cc,q,q,q,1,q,q,!1,"\u2022",q,q,q,q,q,!1,q,q,!1,q,!0,q,B.V,q,q,q,q,q,q,q,q,q,q,q,q,!0,B.J,q,B.ad,q,q,q,q)],s),B.j,B.f,B.D,0,B.n)
-return A.dD(A.a([A.aT(B.j9,new A.aIb(a),q),A.cM(B.anO,new A.aIc(a),q)],s),q,n,q,p)},
+return A.dD(A.a([A.aT(B.j9,new A.aIb(a),q),A.cM(B.anN,new A.aIc(a),q)],s),q,n,q,p)},
 $S:13}
 A.aIb.prototype={
 $0(){A.a5(this.a,!1).ba(!1)
@@ -139995,7 +140002,7 @@ r=p
 J.bV(s,r.a+" : "+A.i9(B.c.A(A.aX(r.b))))}J.bV(c,A.f(J.u2(s," \xb7 "),h,h,B.M4,h))}J.bV(c,B.jY)
 s=i.e
 f=s.length
-if(f===0)J.bV(c,B.ang)
+if(f===0)J.bV(c,B.anf)
 else for(o=0;o<s.length;s.length===f||(0,A.w)(s),++o){q=s[o]
 p=A.e(J.aO(q,"player"))
 n=A.e(J.aO(q,"game"))
@@ -140222,7 +140229,7 @@ c=c==null?a2:B.c.A(c)
 q=A.F(A.a([new A.J(q,B.hJ,a2,a2,a2,a2),new A.J(p+h+" \xb7 mis\xe9 "+A.i9(c==null?0:c),B.fw,a2,a2,a2,a2)],r),B.u,B.f,B.i,0,B.n)
 p=k.h(0,A.e(a0.h(0,"id")))
 a8.push(A.T(a2,A.a1(A.a([new A.cm(1,B.ac,q,a2),new A.J(A.i9(p==null?0:p),B.fx,a2,a2,a2,a2)],r),B.j,B.f,B.i,0,a2),B.l,a2,a2,new A.a3(B.b0,a2,a2,new A.bu(b0,b0,b0,b0),a2,a2,B.p),a2,a2,a2,B.bJ,B.bd,a2,a2,a2))}a8.push(B.a9j)
-if(o.length===0)a8.push(B.amQ)
+if(o.length===0)a8.push(B.amP)
 for(a7=A.ho(o,0,A.mo(60,"count",s),A.ab(o).c),a9=a7.$ti,a7=new A.bO(a7,a7.gK(0),a9.i("bO<ai.E>")),a9=a9.i("ai.E");a7.u();){b0=a7.d
 if(b0==null)b0=a9.a(b0)
 if(A.e(b0.h(0,a4)).length>=16){s=B.h.a7(A.e(b0.h(0,a4)),0,16)
@@ -140973,11 +140980,11 @@ r=a.gux()[s]
 q=a.MA(r)
 a1=t.DU
 p=A.a([r],a1)
-for(o=0,n=0;n<360;++n,q=l){m=B.k.ae(s+n,360)
+for(o=0,n=0;n<360;++n,q=l){m=B.k.ad(s+n,360)
 l=a.MA(a.gux()[m])
 o+=Math.abs(l-q)}k=o/a3
 q=a.MA(r)
-for(j=1,i=0;p.length<a3;q=l){m=B.k.ae(s+j,360)
+for(j=1,i=0;p.length<a3;q=l){m=B.k.ad(s+j,360)
 h=a.gux()[m]
 l=a.MA(h)
 i+=Math.abs(l-q)
@@ -140993,8 +141000,8 @@ break}}d=A.a([a0],a1)
 c=B.c.hj((a2-1)/2)
 for(a0=c+1,n=1;n<a0;++n){b=0-n
 for(a1=p.length;b<0;)b=a1+b
-B.b.jG(d,0,p[b>=a1?B.k.ae(b,a1):b])}for(a0=a2-c-1+1,n=1;n<a0;++n){for(a1=p.length,b=n;!1;)b=a1+b
-d.push(p[b>=a1?B.k.ae(b,a1):b])}return d},
+B.b.jG(d,0,p[b>=a1?B.k.ad(b,a1):b])}for(a0=a2-c-1+1,n=1;n<a0;++n){for(a1=p.length,b=n;!1;)b=a1+b
+d.push(p[b>=a1?B.k.ad(b,a1):b])}return d},
 gaOk(){var s,r,q,p,o,n,m,l,k,j,i,h,g,f,e,d=this,c=d.f
 if(c!=null)return c
 c=B.b.gT(d.goX()).a
@@ -141016,7 +141023,7 @@ if(n)l=c
 else l=r
 k=d.gux()[B.c.am(q.a)]
 j=1-d.gaTc()
-for(i=1000,h=0;h<=360;++h){g=B.c.ae(m+h,360)
+for(i=1000,h=0;h<=360;++h){g=B.c.ad(m+h,360)
 if(g<0)g+=360
 if(!A.bww(m,g,l))continue
 f=d.gux()[B.c.am(g)]
@@ -141069,10 +141076,10 @@ j=A.uz((0.2126*n+0.7152*m+0.0722*l)/100)
 i=[116*j-16,500*(k-j),200*(j-A.uz((0.01932141*n+0.11916382*m+0.95034478*l)/108.883))]
 o=i[2]
 h=i[1]
-g=B.c.ae(Math.atan2(o,h)*180/3.141592653589793,360)
+g=B.c.ad(Math.atan2(o,h)*180/3.141592653589793,360)
 if(g<0)g+=360
 o=Math.pow(Math.sqrt(h*h+o*o),1.07)
-g=B.c.ae(g-50,360)
+g=B.c.ad(g-50,360)
 e.q(0,p,-0.5+0.02*o*Math.cos((g<0?g+360:g)*3.141592653589793/180))}return f.d=e},
 gux(){var s,r,q,p,o,n,m,l=this.c
 if(l.length!==0)return l
@@ -142882,7 +142889,7 @@ s.Oj=s.bn
 s.Oh=s.bi
 s.ald=s.h_
 s.ZU=s.df
-s.ale=s.cG
+s.ale=s.cH
 s.rT=s.bJ
 s.zw=s.d6
 s.alc=s.e0
@@ -145586,7 +145593,7 @@ r(A.T4,A.ed)})()
 var v={G:typeof self!="undefined"?self:globalThis,typeUniverse:{eC:new Map(),tR:{},eT:{},tPV:{},sEA:[]},mangledGlobalNames:{y:"int",U:"double",eR:"num",u:"String",N:"bool",bT:"Null",a8:"List",R:"Object",ap:"Map",bo:"JSObject"},mangledNames:{},types:["~()","U(U)","au<~>()","~(N)","N(ap<u,@>)","~(bo)","~(b7)","x(ca<dh>)","U(fz)","xm(fz)","au<ap<u,@>>()","i(B)","~(u)","qj(B)","bT(~)","~(kv)","~(y)","bT()","u(ap<u,@>)","GI(fz)","u(y)","~(Cr)","x?(ca<dh>)","~(R?)","N(o2,r)","~(oW,r)","ap<u,@>(@)","~(R,da)","N(y)","~(zG)","bT(R)","N(k5<ap<u,@>>)","~(ce)","~(G)","bT(R,da)","U(M)","bT(@)","u(@)","hH(fz)","N(u)","N(R?)","~(jI)","N(ex)","~(ie)","u(u)","~(ec<R?>,~())","hG(B)","u(vO)","~(cv)","a8<fl>()","~(Cf)","~(@)","y(@)","~(ev?)","~(u?)","~(R)","i(B,i?)","N(ce)","b_<U>(@)","N(iO)","N()","q(ca<dh>)","A(B,~(~()))","~(fs)","@(@)","y()","bT(bo)","~(rt)","u()","~(U)","N(mL)","y(k5<ap<u,@>>,k5<ap<u,@>>)","E(M,av)","~(rs)","y(y)","~(rX)","eM(ca<dh>)","N(ap<u,y>)","~(~())","y(ex,ex)","~(R[da?])","N(j)","uO(B)","cD<x?>?(fY?)","U(M,U)","~(hk)","i(B,db<iN<ap<u,@>>>)","N(dz)","iV(B,U,i?)","~(b6)","N(ja)","x(x)","~(p1)","aM(ca<dh>)","~(N,R?)","J(B,db<y>)","mw(B)","i(B,db<hS<ap<u,@>>>)","~(y,a8<y>,a8<ap<u,y>>)","xn(B)","N(h8)","N(R)","jm()","bT(u)","aC(B)","y(G,G)","au<@>(lE)","~(N?)","au<~>(lE)","au<~>(@)","@(u,@)","iV(B,i?)","eI(@)","~(w6)","a8<h8>()","Y(B)","~(LB)","~(vd)","~(a8<y>)","N(fV)","r(r)","R?(R?)","u(vQ)","y(lQ,lQ)","~(R?,R?)","N(@)","au<@>()","yo(B,db<y>)","i(B,y)","bT(N)","au<u?>(xp)","cD<x?>?(cH?)","~(iN<ap<u,@>>)","~(hS<ap<u,@>>)","xz(B)","t4(B)","i(B)?(yM?)","kO(B)","U()","bo(R?)","au<~>(~)","au<u>()","jl()","og(@)","cF(U)","~([c4?])","i(B,qK)","0^?(0^?(fY?))<R?>","N(wN)","dI(B,c3<U>,i?)","0^?(cD<0^>?(fY?),ca<dh>)<R?>","~(E)","~(LE)","oC(B)","0&(@,@)","rL(B)","pg(B)","cD<E?>?(cH?)","~(cd)","~(u,@)","~(R,da?)","N(h0)","~(hT)","c0<a8<hT>>()","~(rQ)","h6(h6)","~(y?)","N(bp<y,kP>)","bT(cE?)","ca<0^>()<R?>","cD<eD?>?(fY?)","~(jl)","~({curve:hR,descendant:G?,duration:b7,rect:H?})","0&()","au<l4>()","N(jd)","mO(B)","mh(B)","y(@,@)","u(R?)","au<~>(xp)","y(R?)","y(dz,dz)","kg()","N(R?,R?)","~(kg)","N(v9)","bT(cE)","U(U,U)","U(ca<dh>)","u?(u?)","x?(fY?)","~(~)","bo()","bo?(y)","N(is)","i(B,c3<U>,c3<U>)","N(o2)","U?(+(av,rY))","nv?(t7?)","~(nv?)","l4(R?)","~(a8<bo>,bo)","au<~>(ou)","au<bo>([bo?])","a8<bo>()","N(mz)","~(vi)","x?(x?)","~(R,da?,GW)","N(wX)","Jl?()","~(iO)","kW(B,i?)","x?()","cD<U?>?(cH?)","i(B,ca<dh>,i?)?(cH?)","~(n3)","~(nb)","~(jG)","au<N>()","u(U,U,u)","~(b6?)","u(ik)","@(u)","H()","~(qR)","z9(a8<fs>)","~(M?)","tM(B,c3<U>,i?)","tN(B,c3<U>,i?)","bo([bo?])","u4(B)","N(jS<aW>)","bT(he,he)","~(iU,kV?)","E()","U(E)","dU(B,U,i?)","~(@,@)","N(le)","bT(R?)","BU(B,av)","au<kw>(mT{getTargetSize:x9(y,y)?})","vu()","@()","~(lz)","~(nt,y,y)","~(boG)","au<u>(ap<u,@>,y)","av(M)","y(u?)","N(G)","fg(fs)","~(nH)","+boundaryEnd,boundaryStart(aZ,aZ)(aZ)","~(pq)","U({from!U,to!U})","~(r,M)","E(M)","~(a8<qS>)","~(dz)","N(R,dz)","N(R,ca<dz>)","y(dz)","a8<dz>(mi)","pM()","au<ev?>(ev?)","~(fc)","ap<R?,R?>()","N(oP)","kH(ex,hX)","N(aib)","~([b7?])","aZ(aZ,N,jm)","~(R?,u,u)","h0(h0)","y(fN,fN)","N(iF<@>)","lD()","~(lD)","jT()","~(jT)","lM()","~(lM)","fF(B,i?)","b_<@>?(b_<@>?,@,b_<@>(@))","qk(@)","od(@)","kM(B)","jd()","M(y)","U?(M,av,rY)","m7(cv)","N(iP)","~(of)","~(il)","N(hk,U)","N(hk)","y(hk,hk)","~(If)","~(Aw)","~(LD)","~(LF)","~(LC)","N(N?)","au<By>(ags)","y(u)","H(cF,H)","a8<u>()","oS(B,U,i?)","oa(B,i?)","qv(B)","~(R,@)","au<~>(Ri)","y(y,y)","U(R?)","~(h7)","au<~>(hI?)","qO(B,db<y>)","i(u,u)","tA(B)","a8<hT>(iN<ap<u,@>>)","y(k5<ap<u,@>>)","N(y,kP)","~(cE)","au<bT>(R)","aV(B,db<iN<ap<u,@>>>)","bT(aie<ap<u,@>>)","te(B)","b8(B,R,da?)","xU(B)","wx(B)","xr(B)","AM(B)","j4(B,db<hI?>)","u6(B)","x(ik)","a8<p5<u>>(B)","j4(B,i?)","N(lQ)","~(CI)","N(ka)","qj(B,~(~()))","y(y,ap<u,@>)","~(lm)","N(u?)","0&(R,da)","i?(B,c3<U>,c3<U>,N,i?)","i(B,c3<U>,c3<U>,i)","U(M,av)","~(Ax)","wD()","Y?(B,vN,d2<oL>)","N(jW)","aG<@>?()","w1()","x_(@)","ap<u,@>(nu<cE>)","au<~>(j)","wa()","dE(B,c3<U>,i?)","i(B,c3<U>,c3<U>,N,i?)","n7?(ip)","dI(B,i?)","iA(B,av)","pc(B,av)","i(B,pX,rw?,rw?)","~(f9,y)","~({color!x,endFraction!U,startFraction!U})","~(@,da)","N(rk)","AJ(B,i?)","~(bo,a8<kQ>)","~({allowPlatformDefault:N})","N(ca<dh>)","u(u,x)","CW()","~(mb)","DO()","~(z0)","~(ls)","~(af2)","~(af3)","c3<E>(N)","nk(ca<dh>)","~(a8<U>,xc,U)","j9<Z<Y>>(i)","eZ(y)","kW(i)","vw(B,i?)","xt(iF<u>)","xi(@)","qq()","l2()","bp<R,nr<@>>(R,nr<@>)","N(bp<R,nr<@>>)","cd(y)","r(U,U)","~(a8<le>,U)","~(a8<le>?)","~(oj)","~({animation!c3<U>,controller!qm,max!U,min!U,target!U,tween!b_<U>})","cd()","~(mR)","~(m2)","~(Xz)","~(nD)","r(Cu)","dI(B,c3<U>)","au<kw>(mT{allowUpscaling:N,cacheHeight:y?,cacheWidth:y?})","eZ(i)","ew(ew,dp)","dp(dp)","N(dp)","u(dp)","N(U)","x(U)","Dw()","~(ly?,N)","au<~>(R,da?)","ce(y)","au<kw>(mT{allowUpscaling:N?,cacheHeight:y?,cacheWidth:y?})","x9(y,y)","lF<cE>(R?)","bT(aew)","wB?(mv,u,u)","~(R,da?)?(lz)","~(kw)","~(mC)","Z4(bJ)","H(bJ)","Za(bJ)","N(y,N)","oA?()","r7(r7)","~(Lu,@)","zO(u)","oB(r,y)","U?()","E(av)","N(+(y,@))","~(iU)","N(oG)","H(H?,h6)","au<~>(qp)","u(eB)","Dh()","eM(n2)","~(n2,cF)","N(n2)","ap<u,u>(ap<u,u>,u)","~(Jk)","y(fO,fO)","0&(u,y?)","~(u,u?)","~(a8<fg>{isMergeUp:N})","fs?(fg)","U?(y)","a8<fg>(a8<fg>)","a8<fO>(fO)","ca<eW>?(fg)","ca<eW>(ca<eW>)","N(bp<R?,R?>)","N(nH)","b6()","+boundaryEnd,boundaryStart(aZ,aZ)(aZ,u)","pD?(oW,r)","N(BX{crossAxisPosition!U,mainAxisPosition!U})","tu(eJ)","N(kQ)","N(M)","fM?(kQ)","N(e2)","u(U)","~(E8)","ap<~(cv),cF?>()","~(y,De)","~(y,y,y)","~(a8<fs>)","~(~(cv),cF?)","xI()","~(y,bo)","ou()","N(bo)","dz(q4)","~(@,R?)","~(u,zL)","dz(y)","ca<dz>()","~(eW)","~(e3,~(R?))","ev(ev?)","au<xC>(u)","qr(ap<R?,R?>)","c0<kJ>()","au<u?>(u?)","kA(kF)","au<~>(ev?,~(ev?))","au<ap<u,@>>(@)","~(p9)","ca<t>(t)","~(lu?,Cj?)","au<bT>(ev?)","Jy()","qB(f1)","zx(f1)","a8<fc>()","a8<fc>(a8<fc>)","U(eR)","a8<@>(u)","a8<eR>(wU)","ap<u,@>(hU)","~({allowPlatformDefault!N})","zd(wb)","~(cc<c4>)","au<~>([bo?])","~(ti)","i(ti)","N(i)","uH(f1)","dd<@>?(k7)","dd<@>(k7)","AD(H?,H?)","vK(B,i?)","N(Al)","he()","zh(B)","au<N>(lE)","qD(B)","au<~>(kv)","y(bo)","H(aib)","~(hf)","U(@)","re<0^>(k7,i(B))<R?>","N(U?,U)","~(t3)","~(lT)","~(pj)","~(hD)","~(l3)","R?(j7)","d_(d_,pz)","zc(w9)","Ck(B)","~(p4)","~(d_)","N(d_?,d_)","d_(d_)","uC(B,i0)","U(u)","~([ex?])","@(R)","N(HZ)","~(Dc)","N(D3)","au<b7?>()","N(pE)","ca<j6>(fN)","U(pP)","a8<j6>(B)","H(fN)","y(nF,nF)","a8<fN>(fN,L<fN>)","N(fN)","N(bns)","au<bT>()","mE<ce>(ce)","ce?(ce)","R?(y,ce?)","lt()","~(lt)","y(j,j)","~(ie{isClosing:N?})","u(u,u?)","bI0?()","N(t9)","uk(bo)","~(p3)","~(pd)","~(kb,R)","0^?(0^?(cH?))<R?>","~(pS)","i(B,c3<U>,A6,B,B)","N(pS)","kM(B,i?)","vr(B)","~(ly,N)","0^?(cD<0^>?(cH?))<R?>","u?(u)","u(fV)","qp()","uo(@)","vV(@)","xh(@)","um(@)","yl(y)","~(o7)","au<@>(DM)","ap<ke,@>(a8<@>)","ap<ke,@>(ap<ke,@>)","bT(ap<ke,@>)","cD<q?>?(cH?)","~(pi?,N)","N(dd<@>?)","au<bT>(@)","N(ri)","au<+(u,j8?)>()","bT(R[da?])","~([0^?])<R?>","h8(dd<@>)","N(N)","bp<u?,a8<R>>(@,@)","M?()","DI(B)","yb()","cD<ew?>?(cH?)","~(av)","zi(B,i?)","xw(B,i0)","i(B,+(E,cF,E))","N(pa)","bT(fc?)","~(ec<R?>)","y(l5,l5)","N(ty)","rI(B,i?)","dE(B,i?)","vp(cv)","Ay(cv)","cD<aM?>?(cH?)","N(kE)","u(kE)","i(B,i0)","cD<eD?>?(cH?)","bT(a8<~>)","eM?(ca<dh>)","eM?(cH?)","x?(cH?)","~(r)","~(u,R?)","~(jH)","ts()","tK()","nI()","~(nI)","~(p2)","pJ?(cH?)","H(H)","N(H)","~(BS,c4)","a8<td>()","cc<c4>?()","E4(B,i0)","~(M)","ce?()","hU(iG)","N(rG)","qE(B)","tD(B)","~(b7?)","fV(@)","vR?(cH?)","b7?(cH?)","N?(cH?)","j1?(cH?)","Ai?(cH?)","bo(R,da)","nm()","~(nm)","nn()","~(nn)","lx()","~(lx)","~([rX?])","0&(@)","~(t6)","~(rB)","yk(B,oZ)","au<~>(u,ev?,~(ev?)?)","nt()","zW()","N(u,u)","nu<cE>(@)","bT(u,u[R?])","~(YD<a8<y>>)","kE(@)","In()","~(u,u)","y(hS<ap<u,@>>)","~(AG)","au<~>(CQ)","au<~>(bo)","mv(R?)","N(a8<u>)","~(E?)","bo?(R)","~(y,N(mL))","a8<y>()","u9(B)","ut(B)","u7(B)","u8(B)","au<bT>(xq)","au<~>(u)","i(u,u{bold:N,color:x?})","zB(B)","Ds(hB)","aj(B,R,da?)","i()","au<oQ>()","xj({from:U?})","~(@,u,@)","J(B,U,i?)","aj(B,av)","Ap(B,i?)","cC(B,av)","r(y)","xY(eJ)","~(a8<R?>)","Dq(mG)","N(y,y)","~(oO)","a8<n8>()","lO(@)","i(u,y?,~(y?){exclude:y?})","lN(@)","eJ?(lO?)","y(y,h7)","N(h7)","vc(@)","vv(B,i?)","i(i)","j4(B,db<y>)","rf?(lN?)","mx(B)","r(E,U)","@(u,ap<u,@>)","@(y,ap<u,@>?)","ur()","nX(B)","px(B)","y(ap<u,@>,ap<u,@>)","or(B)","ve()","xa(B)","N(~)","au<iC>()","us(B)","v5(B,av)","~(CS)","c0<eJ>()","y0(B)","bT(Q<R?>,bo)","zY(@)","@(@,u)","eJ(iC)","bo(cE)","J(B,i?)","qz(B,i?)","~(XZ)","y_(B)","DG(B)","N(wf)","N(dd<@>,@)","a8<R?>(cE)","y2()","j6(B)","a8<R?>(a8<R?>)","cE(R?)","qG(@)","r(a8<U>)","a8<U>(U,U)","iC(@)","Df(B)","xG(B)","xQ(B)","bK(B,i?)","cC(B,i?)","dI(B,c3<U>,c3<U>,i)","cC(B,c3<U>,c3<U>)","yd(B)","x(y)","bp<@,R?>(@,@)","r9(B,db<a8<hT>>)","i(u,u{onTap:~()?})","bi(B,u,i?)","j4(B,u,i?)","bp<y,u>(bp<u,u>)","~(B,i(B))","~(i(B))","i(aC,u,x,~())","mO(B,db<y>)","iA(B)","~(qi)","~(qt)","aV(i)","au<hB>()","w3(B)","wd(B)","au<rS>(u,ap<u,u>)","c0<hB>()","vm(B)","we(B)","wZ(B)","aM?(ca<dh>)","~(he)","i(y,aC,u)","Dx(B)","zy(B)","hB(rx)","AZ(B)","vM(B)","bT(ap<u,@>)","y1(B)","qT(B)","~(ap<u,@>)","bp<u,y>(@,@)","b6(~)","bT(ap<u,@>?)","a8<jr>()","y(jr,jr)","ql(jr)","oa(B,U,i?)","mO(B,av)","H()?(M)","y(ik)","~(c4?)","jD(B,U,i?)","i?()","mF(f9)","rL(B,~(~()))","ik(y)","q(U)","au<eJ>()","ap<u,y>(@)","q([U,ii])","i(a8<i>)","~(~(y,a8<y>,a8<ap<u,y>>){notify:N})","eJ(iC?)","mG(qG)","i(B,db<y>)","wA(B)","oR(B)","A7(B)","~(x,r,r)","x2(B)","uF(B)","oH(u)","w4(B)","N(qX?)","x(tr)","B6(B)","A(B)","au<~>(Cr)","au<~>(b7)","ap<u,@>(y,N,y,y,y)","j4(B)","Bx(ap<u,@>)","i(u,N)","ap<u,u>(ap<u,@>)","N(ap<u,u>)","N(hI?)","au<N>(u)","bT(~())","yf(B)","A(B,db<iN<ap<u,@>>>)","r9(B,db<iN<ap<u,@>>>)","y(ka,ka)","au<b6?>(B,b6?)","kW(B)","bi(B,db<y>)","~(hI?)","xH(B)","~(LH)","au<bo>()","zR()","hI?(fv?)","~(jk<hI?>)","y(jR,jR)","u(u?)","u?()","y(mf)","w_()","R(mf)","R(is)","y(is,is)","a8<mf>(bp<R,a8<is>>)","pv()","u(u,u)","bo(y{params:R?})","avO(avP)","0&(u,y,y)","fv?(ju<fv>)","y(d7<@>,d7<@>)","a8<u>(u,a8<u>)","0^(0^,0^)<eR>","E?(E?,E?,U)","U?(eR?,eR?,U)","x?(x?,x?,U)","lP(R)","k1(lF<cE>)","N(eW)","a8<fs>()","i(B,r,r,i)","~(bN{forceReport:N})","fl(u)","m_?(u)","U(U,U,U)","bT(@,da)","~(y,@)","~(M,r)","i(B,c3<U>)","N?(N?,N?,U)","k1(lP)","i(B,i)","eD?(eD?,eD?,U)","ew?(ew?,ew?,U)","q?(q?,q?,U)","y(Rk<@>,Rk<@>)","N({priority!y,scheduler!nf})","a8<kJ>(u)","i(i,c3<U>)","i(i?,a8<i>)","~(ex{alignment:U?,alignmentPolicy:wP?,curve:hR?,duration:b7?})","y(ce,ce)","dZ(dZ?,dZ?,U)","i?(B,vN,d2<oL>)","a8<dd<@>>(lH,u)","kH(hX)","N(hX)","y(i,y)","x?(x?,x?,x?[x?])","~(wC)","vH(B)","bo(y)","0&(R,da{fromPigeon:N})","qz(B,av)","eO<N>(N)"],interceptorsByTag:null,leafTags:null,arrayRti:Symbol("$ti"),rttc:{"2;":(a,b)=>c=>c instanceof A.aB&&a.b(c.a)&&b.b(c.b),"2;boundaryEnd,boundaryStart":(a,b)=>c=>c instanceof A.a82&&a.b(c.a)&&b.b(c.b),"2;end,start":(a,b)=>c=>c instanceof A.a83&&a.b(c.a)&&b.b(c.b),"2;endGlyphHeight,startGlyphHeight":(a,b)=>c=>c instanceof A.PS&&a.b(c.a)&&b.b(c.b),"2;errors,placed":(a,b)=>c=>c instanceof A.a84&&a.b(c.a)&&b.b(c.b),"2;inside,outside":(a,b)=>c=>c instanceof A.a85&&a.b(c.a)&&b.b(c.b),"2;key,value":(a,b)=>c=>c instanceof A.a86&&a.b(c.a)&&b.b(c.b),"2;localPosition,paragraph":(a,b)=>c=>c instanceof A.a87&&a.b(c.a)&&b.b(c.b),"2;representation,targetSize":(a,b)=>c=>c instanceof A.a88&&a.b(c.a)&&b.b(c.b),"3;":(a,b,c)=>d=>d instanceof A.js&&a.b(d.a)&&b.b(d.b)&&c.b(d.c),"3;ascent,bottomHeight,subtextHeight":(a,b,c)=>d=>d instanceof A.a89&&a.b(d.a)&&b.b(d.b)&&c.b(d.c),"3;breaks,graphemes,words":(a,b,c)=>d=>d instanceof A.a8a&&a.b(d.a)&&b.b(d.b)&&c.b(d.c),"3;completer,recorder,scene":(a,b,c)=>d=>d instanceof A.PT&&a.b(d.a)&&b.b(d.b)&&c.b(d.c),"3;data,event,timeStamp":(a,b,c)=>d=>d instanceof A.PU&&a.b(d.a)&&b.b(d.b)&&c.b(d.c),"3;devicePixelRatio,height,width":(a,b,c)=>d=>d instanceof A.a8b&&a.b(d.a)&&b.b(d.b)&&c.b(d.c),"3;domSize,representation,targetSize":(a,b,c)=>d=>d instanceof A.a8c&&a.b(d.a)&&b.b(d.b)&&c.b(d.c),"3;large,medium,small":(a,b,c)=>d=>d instanceof A.a8d&&a.b(d.a)&&b.b(d.b)&&c.b(d.c),"3;textConstraints,tileSize,titleY":(a,b,c)=>d=>d instanceof A.a8e&&a.b(d.a)&&b.b(d.b)&&c.b(d.c),"4;domBlurListener,domFocusListener,element,semanticsNodeId":a=>b=>b instanceof A.PV&&A.bAC(a,b.a),"4;queue,started,target,timer":a=>b=>b instanceof A.PW&&A.bAC(a,b.a)}}
 A.bNy(v.typeUniverse,JSON.parse('{"he":"r6","Zm":"r6","pH":"r6","bV4":"AN","ze":{"avO":[]},"zc":{"auL":[]},"zd":{"IR":[],"mF":[]},"w9":{"Fy":["bo"]},"wb":{"Fy":["bo"]},"f9":{"mz":[]},"jE":{"mz":[]},"w1":{"CK":[]},"wa":{"CK":[]},"wD":{"mF":[]},"IR":{"mF":[]},"j8":{"dN":[]},"bw1":{"hA":[]},"n8":{"hA":[]},"aq7":{"avP":[]},"oj":{"Xz":[]},"kA":{"kF":[]},"LM":{"l5":[]},"Jg":{"l5":[]},"oi":{"am4":[]},"UE":{"yX":[]},"V9":{"af2":[]},"o5":{"XZ":[]},"Vb":{"bsi":[]},"o6":{"af3":[]},"Ve":{"Fi":[]},"Vc":{"Fi":[]},"Va":{"Fi":[]},"FI":{"Fi":[]},"Vd":{"Fi":[]},"Vf":{"bsj":[]},"FM":{"xs":["1"]},"FG":{"zt":["1","2"]},"fj":{"Z4":[]},"FK":{"bsk":[]},"qx":{"aq7":[],"avP":[]},"zb":{"yX":[]},"FH":{"r7":[]},"YS":{"pw":["auL","w9"],"pw.C":"auL"},"YV":{"pw":["IR","wb"],"pw.C":"IR"},"Xf":{"btU":[]},"Xd":{"c6":[]},"Hy":{"c6":[]},"tm":{"L":["1"],"L.E":"1"},"WU":{"j8":[],"dN":[]},"Hk":{"j8":[],"dN":[]},"Hl":{"j8":[],"dN":[]},"yQ":{"bnM":[]},"XB":{"c6":[]},"G4":{"hA":[]},"a_q":{"hA":[]},"UC":{"hA":[],"bsg":[]},"Vk":{"hA":[],"bsF":[]},"Vm":{"hA":[],"bsH":[]},"Vl":{"hA":[],"bsG":[]},"YW":{"hA":[],"bv_":[]},"Md":{"hA":[],"bp0":[]},"IO":{"hA":[],"bp0":[],"buY":[]},"XD":{"hA":[],"btX":[]},"AL":{"L":["lG"],"L.E":"lG"},"J3":{"Kr":[]},"Wq":{"kw":[]},"a2K":{"kw":[]},"a9Z":{"kw":[]},"a9M":{"kw":[]},"uV":{"kF":[]},"GT":{"kA":[],"kF":[]},"GS":{"kA":[],"kF":[]},"GV":{"kA":[],"kF":[]},"GU":{"kA":[],"kF":[]},"a1D":{"mR":[]},"XC":{"mR":[]},"XA":{"mR":[]},"V_":{"mR":[]},"eq":{"ej":[]},"cJ":{"ej":[]},"Bk":{"ej":[]},"VC":{"ej":[]},"Vz":{"ej":[]},"Un":{"ej":[]},"Uo":{"ej":[]},"ix":{"ej":[]},"ll":{"ej":[]},"nV":{"ej":[]},"fU":{"ej":[]},"yN":{"ej":[]},"a05":{"ej":[]},"Ua":{"ej":[]},"j3":{"ej":[]},"ch":{"Za":[],"bsJ":[]},"BJ":{"jj":[]},"FC":{"jj":[]},"z3":{"jj":[]},"WA":{"jj":[]},"v8":{"jj":[]},"XV":{"jj":[]},"rb":{"jj":[]},"a_m":{"jj":[]},"a_X":{"pk":[]},"a_W":{"pk":[]},"a_V":{"pk":[]},"wK":{"jj":[]},"a03":{"boG":[]},"no":{"jj":[]},"Ef":{"bH":["1"],"a8":["1"],"bv":["1"],"L":["1"]},"a5Z":{"Ef":["y"],"bH":["y"],"a8":["y"],"bv":["y"],"L":["y"]},"a1m":{"Ef":["y"],"bH":["y"],"a8":["y"],"bv":["y"],"L":["y"],"bH.E":"y","L.E":"y"},"Zn":{"c6":[]},"zN":{"r7":[]},"Wl":{"l5":[]},"np":{"vD":[]},"n9":{"vD":[]},"zK":{"np":[],"vD":[]},"wk":{"AY":[]},"xg":{"AY":[]},"V5":{"C7":[]},"a_r":{"C7":[]},"a4P":{"oi":[],"am4":[]},"zM":{"oi":[],"am4":[]},"Xc":{"c6":[]},"cE":{"dQ":[],"bo":[]},"Q":{"a8":["1"],"cE":[],"bv":["1"],"dQ":[],"bo":[],"L":["1"],"L.E":"1"},"HR":{"dQ":[],"N":[],"e6":[]},"Ak":{"dQ":[],"bT":[],"e6":[]},"r6":{"cE":[],"dQ":[],"bo":[]},"r3":{"dQ":[]},"r4":{"dQ":[]},"XN":{"Km":[]},"apy":{"Q":["1"],"a8":["1"],"cE":[],"bv":["1"],"dQ":[],"bo":[],"L":["1"],"L.E":"1"},"r2":{"U":[],"eR":[],"dQ":[],"d7":["eR"]},"Aj":{"U":[],"y":[],"eR":[],"dQ":[],"d7":["eR"],"e6":[]},"HS":{"U":[],"eR":[],"dQ":[],"d7":["eR"],"e6":[]},"oI":{"u":[],"dQ":[],"d7":["u"],"e6":[]},"md":{"L":["2"]},"uu":{"md":["1","2"],"L":["2"],"L.E":"2"},"O6":{"uu":["1","2"],"md":["1","2"],"bv":["2"],"L":["2"],"L.E":"2"},"N9":{"bH":["2"],"a8":["2"],"md":["1","2"],"bv":["2"],"L":["2"]},"eT":{"N9":["1","2"],"bH":["2"],"a8":["2"],"md":["1","2"],"bv":["2"],"L":["2"],"bH.E":"2","L.E":"2"},"o4":{"ca":["2"],"md":["1","2"],"bv":["2"],"L":["2"],"L.E":"2"},"uv":{"cz":["3","4"],"ap":["3","4"],"cz.V":"4","cz.K":"3"},"o3":{"md":["1","2"],"bv":["2"],"L":["2"],"L.E":"2"},"lC":{"dN":[]},"iz":{"bH":["y"],"a8":["y"],"bv":["y"],"L":["y"],"bH.E":"y","L.E":"y"},"bv":{"L":["1"]},"ai":{"bv":["1"],"L":["1"]},"iS":{"ai":["1"],"bv":["1"],"L":["1"],"L.E":"1","ai.E":"1"},"hh":{"L":["2"],"L.E":"2"},"oh":{"hh":["1","2"],"bv":["2"],"L":["2"],"L.E":"2"},"af":{"ai":["2"],"bv":["2"],"L":["2"],"L.E":"2","ai.E":"2"},"al":{"L":["1"],"L.E":"1"},"fB":{"L":["2"],"L.E":"2"},"x8":{"L":["1"],"L.E":"1"},"GL":{"x8":["1"],"bv":["1"],"L":["1"],"L.E":"1"},"po":{"L":["1"],"L.E":"1"},"zJ":{"po":["1"],"bv":["1"],"L":["1"],"L.E":"1"},"L6":{"L":["1"],"L.E":"1"},"iD":{"bv":["1"],"L":["1"],"L.E":"1"},"va":{"L":["1"],"L.E":"1"},"dF":{"L":["1"],"L.E":"1"},"lI":{"L":["1"],"L.E":"1"},"oF":{"L":["+(y,1)"],"L.E":"+(y,1)"},"uT":{"oF":["1"],"bv":["+(y,1)"],"L":["+(y,1)"],"L.E":"+(y,1)"},"CE":{"bH":["1"],"a8":["1"],"bv":["1"],"L":["1"]},"cV":{"ai":["1"],"bv":["1"],"L":["1"],"L.E":"1","ai.E":"1"},"h5":{"Lu":[]},"uD":{"m5":["1","2"],"ap":["1","2"]},"zr":{"ap":["1","2"]},"cQ":{"zr":["1","2"],"ap":["1","2"]},"xZ":{"L":["1"],"L.E":"1"},"cS":{"zr":["1","2"],"ap":["1","2"]},"G1":{"kX":["1"],"ca":["1"],"bv":["1"],"L":["1"]},"ey":{"kX":["1"],"ca":["1"],"bv":["1"],"L":["1"],"L.E":"1"},"fD":{"kX":["1"],"ca":["1"],"bv":["1"],"L":["1"],"L.E":"1"},"XK":{"ox":[]},"mW":{"ox":[]},"IM":{"pF":[],"dN":[]},"XP":{"dN":[]},"a1s":{"dN":[]},"YO":{"c6":[]},"R7":{"da":[]},"qy":{"ox":[]},"Vo":{"ox":[]},"Vp":{"ox":[]},"a0V":{"ox":[]},"a0H":{"ox":[]},"z_":{"ox":[]},"a_w":{"dN":[]},"hV":{"cz":["1","2"],"ap":["1","2"],"cz.V":"2","cz.K":"1"},"c8":{"bv":["1"],"L":["1"],"L.E":"1"},"bS":{"bv":["1"],"L":["1"],"L.E":"1"},"dK":{"bv":["bp<1,2>"],"L":["bp<1,2>"],"L.E":"bp<1,2>"},"HU":{"hV":["1","2"],"cz":["1","2"],"ap":["1","2"],"cz.V":"2","cz.K":"1"},"vz":{"hV":["1","2"],"cz":["1","2"],"ap":["1","2"],"cz.V":"2","cz.K":"1"},"Dz":{"ZL":[],"vO":[]},"a22":{"L":["ZL"],"L.E":"ZL"},"C5":{"vO":[]},"aa2":{"L":["vO"],"L.E":"vO"},"oO":{"k2":[],"nt":[],"bH":["y"],"a8":["y"],"jV":["y"],"cE":[],"bv":["y"],"dQ":[],"bo":[],"L":["y"],"e6":[],"bH.E":"y","L.E":"y"},"AN":{"cE":[],"dQ":[],"bo":[],"mv":[],"e6":[]},"w5":{"cE":[],"dQ":[],"bo":[],"mv":[],"e6":[]},"ID":{"cE":[],"dQ":[],"bo":[]},"abm":{"mv":[]},"Ix":{"cE":[],"ev":[],"dQ":[],"bo":[],"e6":[]},"AO":{"jV":["1"],"cE":[],"dQ":[],"bo":[]},"IC":{"bH":["U"],"a8":["U"],"jV":["U"],"cE":[],"bv":["U"],"dQ":[],"bo":[],"L":["U"]},"k2":{"bH":["y"],"a8":["y"],"jV":["y"],"cE":[],"bv":["y"],"dQ":[],"bo":[],"L":["y"]},"Iy":{"alS":[],"bH":["U"],"a8":["U"],"jV":["U"],"cE":[],"bv":["U"],"dQ":[],"bo":[],"L":["U"],"e6":[],"bH.E":"U","L.E":"U"},"Iz":{"alT":[],"bH":["U"],"a8":["U"],"jV":["U"],"cE":[],"bv":["U"],"dQ":[],"bo":[],"L":["U"],"e6":[],"bH.E":"U","L.E":"U"},"YF":{"k2":[],"apq":[],"bH":["y"],"a8":["y"],"jV":["y"],"cE":[],"bv":["y"],"dQ":[],"bo":[],"L":["y"],"e6":[],"bH.E":"y","L.E":"y"},"IA":{"k2":[],"apr":[],"bH":["y"],"a8":["y"],"jV":["y"],"cE":[],"bv":["y"],"dQ":[],"bo":[],"L":["y"],"e6":[],"bH.E":"y","L.E":"y"},"YG":{"k2":[],"aps":[],"bH":["y"],"a8":["y"],"jV":["y"],"cE":[],"bv":["y"],"dQ":[],"bo":[],"L":["y"],"e6":[],"bH.E":"y","L.E":"y"},"IE":{"k2":[],"aEu":[],"bH":["y"],"a8":["y"],"jV":["y"],"cE":[],"bv":["y"],"dQ":[],"bo":[],"L":["y"],"e6":[],"bH.E":"y","L.E":"y"},"IF":{"k2":[],"Cz":[],"bH":["y"],"a8":["y"],"jV":["y"],"cE":[],"bv":["y"],"dQ":[],"bo":[],"L":["y"],"e6":[],"bH.E":"y","L.E":"y"},"AP":{"k2":[],"aEv":[],"bH":["y"],"a8":["y"],"jV":["y"],"cE":[],"bv":["y"],"dQ":[],"bo":[],"L":["y"],"e6":[],"bH.E":"y","L.E":"y"},"RI":{"ke":[]},"a4Q":{"dN":[]},"RJ":{"pF":[],"dN":[]},"aG":{"au":["1"]},"YD":{"iR":["1"]},"l7":{"jk":["1"]},"RC":{"Cr":[]},"km":{"L":["1"],"L.E":"1"},"eu":{"dN":[]},"ct":{"l9":["1"],"E6":["1"],"c0":["1"],"c0.T":"1"},"xE":{"tk":["1"],"l7":["1"],"jk":["1"]},"l6":{"iR":["1"]},"hq":{"l6":["1"],"iR":["1"]},"dA":{"l6":["1"],"iR":["1"]},"CV":{"hq":["1"],"l6":["1"],"iR":["1"]},"xk":{"c6":[]},"bE":{"Ng":["1"]},"Lp":{"c0":["1"]},"tG":{"iR":["1"]},"nA":{"tG":["1"],"iR":["1"]},"E7":{"tG":["1"],"iR":["1"]},"l9":{"E6":["1"],"c0":["1"],"c0.T":"1"},"tk":{"l7":["1"],"jk":["1"]},"E6":{"c0":["1"]},"D4":{"jk":["1"]},"CU":{"c0":["1"],"c0.T":"1"},"xF":{"jk":["1"]},"O7":{"c0":["1"],"c0.T":"1"},"Pe":{"c0":["1"],"c0.T":"1"},"Pf":{"nA":["1"],"tG":["1"],"YD":["1"],"iR":["1"]},"i3":{"c0":["2"]},"tq":{"l7":["2"],"jk":["2"]},"ml":{"i3":["1","1"],"c0":["1"],"c0.T":"1","i3.S":"1","i3.T":"1"},"dB":{"i3":["1","2"],"c0":["2"],"c0.T":"2","i3.S":"1","i3.T":"2"},"Or":{"i3":["1","1"],"c0":["1"],"c0.T":"1","i3.S":"1","i3.T":"1"},"pR":{"cz":["1","2"],"ap":["1","2"],"cz.V":"2","cz.K":"1"},"tt":{"pR":["1","2"],"cz":["1","2"],"ap":["1","2"],"cz.V":"2","cz.K":"1"},"Nw":{"pR":["1","2"],"cz":["1","2"],"ap":["1","2"],"cz.V":"2","cz.K":"1"},"xV":{"bv":["1"],"L":["1"],"L.E":"1"},"Du":{"hV":["1","2"],"cz":["1","2"],"ap":["1","2"],"cz.V":"2","cz.K":"1"},"nC":{"E3":["1"],"kX":["1"],"ca":["1"],"bv":["1"],"L":["1"],"L.E":"1"},"jq":{"E3":["1"],"kX":["1"],"bIq":["1"],"ca":["1"],"bv":["1"],"L":["1"],"L.E":"1"},"vF":{"L":["1"],"L.E":"1"},"bH":{"a8":["1"],"bv":["1"],"L":["1"]},"cz":{"ap":["1","2"]},"P_":{"bv":["2"],"L":["2"],"L.E":"2"},"Ig":{"ap":["1","2"]},"m5":{"ap":["1","2"]},"NT":{"NU":["1"],"bte":["1"]},"NV":{"NU":["1"]},"GD":{"bv":["1"],"L":["1"],"L.E":"1"},"I7":{"ai":["1"],"bv":["1"],"L":["1"],"L.E":"1","ai.E":"1"},"kX":{"ca":["1"],"bv":["1"],"L":["1"]},"E3":{"kX":["1"],"ca":["1"],"bv":["1"],"L":["1"]},"Lh":{"cz":["1","2"],"tE":["1","it<1,2>"],"ap":["1","2"],"cz.V":"2","cz.K":"1","tE.K":"1"},"q1":{"bv":["1"],"L":["1"],"L.E":"1"},"yg":{"bv":["2"],"L":["2"],"L.E":"2"},"R0":{"bv":["bp<1,2>"],"L":["bp<1,2>"],"L.E":"bp<1,2>"},"q2":{"mj":["1","2","1"],"mj.T":"1"},"R5":{"mj":["1","it<1,2>","2"],"mj.T":"2"},"q3":{"mj":["1","it<1,2>","bp<1,2>"],"mj.T":"bp<1,2>"},"C2":{"kX":["1"],"ca":["1"],"bv":["1"],"tE":["1","iZ<1>"],"L":["1"],"L.E":"1","tE.K":"1"},"a64":{"cz":["u","@"],"ap":["u","@"],"cz.V":"@","cz.K":"u"},"a65":{"ai":["u"],"bv":["u"],"L":["u"],"L.E":"u","ai.E":"u"},"Up":{"uU":[]},"HV":{"dN":[]},"XR":{"dN":[]},"XX":{"uU":[]},"a1A":{"uU":[]},"b6":{"d7":["b6"]},"U":{"eR":[],"d7":["eR"]},"b7":{"d7":["b7"]},"y":{"eR":[],"d7":["eR"]},"a8":{"bv":["1"],"L":["1"]},"eR":{"d7":["eR"]},"ZL":{"vO":[]},"ca":{"bv":["1"],"L":["1"]},"u":{"d7":["u"]},"ue":{"dN":[]},"pF":{"dN":[]},"id":{"dN":[]},"Bl":{"dN":[]},"HE":{"dN":[]},"YL":{"dN":[]},"Mj":{"dN":[]},"a1r":{"dN":[]},"hn":{"dN":[]},"Vy":{"dN":[]},"YY":{"dN":[]},"Ll":{"dN":[]},"a4R":{"c6":[]},"hc":{"c6":[]},"Oo":{"ai":["1"],"bv":["1"],"L":["1"],"L.E":"1","ai.E":"1"},"aa3":{"da":[]},"RS":{"a1u":[]},"ld":{"a1u":[]},"a3V":{"a1u":[]},"YN":{"c6":[]},"aps":{"a8":["y"],"bv":["y"],"L":["y"]},"nt":{"a8":["y"],"bv":["y"],"L":["y"]},"aEv":{"a8":["y"],"bv":["y"],"L":["y"]},"apq":{"a8":["y"],"bv":["y"],"L":["y"]},"aEu":{"a8":["y"],"bv":["y"],"L":["y"]},"apr":{"a8":["y"],"bv":["y"],"L":["y"]},"Cz":{"a8":["y"],"bv":["y"],"L":["y"]},"alS":{"a8":["U"],"bv":["U"],"L":["U"]},"alT":{"a8":["U"],"bv":["U"],"L":["U"]},"lR":{"DQ":["lR"]},"wz":{"DQ":["wz"]},"Uw":{"c6":[]},"f7":{"L":["u"],"L.E":"u"},"tu":{"hS":["ap<u,@>"]},"k5":{"hS":["1"]},"xY":{"k5":["ap<u,@>"],"hS":["ap<u,@>"]},"Ds":{"iN":["ap<u,@>"]},"Dr":{"aie":["ap<u,@>"]},"Sb":{"hS":["1"]},"Ys":{"agK":[]},"rf":{"mG":[]},"Yx":{"hB":[]},"Yy":{"xq":[]},"fu":{"d7":["fu"]},"Vs":{"agK":[]},"a4Y":{"qM":[]},"a5_":{"qM":[]},"a4W":{"qM":[]},"a4X":{"qM":[]},"a4Z":{"qM":[]},"a1h":{"xq":[]},"cI":{"ap":["2","3"]},"CF":{"tI":["1","L<1>"],"tI.E":"1"},"BQ":{"tI":["1","ca<1>"],"tI.E":"1"},"WH":{"c6":[]},"ot":{"c6":[]},"zS":{"c6":[]},"Yz":{"fv":[]},"YA":{"CG":[]},"J1":{"k1":[]},"Mb":{"k1":[]},"nv":{"fv":[]},"a1y":{"CG":[]},"t7":{"nu":["cE"]},"J2":{"lF":["cE"]},"Mc":{"lF":["cE"]},"Ip":{"qN":[]},"zU":{"c6":[]},"WF":{"qN":[]},"a1l":{"c6":[]},"c3":{"az":[]},"qm":{"c3":["U"],"az":[]},"uI":{"c3":["U"],"az":[]},"a23":{"c3":["U"],"az":[]},"a24":{"c3":["U"],"az":[]},"ua":{"c3":["1"],"az":[]},"wy":{"c3":["U"],"az":[]},"im":{"c3":["U"],"az":[]},"xo":{"c3":["U"],"az":[]},"zp":{"c3":["1"],"az":[]},"F5":{"c3":["1"],"az":[]},"OT":{"hR":[]},"Kn":{"hR":[]},"dJ":{"hR":[]},"Li":{"hR":[]},"LY":{"hR":[]},"ez":{"hR":[]},"LX":{"hR":[]},"jM":{"hR":[]},"a43":{"hR":[]},"Wj":{"hR":[]},"b_":{"b3":["1"],"b3.T":"1","b_.T":"1"},"eI":{"b_":["x?"],"b3":["x?"],"b3.T":"x?","b_.T":"x?"},"b2":{"c3":["1"],"az":[]},"fw":{"b3":["1"],"b3.T":"1"},"Ke":{"b_":["1"],"b3":["1"],"b3.T":"1","b_.T":"1"},"a0a":{"b_":["E?"],"b3":["E?"],"b3.T":"E?","b_.T":"E?"},"JB":{"b_":["H?"],"b3":["H?"],"b3.T":"H?","b_.T":"H?"},"qZ":{"b_":["y"],"b3":["y"],"b3.T":"y","b_.T":"y"},"zs":{"b_":["1"],"b3":["1"],"b3.T":"1","b_.T":"1"},"fa":{"b3":["U"],"b3.T":"U"},"Mg":{"b3":["1"],"b3.T":"1"},"G6":{"Y":[],"i":[]},"a3C":{"Z":["G6"]},"a3B":{"az":[]},"G7":{"Y":[],"i":[]},"No":{"Z":["G7"]},"G8":{"Y":[],"i":[]},"a3D":{"Z":["G8"]},"a33":{"az":[]},"ds":{"x":[]},"a3F":{"m1":[]},"VD":{"ax":[],"i":[]},"uH":{"Y":[],"i":[]},"Np":{"Z":["uH"]},"VE":{"dZ":[]},"bG0":{"bI":[],"bs":[],"i":[]},"a3J":{"iH":["Ga"],"iH.T":"Ga"},"VT":{"Ga":[]},"Gc":{"Y":[],"i":[]},"Nr":{"Z":["Gc"]},"VF":{"ax":[],"i":[]},"Gb":{"Y":[],"i":[]},"G9":{"Y":[],"i":[]},"D1":{"Y":[],"i":[]},"a3K":{"Z":["Gb"]},"a3H":{"Z":["G9"]},"D2":{"Z":["D1<1>"]},"me":{"jF":[]},"VG":{"n7":[]},"zu":{"Y":[],"i":[]},"Nq":{"nc":["zu"],"Z":["zu"]},"a3M":{"az":[]},"VH":{"m1":[]},"Nt":{"Y":[],"i":[]},"VI":{"ax":[],"i":[]},"a3O":{"bK":[],"aV":[],"i":[]},"a8l":{"M":[],"bl":["M"],"G":[],"aW":[]},"Nu":{"Z":["Nt"]},"a6c":{"az":[]},"a9_":{"az":[]},"a3E":{"az":[]},"Nv":{"aV":[],"i":[]},"a3N":{"bY":[],"ce":[],"B":[]},"y9":{"e1":["M","iq"],"M":[],"aH":["M","iq"],"G":[],"aW":[],"e1.1":"iq","aH.1":"iq","aH.0":"M"},"qB":{"Y":[],"i":[]},"Ns":{"Z":["qB"]},"a6j":{"az":[]},"HH":{"dx":[],"bI":[],"bs":[],"i":[]},"Ge":{"ax":[],"i":[]},"to":{"fl":[]},"zO":{"to":[],"fl":[]},"Wx":{"to":[],"fl":[]},"Wv":{"to":[],"fl":[]},"qP":{"ue":[],"dN":[]},"W2":{"fl":[]},"a58":{"fl":[]},"mE":{"fl":[]},"Gq":{"fl":[]},"W1":{"fl":[]},"Gr":{"fl":[]},"Yb":{"hW":[]},"m4":{"hW":[]},"cW":{"hW":[],"cW.T":"1"},"I4":{"kJ":[]},"bQ":{"L":["1"],"L.E":"1"},"hd":{"L":["1"],"L.E":"1"},"eO":{"au":["1"]},"Hf":{"bN":[]},"fM":{"cv":[]},"p2":{"cv":[]},"rs":{"cv":[]},"rt":{"cv":[]},"p1":{"cv":[]},"p4":{"cv":[]},"il":{"cv":[]},"p3":{"cv":[]},"a1W":{"cv":[]},"ab4":{"cv":[]},"wm":{"cv":[]},"ab0":{"wm":[],"cv":[]},"wr":{"cv":[]},"abb":{"wr":[],"cv":[]},"ab6":{"p2":[],"cv":[]},"ab3":{"rs":[],"cv":[]},"ab5":{"rt":[],"cv":[]},"ab2":{"p1":[],"cv":[]},"wo":{"cv":[]},"ab7":{"wo":[],"cv":[]},"abf":{"p4":[],"cv":[]},"ws":{"il":[],"cv":[]},"abd":{"ws":[],"il":[],"cv":[]},"wt":{"il":[],"cv":[]},"abe":{"wt":[],"il":[],"cv":[]},"Zq":{"il":[],"cv":[]},"abc":{"il":[],"cv":[]},"ab9":{"p3":[],"cv":[]},"wq":{"cv":[]},"aba":{"wq":[],"cv":[]},"wp":{"cv":[]},"ab8":{"wp":[],"cv":[]},"wn":{"cv":[]},"ab1":{"wn":[],"cv":[]},"lx":{"eC":[],"eB":[]},"P5":{"Ee":[]},"DH":{"Ee":[]},"lD":{"eC":[],"eB":[]},"jH":{"eC":[],"eB":[]},"kg":{"jH":[],"eC":[],"eB":[]},"jT":{"jH":[],"eC":[],"eB":[]},"lM":{"jH":[],"eC":[],"eB":[]},"lt":{"eC":[],"eB":[]},"eC":{"eB":[]},"IQ":{"eC":[],"eB":[]},"Bf":{"eC":[],"eB":[]},"jl":{"eC":[],"eB":[]},"UI":{"eC":[],"eB":[]},"nm":{"eC":[],"eB":[]},"nn":{"eC":[],"eB":[]},"Fk":{"eC":[],"eB":[]},"xI":{"eB":[]},"a3e":{"A0":[]},"vp":{"m7":[]},"Ay":{"m7":[]},"a1X":{"ax":[],"i":[]},"xA":{"ax":[],"i":[]},"UA":{"ax":[],"i":[]},"Uz":{"ax":[],"i":[]},"Vn":{"ax":[],"i":[]},"FW":{"ax":[],"i":[]},"Wg":{"ax":[],"i":[]},"Wf":{"ax":[],"i":[]},"Wo":{"ax":[],"i":[]},"Wn":{"ax":[],"i":[]},"U6":{"ax":[],"i":[]},"bEG":{"dx":[],"bI":[],"bs":[],"i":[]},"U9":{"ax":[],"i":[]},"Ih":{"Y":[],"i":[]},"P0":{"Z":["Ih"]},"F9":{"Y":[],"i":[]},"a7N":{"E":[]},"MM":{"Z":["F9"]},"a2l":{"bK":[],"aV":[],"i":[]},"a8i":{"M":[],"bl":["M"],"G":[],"aW":[]},"bEO":{"dx":[],"bI":[],"bs":[],"i":[]},"AD":{"b_":["H?"],"b3":["H?"],"b3.T":"H?","b_.T":"H?"},"Ij":{"b_":["r"],"b3":["r"],"b3.T":"r","b_.T":"r"},"bIC":{"dx":[],"bI":[],"bs":[],"i":[]},"Fp":{"Y":[],"i":[]},"y4":{"Y":[],"i":[]},"MV":{"Z":["Fp"]},"a4w":{"ax":[],"i":[]},"a2G":{"bK":[],"aV":[],"i":[]},"PZ":{"M":[],"bl":["M"],"G":[],"aW":[]},"DC":{"Z":["y4<1>"]},"Ir":{"dV":["1"],"fe":["1"],"dd":["1"],"dd.T":"1","dV.T":"1"},"MU":{"ax":[],"i":[]},"Fw":{"Y":[],"i":[]},"MY":{"Z":["Fw"]},"a6H":{"eM":[],"cD":["eM"]},"a5Y":{"bK":[],"aV":[],"i":[]},"Q8":{"M":[],"bl":["M"],"G":[],"aW":[]},"bFc":{"dx":[],"bI":[],"bs":[],"i":[]},"ur":{"Y":[],"i":[]},"Ny":{"Y":[],"i":[]},"Pc":{"Y":[],"i":[]},"Ok":{"bI":[],"bs":[],"i":[]},"NE":{"Y":[],"i":[]},"NA":{"Y":[],"i":[]},"Mz":{"Y":[],"i":[]},"N0":{"Z":["ur"]},"a3Y":{"Z":["Ny"]},"Pd":{"Z":["Pc"]},"a41":{"Z":["NE"]},"a42":{"Z":["NA"]},"Sd":{"Z":["Mz"]},"V1":{"ax":[],"i":[]},"bFg":{"bI":[],"bs":[],"i":[]},"FD":{"Y":[],"i":[]},"a34":{"Z":["FD"]},"a32":{"az":[]},"FE":{"ax":[],"i":[]},"bFk":{"bI":[],"bs":[],"i":[]},"Jx":{"Y":[],"i":[]},"V6":{"ax":[],"i":[]},"PM":{"Z":["Jx"]},"a5S":{"cD":["x?"]},"a36":{"bK":[],"aV":[],"i":[]},"a8j":{"M":[],"bl":["M"],"G":[],"aW":[]},"a38":{"hZ":["nB","M"],"aV":[],"i":[],"hZ.0":"nB","hZ.1":"M"},"Q_":{"M":[],"kZ":["nB","M"],"G":[],"aW":[]},"bFq":{"dx":[],"bI":[],"bs":[],"i":[]},"V7":{"ax":[],"i":[]},"uw":{"ax":[],"i":[]},"vP":{"my":["y"],"x":[],"my.T":"y"},"AC":{"my":["y"],"x":[],"my.T":"y"},"Ht":{"z2":["b6"],"z2.T":"b6"},"Gi":{"Y":[],"i":[]},"Gj":{"Y":[],"i":[]},"N1":{"Y":[],"i":[]},"N3":{"Y":[],"i":[]},"Oj":{"bI":[],"bs":[],"i":[]},"Pa":{"Y":[],"i":[]},"NB":{"Y":[],"i":[]},"OL":{"Y":[],"i":[]},"Dp":{"Z":["OL"]},"Nx":{"Z":["Gi"]},"Qn":{"at":["mD"],"ec":["mD"],"az":[],"at.T":"mD"},"a8Q":{"at":["jA"],"ec":["jA"],"az":[],"at.T":"jA"},"a3X":{"ax":[],"i":[]},"Nz":{"Z":["Gj"]},"a2S":{"ax":[],"i":[]},"N2":{"Z":["N1"]},"N4":{"Z":["N3"]},"a4_":{"ax":[],"i":[]},"Pb":{"Z":["Pa"]},"a40":{"Z":["NB"]},"Ov":{"az":[]},"a5W":{"ax":[],"i":[]},"bG3":{"dx":[],"bI":[],"bs":[],"i":[]},"a3W":{"fY":[]},"a4d":{"m1":[]},"W_":{"ax":[],"i":[]},"zx":{"ax":[],"i":[]},"zB":{"ax":[],"i":[]},"qj":{"ax":[],"i":[]},"Df":{"ax":[],"i":[]},"DG":{"ax":[],"i":[]},"zC":{"ry":["1"],"dV":["1"],"fe":["1"],"dd":["1"],"dd.T":"1","dV.T":"1"},"a4i":{"ax":[],"i":[]},"xL":{"n6":["~"],"k7":[]},"Gs":{"dx":[],"bI":[],"bs":[],"i":[]},"qF":{"ax":[],"i":[]},"a1C":{"ax":[],"i":[]},"bGs":{"dx":[],"bI":[],"bs":[],"i":[]},"D8":{"Y":[],"i":[]},"D7":{"Y":[],"i":[]},"xO":{"Y":[],"i":[]},"DB":{"bK":[],"aV":[],"i":[]},"hb":{"ax":[],"i":[]},"GG":{"bI":[],"bs":[],"i":[]},"qI":{"Y":[],"i":[]},"a4A":{"az":[]},"D9":{"Z":["D8<1>"]},"NZ":{"Z":["D7<1>"]},"O_":{"dV":["kk<1>"],"fe":["kk<1>"],"dd":["kk<1>"],"dd.T":"kk<1>","dV.T":"kk<1>"},"O0":{"Z":["xO<1>"]},"a8v":{"M":[],"bl":["M"],"G":[],"aW":[]},"NY":{"ax":[],"i":[]},"D6":{"Z":["qI<1>"],"dG":[]},"zH":{"kD":["1"],"Y":[],"i":[],"kD.T":"1"},"xN":{"iF":["1"],"Z":["kD<1>"]},"GM":{"Y":[],"i":[]},"a4O":{"ax":[],"i":[]},"a4M":{"cH":[]},"bH2":{"dx":[],"bI":[],"bs":[],"i":[]},"H3":{"Y":[],"i":[]},"a53":{"ax":[],"i":[]},"a51":{"cH":[]},"bHk":{"dx":[],"bI":[],"bs":[],"i":[]},"WE":{"ax":[],"i":[]},"Hb":{"bI":[],"bs":[],"i":[]},"MK":{"c3":["1"],"az":[]},"QK":{"Y":[],"i":[]},"Hz":{"ax":[],"i":[]},"a9j":{"Z":["QK"]},"a5J":{"Y":[],"i":[]},"a5I":{"cH":[]},"a54":{"cH":[]},"a55":{"cH":[]},"a72":{"cH":[]},"HA":{"dx":[],"bI":[],"bs":[],"i":[]},"vv":{"Y":[],"i":[]},"OH":{"Z":["vv"]},"HJ":{"mV":[]},"qX":{"r_":[],"mV":[]},"HK":{"r_":[],"mV":[]},"HL":{"r_":[],"mV":[]},"r_":{"mV":[]},"Pz":{"bI":[],"bs":[],"i":[]},"OG":{"Y":[],"i":[]},"Ag":{"ax":[],"i":[]},"OF":{"Z":["OG"],"bpv":[]},"XI":{"ax":[],"i":[]},"kG":{"dp":[]},"m3":{"kG":[],"dp":[]},"cU":{"kG":[],"dp":[]},"HM":{"Y":[],"i":[]},"OK":{"Z":["HM"]},"MT":{"Y":[],"i":[]},"Ot":{"Y":[],"i":[]},"vw":{"Y":[],"i":[]},"bI8":{"dx":[],"bI":[],"bs":[],"i":[]},"OI":{"az":[]},"OJ":{"b_":["kG"],"b3":["kG"],"b3.T":"kG","b_.T":"kG"},"a5V":{"az":[]},"a2C":{"Z":["MT"]},"Ou":{"Z":["Ot"]},"Q2":{"M":[],"kZ":["hK","M"],"G":[],"aW":[]},"a47":{"hZ":["hK","M"],"aV":[],"i":[],"hZ.0":"hK","hZ.1":"M"},"MH":{"ax":[],"i":[]},"OM":{"Z":["vw"]},"Y6":{"ax":[],"i":[]},"a5R":{"cD":["x?"]},"a6h":{"hZ":["mg","M"],"aV":[],"i":[],"hZ.0":"mg","hZ.1":"M"},"Qc":{"M":[],"kZ":["mg","M"],"G":[],"aW":[]},"vH":{"dx":[],"bI":[],"bs":[],"i":[]},"LR":{"Y":[],"i":[]},"Rp":{"Z":["LR"]},"Yf":{"ax":[],"i":[]},"AB":{"Y":[],"i":[]},"Q6":{"M":[],"bl":["M"],"G":[],"aW":[]},"x_":{"b_":["dp?"],"b3":["dp?"],"b3.T":"dp?","b_.T":"dp?"},"P1":{"Y":[],"i":[]},"a6w":{"Z":["AB"]},"a5U":{"bK":[],"aV":[],"i":[]},"a6t":{"Z":["P1"]},"QT":{"ax":[],"i":[]},"QU":{"az":[]},"a6u":{"iH":["vQ"],"iH.T":"vQ"},"VV":{"vQ":[]},"IS":{"Y":[],"i":[]},"a71":{"ax":[],"i":[]},"a7_":{"cH":[]},"bJb":{"dx":[],"bI":[],"bs":[],"i":[]},"re":{"Yj":["1"],"k3":["1"],"dV":["1"],"fe":["1"],"dd":["1"],"dd.T":"1","dV.T":"1"},"tM":{"Y":[],"i":[]},"tN":{"Y":[],"i":[]},"DL":{"Y":[],"i":[]},"abI":{"ax":[],"i":[]},"abG":{"Z":["tM"]},"abH":{"Z":["tN"]},"a4U":{"ax":[],"i":[]},"a1U":{"n7":[]},"Py":{"Z":["DL<1>"]},"Se":{"az":[]},"Sf":{"az":[]},"p5":{"Y":[],"i":[]},"Jn":{"p5":["0&"],"Y":[],"i":[]},"wu":{"p5":["1"],"Y":[],"i":[]},"DP":{"Y":[],"i":[]},"Ba":{"Y":[],"i":[]},"a7J":{"Z":["Jn"]},"a6A":{"bK":[],"aV":[],"i":[]},"a8w":{"M":[],"bl":["M"],"G":[],"aW":[]},"Bc":{"Z":["2"]},"PH":{"Z":["DP<1>"]},"PG":{"dV":["1"],"fe":["1"],"dd":["1"],"dd.T":"1","dV.T":"1"},"Bb":{"Z":["Ba<1>"]},"a4K":{"eM":[],"cD":["eM"]},"bJz":{"dx":[],"bI":[],"bs":[],"i":[]},"PI":{"Y":[],"i":[]},"PJ":{"Y":[],"i":[]},"Zt":{"n7":[]},"a7L":{"Z":["PI"],"dG":[]},"a7M":{"Z":["PJ"]},"r8":{"Y":[],"i":[]},"jD":{"Y":[],"i":[]},"ZA":{"Y":[],"i":[]},"a6e":{"az":[]},"a6f":{"Z":["r8"]},"CY":{"az":[]},"Nc":{"Z":["jD"]},"a8f":{"az":[]},"JE":{"Y":[],"i":[]},"a8g":{"Z":["jD"]},"bJI":{"dx":[],"bI":[],"bs":[],"i":[]},"JC":{"Y":[],"i":[]},"JD":{"Z":["JC"]},"Kp":{"Y":[],"i":[]},"BE":{"Z":["Kp"]},"Qw":{"bI":[],"bs":[],"i":[]},"Od":{"Y":[],"i":[]},"BD":{"Y":[],"i":[]},"Kq":{"Z":["BD"],"dG":[]},"bNf":{"Y":[],"i":[]},"a97":{"az":[]},"MS":{"av":[],"o7":[]},"a2B":{"ax":[],"i":[]},"Oe":{"Z":["Od"]},"a4o":{"cc":["j7"],"cc.T":"j7"},"a98":{"bI":[],"bs":[],"i":[]},"a5y":{"ax":[],"i":[]},"DA":{"Y":[],"i":[]},"a_R":{"ax":[],"i":[]},"a6v":{"nc":["DA"],"Z":["DA"]},"bKq":{"dx":[],"bI":[],"bs":[],"i":[]},"KE":{"Y":[],"i":[]},"aaJ":{"bZ":[],"d2":["d_"],"az":[]},"QM":{"Z":["KE"]},"L7":{"Y":[],"i":[]},"mb":{"c4":[]},"QY":{"Z":["L7"]},"a9N":{"aV":[],"i":[]},"DW":{"M":[],"G":[],"aW":[]},"abu":{"aV":[],"i":[]},"a8M":{"M":[],"G":[],"aW":[]},"bKS":{"dx":[],"bI":[],"bs":[],"i":[]},"hm":{"Y":[],"i":[]},"R_":{"Z":["hm"]},"bKV":{"dx":[],"bI":[],"bs":[],"i":[]},"P3":{"Y":[],"i":[]},"a0O":{"ax":[],"i":[]},"P4":{"Z":["P3"]},"Re":{"az":[]},"aa8":{"nU":["m0"],"nU.T":"m0"},"aa6":{"m0":[]},"aa7":{"m0":[]},"a0P":{"ax":[],"i":[]},"bL8":{"bI":[],"bs":[],"i":[]},"bLe":{"dx":[],"bI":[],"bs":[],"i":[]},"LA":{"az":[]},"t5":{"jF":[]},"Lx":{"Y":[],"i":[]},"Lz":{"Y":[],"i":[]},"Cc":{"ax":[],"i":[]},"aal":{"Y":[],"i":[]},"aak":{"e1":["M","hy"],"M":[],"aH":["M","hy"],"G":[],"aW":[],"e1.1":"hy","aH.1":"hy","aH.0":"M"},"aaj":{"fE":[],"aV":[],"i":[]},"a4q":{"az":[]},"a5Q":{"az":[]},"OD":{"az":[]},"a30":{"c3":["U"],"az":[]},"D5":{"c3":["U"],"az":[]},"Rf":{"lW":[],"i0":[],"az":[]},"Ly":{"az":[]},"Rg":{"Z":["Lx"]},"Rh":{"Z":["Lz"]},"LK":{"Y":[],"i":[]},"aav":{"ax":[],"i":[]},"aat":{"cH":[]},"bLj":{"dx":[],"bI":[],"bs":[],"i":[]},"LN":{"Y":[],"i":[]},"Rn":{"Z":["LN"]},"LO":{"kD":["u"],"Y":[],"i":[],"kD.T":"u"},"E9":{"iF":["u"],"Z":["kD<u>"]},"Yk":{"m1":[]},"aaA":{"az":[]},"bLs":{"dx":[],"bI":[],"bs":[],"i":[]},"Rs":{"Y":[],"i":[]},"a1a":{"ax":[],"i":[]},"aaG":{"Z":["Rs"]},"aaH":{"bK":[],"aV":[],"i":[]},"aaI":{"M":[],"bl":["M"],"G":[],"aW":[]},"aaD":{"fE":[],"aV":[],"i":[]},"aaE":{"bY":[],"ce":[],"B":[]},"a8L":{"M":[],"aH":["M","iq"],"G":[],"aW":[],"aH.1":"iq","aH.0":"M"},"aaC":{"ax":[],"i":[]},"aaF":{"ax":[],"i":[]},"a1c":{"ax":[],"i":[]},"pB":{"ax":[],"i":[]},"OE":{"dx":[],"bI":[],"bs":[],"i":[]},"xi":{"b_":["l2"],"b3":["l2"],"b3.T":"l2","b_.T":"l2"},"F1":{"Y":[],"i":[]},"a2d":{"Z":["F1"]},"cd":{"d7":["cd"]},"BB":{"at":["cd"],"ec":["cd"],"az":[],"at.T":"cd"},"RA":{"jb":["i6"],"bI":[],"bs":[],"i":[],"jb.T":"i6"},"NM":{"Y":[],"i":[]},"Ry":{"Y":[],"i":[]},"OA":{"Y":[],"i":[]},"M3":{"Y":[],"i":[]},"Rw":{"Y":[],"i":[]},"NO":{"ax":[],"i":[]},"NP":{"ax":[],"i":[]},"a4f":{"ax":[],"i":[]},"Ed":{"ax":[],"i":[]},"a4g":{"ax":[],"i":[]},"NC":{"ax":[],"i":[]},"xB":{"ax":[],"i":[]},"ND":{"bK":[],"aV":[],"i":[]},"Q7":{"M":[],"bl":["M"],"G":[],"aW":[]},"a4h":{"az":[]},"NN":{"Z":["NM"]},"Rz":{"Z":["Ry"]},"a5B":{"ax":[],"i":[]},"a6E":{"ax":[],"i":[]},"a5A":{"Z":["OA"]},"Rx":{"Z":["M3"]},"RB":{"Z":["Rw"]},"bLJ":{"dx":[],"bI":[],"bs":[],"i":[]},"M8":{"Y":[],"i":[]},"M9":{"Z":["M8"]},"aaT":{"ax":[],"i":[]},"bLN":{"dx":[],"bI":[],"bs":[],"i":[]},"f8":{"j1":[]},"hv":{"j1":[]},"P7":{"j1":[]},"aaf":{"az":[]},"eD":{"dp":[]},"l8":{"dp":[]},"un":{"dp":[]},"d0":{"un":[],"dp":[]},"hN":{"un":[],"dp":[]},"a3":{"jF":[]},"bJ":{"lY":[]},"fi":{"eD":[],"dp":[]},"my":{"x":[]},"X":{"ew":[]},"dm":{"ew":[]},"tx":{"ew":[]},"Ut":{"jU":["ms"]},"K9":{"jU":["nd"],"jU.T":"nd"},"Fe":{"jU":["ms"],"jU.T":"ms"},"Zl":{"h0":[]},"bA":{"eD":[],"dp":[]},"ne":{"eD":[],"dp":[]},"DZ":{"hM":["bA"],"eD":[],"dp":[],"hM.T":"bA"},"E_":{"hM":["ne"],"eD":[],"dp":[],"hM.T":"ne"},"hM":{"eD":[],"dp":[]},"hl":{"jF":[]},"iQ":{"eD":[],"dp":[]},"iu":{"eD":[],"dp":[]},"iv":{"eD":[],"dp":[]},"CP":{"jm":[]},"abq":{"jm":[]},"abn":{"kd":[]},"i4":{"kd":[]},"CZ":{"kd":[]},"fJ":{"h0":[],"n2":[],"aW":[]},"JJ":{"M":[],"bl":["M"],"G":[],"aW":[]},"MR":{"az":[]},"a48":{"oZ":[]},"a8W":{"wI":[],"bl":["M"],"G":[],"aW":[]},"av":{"o7":[]},"o2":{"oB":[]},"M":{"G":[],"aW":[]},"up":{"jS":["M"]},"hO":{"dW":[]},"G3":{"hO":[],"f0":["1"],"dW":[]},"kN":{"hO":[],"f0":["M"],"dW":[]},"JN":{"e1":["M","kN"],"M":[],"aH":["M","kN"],"G":[],"aW":[],"e1.1":"kN","aH.1":"kN","aH.0":"M"},"VK":{"az":[]},"JO":{"M":[],"bl":["M"],"G":[],"aW":[]},"rE":{"az":[]},"wE":{"M":[],"aH":["M","l1"],"G":[],"aW":[],"aH.1":"l1","aH.0":"M"},"a8n":{"M":[],"G":[],"aW":[]},"Ro":{"rE":[],"az":[]},"N8":{"rE":[],"az":[]},"D_":{"rE":[],"az":[]},"JQ":{"M":[],"G":[],"aW":[]},"hy":{"hO":[],"f0":["M"],"dW":[]},"wF":{"e1":["M","hy"],"M":[],"aH":["M","hy"],"G":[],"aW":[],"e1.1":"hy","aH.1":"hy","aH.0":"M"},"JU":{"M":[],"G":[],"aW":[]},"hQ":{"hf":[]},"zj":{"hQ":[],"hf":[]},"FP":{"hQ":[],"hf":[]},"pD":{"lK":[],"hQ":[],"hf":[]},"YX":{"lK":[],"hQ":[],"hf":[]},"I3":{"hQ":[],"hf":[]},"F7":{"hQ":[],"hf":[]},"Zh":{"hf":[]},"lK":{"hQ":[],"hf":[]},"FS":{"hQ":[],"hf":[]},"HD":{"lK":[],"hQ":[],"hf":[]},"Fh":{"hQ":[],"hf":[]},"Hj":{"hQ":[],"hf":[]},"mZ":{"hO":[],"f0":["M"],"dW":[]},"JX":{"e1":["M","mZ"],"M":[],"aH":["M","mZ"],"G":[],"aW":[],"e1.1":"mZ","aH.1":"mZ","aH.0":"M"},"YB":{"az":[]},"G":{"aW":[]},"f0":{"dW":[]},"fO":{"fg":[]},"OC":{"fg":[]},"p_":{"eW":[]},"l1":{"f0":["M"],"dW":[]},"nH":{"hk":[],"az":[]},"abo":{"kd":[]},"rF":{"M":[],"aH":["M","l1"],"G":[],"aW":[],"aH.1":"l1","aH.0":"M"},"rT":{"az":[]},"JG":{"M":[],"bl":["M"],"G":[],"aW":[]},"pd":{"M":[],"bl":["M"],"G":[],"aW":[]},"a_8":{"M":[],"bl":["M"],"G":[],"aW":[]},"K2":{"M":[],"bl":["M"],"G":[],"aW":[]},"Bt":{"M":[],"bl":["M"],"G":[],"aW":[]},"a_1":{"M":[],"bl":["M"],"G":[],"aW":[]},"JL":{"M":[],"bl":["M"],"G":[],"aW":[]},"JW":{"M":[],"bl":["M"],"G":[],"aW":[]},"a_4":{"M":[],"bl":["M"],"G":[],"aW":[]},"ZO":{"M":[],"bl":["M"],"G":[],"aW":[]},"ZP":{"M":[],"bl":["M"],"G":[],"aW":[]},"Gf":{"az":[]},"DS":{"M":[],"bl":["M"],"G":[],"aW":[]},"ZU":{"M":[],"bl":["M"],"G":[],"aW":[]},"ZT":{"M":[],"bl":["M"],"G":[],"aW":[]},"ZR":{"M":[],"bl":["M"],"G":[],"aW":[]},"ZS":{"M":[],"bl":["M"],"G":[],"aW":[]},"Qe":{"M":[],"bl":["M"],"G":[],"aW":[]},"a_5":{"M":[],"bl":["M"],"G":[],"aW":[]},"a_6":{"M":[],"bl":["M"],"G":[],"aW":[]},"ZV":{"M":[],"bl":["M"],"G":[],"aW":[]},"a_i":{"M":[],"bl":["M"],"G":[],"aW":[]},"JR":{"M":[],"bl":["M"],"G":[],"aW":[]},"ZY":{"M":[],"bl":["M"],"G":[],"aW":[]},"a_7":{"M":[],"bl":["M"],"G":[],"aW":[]},"JZ":{"M":[],"bl":["M"],"G":[],"n2":[],"aW":[]},"a_a":{"M":[],"bl":["M"],"G":[],"aW":[]},"JT":{"M":[],"bl":["M"],"G":[],"aW":[]},"K_":{"M":[],"bl":["M"],"G":[],"aW":[]},"JY":{"M":[],"bl":["M"],"G":[],"aW":[]},"a_b":{"M":[],"bl":["M"],"G":[],"aW":[]},"ZQ":{"M":[],"bl":["M"],"G":[],"aW":[]},"a_2":{"M":[],"bl":["M"],"G":[],"aW":[]},"ZW":{"M":[],"bl":["M"],"G":[],"aW":[]},"ZZ":{"M":[],"bl":["M"],"G":[],"aW":[]},"a_0":{"M":[],"bl":["M"],"G":[],"aW":[]},"ZX":{"M":[],"bl":["M"],"G":[],"aW":[]},"JK":{"M":[],"bl":["M"],"G":[],"aW":[]},"K3":{"M":[],"bl":["M"],"G":[],"aW":[]},"hk":{"az":[]},"wG":{"M":[],"bl":["M"],"G":[],"aW":[]},"K0":{"M":[],"bl":["M"],"G":[],"aW":[]},"ZN":{"M":[],"bl":["M"],"G":[],"aW":[]},"K1":{"M":[],"bl":["M"],"G":[],"aW":[]},"JS":{"M":[],"bl":["M"],"G":[],"aW":[]},"JP":{"M":[],"bl":["M"],"G":[],"aW":[]},"pq":{"o7":[]},"BX":{"oB":[]},"pr":{"ps":[],"f0":["e2"],"dW":[]},"pu":{"rW":[],"f0":["e2"],"dW":[]},"e2":{"G":[],"aW":[]},"a0k":{"jS":["e2"]},"ps":{"dW":[]},"rW":{"dW":[]},"a_d":{"pe":[],"e2":[],"aH":["M","hF"],"G":[],"aW":[],"aH.1":"hF","aH.0":"M"},"a_e":{"pe":[],"e2":[],"aH":["M","hF"],"G":[],"aW":[]},"BW":{"hF":[],"ps":[],"f0":["M"],"lA":[],"dW":[]},"a_f":{"pe":[],"e2":[],"aH":["M","hF"],"G":[],"aW":[],"aH.1":"hF","aH.0":"M"},"a_g":{"pe":[],"e2":[],"aH":["M","hF"],"G":[],"aW":[],"aH.1":"hF","aH.0":"M"},"lA":{"dW":[]},"hF":{"ps":[],"f0":["M"],"lA":[],"dW":[]},"pe":{"e2":[],"aH":["M","hF"],"G":[],"aW":[]},"K4":{"e2":[],"bl":["e2"],"G":[],"aW":[]},"a_h":{"e2":[],"bl":["e2"],"G":[],"aW":[]},"ft":{"hO":[],"f0":["M"],"dW":[]},"Bu":{"e1":["M","ft"],"M":[],"aH":["M","ft"],"G":[],"aW":[],"e1.1":"ft","aH.1":"ft","aH.0":"M"},"JV":{"e1":["M","ft"],"M":[],"aH":["M","ft"],"G":[],"aW":[],"e1.1":"ft","aH.1":"ft","aH.0":"M"},"qk":{"b_":["j1?"],"b3":["j1?"],"b3.T":"j1?","b_.T":"j1?"},"wI":{"bl":["M"],"G":[],"aW":[]},"Bw":{"lc":["1"],"M":[],"aH":["e2","1"],"JH":[],"G":[],"aW":[]},"K5":{"lc":["pu"],"M":[],"aH":["e2","pu"],"JH":[],"G":[],"aW":[],"aH.1":"pu","lc.0":"pu","aH.0":"e2"},"a_c":{"lc":["pr"],"M":[],"aH":["e2","pr"],"JH":[],"G":[],"aW":[],"aH.1":"pr","lc.0":"pr","aH.0":"e2"},"i0":{"az":[]},"nz":{"hO":[],"f0":["M"],"dW":[]},"K6":{"e1":["M","nz"],"M":[],"aH":["M","nz"],"G":[],"aW":[],"e1.1":"nz","aH.1":"nz","aH.0":"M"},"xj":{"au":["~"]},"M_":{"c6":[]},"pL":{"d7":["pL"]},"mi":{"d7":["mi"]},"q4":{"d7":["q4"]},"BO":{"d7":["BO"]},"a9u":{"fl":[]},"KP":{"az":[]},"n5":{"d7":["BO"]},"xC":{"aew":[]},"lB":{"hX":[]},"vA":{"hX":[]},"oJ":{"hX":[]},"iK":{"c6":[]},"Iq":{"c6":[]},"nk":{"eM":[]},"a4b":{"eM":[]},"aag":{"Is":[]},"rz":{"p9":[]},"Bo":{"p9":[]},"Kc":{"az":[]},"z6":{"jm":[]},"Aq":{"jm":[]},"rl":{"jm":[]},"uR":{"jm":[]},"a10":{"t_":[]},"a1_":{"t_":[]},"a11":{"t_":[]},"Ci":{"t_":[]},"H5":{"pz":[]},"vC":{"pz":[]},"a7c":{"LQ":[]},"Xj":{"hU":[]},"Xk":{"hU":[]},"Xn":{"hU":[]},"Xp":{"hU":[]},"Xm":{"hU":[]},"Xo":{"hU":[]},"Xq":{"hU":[]},"Xl":{"hU":[]},"u4":{"Y":[],"i":[]},"MA":{"bI":[],"bs":[],"i":[]},"v9":{"Y":[],"i":[]},"bp6":{"c4":[]},"bGv":{"c4":[]},"bGu":{"c4":[]},"qi":{"c4":[]},"qt":{"c4":[]},"j7":{"c4":[]},"p6":{"c4":[]},"e9":{"cc":["1"]},"dr":{"cc":["1"],"cc.T":"1"},"MB":{"Z":["u4"]},"Oi":{"Z":["v9"]},"a1H":{"cc":["bp6"],"cc.T":"bp6"},"Gx":{"cc":["c4"],"cc.T":"c4"},"W6":{"cc":["j7"]},"Zz":{"e9":["p6"],"cc":["p6"],"cc.T":"p6","e9.T":"p6"},"Pv":{"e9":["1"],"DK":["1"],"cc":["1"],"cc.T":"1","e9.T":"1"},"Pw":{"e9":["1"],"DK":["1"],"cc":["1"],"cc.T":"1","e9.T":"1"},"Nl":{"cc":["1"],"cc.T":"1"},"F_":{"Y":[],"i":[]},"a2c":{"Z":["F_"]},"a2b":{"bK":[],"aV":[],"i":[]},"F0":{"Y":[],"i":[]},"MJ":{"Z":["F0"]},"F6":{"bK":[],"aV":[],"i":[]},"Mv":{"Y":[],"i":[]},"S1":{"Z":["Mv"],"dG":[]},"Um":{"dG":[]},"nj":{"Y":[],"i":[]},"Rb":{"Z":["nj<1,2>"]},"Lo":{"nj":["1","db<1>"],"Y":[],"i":[],"nj.T":"1","nj.S":"db<1>"},"yV":{"Y":[],"i":[]},"MN":{"Z":["yV"]},"HX":{"az":[]},"a6V":{"ax":[],"i":[]},"j6":{"bI":[],"bs":[],"i":[]},"oS":{"bK":[],"aV":[],"i":[]},"oa":{"bK":[],"aV":[],"i":[]},"zi":{"bK":[],"aV":[],"i":[]},"zh":{"bK":[],"aV":[],"i":[]},"iV":{"bK":[],"aV":[],"i":[]},"uC":{"bK":[],"aV":[],"i":[]},"qO":{"bK":[],"aV":[],"i":[]},"A":{"bK":[],"aV":[],"i":[]},"dU":{"bK":[],"aV":[],"i":[]},"eZ":{"bK":[],"aV":[],"i":[]},"iA":{"bK":[],"aV":[],"i":[]},"I2":{"h2":["kN"],"bs":[],"i":[],"h2.T":"kN"},"aj":{"bK":[],"aV":[],"i":[]},"cC":{"fE":[],"aV":[],"i":[]},"fF":{"h2":["ft"],"bs":[],"i":[],"h2.T":"ft"},"v5":{"fE":[],"aV":[],"i":[]},"qz":{"fE":[],"aV":[],"i":[]},"bGd":{"bI":[],"bs":[],"i":[]},"dE":{"bK":[],"aV":[],"i":[]},"kW":{"bK":[],"aV":[],"i":[]},"hG":{"Y":[],"i":[]},"abh":{"ja":[],"ce":[],"B":[]},"abi":{"bI":[],"bs":[],"i":[]},"UB":{"bK":[],"aV":[],"i":[]},"FQ":{"bK":[],"aV":[],"i":[]},"Vj":{"bK":[],"aV":[],"i":[]},"Zf":{"bK":[],"aV":[],"i":[]},"Zg":{"bK":[],"aV":[],"i":[]},"Vv":{"bK":[],"aV":[],"i":[]},"WX":{"bK":[],"aV":[],"i":[]},"a_s":{"bK":[],"aV":[],"i":[]},"Gg":{"fE":[],"aV":[],"i":[]},"eg":{"bK":[],"aV":[],"i":[]},"WY":{"bK":[],"aV":[],"i":[]},"I5":{"bK":[],"aV":[],"i":[]},"IP":{"bK":[],"aV":[],"i":[]},"a6Z":{"bY":[],"ce":[],"B":[]},"Uq":{"bK":[],"aV":[],"i":[]},"XL":{"bK":[],"aV":[],"i":[]},"a0m":{"bK":[],"aV":[],"i":[]},"a9r":{"bK":[],"aV":[],"i":[]},"Y5":{"fE":[],"aV":[],"i":[]},"Zs":{"ax":[],"i":[]},"a_v":{"fE":[],"aV":[],"i":[]},"fm":{"h2":["hy"],"bs":[],"i":[],"h2.T":"hy"},"cm":{"h2":["hy"],"bs":[],"i":[],"h2.T":"hy"},"a1T":{"fE":[],"aV":[],"i":[]},"a_p":{"fE":[],"aV":[],"i":[]},"ZE":{"aV":[],"i":[]},"Y8":{"bK":[],"aV":[],"i":[]},"It":{"bK":[],"aV":[],"i":[]},"k6":{"bK":[],"aV":[],"i":[]},"U4":{"bK":[],"aV":[],"i":[]},"Yq":{"bK":[],"aV":[],"i":[]},"vY":{"bK":[],"aV":[],"i":[]},"UK":{"bK":[],"aV":[],"i":[]},"ig":{"bK":[],"aV":[],"i":[]},"HG":{"bK":[],"aV":[],"i":[]},"kI":{"ax":[],"i":[]},"dc":{"ax":[],"i":[]},"a9Y":{"Z":["hG"]},"zn":{"bK":[],"aV":[],"i":[]},"Q0":{"M":[],"bl":["M"],"G":[],"aW":[]},"Kj":{"i":[]},"Kh":{"ce":[],"B":[]},"a1S":{"nf":[],"aW":[]},"j4":{"ax":[],"i":[]},"Gl":{"bK":[],"aV":[],"i":[]},"a45":{"az":[]},"qD":{"dx":[],"bI":[],"bs":[],"i":[]},"a6W":{"ax":[],"i":[]},"VX":{"ax":[],"i":[]},"Gv":{"Y":[],"i":[]},"NS":{"Z":["Gv"]},"Gw":{"ax":[],"i":[]},"qJ":{"Y":[],"i":[]},"O1":{"Z":["qJ"]},"bZ":{"d2":["d_"],"az":[]},"zI":{"Y":[],"i":[]},"qK":{"Z":["zI"],"dG":[]},"QA":{"Y":[],"i":[]},"q_":{"CO":[],"h0":[]},"a3f":{"bK":[],"aV":[],"i":[]},"a8k":{"M":[],"bl":["M"],"G":[],"aW":[]},"O2":{"fE":[],"aV":[],"i":[]},"a9a":{"Z":["QA"],"bvV":[]},"a3c":{"jm":[]},"pO":{"e9":["1"],"cc":["1"],"cc.T":"1","e9.T":"1"},"RQ":{"e9":["1"],"cc":["1"],"cc.T":"1","e9.T":"1"},"RR":{"e9":["1"],"cc":["1"],"cc.T":"1","e9.T":"1"},"RZ":{"dr":["1"],"cc":["1"],"cc.T":"1"},"a9i":{"e9":["ng"],"cc":["ng"],"cc.T":"ng","e9.T":"ng"},"a3z":{"e9":["mB"],"cc":["mB"],"cc.T":"mB","e9.T":"mB"},"a78":{"e9":["oX"],"cc":["oX"],"cc.T":"oX","e9.T":"oX"},"abx":{"d2":["zk"],"az":[],"dG":[]},"a4I":{"e9":["mI"],"cc":["mI"],"cc.T":"mI","e9.T":"mI"},"a4J":{"e9":["mJ"],"cc":["mJ"],"cc.T":"mJ","e9.T":"mJ"},"ex":{"az":[]},"ov":{"ex":[],"az":[]},"a2m":{"dG":[]},"Hg":{"az":[]},"qQ":{"Y":[],"i":[]},"Of":{"mU":["ex"],"bI":[],"bs":[],"i":[],"mU.T":"ex"},"Db":{"Z":["qQ"]},"Hh":{"Y":[],"i":[]},"a5h":{"Y":[],"i":[]},"a5g":{"Z":["qQ"]},"zP":{"ax":[],"i":[]},"Hi":{"Y":[],"i":[]},"box":{"c4":[]},"n3":{"c4":[]},"nb":{"c4":[]},"jG":{"c4":[]},"Og":{"ex":[],"az":[]},"Oh":{"Z":["Hi"]},"a_l":{"cc":["box"],"cc.T":"box"},"YK":{"cc":["n3"],"cc.T":"n3"},"Zw":{"cc":["nb"],"cc.T":"nb"},"Gu":{"cc":["jG"],"cc.T":"jG"},"ve":{"Y":[],"i":[]},"Hn":{"Z":["ve"]},"Om":{"bI":[],"bs":[],"i":[]},"kD":{"Y":[],"i":[]},"iF":{"Z":["kD<1>"]},"j9":{"hW":[]},"bz":{"j9":["1"],"hW":[]},"Y":{"i":[]},"aV":{"i":[]},"bK":{"aV":[],"i":[]},"ce":{"B":[]},"kb":{"ce":[],"B":[]},"rn":{"ce":[],"B":[]},"ja":{"ce":[],"B":[]},"vk":{"j9":["1"],"hW":[]},"ax":{"i":[]},"bs":{"i":[]},"h2":{"bs":[],"i":[]},"bI":{"bs":[],"i":[]},"Y2":{"aV":[],"i":[]},"fE":{"aV":[],"i":[]},"Wy":{"aV":[],"i":[]},"FZ":{"ce":[],"B":[]},"a0G":{"ce":[],"B":[]},"Js":{"ce":[],"B":[]},"bY":{"ce":[],"B":[]},"Y1":{"bY":[],"ce":[],"B":[]},"L2":{"bY":[],"ce":[],"B":[]},"jf":{"bY":[],"ce":[],"B":[]},"a_j":{"bY":[],"ce":[],"B":[]},"a6U":{"ce":[],"B":[]},"a6X":{"i":[]},"mO":{"ax":[],"i":[]},"kR":{"Y":[],"i":[]},"Bn":{"Z":["kR"]},"dP":{"vj":["1"]},"a5q":{"bK":[],"aV":[],"i":[]},"vn":{"Y":[],"i":[]},"Dk":{"Z":["vn"]},"Hv":{"w6":[]},"b8":{"ax":[],"i":[]},"vr":{"dx":[],"bI":[],"bs":[],"i":[]},"HC":{"Y":[],"i":[]},"OB":{"Z":["HC"],"dG":[]},"uo":{"b_":["av"],"b3":["av"],"b3.T":"av","b_.T":"av"},"od":{"b_":["jF"],"b3":["jF"],"b3.T":"jF","b_.T":"jF"},"og":{"b_":["ew"],"b3":["ew"],"b3.T":"ew","b_.T":"ew"},"um":{"b_":["bu?"],"b3":["bu?"],"b3.T":"bu?","b_.T":"bu?"},"vV":{"b_":["cF"],"b3":["cF"],"b3.T":"cF","b_.T":"cF"},"xh":{"b_":["q"],"b3":["q"],"b3.T":"q","b_.T":"q"},"EV":{"Y":[],"i":[]},"EY":{"Y":[],"i":[]},"ql":{"Y":[],"i":[]},"EX":{"Y":[],"i":[]},"EW":{"Y":[],"i":[]},"EZ":{"Y":[],"i":[]},"GK":{"b_":["X"],"b3":["X"],"b3.T":"X","b_.T":"X"},"XE":{"Y":[],"i":[]},"Ae":{"Z":["1"]},"uc":{"Z":["1"]},"a25":{"Z":["EV"]},"a28":{"Z":["EY"]},"a2a":{"Z":["ql"]},"a27":{"Z":["EX"]},"a26":{"Z":["EW"]},"a29":{"Z":["EZ"]},"yl":{"bI":[],"bs":[],"i":[]},"XH":{"ax":[],"i":[]},"PN":{"fE":[],"aV":[],"i":[]},"a5P":{"bY":[],"ce":[],"B":[]},"jb":{"bI":[],"bs":[],"i":[]},"HI":{"ja":[],"ce":[],"B":[]},"mU":{"bI":[],"bs":[],"i":[]},"Do":{"ja":[],"ce":[],"B":[]},"dx":{"bI":[],"bs":[],"i":[]},"mc":{"ax":[],"i":[]},"Ap":{"ku":["av"],"aV":[],"i":[],"ku.0":"av"},"ku":{"aV":[],"i":[]},"G2":{"ku":["1"],"aV":[],"i":[]},"Dt":{"bY":[],"ce":[],"B":[]},"Qa":{"fI":["av","M"],"M":[],"bl":["M"],"G":[],"aW":[],"fI.0":"av"},"OX":{"bI":[],"bs":[],"i":[]},"vK":{"Y":[],"i":[]},"Av":{"az":[],"dG":[]},"abD":{"iH":["Mw"],"iH.T":"Mw"},"VZ":{"Mw":[]},"a6m":{"Z":["vK"]},"buu":{"bI":[],"bs":[],"i":[]},"ZH":{"ax":[],"i":[]},"a6S":{"az":[]},"a6q":{"bK":[],"aV":[],"i":[]},"a8u":{"M":[],"bl":["M"],"G":[],"aW":[]},"kM":{"jb":["er"],"bI":[],"bs":[],"i":[],"jb.T":"er"},"P6":{"Y":[],"i":[]},"a6y":{"Z":["P6"],"dG":[]},"abp":{"kd":[]},"Lw":{"kd":[]},"AJ":{"ax":[],"i":[]},"CT":{"eC":[],"eB":[]},"a9s":{"bK":[],"aV":[],"i":[]},"a8D":{"M":[],"bl":["M"],"G":[],"aW":[]},"Uh":{"Y":[],"i":[]},"a2i":{"vj":["CT"]},"a6F":{"ax":[],"i":[]},"YI":{"ax":[],"i":[]},"n6":{"k7":[]},"vo":{"bI":[],"bs":[],"i":[]},"IJ":{"Y":[],"i":[]},"h8":{"pi":[]},"lH":{"Z":["IJ"]},"DF":{"tz":[]},"DE":{"tz":[]},"Pl":{"tz":[]},"Pm":{"tz":[]},"a5w":{"L":["h8"],"az":[],"L.E":"h8"},"a5x":{"ec":["ap<u?,a8<R>>?"],"az":[]},"eb":{"bs":[],"i":[]},"Pp":{"ce":[],"B":[]},"nE":{"hO":[],"f0":["M"],"dW":[]},"YZ":{"fE":[],"aV":[],"i":[]},"DV":{"e1":["M","nE"],"M":[],"aH":["M","nE"],"G":[],"aW":[],"e1.1":"nE","aH.1":"nE","aH.0":"M"},"ri":{"az":[]},"pV":{"Y":[],"i":[]},"Pu":{"Z":["pV"]},"AR":{"Y":[],"i":[]},"IU":{"Z":["AR"]},"ya":{"M":[],"aH":["M","ft"],"G":[],"aW":[],"aH.1":"ft","aH.0":"M"},"AS":{"Y":[],"i":[]},"y6":{"kK":["y6"],"kK.E":"y6"},"yb":{"bI":[],"bs":[],"i":[]},"pZ":{"M":[],"bl":["M"],"G":[],"aW":[],"kK":["pZ"],"kK.E":"pZ"},"Qb":{"M":[],"bl":["M"],"G":[],"aW":[]},"DI":{"ku":["+(E,cF,E)"],"aV":[],"i":[],"ku.0":"+(E,cF,E)"},"Ru":{"fE":[],"aV":[],"i":[]},"aaM":{"bY":[],"ce":[],"B":[]},"Ec":{"ft":[],"hO":[],"f0":["M"],"dW":[]},"a74":{"Z":["AS"]},"DJ":{"aV":[],"i":[]},"a73":{"bY":[],"ce":[],"B":[]},"a4a":{"bK":[],"aV":[],"i":[]},"Q9":{"fI":["+(E,cF,E)","M"],"M":[],"bl":["M"],"G":[],"aW":[],"fI.0":"+(E,cF,E)"},"Hs":{"Y":[],"i":[]},"Lr":{"Y":[],"i":[]},"rk":{"iW":[]},"Oq":{"Z":["Hs"]},"Op":{"az":[]},"a5t":{"az":[]},"Rc":{"Z":["Lr"]},"aa1":{"az":[]},"bv2":{"cW":["1"],"hW":[]},"AW":{"ax":[],"i":[]},"AX":{"Y":[],"i":[]},"Z2":{"az":[]},"tB":{"lW":[],"AU":[],"i0":[],"az":[]},"a77":{"Z":["AX"]},"k3":{"dV":["1"],"fe":["1"],"dd":["1"]},"IW":{"k3":["1"],"dV":["1"],"fe":["1"],"dd":["1"],"dd.T":"1","dV.T":"1"},"B9":{"Y":[],"i":[]},"PF":{"Z":["B9<1>"],"bop":["1"]},"Zu":{"ax":[],"i":[]},"Bg":{"bI":[],"bs":[],"i":[]},"Jz":{"Y":[],"i":[]},"pa":{"Z":["Jz"]},"a4S":{"bK":[],"aV":[],"i":[]},"a8p":{"M":[],"bl":["M"],"G":[],"n2":[],"aW":[]},"rI":{"Y":[],"i":[]},"xt":{"bI":[],"bs":[],"i":[]},"Ki":{"Y":[],"i":[]},"ec":{"az":[]},"a8U":{"Z":["rI"]},"Qs":{"Z":["Ki"]},"at":{"ec":["1"],"az":[]},"iY":{"at":["1"],"ec":["1"],"az":[]},"Qo":{"iY":["1"],"at":["1"],"ec":["1"],"az":[]},"Kb":{"iY":["1"],"at":["1"],"ec":["1"],"az":[],"at.T":"1","iY.T":"1"},"kU":{"iY":["N"],"at":["N"],"ec":["N"],"az":[],"at.T":"N","iY.T":"N"},"Ka":{"iY":["N?"],"at":["N?"],"ec":["N?"],"az":[],"at.T":"N?","iY.T":"N?"},"a_n":{"iY":["u?"],"at":["u?"],"ec":["u?"],"az":[],"at.T":"u?","iY.T":"u?"},"BA":{"at":["b6?"],"ec":["b6?"],"az":[],"at.T":"b6?"},"wJ":{"ec":["1"],"az":[]},"Bz":{"ec":["1"],"az":[]},"a_o":{"ec":["bZ"],"az":[]},"rH":{"at":["1?"],"ec":["1?"],"az":[],"at.T":"1?"},"ph":{"at":["1"],"ec":["1"],"az":[],"at.T":"1"},"a_u":{"Y":[],"i":[]},"bT4":{"bWn":["au<N>"]},"E0":{"Z":["a_u<1>"]},"a95":{"bI":[],"bs":[],"i":[]},"a8R":{"at":["rK?"],"ec":["rK?"],"az":[],"at.T":"rK?"},"P9":{"jb":["ty"],"bI":[],"bs":[],"i":[],"jb.T":"ty"},"DD":{"Y":[],"i":[]},"kl":{"Z":["DD<1>"]},"AT":{"dd":["1"]},"fe":{"dd":["1"]},"a4p":{"cc":["j7"],"cc.T":"j7"},"dV":{"fe":["1"],"dd":["1"]},"Jo":{"dV":["1"],"fe":["1"],"dd":["1"]},"ry":{"dV":["1"],"fe":["1"],"dd":["1"],"dd.T":"1","dV.T":"1"},"rL":{"ax":[],"i":[]},"BF":{"jU":["1"],"jU.T":"1"},"Kv":{"bI":[],"bs":[],"i":[]},"wM":{"az":[]},"E2":{"Y":[],"i":[]},"E1":{"cW":["hW"],"hW":[],"cW.T":"hW"},"QP":{"Z":["E2"]},"iO":{"jW":[],"iW":[]},"iP":{"iO":[],"jW":[],"iW":[]},"rN":{"iO":[],"jW":[],"iW":[]},"lL":{"iO":[],"jW":[],"iW":[]},"k8":{"iO":[],"jW":[],"iW":[]},"a1z":{"iO":[],"jW":[],"iW":[]},"QC":{"bI":[],"bs":[],"i":[]},"pT":{"kK":["pT"],"kK.E":"pT"},"Kx":{"Y":[],"i":[]},"a_N":{"Z":["Kx"]},"lW":{"i0":[],"az":[]},"wN":{"iW":[]},"wQ":{"lW":[],"i0":[],"az":[]},"r9":{"ax":[],"i":[]},"a_O":{"ax":[],"i":[]},"VL":{"ax":[],"i":[]},"UR":{"ax":[],"i":[]},"A1":{"ax":[],"i":[]},"Ky":{"Y":[],"i":[]},"QE":{"bI":[],"bs":[],"i":[]},"wR":{"Z":["Ky"]},"QG":{"Y":[],"i":[]},"a9d":{"Z":["QG"]},"QF":{"az":[]},"a9c":{"bK":[],"aV":[],"i":[]},"Qh":{"M":[],"bl":["M"],"G":[],"aW":[]},"a8S":{"at":["U?"],"ec":["U?"],"az":[],"at.T":"U?"},"hD":{"c4":[]},"Ku":{"e9":["hD"],"cc":["hD"],"cc.T":"hD","e9.T":"hD"},"Bp":{"Y":[],"i":[]},"nI":{"jl":[],"eC":[],"eB":[]},"tK":{"kg":[],"jH":[],"eC":[],"eB":[]},"ts":{"jT":[],"jH":[],"eC":[],"eB":[]},"BI":{"az":[]},"nc":{"Z":["1"]},"bKx":{"Y":[],"i":[]},"C3":{"az":[]},"AK":{"az":[]},"wS":{"Y":[],"i":[]},"BM":{"bI":[],"bs":[],"i":[]},"a9n":{"hk":[],"Z":["wS"],"az":[]},"a_S":{"az":[]},"KV":{"Y":[],"i":[]},"a9z":{"Z":["KV"]},"a9A":{"jb":["R"],"bI":[],"bs":[],"i":[],"jb.T":"R"},"b1":{"BS":[]},"x0":{"Y":[],"i":[]},"KZ":{"Y":[],"i":[]},"BT":{"az":[]},"QW":{"Z":["x0"]},"L_":{"az":[]},"QV":{"Z":["KZ"]},"a9F":{"bI":[],"bs":[],"i":[]},"BU":{"ax":[],"i":[]},"E4":{"bK":[],"aV":[],"i":[]},"a9L":{"bY":[],"ce":[],"B":[]},"Qj":{"M":[],"bl":["M"],"JH":[],"G":[],"aW":[]},"a07":{"jW":[]},"a08":{"bK":[],"aV":[],"i":[]},"a8E":{"M":[],"bl":["M"],"G":[],"aW":[]},"a0n":{"aV":[],"i":[]},"pt":{"aV":[],"i":[]},"Lb":{"pt":[],"aV":[],"i":[]},"a0i":{"pt":[],"aV":[],"i":[]},"BY":{"bY":[],"ce":[],"B":[]},"HW":{"h2":["lA"],"bs":[],"i":[],"h2.T":"lA"},"a0g":{"ax":[],"i":[]},"a9P":{"pt":[],"aV":[],"i":[]},"a9Q":{"bK":[],"aV":[],"i":[]},"a8G":{"e2":[],"bl":["e2"],"G":[],"aW":[]},"Lc":{"hZ":["1","2"],"aV":[],"i":[]},"Ld":{"bY":[],"ce":[],"B":[]},"Le":{"az":[]},"a0t":{"bK":[],"aV":[],"i":[]},"DX":{"M":[],"bl":["M"],"G":[],"aW":[]},"a0s":{"az":[]},"NJ":{"az":[]},"a0A":{"ax":[],"i":[]},"a0K":{"ax":[],"i":[]},"Lv":{"Y":[],"i":[]},"aae":{"Z":["Lv"]},"Xh":{"iG":[]},"Xi":{"iG":[]},"Xt":{"iG":[]},"Xv":{"iG":[]},"Xs":{"iG":[]},"Xu":{"iG":[]},"Xw":{"iG":[]},"Xr":{"iG":[]},"Bv":{"M":[],"bl":["M"],"G":[],"aW":[]},"rG":{"M":[],"bl":["M"],"G":[],"aW":[]},"Ck":{"bK":[],"aV":[],"i":[]},"a0U":{"bK":[],"aV":[],"i":[]},"a4E":{"eB":[]},"LI":{"bK":[],"aV":[],"i":[]},"qE":{"dx":[],"bI":[],"bs":[],"i":[]},"bGg":{"dx":[],"bI":[],"bs":[],"i":[]},"bi":{"ax":[],"i":[]},"QL":{"Y":[],"i":[]},"a6Y":{"ax":[],"i":[]},"a9l":{"Z":["QL"]},"a8Z":{"ax":[],"i":[]},"a9k":{"az":[]},"Gy":{"c4":[]},"uL":{"c4":[]},"uN":{"c4":[]},"uM":{"c4":[]},"Gt":{"c4":[]},"om":{"c4":[]},"op":{"c4":[]},"v0":{"c4":[]},"uY":{"c4":[]},"uZ":{"c4":[]},"jL":{"c4":[]},"qL":{"c4":[]},"oq":{"c4":[]},"oo":{"c4":[]},"v_":{"c4":[]},"on":{"c4":[]},"pj":{"c4":[]},"ng":{"c4":[]},"mB":{"c4":[]},"oX":{"c4":[]},"rB":{"c4":[]},"lT":{"c4":[]},"t6":{"c4":[]},"l3":{"c4":[]},"t3":{"c4":[]},"mI":{"c4":[]},"mJ":{"c4":[]},"W5":{"c4":[]},"iq":{"hO":[],"f0":["M"],"dW":[]},"tD":{"Y":[],"i":[]},"QN":{"Y":[],"i":[]},"LS":{"Y":[],"i":[]},"QQ":{"Z":["tD"]},"QO":{"Z":["QN"]},"Rr":{"Z":["LS"]},"FU":{"d2":["zk"],"az":[],"dG":[]},"M0":{"Y":[],"i":[]},"O5":{"bI":[],"bs":[],"i":[]},"aaO":{"Z":["M0"]},"a3j":{"az":[]},"M4":{"Y":[],"i":[]},"aaR":{"Z":["M4"]},"Cs":{"az":[]},"F2":{"Y":[],"i":[]},"dI":{"bK":[],"aV":[],"i":[]},"MI":{"Z":["F2"]},"a0f":{"Y":[],"i":[]},"Il":{"Y":[],"i":[]},"a_y":{"Y":[],"i":[]},"a_t":{"Y":[],"i":[]},"a09":{"Y":[],"i":[]},"VR":{"Y":[],"i":[]},"ra":{"Y":[],"i":[]},"Ug":{"Y":[],"i":[]},"Cx":{"Y":[],"i":[]},"RG":{"Z":["Cx<1>"]},"CA":{"Y":[],"i":[]},"CB":{"Z":["CA<1>"]},"Mh":{"d2":["CC"],"az":[]},"nw":{"Y":[],"i":[]},"Ei":{"Z":["nw<1>"]},"Mm":{"Y":[],"i":[]},"yk":{"bI":[],"bs":[],"i":[]},"PC":{"bI":[],"bs":[],"i":[]},"RW":{"Z":["Mm"],"dG":[]},"ZI":{"ax":[],"i":[]},"PP":{"aV":[],"i":[]},"a7Y":{"bY":[],"ce":[],"B":[]},"NL":{"j9":["1"],"hW":[]},"xw":{"fE":[],"aV":[],"i":[]},"abv":{"bY":[],"ce":[],"B":[]},"a06":{"fE":[],"aV":[],"i":[]},"CO":{"h0":[]},"aby":{"h2":["l1"],"bs":[],"i":[],"h2.T":"l1"},"a2v":{"bK":[],"aV":[],"i":[]},"Qg":{"M":[],"bl":["M"],"G":[],"aW":[]},"dh":{"tb":[]},"a2j":{"tb":[]},"a1N":{"x":[],"cD":["x"]},"ym":{"x":[],"cD":["x"]},"a1O":{"eM":[],"cD":["eM"]},"S0":{"eM":[],"cD":["eM"]},"a1M":{"aM":[],"cD":["aM?"]},"a6d":{"cD":["aM?"]},"ko":{"aM":[],"cD":["aM?"]},"a1P":{"q":[],"cD":["q"]},"abA":{"q":[],"cD":["q"]},"OR":{"cD":["1?"]},"bn":{"cD":["1"]},"i2":{"cD":["1"]},"bC":{"cD":["1"]},"a1Q":{"d2":["ca<dh>"],"az":[]},"Mx":{"Y":[],"i":[]},"abE":{"Z":["Mx"]},"U8":{"c6":[]},"Ue":{"c6":[]},"XM":{"c6":[]},"Yc":{"c6":[]},"Zd":{"c6":[]},"J_":{"c6":[]},"Ze":{"c6":[]},"Be":{"c6":[]},"a_k":{"c6":[]},"UG":{"ags":[]},"UV":{"ags":[]},"z1":{"c0":["a8<y>"],"c0.T":"a8<y>"},"ux":{"c6":[]},"a0J":{"Lq":[]},"FA":{"cI":["u","u","1"],"ap":["u","1"],"cI.K":"u","cI.V":"1","cI.C":"u"},"y1":{"Y":[],"i":[]},"nx":{"c6":[]},"XO":{"ax":[],"i":[]},"OY":{"Z":["y1"]},"ES":{"Y":[],"i":[]},"MC":{"Z":["ES"]},"u6":{"Y":[],"i":[]},"ET":{"Y":[],"i":[]},"MD":{"Z":["u6"]},"a21":{"Z":["ET"]},"u7":{"Y":[],"i":[]},"ME":{"Z":["u7"]},"yo":{"Y":[],"i":[]},"NF":{"Y":[],"i":[]},"mw":{"ax":[],"i":[]},"CX":{"Y":[],"i":[]},"LZ":{"Y":[],"i":[]},"Fq":{"Y":[],"i":[]},"qv":{"Y":[],"i":[]},"mx":{"Y":[],"i":[]},"nX":{"Y":[],"i":[]},"px":{"Y":[],"i":[]},"or":{"Y":[],"i":[]},"tn":{"Y":[],"i":[]},"th":{"Y":[],"i":[]},"fL":{"ax":[],"i":[]},"pW":{"ax":[],"i":[]},"Sa":{"Z":["yo"]},"a3h":{"az":[]},"a4V":{"ax":[],"i":[]},"y3":{"ax":[],"i":[]},"a9C":{"ax":[],"i":[]},"NH":{"Z":["NF"]},"a2T":{"ax":[],"i":[]},"N7":{"Z":["CX"]},"Rv":{"Z":["LZ"]},"MW":{"Z":["Fq"]},"N5":{"Z":["qv"]},"N6":{"Z":["mx"]},"ML":{"Z":["nX"],"dG":[]},"Rl":{"Z":["px"],"dG":[]},"yi":{"ax":[],"i":[]},"Ob":{"Z":["or"],"dG":[]},"a4D":{"Z":["tn"]},"a31":{"Z":["th"]},"FB":{"Y":[],"i":[]},"a2X":{"Z":["FB"]},"V2":{"ax":[],"i":[]},"ut":{"Y":[],"i":[]},"us":{"Y":[],"i":[]},"a2Z":{"Z":["ut"]},"a2Y":{"Z":["us"]},"uF":{"Y":[],"i":[]},"Nm":{"Z":["uF"]},"uO":{"Y":[],"i":[]},"NK":{"Z":["uO"]},"zy":{"ax":[],"i":[]},"NQ":{"Y":[],"i":[]},"y0":{"Y":[],"i":[]},"y_":{"Y":[],"i":[]},"tA":{"Y":[],"i":[]},"mh":{"Y":[],"i":[]},"q0":{"ax":[],"i":[]},"NR":{"Z":["NQ"]},"OV":{"Z":["y0"]},"OU":{"Z":["y_"]},"Pq":{"Z":["tA"]},"zz":{"ax":[],"i":[]},"Ps":{"Z":["mh"]},"uQ":{"ax":[],"i":[]},"a4l":{"az":[]},"A_":{"Y":[],"i":[]},"xG":{"Y":[],"i":[]},"MX":{"Y":[],"i":[]},"xQ":{"Y":[],"i":[]},"yd":{"Y":[],"i":[]},"CL":{"Y":[],"i":[]},"A8":{"Y":[],"i":[]},"On":{"Z":["A_"]},"Na":{"Z":["xG"]},"GP":{"az":[]},"Wk":{"ax":[],"i":[]},"a2L":{"Z":["MX"]},"a5b":{"Z":["xQ"]},"Kg":{"ax":[],"i":[]},"a90":{"Z":["yd"]},"RY":{"Z":["CL"]},"Ox":{"Z":["A8"]},"Hp":{"Y":[],"i":[]},"a5n":{"Z":["Hp"]},"oy":{"c6":[]},"vm":{"Y":[],"i":[]},"a5u":{"Z":["vm"]},"A7":{"ax":[],"i":[]},"oC":{"Y":[],"i":[]},"Oy":{"Z":["oC"]},"J":{"ax":[],"i":[]},"XW":{"ax":[],"i":[]},"Ib":{"Y":[],"i":[]},"te":{"Y":[],"i":[]},"OW":{"Z":["Ib"]},"MQ":{"Z":["te"]},"Y9":{"ax":[],"i":[]},"mY":{"Y":[],"i":[]},"qT":{"ax":[],"i":[]},"Ow":{"Y":[],"i":[]},"xU":{"ax":[],"i":[]},"Dx":{"ax":[],"i":[]},"wZ":{"Y":[],"i":[]},"vM":{"Y":[],"i":[]},"Ye":{"ax":[],"i":[]},"a62":{"Z":["mY"]},"a6G":{"ax":[],"i":[]},"a5z":{"Z":["Ow"]},"a6D":{"ax":[],"i":[]},"tf":{"ax":[],"i":[]},"a5o":{"ax":[],"i":[]},"Dg":{"ax":[],"i":[]},"QS":{"Z":["wZ"]},"OZ":{"Z":["vM"]},"oR":{"Y":[],"i":[]},"kO":{"ax":[],"i":[]},"ON":{"Y":[],"i":[]},"Pr":{"Z":["oR"]},"a61":{"Z":["ON"]},"rh":{"Y":[],"i":[]},"Pt":{"Z":["rh"]},"G_":{"Y":[],"i":[]},"a3i":{"Z":["G_"]},"a3g":{"az":[]},"UX":{"az":[]},"UM":{"az":[]},"IY":{"az":[]},"AZ":{"ax":[],"i":[]},"x2":{"Y":[],"i":[]},"R6":{"Z":["x2"]},"we":{"Y":[],"i":[]},"PB":{"Z":["we"]},"Ji":{"Y":[],"i":[]},"PD":{"Z":["Ji"]},"AM":{"ax":[],"i":[]},"B6":{"ax":[],"i":[]},"Qp":{"Y":[],"i":[]},"u8":{"Y":[],"i":[]},"Jj":{"ax":[],"i":[]},"Qq":{"Z":["Qp"]},"MF":{"Z":["u8"]},"wx":{"Y":[],"i":[]},"PK":{"Z":["wx"]},"wA":{"Y":[],"i":[]},"PQ":{"Z":["wA"]},"Br":{"Y":[],"i":[]},"Au":{"Y":[],"i":[]},"Bq":{"c6":[]},"PY":{"Z":["Br"]},"a6k":{"Z":["Au"]},"pg":{"Y":[],"i":[]},"w4":{"Y":[],"i":[]},"Ql":{"Z":["pg"]},"a2V":{"ax":[],"i":[]},"Pg":{"Z":["w4"]},"Bx":{"hS":["ap<u,@>"]},"vg":{"ax":[],"i":[]},"KC":{"Y":[],"i":[]},"IZ":{"ax":[],"i":[]},"QJ":{"Z":["KC"]},"KW":{"Y":[],"i":[]},"Kd":{"Y":[],"i":[]},"a9B":{"Z":["KW"]},"a8V":{"Z":["Kd"]},"pl":{"ax":[],"i":[]},"L1":{"Y":[],"i":[]},"yf":{"Y":[],"i":[]},"QX":{"Z":["L1"]},"a9H":{"Z":["yf"]},"ni":{"Y":[],"i":[]},"Fl":{"Y":[],"i":[]},"R8":{"Z":["ni"]},"MP":{"Z":["Fl"]},"xa":{"Y":[],"i":[]},"Rm":{"Z":["xa"]},"xn":{"Y":[],"i":[]},"RE":{"Z":["xn"]},"xr":{"Y":[],"i":[]},"RF":{"Z":["xr"]},"t4":{"Y":[],"i":[]},"RH":{"Z":["t4"]},"Mk":{"Y":[],"i":[]},"abr":{"Z":["Mk"]},"Mu":{"Y":[],"i":[]},"a1L":{"ax":[],"i":[]},"S_":{"Z":["Mu"]},"xz":{"Y":[],"i":[]},"Sc":{"Z":["xz"]},"FF":{"Y":[],"i":[]},"xH":{"Y":[],"i":[]},"w3":{"Y":[],"i":[]},"u9":{"Y":[],"i":[]},"wd":{"Y":[],"i":[]},"a3a":{"Z":["FF"]},"Nd":{"Z":["xH"]},"a6N":{"Z":["w3"]},"MG":{"Z":["u9"]},"PA":{"Z":["wd"]},"d2":{"az":[]},"iy":{"az":[]},"pU":{"az":[]},"a_z":{"fz":[]},"a_A":{"fz":[]},"a_B":{"fz":[]},"a_C":{"fz":[]},"a_D":{"fz":[]},"a_E":{"fz":[]},"a_F":{"fz":[]},"a_G":{"fz":[]},"a_H":{"fz":[]},"Zb":{"c6":[]},"WD":{"lZ":[],"d7":["lZ"]},"Da":{"pv":[],"d7":["a0x"]},"lZ":{"d7":["lZ"]},"a0w":{"lZ":[],"d7":["lZ"]},"a0x":{"d7":["a0x"]},"a0y":{"d7":["a0x"]},"a0z":{"c6":[]},"C0":{"hc":[],"c6":[]},"C1":{"d7":["a0x"]},"pv":{"d7":["a0x"]},"a0M":{"hc":[],"c6":[]},"O8":{"c0":["1"]},"a4L":{"O8":["1"],"c0":["1"],"c0.T":"1"},"O9":{"jk":["1"]},"bIB":{"Y":[],"i":[]},"bGP":{"Y":[],"i":[]},"bGQ":{"Z":["bGP"]},"bNm":{"bI":[],"bs":[],"i":[]},"bMg":{"bI":[],"bs":[],"i":[]},"bns":{"iW":[]}}'))
 A.bNx(v.typeUniverse,JSON.parse('{"Y0":1,"jn":1,"a0d":1,"a0e":1,"Wm":1,"WT":1,"IK":1,"HF":1,"Ha":1,"a1t":1,"CE":1,"Sk":2,"G1":1,"hg":1,"ea":1,"AO":1,"YD":1,"mk":1,"Lp":1,"aab":1,"a2s":1,"a20":1,"aa_":1,"a4c":1,"tl":1,"y8":1,"aa0":1,"abl":2,"Ig":2,"R2":2,"R1":2,"R3":1,"R4":1,"RP":2,"V8":1,"Vq":2,"G5":2,"a5m":3,"Rd":1,"d7":1,"tL":1,"GZ":1,"k4":1,"VU":1,"XQ":1,"qo":1,"zp":1,"Nh":1,"Ni":1,"Nj":1,"IX":1,"Sg":1,"Nn":1,"mE":1,"Gq":1,"J0":2,"SE":1,"P2":1,"Ej":1,"G3":1,"Nk":1,"Y_":1,"f0":1,"h4":1,"JI":1,"Gf":1,"DS":1,"Qe":1,"Bw":1,"Rk":1,"SR":1,"SS":1,"qs":1,"W9":1,"Dd":1,"Ae":1,"uc":1,"Dn":1,"G2":1,"a1k":1,"VY":1,"bv2":1,"ec":1,"hC":1,"Qo":1,"wJ":1,"Bz":1,"Ek":1,"bop":1,"AT":1,"Ya":1,"Jo":1,"y5":1,"DR":1,"Lc":2,"QZ":2,"eX":1,"ed":1,"xl":1,"RK":1,"d2":1}'))
-var u={S:"\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\u03f6\x00\u0404\u03f4 \u03f4\u03f6\u01f6\u01f6\u03f6\u03fc\u01f4\u03ff\u03ff\u0584\u03ff\u03ff\u03ff\u03ff\u03ff\u03ff\u03ff\u03ff\u03ff\u03ff\u05d4\u01f4\x00\u01f4\x00\u0504\u05c4\u03ff\u03ff\u03ff\u03ff\u03ff\u03ff\u03ff\u03ff\u03ff\u03ff\u03ff\u03ff\u03ff\u03ff\u03ff\u03ff\u03ff\u03ff\u03ff\u03ff\u03ff\u03ff\u03ff\u03ff\u03ff\u03ff\u0400\x00\u0400\u0200\u03f7\u0200\u03ff\u03ff\u03ff\u03ff\u03ff\u03ff\u03ff\u03ff\u03ff\u03ff\u03ff\u03ff\u03ff\u03ff\u03ff\u03ff\u03ff\u03ff\u03ff\u03ff\u03ff\u03ff\u03ff\u03ff\u03ff\u03ff\u0200\u0200\u0200\u03f7\x00",t:"\x01\x01)==\xb5\x8d\x15)QeyQQ\xc9===\xf1\xf0\x00\x01)==\xb5\x8d\x15)QeyQQ\xc9===\xf1\xf0\x01\x01)==\xb5\x8d\x15(QeyQQ\xc9===\xf1\xf0\x01\x01(<<\xb4\x8c\x15(PdxPP\xc8<<<\xf1\xf0\x01\x01)==\xb5\x8d\x15(PeyQQ\xc9===\xf1\xf0\x01\x01)==\xb5\x8d\x15(PdyPQ\xc9===\xf1\xf0\x01\x01)==\xb5\x8d\x15(QdxPP\xc9===\xf1\xf0\x01\x01)==\xb5\x8d\x15(QeyQQ\xc9\u011a==\xf1\xf0\xf0\xf0\xf0\xf0\xf0\xdc\xf0\xf0\xf0\xf0\xf0\xf0\xf0\xf0\xf0\xf0\xf0\xf0\xf0\xf0\x01\x01)==\u0156\x8d\x15(QeyQQ\xc9===\xf1\xf0\x01\x01)==\xb5\x8d\x15(QeyQQ\xc9\u012e\u012e\u0142\xf1\xf0\x01\x01)==\xa1\x8d\x15(QeyQQ\xc9===\xf1\xf0\x00\x00(<<\xb4\x8c\x14(PdxPP\xc8<<<\xf0\xf0\x01\x01)==\xb5\x8d\x15)QeyQQ\xc9===\xf0\xf0??)\u0118=\xb5\x8c?)QeyQQ\xc9=\u0118\u0118?\xf0??)==\xb5\x8d?)QeyQQ\xc9\u012c\u012c\u0140?\xf0??)==\xb5\x8d?)QeyQQ\xc8\u0140\u0140\u0140?\xf0\xdc\xdc\xdc\xdc\xdc\u0168\xdc\xdc\xdc\xdc\xdc\xdc\xdc\xdc\xdc\xdc\xdc\xdc\xdc\x00\xa1\xa1\xa1\xa1\xa1\u0154\xa1\xa1\xa1\xa1\xa1\xa1\xa1\xa1\xa1\xa1\xa1\xa1\xa1\x00",e:"\x10\x10\b\x04\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x04\x04\x10\x10\x10\x10\x10\x02\x02\x02\x04\x04\x10\x10\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x10\x10\x02\x01\x01\x01\x01\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x10\x02\x04\x04\x04\x04\x04\x04\x04\x04\x04\x04\x04\x04\x04\x04\x04\x04\x04\x04\x04\x04\x04\x04\x04\x04\x04\x04\x04\x04\x04\x04\x04\x04\x04\x04\x04\x04\x04\x04\x04\x04\x04\x04\x04\x04\x04\x04\x04\x04\x04\x04\x04\x04\x04\x04\x04\x02\x02\x02\x02\x02\x02\x02\x10\x10\x10\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x10\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x02\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x02\x0e\x02\x02\x02\x0e\x0e\x0e\x0e\x02\x02\x10\x02\x10\x04\x10\x04\x04\x02\x10\x10\x10\x02\x10\x10\x10\x10\x02\x02\x02\x02\x02\x02\x02\x10\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x04\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x10\x10\x10\x10\x10\x10\x06\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x06\x02\x02\x06\x02\x02\x02\x02\x06\x02\x06\x02\x02\x02\x02\x06\x06\x06\x02\x06\x02\x02\x02\x02\x02\x02\x02\x02\x04\x10\x10\x10\x10\x02\x02\x04\x04\x02\x02\x04\x04\x11\x02\x02\x02\x02\x02\x02\x02\x02\x02\x10\x02\x02\x02\x02\x0e\x0e\x02\x0e\x10\x04\x04\x04\x04\x02\x10\x10\x10\x02\x10\x10\x10\x11\x02\x02\x02\x02\x02\x02\x02\x10\x10\x02\x0e\x0e\x0e\x02\x02\x02\x02\x02\x10\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x0e\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x10\x10\x10\x10\x04\x10\x10\x10\x10\x10\x10\x02\x10\x10\x04\x04\x10\x10\x02\x10\x02\x02\x10\x10\x10\x10\x10\x10\x10\x10\x04\x04\x04\x04\x04\x04\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x02\x02\x10\x10\x02\x10\x10\x10\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x10\x10\x04\x10\x10\x10\x10\x10\x10\x10\x04\x04\x04\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x02\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x02\x02\x10\x02\x10\x10\x10\x02\x10\x10\x02\x02\x02\x02\x02\x10\x10\x10\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x10\x10\x10\x02\x02\x02\x02\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x10\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x10\x10\x04\x04\x10\x02\x02\x02\x02\x04\x10\x10\x10\x10\x10\x10\x10\x10\x04\x04\x04\x04\x11\x04\x04\x02\x10\x10\x10\x10\x10\x10\x10\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x0e\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\f\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\f\r\r\r\r\r\r\r\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\v\v\v\v\v\v\v\v\v\v\v\v\v\v\v\v\v\v\v\v\v\v\v\v\v\v\v\v\v\v\v\v\x02\x02\x02\x02\x04\x10\x10\x10\x10\x02\x04\x04\x04\x02\x04\x04\x04\x11\b\x02\x02\x02\x02\x02\x02\x02\x02\x10\x02\x02\x02\x02\x02\x02\x02\x02\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x04\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x10\x10\x10\x01\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x10\x10\x10\x02\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x02\x10\x10\x02\x02\x02\x02\x02\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x02\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x02\x02\x10\x10\x10\x10\x10\x10\x10\x02\x10\x10\x02\x10\x10\x10\x10\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x10\x10\x10\x10\x10\x02\x02\x02\x10\x10\x10\x10\x10\x10\x01\x01\x01\x01\x01\x01\x01\x01\x10\x10\x10\x10\x10\x10\x10\x10\x02\x02\x10\x10\x10\x10\x10\x10\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x10\x10\x10\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x06\x06\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x06\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x06\x02\x02\x02\x02\x02\x02\x10\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x0e\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x02\x02\x02\x02\x06\x06\x06\x02\x02\x02\x02\x02\x10\x04\x04\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x10\x02\x04\x10\x10\x10\x10\x10\x10\x10\x02\x02\x02\x02\x02\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\x02\x02\x02\x04\x04\x10\x04\x04\x10\x04\x04\x02\x04\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x06\x02\x02\x02\x02\x06\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x06\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x06\x06\x06\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x06\x06\x02\x02\x02\x10\x04\x04\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x02\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x02\x0e\x0e\x02\x0e\x0e\x0e\x0e\x0e\x02\x02\x10\x02\x10\x10\x04\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x02\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x02\x0e\x0e\x02\x0e\x0e\x0e\x0e\x0e\x02\x02\x10\x02\x04\x04\x10\x10\x10\x10\x02\x02\x04\x04\x02\x02\x04\x04\x11\x02\x02\x02\x02\x02\x02\x02\x10\x10\x10\x02\x02\x02\x02\x0e\x0e\x02\x0e\n\n\n\n\n\n\n\x02\x02\x02\x02\v\v\v\v\v\v\v\v\v\v\v\v\v\v\v\v\v\v\v\v\v\x10\x10\b\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x02\x02\x02\x02\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x02\x02\x02\x02\x02\x02\x02\x02\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x10\x10\x10\x10\x10\x02\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x04\x10\x10\x10\x10\x10\x10\x10\x02\x10\x10\x10\x10\x10\x10\x04\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x02\x04\x10\x10\x10\x10\x10\x10\x10\x04\x10\x10\x04\x10\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x10\x10\x10\x10\x10\x10\x02\x02\x02\x10\x02\x10\x10\x02\x10\x10\x10\x10\x10\x10\x10\b\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x04\x04\x04\x04\x04\x02\x10\x10\x02\x04\x04\x10\x04\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x10\x04\x04\x04\x04\x04\x02\x04\x04\x02\x02\x10\x10\x10\x10\b\x04\b\x04\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x04\x04\x04\x10\x10\x10\x10\x02\x02\x10\x10\x04\x04\x04\x04\x10\x02\x02\x02\x04\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x06\x06\x06\x06\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x06\x06\x06\x06\x06\x06\x06\x06\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x06\x06\x06\x06\x06\x06\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x06\x06\x06\x06\x06\x06\x06\x06\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x02\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x02\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x06\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x06\x02\x02\x06\x06\x06\x06\x06\x06\x06\x06\x06\x02\x06\x06\x06\x06\x02\x02\x02\x02\x02\x02\x02\x02\x02\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x02\x02\x02\x02\x02\x02\x02\x02\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x07\x01\x01\x00\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x02\x02\x02\x02\x04\x04\x10\x10\x04\x02\x02\x02\x02\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x04\x04\x04\x04\x04\x04\x04\x04\x04\x04\x04\x04\x10\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x10\x10\x10\x10\x10\x10\x10\b\x02\x10\x10\x10\x10\x02\x10\x10\x10\x02\x10\x10\x10\x10\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x04\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x04\x10\x04\x10\x10\x10\x10\x10\x10\x10\x02\x02\x02\x02\x10\x02\x02\x02\x02\x02\x02\x10\x02\x02\x04\x10\x10\x02\x02\x02\x02\x02\x02\x10\x04\x10\x10\x04\x04\x04\x10\x04\x10\x10\x10\x10\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x01\x03\x0f\x01\x01\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x10\x10\x02\x02\x02\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x10\x10\x10\x10\x10\x10\x04\x04\x10\x10\x04\x04\x10\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x01\x01\x01\x01\x01\x01\x01\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x06\x02\x02\x02\x01\x06\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x10\x02\x10\x10\x10\x02\x02\x10\x10\x02\x02\x02\x02\x02\x10\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x0e\x0e\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x10\x02\x04\x10\x10\x02\x02\x02\x02\x02\x02\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x10\x02\x02\x02\x02\x10\x04\x04\x10\x10\x10\x02\x10\x02\x04\x04\x04\x04\x04\x04\x04\x10\x04\x04\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x10\x02\x02\x04\x10\x10\x10\x10\x04\x04\x10\x10\x10\x10\x10\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x10\x10\x10\x10\x10\x04\x10\x10\x10\x10\x10\x10\x10\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x04\x04\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x10\x10\x04\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x04\x04\x04\x10\x10\x10\x10\x10\x10\x10\x10\x10\x04\x10\x02\b\b\x02\x02\x02\x02\x02\x10\x10\x10\x10\x02\x04\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x04\x04\x04\x10\x10\x10\x10\x10\x10\x10\x10\x04\x04\x10\x04\x10\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x10\x04\x10\x04\x04\x10\x10\x10\x10\x10\x10\x10\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x10\x10\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x10\x10\x10\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x10\x10\x10\x10\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x04\x04\x04\x10\x10\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x10\x10\x10\x10\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x04\x04\x04\x10\x10\x10\x10\x10\x10\x10\x10\x10\x04\x10\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x10\x10\x10\x10\x10\x10\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x10\x10\x10\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\b\b\x02\x02\x02\x02\x02\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x02\x02\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x10\x10\x04\x04\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x10\x10\x02\x10\x04\x04\x02\x02\x02\x04\x04\x04\x02\x04\x04\x04\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x10\x02\x02\x02\x02\x02\x02\x02\x02\x10\x04\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x10\x04\x04\x10\x10\x10\x10\x04\x04\x10\x10\x04\x04\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x10\x10\x02\x10\x04\x10\x04\x04\x04\x04\x02\x02\x04\x04\x02\x02\x04\x04\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x04\x04\x02\x02\x10\x10\x10\x10\x10\x10\x10\x02\x02\x02\x10\x10\x10\x10\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x10\x04\x04\x10\x10\x10\x10\x10\x10\x02\x10\x02\x02\x10\x02\x10\x10\x10\x04\x02\x04\x04\x10\x10\x10\b\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x10\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x04\x04\x10\x10\x02\x02\x02\x02\x10\x10\x02\x02\x10\x10\x10\x02\x02\x02\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\b\x02\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x10\x10\x10\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x10\x10\x10\x10\x10\x10\x10\x10\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x10\x10\x10\x10\x10\x10\x10\x10\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x10\x02\x02\x02\x10\x02\x02\x02\x02\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x04\x04\x04\x04\x10\x10\x04\x04\x04\x02\x02\x02\x02\x04\x04\x10\x04\x04\x04\x04\x04\x04\x10\x10\x10\x02\x02\x02\x02\x10\x10\x10\x04\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x10\x04\x10\x02\x04\x04\x10\x04\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x10\x02\x02\x10\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x10\x10\x10\x04\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x04\x04\x04\x10\x10\x10\x10\x04\x04\x10\x10\x02\x02\b\x02\x02\x02\x02\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\b\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x10\x02\x02\x02\x02\x02\x02\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x10\x04\x04\x10\x10\x10\x10\x02\x02\x04\x04\x04\x04\x10\x10\x04\x10\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x10\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x10\x04\x10\x02\x02\x10\x10\x10\x10\x04\x10\x10\x10\x10\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x10\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x10\x10\x10\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x04\x04\x04\x10\x10\x10\x10\x10\x10\x10\x10\x04\x04\x10\x10\x10\x04\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x10\x04\x04\x10\x10\x10\x10\x10\x10\x04\x10\x04\x04\x10\x04\x10\x10\x04\x10\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x04\x04\x04\x10\x10\x10\x04\x04\x10\x10\x10\x10\x02\x02\x02\x02\x02\x02\x10\x02\x02\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x10\x04\x04\x04\x10\x10\x10\x10\x10\x10\x10\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x06\x06\x06\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x06\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x06\x06\x06\x06\x06\x06\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x06\x06\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x06\x02\x02\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x05\x05\x05\x05\x05\x05\x05\x05\x05\x05\x05\x05\x05\x05\x05\x05\x05\x05\x05\x05\x05\x05\x05\x05\x05\x05\b\b\b\b\b\b\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x02\x01\x02\x02\x02\x10\x10\x02\x10\x10\x02\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x06\x02\x06\x02\x02\x02\x02\x02\x02\x06\x06\x06\x06\x06\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x10\x10\x10\x10\x02\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x10\x10\x10\x10\x10\x10\x04\b\x10\x10\x10\x10\x02\x02\x02\x02\x02\x02\x02\x02\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x10\x10\x10\x10\x10\x10\x04\x04\x10\x10\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\b\b\b\b\b\b\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x04\x10\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\n\x02\x02\x02\n\n\n\n\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x02\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x02\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x02\x02\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x02\x06\x02\x06\x02\x02\x02\x02\x02\x02\x06\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x06\x06\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x10\x02\x10\x02\x10\x02\x02\x02\x02\x04\x04\x04\x04\x04\x04\x04\x04\x10\x10\x10\x10\x10\x10\x10\x10\x04\x04\x10\x10\x02\x02\x02\x02\x02\x02\x02\x02\x10\x10\x10\x10\x10\x10\x10\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x10\x02\x04\x10\x10\x10\x10\x10\x10\x10\x10\x10\x02\x02\x02\x04\x10\x10\x10\x10\x10\x02\x10\x10\x04\x02\x04\x04\x11\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x04\x04\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x04\x10\x10\x04\x04\x02\x02\x02\x02\x02\x04\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02",U:"\x15\x01)))\xb5\x8d\x01=Qeyey\xc9)))\xf1\xf0\x15\x01)))\xb5\x8d\x00=Qeyey\xc9)))\xf1\xf0\x15\x01)((\xb5\x8d\x01=Qeyey\xc9(((\xf1\xf0\x15\x01(((\xb4\x8c\x01<Pdxdx\xc8(((\xf1\xf0\x15\x01)((\xb5\x8d\x01=Pdydx\xc9(((\xf1\xf0\x15\x01)((\xb5\x8d\x01=Qdxey\xc9(((\xf1\xf0\x15\x01)((\xb5\x8d\x01=Qexey\xc9(((\xf1\xf0\x15\x01)\x8c(\xb5\x8d\x01=Qeyey\xc9\xa0\x8c\x8c\xf1\xf0\x15\x01)((\xb5\x8c\x01=Qeyey\xc9(((\xf1\xf0\x15\x01)(((\x8d\x01=Qeyey\xc9(((\xf1\xf0\x15\x01)((\xb5\x8d\x01=Qeyey\xc9\xc8\xc8\xdc\xf1\xf0\x15\x01)((\xb5\x8d\x01=Qeyey\xc8\xdc\xdc\xdc\xf1\xf0\x14\x00(((\xb4\x8c\x00<Pdxdx\xc8(((\xf0\xf0\x15\x01)))\xb5\x8d\x01=Qeyey\xc9)))\xf0\xf0\x15\x01(\u01b8(\u01e0\x8d\x01<Pdxdx\xc8\u012c\u0140\u0154\xf0\xf0\x15\x01)((\xb5\u011a\x01=Qeyey\u012e\u0190\u0190\u01a4\xf1\xf0\x15\x01)\u01b8(\xb5\x8d\x01=Qeyey\u012e\u0168\u0140\u0154\xf1\xf0\x15\x01)\u01b8(\xb5\x8d\x01=Qeyey\u0142\u017c\u0154\u0154\xf1\xf0\x15\x01)((\xb5\u011a\x01=Qeyey\xc9\u0190\u0190\u01a4\xf1\xf0\x15\x01)((\xb5\u011a\x01=Qeyey\u0142\u01a4\u01a4\u01a4\xf1\xf0\x15\x01)((\xb5\x8d\x01=Qeyey\u012e\u0190\u0190\u01a4\xf1\xf0\x15\x01)((\xb5\x8d\x01=Qeyey\u0142\u01a4\u01a4\u01a4\xf1\xf0\x15\x01)\u01b8(\xb5\x8d\x01=Qeyey\xc9\u01cc\u01b8\u01b8\xf1\xf0\x15\x01)((\xb5\u011a\x01=Qeyey\xc9(((\xf1\xf0\x15\x01)((\u0156\x8d\x01=Qeyey\xc9(((\xf1\xf0",D:" must not be greater than the number of characters in the file, ",d:" pris sur le solde du joueur captur\xe9 (ce qu'il a, s'il en a moins).",B:" taken from the captured player's balance (whatever they have, if less).",r:'"recorder" must not already be associated with another Canvas.',N:"% of the way to being a CircleBorder that is ",g:". Ouvre-le et suis le lien pour choisir un nouveau mot de passe (regarde aussi dans les spams).",o:'1. For people aged 18 and over only. By creating an account you confirm you are at least 18.\n\n2. One account per person. Never share your password.\n\n3. Stake games use real money. You can lose some or all of your stake. Never play money you need to live.\n\n4. Commissions: Katika takes a commission on pots and bets, shown before you stake. Refunds (ties, cancelled games) carry no commission.\n\n5. Deposits and withdrawals use Mobile Money. Withdrawals have a 24-hour cap and may be checked before payment.\n\n6. Fraud: cheating, collusion, multiple accounts or tampering with results leads to suspension and loss of the related winnings.\n\n7. Cancelled games: stakes are refunded.\n\n8. Responsible play: set a deposit limit or self-exclude any time from "Help and responsible play". Self-exclusion cannot be shortened.\n\n9. Personal data: Katika stores your username, balance, games and transactions to run the service and prevent fraud. It is not sold.\n\n10. Katika may update these terms; you will be asked to accept them again.',P:"1. R\xe9serv\xe9 aux personnes de 18 ans et plus. En cr\xe9ant un compte, tu confirmes avoir 18 ans r\xe9volus.\n\n2. Un seul compte par personne. Le compte est personnel : ne communique jamais ton mot de passe.\n\n3. Les jeux avec mise se jouent avec de l'argent r\xe9el. Tu peux perdre tout ou partie de ta mise. Ne joue jamais l'argent dont tu as besoin pour vivre.\n\n4. Commissions : Katika pr\xe9l\xe8ve une commission sur les cagnottes et les paris. Elle est affich\xe9e avant la mise ; les remboursements (\xe9galit\xe9, partie annul\xe9e) se font sans commission.\n\n5. Recharges et retraits : ils se font par Mobile Money (Orange Money, MTN MoMo). Les retraits sont soumis \xe0 un plafond par 24 h et peuvent \xeatre v\xe9rifi\xe9s avant paiement.\n\n6. Fraude : toute triche, collusion entre joueurs, usage de plusieurs comptes ou tentative de manipuler le r\xe9sultat entra\xeene la suspension du compte et la perte des gains concern\xe9s.\n\n7. Parties annul\xe9es : si une partie est annul\xe9e (par un administrateur ou faute d'adversaire), les mises sont rembours\xe9es.\n\n8. Jeu responsable : tu peux, \xe0 tout moment, fixer une limite de recharge ou t'auto-exclure depuis \xab Aide et jeu responsable \xbb. L'auto-exclusion ne peut pas \xeatre raccourcie.\n\n9. Donn\xe9es personnelles : Katika enregistre ton pseudo, ton solde, tes parties et tes transactions pour faire fonctionner le service et pr\xe9venir la fraude. Elles ne sont pas vendues.\n\n10. Katika peut modifier ces conditions ; tu seras invit\xe9 \xe0 les accepter \xe0 nouveau.",f:"6 ! Aucun d\xe9placement possible, mais tu rejoues.",k:"A collection path must point to a valid collection.",z:"ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/",cg:"Appuie encore sur retour pour aller \xe0 l'accueil",a:"Attends que d'autres joueurs rejoignent pour inviter un bin\xf4me.",i:"Aucune partie en cours \xe0 regarder pour le moment.",Z:"Aucune partie ouverte pour le moment. Cr\xe9e la tienne !",C:"BHLBQxfH_s9yJtL2SVytqhgVq_iXU18irWpX0d_hXyMrn30zHLaAQbPF1YdtoKWrCOSTelKTXBy2HqG9C18pyYc",A:"Best total (21 max) wins. Tie: stakes refunded.",h:"But : amener tous tes pions jusqu'\xe0 l'arriv\xe9e (56 cases \xe0 parcourir) avant les autres.\n\nD\xe9part : il faut un 6 pour sortir un pion de la base (sauf avec les options \xab Position 54 \xbb ou \xab D\xe9part sur la case de d\xe9part \xbb, o\xf9 les pions sont d\xe9j\xe0 sur le plateau).\n\nD\xe9placement : on avance son pion du nombre indiqu\xe9 par le d\xe9. \xc0 l'arriv\xe9e, il faut le nombre exact : on ne peut pas d\xe9passer.\n\nRejouer : un 6, une capture ou un pion qui arrive \xe0 la maison donnent un nouveau lancer.\n\nCapture : si ton pion s'arr\xeate sur un pion adverse, celui-ci retourne \xe0 sa base et doit refaire un 6 pour ressortir. Les portes et les \xe9toiles prot\xe8gent les pions (selon les options de la partie). Avec les captures payantes, chaque capture rapporte de l'argent.\n\n\xc9quipes : en mode 2 contre 2, les bin\xf4mes ne se capturent pas et l'\xe9quipe gagne quand les deux joueurs ont fini.\n\nMises : la cagnotte (mises de tous les joueurs) est vers\xe9e au gagnant, moins la commission de Katika.",F:"But : faire le plus grand total avec tes d\xe9s.\n\nD\xe9roulement : chacun son tour, chaque joueur lance ses deux d\xe9s une seule fois. Le total des deux d\xe9s est son score. Quand tout le monde a lanc\xe9, la partie est finie.\n\nGagnant : le joueur au score le plus \xe9lev\xe9 gagne. En cas d'\xe9galit\xe9, la cagnotte est partag\xe9e entre les gagnants.\n\nTemps : si un joueur ne lance pas dans les 30 secondes, le jeu lance pour lui.\n\nMises : la cagnotte (mises de tous les joueurs) est vers\xe9e au gagnant, moins la commission de Katika. Un jackpot peut aussi tomber.\n\nParis entre joueurs (parties avec mise) : Duel (le plus gros score gagne) et D\xe9fi 7 (plus ou moins de 7). Il faut parier avant d'avoir lanc\xe9 ses d\xe9s ; \xe0 \xe9galit\xe9 ou 7 pile, les mises sont rendues.",ex:"Called rasterize() with a different number of canvases and pictures.",R:"Cannot call getNextFrame() after dispose()",aL:"Cannot decode image. The image decoder has been disposed.\nImage source: ",h8:"Cannot extract a file path from a URI with a fragment component",aM:"Cannot extract a file path from a URI with a query component",Q:"Cannot extract a non-Windows file path from a file URI with an authority",c:"Cannot fire new event. Controller is already firing an event",dn:"Capture obligatoire ! Coup jou\xe9 automatiquement.",eq:"Capture obligatoire : choisis le pion qui capture.",eG:"Capture obligatoire : prends un pion adverse !",c6:"Ce pion ne peut pas finir avec ce lancer.",n:"Cette partie n'est pas (ou plus) en cours.",bM:"Changer ces deux r\xe9glages remet la partie \xe0 z\xe9ro.",y:"Chaque pion captur\xe9 rapporte de l'argent au joueur qui capture, pris sur le solde du joueur captur\xe9.",e9:"Compteurs mis \xe0 jour \xe0 la fin de chaque partie termin\xe9e avec un gagnant (en ligne et en pr\xe9sentiel). Total jou\xe9 = mises engag\xe9es ; total gagn\xe9 = gains re\xe7us ; total perdu = mises des parties perdues.",bb:"Connecte-toi pour jouer en ligne, d\xe9poser et gagner.",cf:"Connecte-toi \xe0 ton compte Katika avant de recharger.",dl:"Connecte-toi \xe0 ton compte avant de lancer une partie en pr\xe9sentiel.",f_:"Error handler must accept one Object or one Object and a StackTrace as arguments, and return a value of the returned future's type",fG:"Free game: no tokens at stake, no jackpot.",b:"Highest score wins (FOMEKOU beats all). Tie: stakes refunded.",l:"Host platform returned null value for non-null return value.",Y:"Impossible de charger les parties en cours.",eP:"Impossible de charger les parties. V\xe9rifie les r\xe8gles Firestore.",d2:"Impossible de cr\xe9er la partie. V\xe9rifie que Firestore est activ\xe9 et que les r\xe8gles autorisent les joueurs connect\xe9s.",m:"Invisible dans la liste : on la rejoint avec un code",T:"Joueurs (chacun se connecte \xe0 son compte)",O:"Joueurs (touche le rond pour changer d'avatar)",d8:"Jouez avec mod\xe9ration \xb7 R\xe9serv\xe9 aux personnes majeures (18 ans et +)",cE:"La connexion par e-mail n'est pas activ\xe9e dans Firebase.",gR:"Le cr\xe9ateur lance la partie quand il veut, d\xe8s 2 joueurs (m\xeame si la salle n'est pas pleine) et quand tout le monde a pay\xe9 sa mise.",dp:"Le jeu joue \xe0 ta place quand il n'y a qu'un seul choix",aZ:"Le meilleur total (21 max) gagne. \xc9galit\xe9 : mises rendues.",cO:"Le plus gros score gagne (FOMEKOU bat tout). \xc9galit\xe9 : mises rendues.",bd:"Le serveur en ligne n'est pas configur\xe9 : Firebase n'a pas d\xe9marr\xe9. Le mode pr\xe9sentiel reste disponible.",q:"Le serveur en ligne n'est pas configur\xe9 dans l'appli.",g5:"Les bin\xf4mes ne se capturent pas. L'\xe9quipe gagne quand les deux ont fini.",eX:"Les bin\xf4mes se choisissent par invitation et ne se capturent pas",cK:"Les pions d\xe9marrent d\xe9j\xe0 sur le plateau, pr\xe8s du centre : pas besoin de 6 au d\xe9but. Un pion captur\xe9 a besoin d'un 6 pour ressortir. Se joue avec 2 pions chacun.",bf:"Les pions d\xe9marrent d\xe9j\xe0 sur leur case de d\xe9part : pas besoin de 6 au d\xe9but. Un pion captur\xe9 retourne \xe0 la base et a besoin d'un 6 pour ressortir.",e4:"Mode : en pr\xe9sentiel (tous les joueurs sur le m\xeame plateau)",I:"Mot de passe trop faible (6 caract\xe8res minimum).",ax:"Partie gratuite : aucun jeton en jeu, pas de jackpot.",ci:"Pilotage automatique : coup jou\xe9 pour toi.",X:"Position 54 : la partie se joue avec 2 pions chacun.",fI:"Rejoins le groupe des joueurs : parties, tournois, astuces et actualit\xe9s. Tu pourras toujours le rejoindre depuis le bouton vert de l'accueil.",V:"Stream has been disposed.\nAn ImageStream is considered disposed once at least one listener has been added and subsequently all listeners have been removed and no handles are outstanding from the keepAlive method.\nTo resolve this error, maintain at least one listener on the stream, or create an ImageStreamCompleterHandle from the keepAlive method, or create a new stream for the image.",ac:"SystemChrome.setApplicationSwitcherDescription",G:"Tap the code to copy it and invite friends",x:"Temps \xe9coul\xe9 : le d\xe9lai pour rejouer est termin\xe9.",af:"Termine la partie pour r\xe9cup\xe9rer les gains.",s:"TextInputClient.updateEditingStateWithDeltas",w:"TextInputClient.updateEditingStateWithTag",c2:"The downloaded CanvasKit version does not support WebParagraph",a2:"There was a problem trying to load FontManifest.json",eK:"Time including microseconds is outside valid range",ge:"Time is up: the replay window has closed.",K:"Touche le code pour le copier et invite tes amis",M:"Touche ton d\xe9 ou glisse-le pour le lancer !",ea:"Toutes les mises seront rembours\xe9es \xe0 100 %.",J:"Trop d'essais. R\xe9essaie dans quelques minutes.",ft:"Tu dois prendre un pion adverse quand c'est possible",v:"Un pion sur une case de d\xe9part ne peut pas \xeatre captur\xe9",W:"Un pion sur une \xe9toile ne peut pas \xeatre captur\xe9",aq:"Un seul coup possible : jou\xe9 automatiquement.",E:"Unable to establish connection on channel.",u:'Unable to establish connection on channel: "',do:"\\.[0-9a-f]{8}((?:\\.(?:js|wasm|mjs)\\.map)|(?:\\.[^./]+))?$",d_:"by a synchronously-called image error listener",gl:"https://chat.whatsapp.com/D9HxYjOSsrVAxxJNYjOnnE?s=cl&p=a&mlu=4&ilr=4&iam=2",H:"https://katika-api.ychachouang.workers.dev/",_:"max must be in range 0 < max \u2264 2^32, was ",b6:"while dispatching notifications for WidgetsBindingObserver.didPushRouteInformation",j:"\u1132\u166c\u166c\u206f\u11c0\u13fb\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u1bff\u1bff\u1bff\u1c36\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u1aee\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u1fb5\u059c\u266d\u166c\u264e\u166c\u0a70\u175c\u166c\u166c\u1310\u033a\u1ebd\u0a6b\u2302\u166c\u166c\u22fc\u166c\u1ef8\u269d\u132f\u03b8\u166c\u1be8\u166c\u0a71\u0915\u1f5a\u1f6f\u04a2\u0202\u086b\u021a\u029a\u1427\u1518\u0147\u1eab\u13b9\u089f\u08b6\u2a91\u02d8\u086b\u0882\u08d5\u0789\u176a\u251c\u1d6c\u166c\u0365\u037c\u02ba\u22af\u07bf\u07c3\u0238\u024b\u1d39\u1d4e\u054a\u22af\u07bf\u166c\u1456\u2a9f\u166c\u07ce\u2a61\u166c\u166c\u2a71\u1ae9\u166c\u0466\u2a2e\u166c\u133e\u05b5\u0932\u1766\u166c\u166c\u0304\u1e94\u1ece\u1443\u166c\u166c\u166c\u07ee\u07ee\u07ee\u0506\u0506\u051e\u0526\u0526\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u196b\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u1798\u1657\u046c\u046c\u166c\u0348\u146f\u166c\u0578\u166c\u166c\u166c\u22ac\u1763\u166c\u166c\u166c\u1f3a\u166c\u166c\u166c\u166c\u166c\u166c\u0482\u166c\u1364\u0322\u166c\u0a6b\u1fc6\u166c\u1359\u1f1f\u270e\u1ee3\u200e\u148e\u166c\u1394\u166c\u2a48\u166c\u166c\u166c\u166c\u0588\u137a\u166c\u166c\u166c\u166c\u166c\u166c\u1bff\u1bff\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u13a9\u13e8\u2574\u12b0\u166c\u166c\u0a6b\u1c35\u166c\u076b\u166c\u166c\u25a6\u2a23\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u0747\u2575\u166c\u166c\u2575\u166c\u256e\u07a0\u166c\u166c\u166c\u166c\u166c\u166c\u257b\u166c\u166c\u166c\u166c\u166c\u166c\u0757\u255d\u0c6d\u0d76\u28f0\u28f0\u28f0\u29ea\u28f0\u28f0\u28f0\u2a04\u2a19\u027a\u2693\u2546\u0832\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u074d\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u084c\u166c\u081e\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u165a\u166c\u166c\u166c\u174d\u166c\u166c\u166c\u1bff\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u0261\u166c\u166c\u0465\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u2676\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u26a4\u196a\u166c\u166c\u046e\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u1f13\u12dd\u166c\u166c\u14de\u12ea\u1306\u02f2\u166c\u2a62\u0563\u07f1\u200d\u1d8e\u198c\u1767\u166c\u13d0\u1d80\u1750\u166c\u140b\u176b\u2ab4\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u080e\u04d6\u04da\u04c2\u04c6\u04ca\u04ce\u04d2\u04d6\u04da\u04c2\u04c6\u04ca\u04ce\u04d2\u04d6\u04da\u04c2\u04c6\u04ca\u04ce\u04d2\u04d6\u04da\u04c2\u04c6\u04ca\u04ce\u04d2\u04d6\u04da\u04c2\u04c6\u04ca\u04ce\u04d2\u04d6\u04da\u04c2\u04c6\u04ca\u04ce\u04d2\u04d6\u04da\u04c2\u04c6\u04ca\u04ce\u04d2\u04d6\u04da\u04c2\u04c6\u04ca\u04ce\u04d2\u04d6\u04da\u04c2\u04c6\u04ca\u04ce\u04d2\u04d6\u04da\u04c2\u04c6\u04ca\u04ce\u04d2\u04d6\u04da\u04c2\u04c6\u04ca\u04ce\u04d2\u04d6\u04da\u04c2\u04c6\u04ca\u04ce\u04d2\u04d6\u04da\u04c2\u04c6\u04ca\u04ce\u04d2\u04d6\u04da\u04c2\u04c6\u04ca\u04ce\u04d2\u04d6\u04da\u04c2\u04c6\u04ca\u04ce\u04d2\u04d6\u04da\u04c2\u04c6\u04ca\u04ce\u04d2\u04d6\u04da\u04c2\u04c6\u04ca\u04ce\u04d2\u04d6\u04da\u04c2\u04c6\u04ca\u04ce\u04d2\u04d6\u04da\u04c2\u04c6\u04ca\u04ce\u04d2\u04d6\u04da\u04c2\u04c6\u04ca\u04ce\u04d2\u04d6\u04da\u04c2\u04c6\u04ca\u04ce\u04d2\u04d6\u04da\u04c2\u04c6\u04ca\u04ce\u04d2\u04d6\u04da\u04c2\u04c6\u04ca\u04ce\u04d2\u04d6\u04da\u04c2\u04c6\u04ca\u04ce\u04d2\u04d6\u04da\u04c2\u04c6\u04ca\u04ce\u04d2\u04d6\u04da\u04c2\u04c6\u04ca\u04ce\u04d2\u04d6\u04da\u04c2\u04c6\u04ca\u04ce\u04d2\u04d6\u04da\u04c2\u04c6\u04ca\u04ce\u04d2\u04d6\u04da\u04c2\u04c6\u04ca\u04ce\u04d2\u04d6\u04da\u04c2\u04c6\u04ca\u04ce\u04d2\u04d6\u04da\u04c2\u04c6\u04ca\u04ce\u04d2\u04d6\u04da\u04c2\u04c6\u04ca\u04ce\u04d2\u04d6\u04da\u04c2\u04c6\u04ca\u04ce\u04d2\u04d6\u04da\u04c2\u04c6\u04ca\u04ce\u04d2\u04d6\u04da\u04c2\u04c6\u04ca\u04ce\u04d2\u04d6\u04da\u04c2\u04c6\u04ca\u04ce\u04d2\u04d6\u04da\u04c2\u04c6\u04ca\u04ce\u04d2\u04d6\u04da\u04c2\u04c6\u04ca\u04ce\u04d2\u04d6\u04da\u04c2\u04c6\u04ca\u04ce\u04d2\u04d6\u04da\u04c2\u04c6\u04ca\u04ce\u04d2\u04d6\u04da\u04c2\u04c6\u04ca\u04ce\u04d2\u04d6\u04da\u04c2\u04c6\u04ca\u04ce\u04d2\u04d6\u04da\u04c2\u04c6\u04ca\u04ce\u04d2\u04d6\u04da\u04c2\u04c6\u04ca\u04ce\u04d2\u04d6\u04da\u04c2\u04c6\u04ca\u04ce\u04d2\u04d6\u04da\u04c2\u04c6\u04ca\u04ce\u04d2\u04d6\u04da\u04c2\u04c6\u04ca\u04ce\u04d2\u04d6\u04da\u04c2\u04c6\u04ca\u04ce\u04d2\u04d6\u04da\u04c2\u04c6\u04ca\u04ce\u04d2\u04d6\u04da\u04c2\u04c6\u04ca\u04ce\u04f6\u08f5\u052a\u11c0\u11c0\u11c0\u11c0\u11c0\u11c0\u11c0\u11c0\u11c0\u11c0\u11c0\u11c0\u11c0\u11c0\u11c0\u11c0\u11c0\u11c0\u11c0\u11c0\u11c0\u11c0\u11c0\u11c0\u11c0\u11c0\u11c0\u11c0\u11c0\u11c0\u11c0\u11c0\u11c0\u11c0\u11c0\u11c0\u11c0\u11c0\u11c0\u11c0\u11c0\u11c0\u11c0\u11c0\u11c0\u11c0\u11c0\u11c0\u11c0\u11c0\u11c0\u11c0\u11c0\u11c0\u11c0\u11c0\u11c0\u11c0\u11c0\u11c0\u11c0\u11c0\u11c0\u11c0\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u174e\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u1c36\u1c36\u166c\u166c\u166c\u166c\u166c\u206f\u166c\u166c\u166c\u166c\u196a\u166c\u166c\u12c0\u166c\u166f\u168c\u1912\u166c\u166c\u166c\u166c\u166c\u166c\u0399\u166c\u166c\u1786\u2206\u22bc\u1f8e\u1499\u245b\u1daa\u2387\u20b4\u1569\u2197\u19e6\u0b88\u26b7\u166c\u09e9\u0ab8\u1c46\x00\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u205e\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u1868\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u1898\u1ac1\u166c\u2754\u166c\u0114\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166cc\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u1bff\u166c\u0661\u1627\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u0918\u166c\u166c\u166c\u166c\u166c\u05c6\u1ac1\u16be\u166c\u1af8\u21c3\u166c\u166c\u1a21\u1aad\u166c\u166c\u166c\u166c\u166c\u166c\u28f0\u254e\u0d89\u0f41\u28f0\u0efb\u0e39\u27e0\u0c7c\u28a9\u28f0\u166c\u28f0\u28f0\u28f0\u28f2\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u1140\u103c\u11c0\u11c0\u11c0\u11c0\u11c0\u11c0\u11c0\u11c0\u11c0\u11c0\u11c0\u11c0\u11c0\u11c0\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c",p:"\ud83d\udccd Localisation obligatoire \xb7 150 m minimum entre deux joueurs",L:"\ud83d\udccd Location required \xb7 at least 150 m between players"}
+var u={S:"\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\u03f6\x00\u0404\u03f4 \u03f4\u03f6\u01f6\u01f6\u03f6\u03fc\u01f4\u03ff\u03ff\u0584\u03ff\u03ff\u03ff\u03ff\u03ff\u03ff\u03ff\u03ff\u03ff\u03ff\u05d4\u01f4\x00\u01f4\x00\u0504\u05c4\u03ff\u03ff\u03ff\u03ff\u03ff\u03ff\u03ff\u03ff\u03ff\u03ff\u03ff\u03ff\u03ff\u03ff\u03ff\u03ff\u03ff\u03ff\u03ff\u03ff\u03ff\u03ff\u03ff\u03ff\u03ff\u03ff\u0400\x00\u0400\u0200\u03f7\u0200\u03ff\u03ff\u03ff\u03ff\u03ff\u03ff\u03ff\u03ff\u03ff\u03ff\u03ff\u03ff\u03ff\u03ff\u03ff\u03ff\u03ff\u03ff\u03ff\u03ff\u03ff\u03ff\u03ff\u03ff\u03ff\u03ff\u0200\u0200\u0200\u03f7\x00",t:"\x01\x01)==\xb5\x8d\x15)QeyQQ\xc9===\xf1\xf0\x00\x01)==\xb5\x8d\x15)QeyQQ\xc9===\xf1\xf0\x01\x01)==\xb5\x8d\x15(QeyQQ\xc9===\xf1\xf0\x01\x01(<<\xb4\x8c\x15(PdxPP\xc8<<<\xf1\xf0\x01\x01)==\xb5\x8d\x15(PeyQQ\xc9===\xf1\xf0\x01\x01)==\xb5\x8d\x15(PdyPQ\xc9===\xf1\xf0\x01\x01)==\xb5\x8d\x15(QdxPP\xc9===\xf1\xf0\x01\x01)==\xb5\x8d\x15(QeyQQ\xc9\u011a==\xf1\xf0\xf0\xf0\xf0\xf0\xf0\xdc\xf0\xf0\xf0\xf0\xf0\xf0\xf0\xf0\xf0\xf0\xf0\xf0\xf0\xf0\x01\x01)==\u0156\x8d\x15(QeyQQ\xc9===\xf1\xf0\x01\x01)==\xb5\x8d\x15(QeyQQ\xc9\u012e\u012e\u0142\xf1\xf0\x01\x01)==\xa1\x8d\x15(QeyQQ\xc9===\xf1\xf0\x00\x00(<<\xb4\x8c\x14(PdxPP\xc8<<<\xf0\xf0\x01\x01)==\xb5\x8d\x15)QeyQQ\xc9===\xf0\xf0??)\u0118=\xb5\x8c?)QeyQQ\xc9=\u0118\u0118?\xf0??)==\xb5\x8d?)QeyQQ\xc9\u012c\u012c\u0140?\xf0??)==\xb5\x8d?)QeyQQ\xc8\u0140\u0140\u0140?\xf0\xdc\xdc\xdc\xdc\xdc\u0168\xdc\xdc\xdc\xdc\xdc\xdc\xdc\xdc\xdc\xdc\xdc\xdc\xdc\x00\xa1\xa1\xa1\xa1\xa1\u0154\xa1\xa1\xa1\xa1\xa1\xa1\xa1\xa1\xa1\xa1\xa1\xa1\xa1\x00",e:"\x10\x10\b\x04\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x04\x04\x10\x10\x10\x10\x10\x02\x02\x02\x04\x04\x10\x10\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x10\x10\x02\x01\x01\x01\x01\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x10\x02\x04\x04\x04\x04\x04\x04\x04\x04\x04\x04\x04\x04\x04\x04\x04\x04\x04\x04\x04\x04\x04\x04\x04\x04\x04\x04\x04\x04\x04\x04\x04\x04\x04\x04\x04\x04\x04\x04\x04\x04\x04\x04\x04\x04\x04\x04\x04\x04\x04\x04\x04\x04\x04\x04\x04\x02\x02\x02\x02\x02\x02\x02\x10\x10\x10\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x10\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x02\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x02\x0e\x02\x02\x02\x0e\x0e\x0e\x0e\x02\x02\x10\x02\x10\x04\x10\x04\x04\x02\x10\x10\x10\x02\x10\x10\x10\x10\x02\x02\x02\x02\x02\x02\x02\x10\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x04\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x10\x10\x10\x10\x10\x10\x06\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x06\x02\x02\x06\x02\x02\x02\x02\x06\x02\x06\x02\x02\x02\x02\x06\x06\x06\x02\x06\x02\x02\x02\x02\x02\x02\x02\x02\x04\x10\x10\x10\x10\x02\x02\x04\x04\x02\x02\x04\x04\x11\x02\x02\x02\x02\x02\x02\x02\x02\x02\x10\x02\x02\x02\x02\x0e\x0e\x02\x0e\x10\x04\x04\x04\x04\x02\x10\x10\x10\x02\x10\x10\x10\x11\x02\x02\x02\x02\x02\x02\x02\x10\x10\x02\x0e\x0e\x0e\x02\x02\x02\x02\x02\x10\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x0e\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x10\x10\x10\x10\x04\x10\x10\x10\x10\x10\x10\x02\x10\x10\x04\x04\x10\x10\x02\x10\x02\x02\x10\x10\x10\x10\x10\x10\x10\x10\x04\x04\x04\x04\x04\x04\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x02\x02\x10\x10\x02\x10\x10\x10\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x10\x10\x04\x10\x10\x10\x10\x10\x10\x10\x04\x04\x04\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x02\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x02\x02\x10\x02\x10\x10\x10\x02\x10\x10\x02\x02\x02\x02\x02\x10\x10\x10\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x10\x10\x10\x02\x02\x02\x02\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x10\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x10\x10\x04\x04\x10\x02\x02\x02\x02\x04\x10\x10\x10\x10\x10\x10\x10\x10\x04\x04\x04\x04\x11\x04\x04\x02\x10\x10\x10\x10\x10\x10\x10\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x0e\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\f\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\f\r\r\r\r\r\r\r\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\v\v\v\v\v\v\v\v\v\v\v\v\v\v\v\v\v\v\v\v\v\v\v\v\v\v\v\v\v\v\v\v\x02\x02\x02\x02\x04\x10\x10\x10\x10\x02\x04\x04\x04\x02\x04\x04\x04\x11\b\x02\x02\x02\x02\x02\x02\x02\x02\x10\x02\x02\x02\x02\x02\x02\x02\x02\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x04\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x10\x10\x10\x01\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x10\x10\x10\x02\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x02\x10\x10\x02\x02\x02\x02\x02\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x02\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x02\x02\x10\x10\x10\x10\x10\x10\x10\x02\x10\x10\x02\x10\x10\x10\x10\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x10\x10\x10\x10\x10\x02\x02\x02\x10\x10\x10\x10\x10\x10\x01\x01\x01\x01\x01\x01\x01\x01\x10\x10\x10\x10\x10\x10\x10\x10\x02\x02\x10\x10\x10\x10\x10\x10\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x10\x10\x10\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x06\x06\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x06\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x06\x02\x02\x02\x02\x02\x02\x10\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x0e\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x02\x02\x02\x02\x06\x06\x06\x02\x02\x02\x02\x02\x10\x04\x04\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x10\x02\x04\x10\x10\x10\x10\x10\x10\x10\x02\x02\x02\x02\x02\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\x02\x02\x02\x04\x04\x10\x04\x04\x10\x04\x04\x02\x04\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x06\x02\x02\x02\x02\x06\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x06\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x06\x06\x06\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x06\x06\x02\x02\x02\x10\x04\x04\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x02\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x02\x0e\x0e\x02\x0e\x0e\x0e\x0e\x0e\x02\x02\x10\x02\x10\x10\x04\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x02\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x02\x0e\x0e\x02\x0e\x0e\x0e\x0e\x0e\x02\x02\x10\x02\x04\x04\x10\x10\x10\x10\x02\x02\x04\x04\x02\x02\x04\x04\x11\x02\x02\x02\x02\x02\x02\x02\x10\x10\x10\x02\x02\x02\x02\x0e\x0e\x02\x0e\n\n\n\n\n\n\n\x02\x02\x02\x02\v\v\v\v\v\v\v\v\v\v\v\v\v\v\v\v\v\v\v\v\v\x10\x10\b\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x02\x02\x02\x02\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x02\x02\x02\x02\x02\x02\x02\x02\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x10\x10\x10\x10\x10\x02\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x04\x10\x10\x10\x10\x10\x10\x10\x02\x10\x10\x10\x10\x10\x10\x04\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x02\x04\x10\x10\x10\x10\x10\x10\x10\x04\x10\x10\x04\x10\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x10\x10\x10\x10\x10\x10\x02\x02\x02\x10\x02\x10\x10\x02\x10\x10\x10\x10\x10\x10\x10\b\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x04\x04\x04\x04\x04\x02\x10\x10\x02\x04\x04\x10\x04\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x10\x04\x04\x04\x04\x04\x02\x04\x04\x02\x02\x10\x10\x10\x10\b\x04\b\x04\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x04\x04\x04\x10\x10\x10\x10\x02\x02\x10\x10\x04\x04\x04\x04\x10\x02\x02\x02\x04\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x06\x06\x06\x06\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x06\x06\x06\x06\x06\x06\x06\x06\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x06\x06\x06\x06\x06\x06\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x06\x06\x06\x06\x06\x06\x06\x06\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x02\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x02\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x06\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x06\x02\x02\x06\x06\x06\x06\x06\x06\x06\x06\x06\x02\x06\x06\x06\x06\x02\x02\x02\x02\x02\x02\x02\x02\x02\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x02\x02\x02\x02\x02\x02\x02\x02\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x07\x01\x01\x00\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x02\x02\x02\x02\x04\x04\x10\x10\x04\x02\x02\x02\x02\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x04\x04\x04\x04\x04\x04\x04\x04\x04\x04\x04\x04\x10\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x10\x10\x10\x10\x10\x10\x10\b\x02\x10\x10\x10\x10\x02\x10\x10\x10\x02\x10\x10\x10\x10\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x04\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x04\x10\x04\x10\x10\x10\x10\x10\x10\x10\x02\x02\x02\x02\x10\x02\x02\x02\x02\x02\x02\x10\x02\x02\x04\x10\x10\x02\x02\x02\x02\x02\x02\x10\x04\x10\x10\x04\x04\x04\x10\x04\x10\x10\x10\x10\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x01\x03\x0f\x01\x01\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x10\x10\x02\x02\x02\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x10\x10\x10\x10\x10\x10\x04\x04\x10\x10\x04\x04\x10\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x01\x01\x01\x01\x01\x01\x01\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x06\x02\x02\x02\x01\x06\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x10\x02\x10\x10\x10\x02\x02\x10\x10\x02\x02\x02\x02\x02\x10\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x0e\x0e\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x10\x02\x04\x10\x10\x02\x02\x02\x02\x02\x02\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x10\x02\x02\x02\x02\x10\x04\x04\x10\x10\x10\x02\x10\x02\x04\x04\x04\x04\x04\x04\x04\x10\x04\x04\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x10\x02\x02\x04\x10\x10\x10\x10\x04\x04\x10\x10\x10\x10\x10\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x10\x10\x10\x10\x10\x04\x10\x10\x10\x10\x10\x10\x10\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x04\x04\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x10\x10\x04\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x04\x04\x04\x10\x10\x10\x10\x10\x10\x10\x10\x10\x04\x10\x02\b\b\x02\x02\x02\x02\x02\x10\x10\x10\x10\x02\x04\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x04\x04\x04\x10\x10\x10\x10\x10\x10\x10\x10\x04\x04\x10\x04\x10\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x10\x04\x10\x04\x04\x10\x10\x10\x10\x10\x10\x10\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x10\x10\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x10\x10\x10\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x10\x10\x10\x10\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x04\x04\x04\x10\x10\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x10\x10\x10\x10\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x04\x04\x04\x10\x10\x10\x10\x10\x10\x10\x10\x10\x04\x10\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x10\x10\x10\x10\x10\x10\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x10\x10\x10\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\b\b\x02\x02\x02\x02\x02\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x02\x02\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x10\x10\x04\x04\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x10\x10\x02\x10\x04\x04\x02\x02\x02\x04\x04\x04\x02\x04\x04\x04\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x10\x02\x02\x02\x02\x02\x02\x02\x02\x10\x04\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x10\x04\x04\x10\x10\x10\x10\x04\x04\x10\x10\x04\x04\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x10\x10\x02\x10\x04\x10\x04\x04\x04\x04\x02\x02\x04\x04\x02\x02\x04\x04\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x04\x04\x02\x02\x10\x10\x10\x10\x10\x10\x10\x02\x02\x02\x10\x10\x10\x10\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x10\x04\x04\x10\x10\x10\x10\x10\x10\x02\x10\x02\x02\x10\x02\x10\x10\x10\x04\x02\x04\x04\x10\x10\x10\b\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x10\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x04\x04\x10\x10\x02\x02\x02\x02\x10\x10\x02\x02\x10\x10\x10\x02\x02\x02\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\b\x02\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x10\x10\x10\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x10\x10\x10\x10\x10\x10\x10\x10\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x10\x10\x10\x10\x10\x10\x10\x10\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x10\x02\x02\x02\x10\x02\x02\x02\x02\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x04\x04\x04\x04\x10\x10\x04\x04\x04\x02\x02\x02\x02\x04\x04\x10\x04\x04\x04\x04\x04\x04\x10\x10\x10\x02\x02\x02\x02\x10\x10\x10\x04\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x10\x04\x10\x02\x04\x04\x10\x04\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x10\x02\x02\x10\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x10\x10\x10\x04\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x04\x04\x04\x10\x10\x10\x10\x04\x04\x10\x10\x02\x02\b\x02\x02\x02\x02\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\b\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x10\x02\x02\x02\x02\x02\x02\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x10\x04\x04\x10\x10\x10\x10\x02\x02\x04\x04\x04\x04\x10\x10\x04\x10\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x10\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x10\x04\x10\x02\x02\x10\x10\x10\x10\x04\x10\x10\x10\x10\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x10\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x10\x10\x10\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x04\x04\x04\x10\x10\x10\x10\x10\x10\x10\x10\x04\x04\x10\x10\x10\x04\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x10\x04\x04\x10\x10\x10\x10\x10\x10\x04\x10\x04\x04\x10\x04\x10\x10\x04\x10\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x04\x04\x04\x10\x10\x10\x04\x04\x10\x10\x10\x10\x02\x02\x02\x02\x02\x02\x10\x02\x02\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x10\x04\x04\x04\x10\x10\x10\x10\x10\x10\x10\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x06\x06\x06\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x06\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x06\x06\x06\x06\x06\x06\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x06\x06\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x06\x02\x02\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x05\x05\x05\x05\x05\x05\x05\x05\x05\x05\x05\x05\x05\x05\x05\x05\x05\x05\x05\x05\x05\x05\x05\x05\x05\x05\b\b\b\b\b\b\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x02\x01\x02\x02\x02\x10\x10\x02\x10\x10\x02\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x06\x02\x06\x02\x02\x02\x02\x02\x02\x06\x06\x06\x06\x06\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x10\x10\x10\x10\x02\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x10\x10\x10\x10\x10\x10\x04\b\x10\x10\x10\x10\x02\x02\x02\x02\x02\x02\x02\x02\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x10\x10\x10\x10\x10\x10\x04\x04\x10\x10\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\b\b\b\b\b\b\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x04\x10\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\n\x02\x02\x02\n\n\n\n\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x02\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x02\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x02\x02\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x02\x06\x02\x06\x02\x02\x02\x02\x02\x02\x06\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x06\x06\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x10\x02\x10\x02\x10\x02\x02\x02\x02\x04\x04\x04\x04\x04\x04\x04\x04\x10\x10\x10\x10\x10\x10\x10\x10\x04\x04\x10\x10\x02\x02\x02\x02\x02\x02\x02\x02\x10\x10\x10\x10\x10\x10\x10\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x10\x02\x04\x10\x10\x10\x10\x10\x10\x10\x10\x10\x02\x02\x02\x04\x10\x10\x10\x10\x10\x02\x10\x10\x04\x02\x04\x04\x11\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x04\x04\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x04\x10\x10\x04\x04\x02\x02\x02\x02\x02\x04\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02",U:"\x15\x01)))\xb5\x8d\x01=Qeyey\xc9)))\xf1\xf0\x15\x01)))\xb5\x8d\x00=Qeyey\xc9)))\xf1\xf0\x15\x01)((\xb5\x8d\x01=Qeyey\xc9(((\xf1\xf0\x15\x01(((\xb4\x8c\x01<Pdxdx\xc8(((\xf1\xf0\x15\x01)((\xb5\x8d\x01=Pdydx\xc9(((\xf1\xf0\x15\x01)((\xb5\x8d\x01=Qdxey\xc9(((\xf1\xf0\x15\x01)((\xb5\x8d\x01=Qexey\xc9(((\xf1\xf0\x15\x01)\x8c(\xb5\x8d\x01=Qeyey\xc9\xa0\x8c\x8c\xf1\xf0\x15\x01)((\xb5\x8c\x01=Qeyey\xc9(((\xf1\xf0\x15\x01)(((\x8d\x01=Qeyey\xc9(((\xf1\xf0\x15\x01)((\xb5\x8d\x01=Qeyey\xc9\xc8\xc8\xdc\xf1\xf0\x15\x01)((\xb5\x8d\x01=Qeyey\xc8\xdc\xdc\xdc\xf1\xf0\x14\x00(((\xb4\x8c\x00<Pdxdx\xc8(((\xf0\xf0\x15\x01)))\xb5\x8d\x01=Qeyey\xc9)))\xf0\xf0\x15\x01(\u01b8(\u01e0\x8d\x01<Pdxdx\xc8\u012c\u0140\u0154\xf0\xf0\x15\x01)((\xb5\u011a\x01=Qeyey\u012e\u0190\u0190\u01a4\xf1\xf0\x15\x01)\u01b8(\xb5\x8d\x01=Qeyey\u012e\u0168\u0140\u0154\xf1\xf0\x15\x01)\u01b8(\xb5\x8d\x01=Qeyey\u0142\u017c\u0154\u0154\xf1\xf0\x15\x01)((\xb5\u011a\x01=Qeyey\xc9\u0190\u0190\u01a4\xf1\xf0\x15\x01)((\xb5\u011a\x01=Qeyey\u0142\u01a4\u01a4\u01a4\xf1\xf0\x15\x01)((\xb5\x8d\x01=Qeyey\u012e\u0190\u0190\u01a4\xf1\xf0\x15\x01)((\xb5\x8d\x01=Qeyey\u0142\u01a4\u01a4\u01a4\xf1\xf0\x15\x01)\u01b8(\xb5\x8d\x01=Qeyey\xc9\u01cc\u01b8\u01b8\xf1\xf0\x15\x01)((\xb5\u011a\x01=Qeyey\xc9(((\xf1\xf0\x15\x01)((\u0156\x8d\x01=Qeyey\xc9(((\xf1\xf0",D:" must not be greater than the number of characters in the file, ",b:" pris sur le solde du joueur captur\xe9 (ce qu'il a, s'il en a moins).",B:" taken from the captured player's balance (whatever they have, if less).",r:'"recorder" must not already be associated with another Canvas.',N:"% of the way to being a CircleBorder that is ",g:". Ouvre-le et suis le lien pour choisir un nouveau mot de passe (regarde aussi dans les spams).",o:'1. For people aged 18 and over only. By creating an account you confirm you are at least 18.\n\n2. One account per person. Never share your password.\n\n3. Stake games use real money. You can lose some or all of your stake. Never play money you need to live.\n\n4. Commissions: Katika takes a commission on pots and bets, shown before you stake. Refunds (ties, cancelled games) carry no commission.\n\n5. Deposits and withdrawals use Mobile Money. Withdrawals have a 24-hour cap and may be checked before payment.\n\n6. Fraud: cheating, collusion, multiple accounts or tampering with results leads to suspension and loss of the related winnings.\n\n7. Cancelled games: stakes are refunded.\n\n8. Responsible play: set a deposit limit or self-exclude any time from "Help and responsible play". Self-exclusion cannot be shortened.\n\n9. Personal data: Katika stores your username, balance, games and transactions to run the service and prevent fraud. It is not sold.\n\n10. Katika may update these terms; you will be asked to accept them again.',P:"1. R\xe9serv\xe9 aux personnes de 18 ans et plus. En cr\xe9ant un compte, tu confirmes avoir 18 ans r\xe9volus.\n\n2. Un seul compte par personne. Le compte est personnel : ne communique jamais ton mot de passe.\n\n3. Les jeux avec mise se jouent avec de l'argent r\xe9el. Tu peux perdre tout ou partie de ta mise. Ne joue jamais l'argent dont tu as besoin pour vivre.\n\n4. Commissions : Katika pr\xe9l\xe8ve une commission sur les cagnottes et les paris. Elle est affich\xe9e avant la mise ; les remboursements (\xe9galit\xe9, partie annul\xe9e) se font sans commission.\n\n5. Recharges et retraits : ils se font par Mobile Money (Orange Money, MTN MoMo). Les retraits sont soumis \xe0 un plafond par 24 h et peuvent \xeatre v\xe9rifi\xe9s avant paiement.\n\n6. Fraude : toute triche, collusion entre joueurs, usage de plusieurs comptes ou tentative de manipuler le r\xe9sultat entra\xeene la suspension du compte et la perte des gains concern\xe9s.\n\n7. Parties annul\xe9es : si une partie est annul\xe9e (par un administrateur ou faute d'adversaire), les mises sont rembours\xe9es.\n\n8. Jeu responsable : tu peux, \xe0 tout moment, fixer une limite de recharge ou t'auto-exclure depuis \xab Aide et jeu responsable \xbb. L'auto-exclusion ne peut pas \xeatre raccourcie.\n\n9. Donn\xe9es personnelles : Katika enregistre ton pseudo, ton solde, tes parties et tes transactions pour faire fonctionner le service et pr\xe9venir la fraude. Elles ne sont pas vendues.\n\n10. Katika peut modifier ces conditions ; tu seras invit\xe9 \xe0 les accepter \xe0 nouveau.",d:"6 ! Aucun d\xe9placement possible, mais tu rejoues.",f:"A collection path must point to a valid collection.",z:"ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/",k:"Appuie encore sur retour pour aller \xe0 l'accueil",a:"Attends que d'autres joueurs rejoignent pour inviter un bin\xf4me.",i:"Aucune partie en cours \xe0 regarder pour le moment.",Z:"Aucune partie ouverte pour le moment. Cr\xe9e la tienne !",C:"BHLBQxfH_s9yJtL2SVytqhgVq_iXU18irWpX0d_hXyMrn30zHLaAQbPF1YdtoKWrCOSTelKTXBy2HqG9C18pyYc",A:"Best total (21 max) wins. Tie: stakes refunded.",h:"But : amener tous tes pions jusqu'\xe0 l'arriv\xe9e (56 cases \xe0 parcourir) avant les autres.\n\nD\xe9part : il faut un 6 pour sortir un pion de la base (sauf avec les options \xab Position 54 \xbb ou \xab D\xe9part sur la case de d\xe9part \xbb, o\xf9 les pions sont d\xe9j\xe0 sur le plateau).\n\nD\xe9placement : on avance son pion du nombre indiqu\xe9 par le d\xe9. \xc0 l'arriv\xe9e, il faut le nombre exact : on ne peut pas d\xe9passer.\n\nRejouer : un 6, une capture ou un pion qui arrive \xe0 la maison donnent un nouveau lancer.\n\nCapture : si ton pion s'arr\xeate sur un pion adverse, celui-ci retourne \xe0 sa base et doit refaire un 6 pour ressortir. Les portes et les \xe9toiles prot\xe8gent les pions (selon les options de la partie). Avec les captures payantes, chaque capture rapporte de l'argent.\n\n\xc9quipes : en mode 2 contre 2, les bin\xf4mes ne se capturent pas et l'\xe9quipe gagne quand les deux joueurs ont fini.\n\nMises : la cagnotte (mises de tous les joueurs) est vers\xe9e au gagnant, moins la commission de Katika.",F:"But : faire le plus grand total avec tes d\xe9s.\n\nD\xe9roulement : chacun son tour, chaque joueur lance ses deux d\xe9s une seule fois. Le total des deux d\xe9s est son score. Quand tout le monde a lanc\xe9, la partie est finie.\n\nGagnant : le joueur au score le plus \xe9lev\xe9 gagne. En cas d'\xe9galit\xe9, la cagnotte est partag\xe9e entre les gagnants.\n\nTemps : si un joueur ne lance pas dans les 30 secondes, le jeu lance pour lui.\n\nMises : la cagnotte (mises de tous les joueurs) est vers\xe9e au gagnant, moins la commission de Katika. Un jackpot peut aussi tomber.\n\nParis entre joueurs (parties avec mise) : Duel (le plus gros score gagne) et D\xe9fi 7 (plus ou moins de 7). Il faut parier avant d'avoir lanc\xe9 ses d\xe9s ; \xe0 \xe9galit\xe9 ou 7 pile, les mises sont rendues.",ex:"Called rasterize() with a different number of canvases and pictures.",R:"Cannot call getNextFrame() after dispose()",aL:"Cannot decode image. The image decoder has been disposed.\nImage source: ",h8:"Cannot extract a file path from a URI with a fragment component",aM:"Cannot extract a file path from a URI with a query component",Q:"Cannot extract a non-Windows file path from a file URI with an authority",c:"Cannot fire new event. Controller is already firing an event",dn:"Capture obligatoire ! Coup jou\xe9 automatiquement.",eq:"Capture obligatoire : choisis le pion qui capture.",eG:"Capture obligatoire : prends un pion adverse !",c6:"Ce pion ne peut pas finir avec ce lancer.",n:"Cette partie n'est pas (ou plus) en cours.",bM:"Changer ces deux r\xe9glages remet la partie \xe0 z\xe9ro.",y:"Chaque pion captur\xe9 rapporte de l'argent au joueur qui capture, pris sur le solde du joueur captur\xe9.",e9:"Compteurs mis \xe0 jour \xe0 la fin de chaque partie termin\xe9e avec un gagnant (en ligne et en pr\xe9sentiel). Total jou\xe9 = mises engag\xe9es ; total gagn\xe9 = gains re\xe7us ; total perdu = mises des parties perdues.",bb:"Connecte-toi pour jouer en ligne, d\xe9poser et gagner.",cf:"Connecte-toi \xe0 ton compte Katika avant de recharger.",dl:"Connecte-toi \xe0 ton compte avant de lancer une partie en pr\xe9sentiel.",f_:"Error handler must accept one Object or one Object and a StackTrace as arguments, and return a value of the returned future's type",fG:"Free game: no tokens at stake, no jackpot.",be:"Highest score wins (MILLION beats all). Tie: stakes refunded.",l:"Host platform returned null value for non-null return value.",Y:"Impossible de charger les parties en cours.",eP:"Impossible de charger les parties. V\xe9rifie les r\xe8gles Firestore.",d2:"Impossible de cr\xe9er la partie. V\xe9rifie que Firestore est activ\xe9 et que les r\xe8gles autorisent les joueurs connect\xe9s.",m:"Invisible dans la liste : on la rejoint avec un code",T:"Joueurs (chacun se connecte \xe0 son compte)",O:"Joueurs (touche le rond pour changer d'avatar)",d8:"Jouez avec mod\xe9ration \xb7 R\xe9serv\xe9 aux personnes majeures (18 ans et +)",cE:"La connexion par e-mail n'est pas activ\xe9e dans Firebase.",gR:"Le cr\xe9ateur lance la partie quand il veut, d\xe8s 2 joueurs (m\xeame si la salle n'est pas pleine) et quand tout le monde a pay\xe9 sa mise.",dp:"Le jeu joue \xe0 ta place quand il n'y a qu'un seul choix",aZ:"Le meilleur total (21 max) gagne. \xc9galit\xe9 : mises rendues.",ci:"Le plus gros score gagne (MILLION bat tout). \xc9galit\xe9 : mises rendues.",bd:"Le serveur en ligne n'est pas configur\xe9 : Firebase n'a pas d\xe9marr\xe9. Le mode pr\xe9sentiel reste disponible.",q:"Le serveur en ligne n'est pas configur\xe9 dans l'appli.",g5:"Les bin\xf4mes ne se capturent pas. L'\xe9quipe gagne quand les deux ont fini.",eX:"Les bin\xf4mes se choisissent par invitation et ne se capturent pas",cK:"Les pions d\xe9marrent d\xe9j\xe0 sur le plateau, pr\xe8s du centre : pas besoin de 6 au d\xe9but. Un pion captur\xe9 a besoin d'un 6 pour ressortir. Se joue avec 2 pions chacun.",bf:"Les pions d\xe9marrent d\xe9j\xe0 sur leur case de d\xe9part : pas besoin de 6 au d\xe9but. Un pion captur\xe9 retourne \xe0 la base et a besoin d'un 6 pour ressortir.",e4:"Mode : en pr\xe9sentiel (tous les joueurs sur le m\xeame plateau)",I:"Mot de passe trop faible (6 caract\xe8res minimum).",ax:"Partie gratuite : aucun jeton en jeu, pas de jackpot.",eg:"Pilotage automatique : coup jou\xe9 pour toi.",X:"Position 54 : la partie se joue avec 2 pions chacun.",fI:"Rejoins le groupe des joueurs : parties, tournois, astuces et actualit\xe9s. Tu pourras toujours le rejoindre depuis le bouton vert de l'accueil.",V:"Stream has been disposed.\nAn ImageStream is considered disposed once at least one listener has been added and subsequently all listeners have been removed and no handles are outstanding from the keepAlive method.\nTo resolve this error, maintain at least one listener on the stream, or create an ImageStreamCompleterHandle from the keepAlive method, or create a new stream for the image.",ac:"SystemChrome.setApplicationSwitcherDescription",G:"Tap the code to copy it and invite friends",x:"Temps \xe9coul\xe9 : le d\xe9lai pour rejouer est termin\xe9.",af:"Termine la partie pour r\xe9cup\xe9rer les gains.",s:"TextInputClient.updateEditingStateWithDeltas",w:"TextInputClient.updateEditingStateWithTag",c2:"The downloaded CanvasKit version does not support WebParagraph",a2:"There was a problem trying to load FontManifest.json",eK:"Time including microseconds is outside valid range",ge:"Time is up: the replay window has closed.",K:"Touche le code pour le copier et invite tes amis",M:"Touche ton d\xe9 ou glisse-le pour le lancer !",ea:"Toutes les mises seront rembours\xe9es \xe0 100 %.",J:"Trop d'essais. R\xe9essaie dans quelques minutes.",ft:"Tu dois prendre un pion adverse quand c'est possible",v:"Un pion sur une case de d\xe9part ne peut pas \xeatre captur\xe9",W:"Un pion sur une \xe9toile ne peut pas \xeatre captur\xe9",aq:"Un seul coup possible : jou\xe9 automatiquement.",E:"Unable to establish connection on channel.",u:'Unable to establish connection on channel: "',do:"\\.[0-9a-f]{8}((?:\\.(?:js|wasm|mjs)\\.map)|(?:\\.[^./]+))?$",d_:"by a synchronously-called image error listener",gl:"https://chat.whatsapp.com/D9HxYjOSsrVAxxJNYjOnnE?s=cl&p=a&mlu=4&ilr=4&iam=2",H:"https://katika-api.ychachouang.workers.dev/",_:"max must be in range 0 < max \u2264 2^32, was ",b6:"while dispatching notifications for WidgetsBindingObserver.didPushRouteInformation",j:"\u1132\u166c\u166c\u206f\u11c0\u13fb\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u1bff\u1bff\u1bff\u1c36\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u1aee\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u1fb5\u059c\u266d\u166c\u264e\u166c\u0a70\u175c\u166c\u166c\u1310\u033a\u1ebd\u0a6b\u2302\u166c\u166c\u22fc\u166c\u1ef8\u269d\u132f\u03b8\u166c\u1be8\u166c\u0a71\u0915\u1f5a\u1f6f\u04a2\u0202\u086b\u021a\u029a\u1427\u1518\u0147\u1eab\u13b9\u089f\u08b6\u2a91\u02d8\u086b\u0882\u08d5\u0789\u176a\u251c\u1d6c\u166c\u0365\u037c\u02ba\u22af\u07bf\u07c3\u0238\u024b\u1d39\u1d4e\u054a\u22af\u07bf\u166c\u1456\u2a9f\u166c\u07ce\u2a61\u166c\u166c\u2a71\u1ae9\u166c\u0466\u2a2e\u166c\u133e\u05b5\u0932\u1766\u166c\u166c\u0304\u1e94\u1ece\u1443\u166c\u166c\u166c\u07ee\u07ee\u07ee\u0506\u0506\u051e\u0526\u0526\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u196b\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u1798\u1657\u046c\u046c\u166c\u0348\u146f\u166c\u0578\u166c\u166c\u166c\u22ac\u1763\u166c\u166c\u166c\u1f3a\u166c\u166c\u166c\u166c\u166c\u166c\u0482\u166c\u1364\u0322\u166c\u0a6b\u1fc6\u166c\u1359\u1f1f\u270e\u1ee3\u200e\u148e\u166c\u1394\u166c\u2a48\u166c\u166c\u166c\u166c\u0588\u137a\u166c\u166c\u166c\u166c\u166c\u166c\u1bff\u1bff\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u13a9\u13e8\u2574\u12b0\u166c\u166c\u0a6b\u1c35\u166c\u076b\u166c\u166c\u25a6\u2a23\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u0747\u2575\u166c\u166c\u2575\u166c\u256e\u07a0\u166c\u166c\u166c\u166c\u166c\u166c\u257b\u166c\u166c\u166c\u166c\u166c\u166c\u0757\u255d\u0c6d\u0d76\u28f0\u28f0\u28f0\u29ea\u28f0\u28f0\u28f0\u2a04\u2a19\u027a\u2693\u2546\u0832\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u074d\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u084c\u166c\u081e\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u165a\u166c\u166c\u166c\u174d\u166c\u166c\u166c\u1bff\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u0261\u166c\u166c\u0465\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u2676\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u26a4\u196a\u166c\u166c\u046e\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u1f13\u12dd\u166c\u166c\u14de\u12ea\u1306\u02f2\u166c\u2a62\u0563\u07f1\u200d\u1d8e\u198c\u1767\u166c\u13d0\u1d80\u1750\u166c\u140b\u176b\u2ab4\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u080e\u04d6\u04da\u04c2\u04c6\u04ca\u04ce\u04d2\u04d6\u04da\u04c2\u04c6\u04ca\u04ce\u04d2\u04d6\u04da\u04c2\u04c6\u04ca\u04ce\u04d2\u04d6\u04da\u04c2\u04c6\u04ca\u04ce\u04d2\u04d6\u04da\u04c2\u04c6\u04ca\u04ce\u04d2\u04d6\u04da\u04c2\u04c6\u04ca\u04ce\u04d2\u04d6\u04da\u04c2\u04c6\u04ca\u04ce\u04d2\u04d6\u04da\u04c2\u04c6\u04ca\u04ce\u04d2\u04d6\u04da\u04c2\u04c6\u04ca\u04ce\u04d2\u04d6\u04da\u04c2\u04c6\u04ca\u04ce\u04d2\u04d6\u04da\u04c2\u04c6\u04ca\u04ce\u04d2\u04d6\u04da\u04c2\u04c6\u04ca\u04ce\u04d2\u04d6\u04da\u04c2\u04c6\u04ca\u04ce\u04d2\u04d6\u04da\u04c2\u04c6\u04ca\u04ce\u04d2\u04d6\u04da\u04c2\u04c6\u04ca\u04ce\u04d2\u04d6\u04da\u04c2\u04c6\u04ca\u04ce\u04d2\u04d6\u04da\u04c2\u04c6\u04ca\u04ce\u04d2\u04d6\u04da\u04c2\u04c6\u04ca\u04ce\u04d2\u04d6\u04da\u04c2\u04c6\u04ca\u04ce\u04d2\u04d6\u04da\u04c2\u04c6\u04ca\u04ce\u04d2\u04d6\u04da\u04c2\u04c6\u04ca\u04ce\u04d2\u04d6\u04da\u04c2\u04c6\u04ca\u04ce\u04d2\u04d6\u04da\u04c2\u04c6\u04ca\u04ce\u04d2\u04d6\u04da\u04c2\u04c6\u04ca\u04ce\u04d2\u04d6\u04da\u04c2\u04c6\u04ca\u04ce\u04d2\u04d6\u04da\u04c2\u04c6\u04ca\u04ce\u04d2\u04d6\u04da\u04c2\u04c6\u04ca\u04ce\u04d2\u04d6\u04da\u04c2\u04c6\u04ca\u04ce\u04d2\u04d6\u04da\u04c2\u04c6\u04ca\u04ce\u04d2\u04d6\u04da\u04c2\u04c6\u04ca\u04ce\u04d2\u04d6\u04da\u04c2\u04c6\u04ca\u04ce\u04d2\u04d6\u04da\u04c2\u04c6\u04ca\u04ce\u04d2\u04d6\u04da\u04c2\u04c6\u04ca\u04ce\u04d2\u04d6\u04da\u04c2\u04c6\u04ca\u04ce\u04d2\u04d6\u04da\u04c2\u04c6\u04ca\u04ce\u04d2\u04d6\u04da\u04c2\u04c6\u04ca\u04ce\u04d2\u04d6\u04da\u04c2\u04c6\u04ca\u04ce\u04d2\u04d6\u04da\u04c2\u04c6\u04ca\u04ce\u04d2\u04d6\u04da\u04c2\u04c6\u04ca\u04ce\u04d2\u04d6\u04da\u04c2\u04c6\u04ca\u04ce\u04d2\u04d6\u04da\u04c2\u04c6\u04ca\u04ce\u04d2\u04d6\u04da\u04c2\u04c6\u04ca\u04ce\u04d2\u04d6\u04da\u04c2\u04c6\u04ca\u04ce\u04d2\u04d6\u04da\u04c2\u04c6\u04ca\u04ce\u04d2\u04d6\u04da\u04c2\u04c6\u04ca\u04ce\u04d2\u04d6\u04da\u04c2\u04c6\u04ca\u04ce\u04d2\u04d6\u04da\u04c2\u04c6\u04ca\u04ce\u04d2\u04d6\u04da\u04c2\u04c6\u04ca\u04ce\u04d2\u04d6\u04da\u04c2\u04c6\u04ca\u04ce\u04d2\u04d6\u04da\u04c2\u04c6\u04ca\u04ce\u04f6\u08f5\u052a\u11c0\u11c0\u11c0\u11c0\u11c0\u11c0\u11c0\u11c0\u11c0\u11c0\u11c0\u11c0\u11c0\u11c0\u11c0\u11c0\u11c0\u11c0\u11c0\u11c0\u11c0\u11c0\u11c0\u11c0\u11c0\u11c0\u11c0\u11c0\u11c0\u11c0\u11c0\u11c0\u11c0\u11c0\u11c0\u11c0\u11c0\u11c0\u11c0\u11c0\u11c0\u11c0\u11c0\u11c0\u11c0\u11c0\u11c0\u11c0\u11c0\u11c0\u11c0\u11c0\u11c0\u11c0\u11c0\u11c0\u11c0\u11c0\u11c0\u11c0\u11c0\u11c0\u11c0\u11c0\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u174e\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u1c36\u1c36\u166c\u166c\u166c\u166c\u166c\u206f\u166c\u166c\u166c\u166c\u196a\u166c\u166c\u12c0\u166c\u166f\u168c\u1912\u166c\u166c\u166c\u166c\u166c\u166c\u0399\u166c\u166c\u1786\u2206\u22bc\u1f8e\u1499\u245b\u1daa\u2387\u20b4\u1569\u2197\u19e6\u0b88\u26b7\u166c\u09e9\u0ab8\u1c46\x00\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u205e\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u1868\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u1898\u1ac1\u166c\u2754\u166c\u0114\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166cc\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u1bff\u166c\u0661\u1627\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u0918\u166c\u166c\u166c\u166c\u166c\u05c6\u1ac1\u16be\u166c\u1af8\u21c3\u166c\u166c\u1a21\u1aad\u166c\u166c\u166c\u166c\u166c\u166c\u28f0\u254e\u0d89\u0f41\u28f0\u0efb\u0e39\u27e0\u0c7c\u28a9\u28f0\u166c\u28f0\u28f0\u28f0\u28f2\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u1140\u103c\u11c0\u11c0\u11c0\u11c0\u11c0\u11c0\u11c0\u11c0\u11c0\u11c0\u11c0\u11c0\u11c0\u11c0\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c",p:"\ud83d\udccd Localisation obligatoire \xb7 150 m minimum entre deux joueurs",L:"\ud83d\udccd Location required \xb7 at least 150 m between players"}
 var t=(function rtii(){var s=A.aP
 return{S6:s("@<tb>"),vH:s("bEG"),od:s("cc<c4>"),gj:s("nU<R>"),pC:s("j1"),ZU:s("ua<x>"),so:s("c3<r>"),E:s("c3<U>"),Bs:s("c3<x?>"),ph:s("F6<nl>"),Gu:s("qp"),qH:s("bEO"),s1:s("Fa"),vp:s("ue"),S7:s("Fd"),jo:s("aew"),Ak:s("qr"),iF:s("jA"),Q4:s("af2"),eA:s("bsi"),PI:s("UD"),u2:s("af3"),bg:s("Fi"),zG:s("bsj"),yR:s("yX"),J:s("e8<R?>"),m_:s("bu"),k:s("av"),r:s("hO"),QS:s("z0"),hR:s("B"),Xj:s("bFc"),pI:s("mv"),V4:s("ev"),wY:s("dr<qi>"),nz:s("dr<qt>"),Nv:s("dr<jG>"),Dn:s("dr<j7>"),_M:s("dr<n3>"),Dd:s("dr<nb>"),fN:s("dr<rB>"),Tx:s("dr<lT>"),fn:s("dr<hD>"),j5:s("dr<t3>"),_n:s("dr<t6>"),ZQ:s("dr<l3>"),f6:s("dr<mb>"),Vr:s("bSZ"),F6:s("bT_"),Ly:s("bT1"),Am:s("bFg"),WG:s("FA<u>"),d0:s("eT<dd<@>?,dd<@>>"),ES:s("bFk"),aL:s("bFq"),Ub:s("o6"),m6:s("FJ"),Bn:s("ze"),S3:s("FL"),BQ:s("zf"),nR:s("FO"),Hz:s("iz"),hP:s("kw"),f7:s("agK"),c0:s("Vr<cE>"),G:s("x"),IC:s("eI"),b8:s("d7<@>"),Ss:s("f9"),id:s("mz"),qO:s("uD<Lu,@>"),li:s("cQ<u,u>"),eL:s("cQ<u,y>"),VJ:s("cQ<u,a8<u>>"),fF:s("ey<u>"),Bx:s("zs<E>"),Nq:s("o7"),vn:s("G4"),pU:s("aH<G,f0<G>>"),FV:s("o8"),I3:s("mC"),ho:s("Ga"),H5:s("bG0"),HY:s("fa"),ip:s("oa"),I7:s("zw"),Rf:s("bG3"),CG:s("b6"),hU:s("qC<b6>"),Hw:s("jF"),l4:s("bGd"),Uf:s("qD"),XP:s("bGg"),yS:s("qE"),Je:s("bTp"),EX:s("fl"),jh:s("Gs"),I:s("j6"),ra:s("bTq"),xm:s("j7"),Jj:s("bGs"),iK:s("aie<ap<u,@>>"),yn:s("iC"),Kk:s("eJ"),__:s("hS<ap<u,@>>"),YH:s("Wc<bo>"),uL:s("jI"),zk:s("zG"),U2:s("GG"),b7:s("hb<u>"),kZ:s("hb<y>"),Tu:s("b7"),ML:s("fz"),A0:s("ew"),Zi:s("mI"),Rz:s("mJ"),Ee:s("bv<@>"),lU:s("ce"),dq:s("bH2"),GB:s("bTz"),lz:s("oi"),ay:s("oj"),m1:s("kA"),sB:s("ch"),Lt:s("dN"),VI:s("c6"),IX:s("fB<mi,dz>"),bh:s("uY"),u3:s("uZ"),_w:s("om"),HH:s("on"),OO:s("jL"),cP:s("oo"),b5:s("v_"),P9:s("op"),eI:s("v0"),Ie:s("zQ"),PA:s("H1"),vT:s("lv"),T5:s("qM"),Q9:s("bHk"),Sm:s("ao"),h3:s("qN"),M9:s("WJ"),US:s("hy"),N8:s("Hb"),s4:s("alS"),OE:s("alT"),Kw:s("am4"),mx:s("ex"),l5:s("ov"),zq:s("zY"),ia:s("vb"),VW:s("vc"),FK:s("j8"),jT:s("Hm"),c4:s("mN"),gx:s("iF<@>"),bE:s("hc"),Uy:s("bnM"),_8:s("ox"),VQ:s("iC/"),km:s("l4/"),Oi:s("u?/"),dd:s("au<iC>"),E2:s("au<eJ>"),pZ:s("au<Xz>"),H_:s("au<oQ>"),DQ:s("au<hB>"),Z9:s("au<rS>"),IE:s("au<u>"),yH:s("au<l4>"),Ev:s("au<N>()"),L0:s("au<@>"),T8:s("au<ev?>"),FT:s("au<bo?>"),iG:s("au<R?>"),qo:s("au<u?>"),R:s("au<~>"),Fp:s("cS<BS,c4>"),pl:s("cS<y,x>"),Lu:s("fD<na>"),MA:s("fD<ip>"),El:s("fD<dh>"),Ih:s("fD<y>"),SP:s("A0"),cD:s("eC"),uA:s("dP<lt>"),C1:s("dP<lx>"),Uv:s("dP<jT>"),jn:s("dP<lD>"),YC:s("dP<lM>"),hg:s("dP<nm>"),_T:s("dP<nn>"),UN:s("dP<jl>"),ok:s("dP<kg>"),lh:s("dP<ts>"),Bk:s("dP<nI>"),Pw:s("dP<tK>"),xR:s("vj<eC>"),yi:s("j9<Z<Y>>"),TX:s("vk<lH>"),bT:s("vk<Z<Y>>"),rQ:s("bU1"),WF:s("Ht"),GF:s("hd<kH(hX)>"),PD:s("hd<~()>"),op:s("hd<~(qR)>"),bq:s("jR"),G7:s("Xa<Rk<@>>"),rA:s("vn"),mS:s("vo"),AL:s("jS<aW>"),Fn:s("oB"),zE:s("aW"),Lk:s("btU"),g5:s("HA"),tk:s("aC"),Oh:s("vr"),lu:s("Xz"),CI:s("mR"),dW:s("lz"),SG:s("mT"),Bc:s("qW<ce?>"),ri:s("HH"),IS:s("ja"),og:s("dx"),WB:s("bI"),U1:s("kG"),lA:s("bI8"),JZ:s("apq"),XO:s("apr"),pT:s("aps"),gD:s("qZ"),vz:s("c4"),nQ:s("r_"),Ya:s("Ai"),ud:s("dQ"),K9:s("HO<@>"),JY:s("L<@>"),VG:s("L<R?>"),lY:s("Q<nU<R>>"),QP:s("Q<lm>"),NS:s("Q<dL>"),Ai:s("Q<bsk>"),TW:s("Q<uk>"),V:s("Q<bJ>"),gb:s("Q<mv>"),AT:s("Q<zf>"),s8:s("Q<bsJ>"),O:s("Q<x>"),EV:s("Q<mz>"),KV:s("Q<hQ>"),ZD:s("Q<f1>"),Ug:s("Q<uI>"),F:s("Q<fl>"),vl:s("Q<j6>"),Up:s("Q<Wd>"),FG:s("Q<hb<u>>"),Ma:s("Q<hb<y>>"),lX:s("Q<ce>"),LE:s("Q<Wr>"),kl:s("Q<kA>"),XS:s("Q<zQ>"),bp:s("Q<ex>"),z8:s("Q<vc>"),uf:s("Q<mN>"),no:s("Q<qS>"),wQ:s("Q<au<vb>>"),NA:s("Q<au<bo>>"),Rh:s("Q<au<+(u,j8?)>>"),RD:s("Q<au<@>>"),mo:s("Q<au<~>>"),iQ:s("Q<eB>"),DU:s("Q<jR>"),om:s("Q<jS<aW>>"),h2:s("Q<hT>"),kr:s("Q<iG>"),G1:s("Q<aC>"),XZ:s("Q<lz>"),Fa:s("Q<ja>"),fJ:s("Q<dx>"),VB:s("Q<mV>"),VO:s("Q<h0>"),O_:s("Q<oG>"),d:s("Q<bo>"),DS:s("Q<he>"),K0:s("Q<hX>"),CE:s("Q<kH>"),k5:s("Q<hA>"),k_:s("Q<XZ>"),xj:s("Q<aq7>"),s9:s("Q<I2>"),Mr:s("Q<kJ>"),MH:s("Q<vD>"),_f:s("Q<vE>"),ER:s("Q<r7>"),yt:s("Q<a8<a8<u>>>"),wX:s("Q<a8<a8<y>>>"),X_:s("Q<a8<fs>>"),rj:s("Q<a8<u>>"),Gc:s("Q<a8<h7>>"),fQ:s("Q<a8<fg>>"),zg:s("Q<a8<U>>"),Zb:s("Q<a8<y>>"),Eo:s("Q<az>"),H8:s("Q<Y7>"),ss:s("Q<vJ>"),a9:s("Q<iH<@>>"),IO:s("Q<iH<R?>>"),en:s("Q<t>"),If:s("Q<bp<u,k5<ap<u,@>>>>"),SN:s("Q<ap<u,u>>"),Y:s("Q<ap<u,@>>"),xN:s("Q<ap<u,y>>"),Xr:s("Q<cF>"),YE:s("Q<lG>"),tc:s("Q<w6>"),Qg:s("Q<j>"),jl:s("Q<R>"),Rd:s("Q<auL>"),yv:s("Q<r>"),sF:s("Q<IR>"),wi:s("Q<ri>"),g8:s("Q<bv2<@>>"),Ql:s("Q<n6<~>>"),zY:s("Q<AY>"),OM:s("Q<rn<dW>>"),h:s("Q<ej>"),el:s("Q<wf>"),RR:s("Q<n8>"),NN:s("Q<B3>"),tg:s("Q<Jg>"),tZ:s("Q<B5>"),zU:s("Q<ik>"),Jl:s("Q<lQ>"),D9:s("Q<kQ>"),Do:s("Q<p5<u>>"),RW:s("Q<Bi>"),mj:s("Q<k5<ap<u,@>>>"),L7:s("Q<+representation,targetSize(L5,E)>"),Co:s("Q<+(u,Mi)>"),lN:s("Q<+data,event,timeStamp(a8<kQ>,bo,b7)>"),Nt:s("Q<+domSize,representation,targetSize(E,L5,E)>"),AO:s("Q<H>"),V5:s("Q<wB>"),Ik:s("Q<M>"),xT:s("Q<rE>"),TT:s("Q<G>"),Ry:s("Q<e2>"),QT:s("Q<fc>"),Fm:s("Q<pi>"),y8:s("Q<Kr>"),ZP:s("Q<lW>"),D1:s("Q<hk>"),u1:s("Q<wU>"),JO:s("Q<jj>"),q1:s("Q<fs>"),QF:s("Q<dz>"),o4:s("Q<a01>"),Qo:s("Q<wX>"),Ay:s("Q<bw1>"),kO:s("Q<lY>"),N_:s("Q<dp>"),oB:s("Q<ka>"),X4:s("Q<E>"),e9:s("Q<jk<iN<ap<u,@>>>>"),Gl:s("Q<jk<~>>"),s:s("Q<u>"),oU:s("Q<bL5>"),PL:s("Q<C7>"),bt:s("Q<C8>"),Lx:s("Q<h6>"),bG:s("Q<LM>"),sD:s("Q<t_>"),VS:s("Q<pz>"),zs:s("Q<a17>"),AS:s("Q<xf>"),Ne:s("Q<fJ>"),FO:s("Q<nr<nr<@>>>"),JN:s("Q<cd>"),BB:s("Q<i_<E>>"),x0:s("Q<i_<U>>"),LX:s("Q<Mi>"),Dg:s("Q<Ml>"),Uu:s("Q<l5>"),p:s("Q<i>"),d_:s("Q<dG>"),Na:s("Q<td>"),SW:s("Q<a2w>"),TV:s("Q<pL>"),ff:s("Q<h7>"),Kj:s("Q<D3>"),_Y:s("Q<is>"),mz:s("Q<a60>"),Kx:s("Q<mf>"),zj:s("Q<pV>"),IR:s("Q<bpv>"),M4:s("Q<jr>"),m3:s("Q<DM>"),jE:s("Q<nF>"),qi:s("Q<fN>"),z_:s("Q<fO>"),uD:s("Q<h8>"),Pc:s("Q<ye>"),M6:s("Q<Qv>"),s6:s("Q<q_>"),lb:s("Q<nH>"),g9:s("Q<fg>"),YK:s("Q<mi>"),kc:s("Q<bNf>"),sK:s("Q<le>"),cR:s("Q<Ee>"),NM:s("Q<q4>"),HZ:s("Q<N>"),n:s("Q<U>"),ee:s("Q<@>"),t:s("Q<y>"),Yl:s("Q<b6?>"),bA:s("Q<az?>"),L:s("Q<t?>"),ef:s("Q<R?>"),sg:s("Q<kP?>"),Rs:s("Q<M?>"),ny:s("Q<dd<@>?>"),Fi:s("Q<dp?>"),_m:s("Q<u?>"),Z:s("Q<y?>"),a0:s("Q<eR>"),Zt:s("Q<au<N>()>"),iL:s("Q<c0<kJ>()>"),sA:s("Q<N(hX)>"),qj:s("Q<~()>"),SM:s("Q<~(R,da?)>"),ot:s("Q<~(cc<c4>)>"),x8:s("Q<~(kv)>"),LY:s("Q<~(lm)>"),j1:s("Q<~(b7)>"),s2:s("Q<~(vi)>"),Jh:s("Q<~(a8<qS>)>"),hi:s("Q<~(rQ)>"),bz:s("Ak"),m:s("bo"),lT:s("he"),dC:s("jV<@>"),e:s("cE"),Hf:s("hV<Lu,@>"),Cl:s("lA"),D2:s("hW"),XU:s("kH(hX)"),SQ:s("Am"),Di:s("vB"),jk:s("bz<bGQ>"),NE:s("bz<qK>"),am:s("bz<Hn>"),ku:s("bz<IU>"),hA:s("bz<Bn>"),cF:s("bz<pa>"),A:s("bz<Z<Y>>"),OH:s("bz<Dp>"),sY:s("bz<kl<~>>"),af:s("bz<Pu>"),E9:s("XZ"),Cc:s("aq7"),rf:s("I3"),hz:s("kJ"),JB:s("kK<@>"),y4:s("vF<pT>"),oM:s("vF<y6>"),U9:s("mZ"),wO:s("Ar<@>"),NH:s("vH"),Rk:s("a8<qr>"),BJ:s("a8<mC>"),cb:s("a8<zQ>"),Oz:s("a8<hT>"),Lc:s("a8<bo>"),qC:s("a8<kJ>"),xW:s("a8<ap<u,u>>"),UX:s("a8<R>"),gm:s("a8<n8>"),jQ:s("a8<Bi>"),zN:s("a8<k5<ap<u,@>>>"),I1:s("a8<fc>"),lD:s("a8<fs>"),xc:s("a8<dz>"),yp:s("a8<u>"),JF:s("a8<td>"),GG:s("a8<h7>"),MI:s("a8<jr>"),Z4:s("a8<h8>"),rg:s("a8<fg>"),CP:s("a8<U>"),j:s("a8<@>"),Cm:s("a8<y>"),W:s("a8<R?>"),I_:s("az"),da:s("vJ"),D5:s("vL"),bd:s("t"),bS:s("buu"),tO:s("bp<r,aZ>"),mT:s("bp<u,u>"),aM:s("bp<u,y>"),UH:s("bp<aZ,rP>"),DC:s("bp<y,r>"),q9:s("bp<y,u>"),sw:s("bp<R,nr<@>>"),Wp:s("bp<u,k5<ap<u,@>>>"),ko:s("bp<@,R?>"),qE:s("bp<u?,a8<R>>"),Dx:s("rd<@,@>"),kY:s("ap<BS,c4>"),nf:s("ap<u,R>"),GU:s("ap<u,u>"),a:s("ap<u,@>"),_P:s("ap<u,y>"),e3:s("ap<ke,@>"),f:s("ap<@,@>"),xE:s("ap<u,R?>"),pE:s("ap<R?,R?>"),rr:s("ap<~(cv),cF?>"),kk:s("hh<ap<u,@>,u>"),IU:s("hh<u,m_?>"),a4:s("af<u,u>"),Gf:s("af<u,@>"),OL:s("af<u,y>"),KR:s("af<jr,ql>"),rB:s("af<q4,dz>"),qn:s("af<y,dz>"),gn:s("af<y,u>"),GA:s("af<ap<u,@>,u>"),Tr:s("af<ip,n7?>"),iB:s("bIC"),v:s("vQ"),i1:s("vR"),xV:s("cF"),w:s("kM"),xS:s("k_"),Pb:s("eM"),ZA:s("Is"),_h:s("n2"),Wz:s("kN"),Lb:s("fE"),Mw:s("k1"),HG:s("lF<cE>"),Es:s("w1"),LZ:s("w5"),A3:s("k2"),u9:s("oO"),uK:s("lH"),pu:s("lI<eJ>"),Pa:s("lI<rf>"),Ei:s("lI<R>"),OP:s("lI<lP>"),K3:s("eb<bns>"),Jc:s("eb<Al>"),Tm:s("eb<jW>"),w3:s("eb<oP>"),eq:s("eb<rk>"),ji:s("eb<wN>"),WA:s("eb<iO>"),kj:s("eb<iP>"),Z_:s("oQ"),Te:s("j"),P:s("bT"),K:s("R"),IW:s("R()"),xA:s("R(y)"),_a:s("R(y{params:R?})"),yw:s("bQ<bpv>"),wS:s("bQ<~(cc<c4>)>"),jc:s("bQ<~(kv)>"),Xy:s("bQ<~(rQ)>"),yF:s("wa"),o:s("r"),gY:s("lK"),Fj:s("IR"),Md:s("wc"),BR:s("bJb"),Ms:s("ri"),B9:s("AU"),oz:s("IW<~>"),Mf:s("AW"),pw:s("n6<@>"),sd:s("n6<R?>"),Q2:s("Z4"),Fw:s("h2<lA>"),IL:s("h2<dW>"),ke:s("Za"),Ud:s("ej"),f3:s("wf"),v3:s("P"),IQ:s("oY"),sT:s("n8"),Hb:s("B_"),J7:s("lN"),Xw:s("lO"),V6:s("wh"),YS:s("lP"),Wm:s("B2"),DF:s("wj"),Y4:s("ro"),ry:s("rp"),sv:s("oZ"),mX:s("wk"),qa:s("bV9"),lI:s("kP"),ge:s("wm"),Ko:s("wn"),Au:s("na"),pY:s("p1"),qL:s("cv"),es:s("bVf"),XA:s("p2"),n2:s("wo"),WQ:s("wp"),w5:s("p3"),DB:s("wq"),PB:s("wr"),Mj:s("ws"),xb:s("wt"),ks:s("il"),oN:s("p4"),f9:s("bop<R?>"),xF:s("bJz"),C9:s("wv"),bb:s("Bg"),C0:s("bJI"),rx:s("bs"),hF:s("rx"),tM:s("hB"),_C:s("iN<ap<u,@>>"),jU:s("Bp"),pK:s("bVp"),Rp:s("+()"),EY:s("+errors,placed(a8<u>,a8<u>)"),BZ:s("+(u,j8?)"),Yr:s("+(xX,U)"),mi:s("+(R?,R?)"),YT:s("H"),nP:s("JE"),Qz:s("ZL"),CZ:s("JG"),NW:s("JH"),x:s("M"),vA:s("wD"),DW:s("wE"),f1:s("JT"),kQ:s("JY"),I9:s("G"),F5:s("aV"),GM:s("bl<G>"),Wx:s("pd"),nl:s("e2"),kp:s("pe"),Cn:s("rG"),dw:s("Bv"),Ju:s("wI"),E1:s("K5"),UM:s("lT"),Wd:s("By"),iw:s("rH<wc>"),Bv:s("rH<nD>"),dX:s("ph<jA>"),rP:s("ph<m2>"),qD:s("ph<nD>"),dZ:s("Kb<y>"),yb:s("ec<R?>"),z4:s("fc"),k2:s("Ke<H?>"),Mn:s("cV<mz>"),cr:s("cV<ap<u,@>>"),hj:s("cV<h7>"),MV:s("cV<pV>"),o_:s("cV<mi>"),ad:s("Kj"),oj:s("BC"),Kh:s("pi"),pO:s("dd<@>(B,R?)"),nY:s("Ko<bIB,bUa>"),BL:s("Ko<hm,nh>"),Np:s("Kq"),JE:s("BF<R>"),Cz:s("Kv"),gt:s("lW"),Lm:s("wR"),sm:s("BI"),NF:s("bKq"),qd:s("bVy"),lL:s("ng"),NU:s("bVz"),hI:s("bVA"),x9:s("hk"),mb:s("KG"),Wu:s("BM"),iN:s("pk"),_S:s("e3"),VP:s("fs"),bu:s("dz"),UF:s("wX"),g3:s("eW"),HS:s("rS"),n5:s("BQ<@>"),hk:s("ca<rG>"),p7:s("ca<dz>"),Ro:s("ca<@>"),uy:s("bw1"),RY:s("dp"),jH:s("rT"),cZ:s("BR"),Vz:s("BS"),yE:s("bVG"),dL:s("ka"),Mp:s("bK"),FW:s("E"),zi:s("a0c"),Ws:s("L6<u>"),Dj:s("bKS"),u:s("pq"),h5:s("BW"),Xp:s("ps"),Gt:s("BY"),U:s("hF"),M0:s("pt"),jB:s("rW"),fO:s("bKV"),y3:s("lZ"),Bb:s("pv"),Qv:s("ft"),Km:s("da"),MF:s("kb"),d1:s("Y"),Iz:s("ax"),rK:s("jk<bo>"),EU:s("c0<eJ>"),jx:s("c0<hB>"),ZE:s("Lq"),N:s("u"),Vc:s("bL5"),HJ:s("iS<r>"),OJ:s("bL8"),wL:s("m0"),WT:s("eO<ms>"),u4:s("eO<Ga>"),re:s("eO<ap<ke,@>>"),az:s("eO<vQ>"),hS:s("eO<nd>"),E8:s("eO<Mw>"),d9:s("eO<N>"),hr:s("eO<fc?>"),ZC:s("nk"),ev:s("nl"),Ce:s("bLe"),NJ:s("np"),if:s("bLj"),QX:s("bZ"),mr:s("LO"),iy:s("pA"),tq:s("l1"),tp:s("kd"),qY:s("m1"),bZ:s("bLs"),fm:s("xg"),E6:s("fJ"),em:s("q"),nH:s("pB"),we:s("l2"),ZM:s("xi"),ZF:s("nr<nr<@>>"),zo:s("nr<@>"),Dp:s("cd"),LC:s("m2"),Fd:s("bLJ"),qe:s("Cr"),Q:s("iq"),U4:s("bLN"),zW:s("e6"),kS:s("i_<E>"),Ns:s("i_<U>"),Ni:s("b_<r>"),qU:s("b_<E>"),_:s("b_<U>"),D:s("ke"),ns:s("pF"),w7:s("aEu"),rd:s("Cz"),Po:s("aEv"),H3:s("nt"),pm:s("CA<d_>"),wV:s("xs<@>"),ZI:s("pH"),lQ:s("xt"),G5:s("m5<u,u>"),N2:s("CF<@>"),gU:s("l3"),Xu:s("a1u"),RK:s("a1x"),L3:s("CG"),TN:s("l4"),Sc:s("nu<cE>"),tJ:s("cW<b6>"),V1:s("cW<R>"),A9:s("cW<x5>"),kK:s("cW<u>"),zm:s("cW<y>"),Ll:s("cW<hW?>"),x_:s("nw<u>"),j3:s("nw<U>"),GY:s("m7"),JH:s("bWd"),Oo:s("xw"),rS:s("iW"),X3:s("pJ"),Yt:s("a1J"),v6:s("Mr"),Vu:s("Mt"),w_:s("al<ap<u,@>>"),BS:s("al<ka>"),Hd:s("al<u>"),V7:s("al<y>"),SF:s("dF<f9>"),FI:s("dF<cv>"),t5:s("dF<fs>"),Hx:s("dF<ca<eW>>"),ZK:s("dF<m_>"),Ri:s("dF<u>"),ow:s("dF<to>"),fG:s("dF<fO>"),kE:s("dF<~(R,da?)>"),Pi:s("ma<ov>"),Zw:s("ma<fO>"),l7:s("i"),a7:s("CO"),C:s("dh"),JI:s("i2<U>"),GC:s("i2<x?>"),ZX:s("i2<eM?>"),y2:s("bC<aM>"),De:s("bC<x>"),mD:s("bC<ew>"),dy:s("bC<eD>"),W7:s("bC<E>"),uE:s("bC<q>"),XR:s("bC<U>"),rc:s("bC<x?>"),j7:s("bC<E?>"),RP:s("bC<q?>"),Ag:s("tb"),QN:s("i(B,ca<dh>,i?)"),X5:s("dG"),Uh:s("Mw"),Qy:s("nz"),Oq:s("CQ"),L1:s("MA"),JX:s("td"),CL:s("xC"),NV:s("dA<fV>"),CX:s("dA<bT0>"),NZ:s("dA<eJ>"),rs:s("dA<b7>"),kn:s("dA<kE>"),gW:s("dA<ap<u,@>>"),tu:s("dA<wl>"),mC:s("dA<hB>"),br:s("dA<u>"),Cy:s("dA<ju<fv>>"),zr:s("dA<@>"),Tv:s("dA<E?>"),J6:s("dA<fv?>"),h8:s("bE<ms>"),DG:s("bE<wv>"),BK:s("bE<nd>"),Iy:s("bE<BR>"),D6:s("bE<nh>"),gI:s("bE<nt>"),zh:s("bE<@>"),yB:s("bE<ev?>"),EZ:s("bE<fc?>"),gR:s("bE<~>"),BY:s("bMg"),ZW:s("CW"),B6:s("N_"),mf:s("ti"),Wb:s("nB"),EG:s("xI"),bY:s("Nv"),TC:s("xJ"),uC:s("hK"),dA:s("pO<uL>"),Fb:s("pO<uM>"),Uz:s("pO<uN>"),Q8:s("NL<Z<Y>>"),UJ:s("a4n"),rM:s("xM<bo>"),s5:s("tm<bo>"),l3:s("O5"),Ds:s("a4L<bo>"),Eh:s("Of"),fk:s("Dc"),ni:s("Ok"),q6:s("Oj"),Jp:s("Om"),h1:s("De"),Lv:s("aG<ms>"),qc:s("aG<bnM>"),Vq:s("aG<wv>"),Xa:s("aG<nd>"),cN:s("aG<BR>"),dH:s("aG<nh>"),aP:s("aG<nt>"),LR:s("aG<@>"),wJ:s("aG<y>"),gg:s("aG<ev?>"),X6:s("aG<fc?>"),Qm:s("aG<u?>"),l:s("aG<~>"),cK:s("Dh"),Qu:s("pS"),U3:s("Dk"),UR:s("is"),R9:s("tr"),_d:s("nD"),Fy:s("tt<R?,R?>"),Nr:s("OE"),cA:s("mg"),Sx:s("pT"),pt:s("Dw"),Gk:s("OX"),PJ:s("Dy"),Fe:s("P9"),xg:s("a6J"),pA:s("Pe<a8<y>>"),Tp:s("tz"),pi:s("nE"),KJ:s("pV"),eU:s("DJ"),gQ:s("tB"),sZ:s("Pz"),j6:s("a79"),UU:s("a7a"),Li:s("PC"),c_:s("PN"),bR:s("PP"),h7:s("nF"),zP:s("fN"),Qd:s("PR"),rk:s("Q0"),l0:s("y9"),Lj:s("pZ"),zd:s("Q6"),m0:s("Qb"),ju:s("fO"),Eg:s("DV"),Sq:s("DW"),xL:s("DX"),im:s("ya"),pR:s("yb"),Ez:s("h8"),q:s("Qw"),yd:s("QC"),jF:s("QE"),vC:s("fg"),kT:s("a9I<R?>"),S8:s("Ra"),b9:s("hq<iC>"),iO:s("hq<AG>"),K_:s("hq<rx>"),mm:s("hq<y>"),me:s("hq<t7?>"),Ls:s("km<+(l5,N)>"),bm:s("km<M>"),dQ:s("km<pZ>"),HE:s("E8"),S0:s("E9"),f2:s("Ru"),i9:s("Ec"),Lq:s("RA"),tH:s("bNm"),E7:s("RR<Gt>"),Wo:s("ju<fv>"),_l:s("yk"),ps:s("yl"),py:s("RZ<pj>"),GD:s("bn<aM>"),mN:s("bn<x>"),tR:s("bn<eM>"),Dm:s("bn<N>"),N5:s("bn<U>"),jY:s("bn<aM?>"),b:s("bn<x?>"),B_:s("bn<eM?>"),Hy:s("bn<q?>"),DH:s("abC"),y:s("N"),px:s("N(hX)"),i:s("U"),z:s("@"),C_:s("@(R)"),Hg:s("@(R,da)"),S:s("y"),VA:s("qk?"),tX:s("bsg?"),m2:s("Fh?"),Vx:s("d0?"),sa:s("hN?"),eJ:s("um?"),oI:s("aM?"),yV:s("un?"),YY:s("uo?"),CD:s("ev?"),L5:s("bsF?"),JG:s("FP?"),cW:s("bsG?"),eG:s("FS?"),e4:s("bsH?"),EM:s("zj?"),VC:s("f_?"),c:s("x?"),YJ:s("eI?"),B8:s("o8?"),aB:s("mC?"),Q0:s("b6?"),in:s("qC<b6>?"),xG:s("od?"),V2:s("j6?"),z2:s("b7?"),pc:s("ew?"),Om:s("og?"),Dv:s("ce?"),e8:s("zM?"),pk:s("ex?"),RC:s("Hj?"),U5:s("j8?"),uZ:s("au<bT>?"),_I:s("vo?"),GK:s("jT?"),lF:s("dZ?"),C6:s("btX?"),Pr:s("qX?"),Ef:s("kG?"),NX:s("bo?"),LO:s("hW?"),Nl:s("ep?"),g:s("a8<@>?"),B:s("a8<R?>?"),m5:s("a8<u?>?"),y6:s("t?"),qA:s("lD?"),nA:s("ap<u,@>?"),Xx:s("ap<@,@>?"),J1:s("ap<R?,R?>?"),iD:s("cF?"),ka:s("vV?"),WV:s("eM?"),X:s("R?"),Ff:s("buY?"),dJ:s("lK?"),Zr:s("bv_?"),KX:s("eD?"),uR:s("lM?"),xO:s("rn<lA>?"),os:s("B0?"),PN:s("wg?"),oZ:s("lN?"),j4:s("lO?"),cw:s("wh?"),w1:s("B2?"),Ku:s("wj?"),xq:s("ro?"),hh:s("p8?"),aA:s("M?"),xP:s("M?(M)"),CA:s("wE?"),p2:s("bY?"),ym:s("pd?"),IT:s("e2?"),oV:s("pi?"),_N:s("wR?"),LQ:s("dz?"),wW:s("ca<eW>?"),Kn:s("ca<R?>?"),TZ:s("x_?"),pg:s("hl?"),tW:s("E?"),MR:s("hF?"),lE:s("kb?"),T:s("u?"),zn:s("jl?"),p8:s("q?"),Dh:s("xh?"),W8:s("cd?"),qf:s("bp0?"),zV:s("pD?"),ir:s("b_<U>?"),nc:s("nt?"),t6:s("hI?"),HA:s("fv?"),Wn:s("kg?"),BM:s("Ms?"),Xk:s("is?"),av:s("PE?"),IA:s("h8?"),tC:s("Rk<@>?"),X7:s("N?"),PM:s("U?"),bo:s("y?"),R7:s("eR?"),Nw:s("~()?"),Ci:s("eR"),H:s("~"),M:s("~()"),CF:s("~(R,da?)"),zv:s("~(b7)"),Su:s("~(qR)"),xt:s("~(a8<qS>)"),lO:s("~(R)"),hK:s("~(R,da)"),Ld:s("~(cv)"),iS:s("~(p9)"),HT:s("~(R?)")}})();(function constants(){var s=hunkHelpers.makeConstList
 B.a_6=J.dQ.prototype
@@ -146171,24 +146178,24 @@ B.ajF=new A.q(!0,B.r,null,null,null,null,30,B.y,null,4,null,null,null,null,null,
 B.alr=new A.J("TIAH !",B.ajF,null,null,null,null)
 B.QT=new A.eZ(B.P,null,null,B.alr,null)
 B.a5=new A.q(!0,B.T,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null)
-B.amK=new A.bi("Aucune partie termin\xe9e pour l'instant.",null,B.a5,null,null,null,null,null,null,null,null)
-B.QU=new A.eZ(B.P,null,null,B.amK,null)
+B.amJ=new A.bi("Aucune partie termin\xe9e pour l'instant.",null,B.a5,null,null,null,null,null,null,null,null)
+B.QU=new A.eZ(B.P,null,null,B.amJ,null)
 B.aA=new A.x(1,0.07058823529411765,0.09411764705882353,0.22745098039215686,B.m)
 B.cP=new A.q(!0,B.aA,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null)
-B.anQ=new A.J("Connecte-toi pour voir tes d\xe9tails.",B.cP,null,null,null,null)
-B.QV=new A.eZ(B.P,null,null,B.anQ,null)
+B.anP=new A.J("Connecte-toi pour voir tes d\xe9tails.",B.cP,null,null,null,null)
+B.QV=new A.eZ(B.P,null,null,B.anP,null)
 B.cu=new A.X(24,24,24,24)
 B.bo=new A.x(1,1,0.5411764705882353,0.5019607843137255,B.m)
 B.ey=new A.q(!0,B.bo,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null)
 B.R=new A.py(2,"center")
-B.amV=new A.bi("Impossible de charger l'historique. V\xe9rifie les r\xe8gles Firestore.",null,B.ey,B.R,null,null,null,null,null,null,null)
-B.a9A=new A.A(B.cu,B.amV,null)
+B.amU=new A.bi("Impossible de charger l'historique. V\xe9rifie les r\xe8gles Firestore.",null,B.ey,B.R,null,null,null,null,null,null,null)
+B.a9A=new A.A(B.cu,B.amU,null)
 B.QW=new A.eZ(B.P,null,null,B.a9A,null)
 B.aiq=new A.q(!0,B.r,null,null,null,null,32,B.y,null,4,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null)
 B.alA=new A.J("TOUCX !",B.aiq,null,null,null,null)
 B.QX=new A.eZ(B.P,null,null,B.alA,null)
-B.anA=new A.bi("Connecte-toi pour voir ton historique.",null,B.a5,null,null,null,null,null,null,null,null)
-B.QY=new A.eZ(B.P,null,null,B.anA,null)
+B.anz=new A.bi("Connecte-toi pour voir ton historique.",null,B.a5,null,null,null,null,null,null,null,null)
+B.QY=new A.eZ(B.P,null,null,B.anz,null)
 B.ass=new A.aFS(0,"material")
 B.oZ=new A.jD(null,null,null,null,null,null,null,null,null,null)
 B.c2=new A.eZ(B.P,null,null,B.oZ,null)
@@ -146891,32 +146898,32 @@ B.y7=new A.uZ(!1,!1,!1,!0)
 B.ac=new A.WN(0,"tight")
 B.U=new A.ii(800)
 B.nW=new A.q(!0,B.aA,null,null,null,null,22,B.U,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null)
-B.amR=new A.bi("\ud83c\udf81 Code promo",null,B.nW,null,null,null,null,null,null,null,null)
-B.WM=new A.cm(1,B.ac,B.amR,null)
+B.amQ=new A.bi("\ud83c\udf81 Code promo",null,B.nW,null,null,null,null,null,null,null,null)
+B.WM=new A.cm(1,B.ac,B.amQ,null)
 B.dS=new A.q(!0,B.e,null,null,null,null,22,B.U,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null)
-B.amU=new A.bi("Chat",null,B.dS,null,null,null,null,null,null,null,null)
-B.WN=new A.cm(1,B.ac,B.amU,null)
+B.amT=new A.bi("Chat",null,B.dS,null,null,null,null,null,null,null,null)
+B.WN=new A.cm(1,B.ac,B.amT,null)
 B.u4=new A.q(!0,B.aA,null,null,null,null,20,B.U,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null)
-B.an0=new A.J("\ud83e\udd1d Mon espace partenaire",B.u4,null,null,null,null)
-B.WO=new A.cm(1,B.ac,B.an0,null)
+B.an_=new A.J("\ud83e\udd1d Mon espace partenaire",B.u4,null,null,null,null)
+B.WO=new A.cm(1,B.ac,B.an_,null)
 B.LE=new A.q(!0,B.r,null,null,null,null,22,B.y,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null)
-B.anM=new A.J("Espace caissi\xe8re",B.LE,null,null,null,null)
-B.WP=new A.cm(1,B.ac,B.anM,null)
+B.anL=new A.J("Espace caissi\xe8re",B.LE,null,null,null,null)
+B.WP=new A.cm(1,B.ac,B.anL,null)
 B.dR=new A.q(!0,B.e,null,null,null,null,18,B.y,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null)
-B.ann=new A.bi("KATIKA \xb7 Administration",null,B.dR,null,null,null,null,null,null,null,null)
-B.WQ=new A.cm(1,B.ac,B.ann,null)
+B.anm=new A.bi("KATIKA \xb7 Administration",null,B.dR,null,null,null,null,null,null,null,null)
+B.WQ=new A.cm(1,B.ac,B.anm,null)
 B.alJ=new A.bi("\ud83d\udd12 Mot de passe",null,B.dS,null,null,null,null,null,null,null,null)
 B.WR=new A.cm(1,B.ac,B.alJ,null)
-B.amS=new A.bi("Recharger mon compte",null,B.dS,null,null,null,null,null,null,null,null)
-B.WS=new A.cm(1,B.ac,B.amS,null)
+B.amR=new A.bi("Recharger mon compte",null,B.dS,null,null,null,null,null,null,null,null)
+B.WS=new A.cm(1,B.ac,B.amR,null)
 B.aqJ=new A.a4f(null)
 B.y8=new A.cm(1,B.ac,B.aqJ,null)
-B.amE=new A.J("\ud83d\uddfa\ufe0f Administration du zoning",B.u4,null,null,null,null)
-B.WT=new A.cm(1,B.ac,B.amE,null)
+B.amD=new A.J("\ud83d\uddfa\ufe0f Administration du zoning",B.u4,null,null,null,null)
+B.WT=new A.cm(1,B.ac,B.amD,null)
 B.aqK=new A.a4g(null)
 B.y9=new A.cm(1,B.ac,B.aqK,null)
-B.amI=new A.bi("\ud83d\udd01 Transf\xe9rer de l'argent",null,B.nW,null,null,null,null,null,null,null,null)
-B.WU=new A.cm(1,B.ac,B.amI,null)
+B.amH=new A.bi("\ud83d\udd01 Transf\xe9rer de l'argent",null,B.nW,null,null,null,null,null,null,null,null)
+B.WU=new A.cm(1,B.ac,B.amH,null)
 B.WV=new A.H0(null,null,null,null,null,null,null,null,null,null,null,null,null)
 B.mi=new A.om(!1,!1,!1,!1)
 B.mj=new A.om(!1,!1,!1,!0)
@@ -147575,8 +147582,8 @@ B.dk=new A.wc(1,"landscape")
 B.zM=s([B.bW,B.dk],A.aP("Q<wc>"))
 B.alu=new A.J("Katika Tournament (duos, 2 500)",null,null,null,null,null)
 B.Uq=new A.hb("katika",B.alu,B.ce,null,t.b7)
-B.anR=new A.J("Katika Mondly (solo, 2 000)",null,null,null,null,null)
-B.Ur=new A.hb("mondly",B.anR,B.ce,null,t.b7)
+B.anQ=new A.J("Katika Mondly (solo, 2 000)",null,null,null,null,null)
+B.Ur=new A.hb("mondly",B.anQ,B.ce,null,t.b7)
 B.a3e=s([B.Uq,B.Ur],t.FG)
 B.zP=s([0,100,200,500,1000,2000,5000],t.t)
 B.a3g=s([0,0.5,1],t.n)
@@ -149094,27 +149101,27 @@ B.a9j=new A.A(B.d0,B.alO,null)
 B.a_P=new A.r8(2,null,null,B.r,null,null,null,null)
 B.a9k=new A.A(B.dg,B.a_P,null)
 B.a9l=new A.A(B.dg,B.zn,null)
-B.anH=new A.bi("Aucune donn\xe9e disponible.",null,B.a5,B.R,null,null,null,null,null,null,null)
-B.a9m=new A.A(B.V,B.anH,null)
+B.anG=new A.bi("Aucune donn\xe9e disponible.",null,B.a5,B.R,null,null,null,null,null,null,null)
+B.a9m=new A.A(B.V,B.anG,null)
 B.FL=new A.A(B.cu,B.c2,null)
+B.LR=new A.q(!0,B.r,null,null,null,null,18,B.y,null,3,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null)
+B.anZ=new A.J("MILLION !",B.LR,null,null,null,null)
+B.a9n=new A.A(B.cI,B.anZ,null)
 B.Wm=new A.X(4,4,0,0)
 B.by=new A.q(!0,B.bI,null,null,null,null,11,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null)
 B.ao6=new A.J("Pseudo de la personne qui t'a invit\xe9. Possible uniquement maintenant, \xe0 la cr\xe9ation du compte.",B.by,null,null,null,null)
-B.a9n=new A.A(B.Wm,B.ao6,null)
+B.a9o=new A.A(B.Wm,B.ao6,null)
 B.ahi=new A.q(!0,B.fV,null,null,null,null,11.5,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null)
 B.alz=new A.J("Ses retraits automatiques (International) sont bloqu\xe9s : il doit passer par le retrait Local, que tu valides \xe0 la main.",B.ahi,null,null,null,null)
-B.a9o=new A.A(B.d1,B.alz,null)
+B.a9p=new A.A(B.d1,B.alz,null)
 B.aT=new A.q(!0,B.bV,null,null,null,null,12,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null)
-B.anw=new A.bi("Aucun joueur trouv\xe9 avec ces lettres.",null,B.aT,null,null,null,null,null,null,null,null)
-B.a9p=new A.A(B.cI,B.anw,null)
+B.anv=new A.bi("Aucun joueur trouv\xe9 avec ces lettres.",null,B.aT,null,null,null,null,null,null,null,null)
+B.a9q=new A.A(B.cI,B.anv,null)
 B.alq=new A.bi("Aucune h\xf4tesse pour le moment.",null,B.a5,null,null,null,null,null,null,null,null)
-B.a9q=new A.A(B.h2,B.alq,null)
+B.a9r=new A.A(B.h2,B.alq,null)
 B.f1=new A.q(!0,B.T,null,null,null,null,11,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null)
-B.anc=new A.J(u.X,B.f1,null,null,null,null)
-B.a9r=new A.A(B.cI,B.anc,null)
-B.LR=new A.q(!0,B.r,null,null,null,null,18,B.y,null,3,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null)
-B.amt=new A.J("FOMEKOU !",B.LR,null,null,null,null)
-B.a9s=new A.A(B.cI,B.amt,null)
+B.anb=new A.J(u.X,B.f1,null,null,null,null)
+B.a9s=new A.A(B.cI,B.anb,null)
 B.bG=new A.q(!0,B.bV,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null)
 B.ao4=new A.J("Aucun joueur trouv\xe9.",B.bG,null,null,null,null)
 B.a9t=new A.A(B.cH,B.ao4,null)
@@ -149124,15 +149131,15 @@ B.ZB=new A.b8(B.XI,18,B.T,null,null)
 B.a9u=new A.A(B.Ww,B.ZB,null)
 B.Vd=new A.X(0,20,0,0)
 B.a9v=new A.A(B.Vd,B.c2,null)
-B.an7=new A.J("Mes joueurs",B.cM,null,null,null,null)
-B.a9w=new A.A(B.d0,B.an7,null)
+B.an6=new A.J("Mes joueurs",B.cM,null,null,null,null)
+B.a9w=new A.A(B.d0,B.an6,null)
 B.bk=new A.q(!0,B.T,null,null,null,null,13,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null)
-B.an1=new A.J(u.X,B.bk,null,null,null,null)
-B.a9x=new A.A(B.cI,B.an1,null)
+B.an0=new A.J(u.X,B.bk,null,null,null,null)
+B.a9x=new A.A(B.cI,B.an0,null)
 B.W1=new A.X(18,16,18,6)
 B.afM=new A.q(!0,B.aA,null,null,null,null,17,B.y,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null)
-B.amw=new A.bi("Choisir un jeu",null,B.afM,null,null,null,null,null,null,null,null)
-B.a9y=new A.A(B.W1,B.amw,null)
+B.amv=new A.bi("Choisir un jeu",null,B.afM,null,null,null,null,null,null,null,null)
+B.a9y=new A.A(B.W1,B.amv,null)
 B.VK=new A.X(16,12,16,0)
 B.Jv=new A.Kd(null)
 B.a9z=new A.A(B.VK,B.Jv,null)
@@ -149554,26 +149561,26 @@ B.alo=new A.bi("Mot de passe modifi\xe9 !",null,null,null,null,null,null,null,nu
 B.aeg=new A.hm(B.alo,null,null,null,null,null,null,null,null,null,null,null,null,B.F,!1,null,null,null,B.o,null)
 B.alp=new A.J("Impossible d'ouvrir WhatsApp.",null,null,null,null,null)
 B.KW=new A.hm(B.alp,null,null,null,null,null,null,null,null,null,null,null,null,B.F,!1,null,null,null,B.o,null)
-B.amF=new A.J("Ce compte joue d\xe9j\xe0 dans la partie.",null,null,null,null,null)
-B.KX=new A.hm(B.amF,null,null,null,null,null,null,null,null,null,null,null,null,B.F,!1,null,null,null,B.o,null)
-B.anV=new A.J("Action impossible. R\xe9essaie.",null,null,null,null,null)
-B.aeh=new A.hm(B.anV,null,null,null,null,null,null,null,null,null,null,null,null,B.F,!1,null,null,null,B.o,null)
+B.amE=new A.J("Ce compte joue d\xe9j\xe0 dans la partie.",null,null,null,null,null)
+B.KX=new A.hm(B.amE,null,null,null,null,null,null,null,null,null,null,null,null,B.F,!1,null,null,null,B.o,null)
+B.anU=new A.J("Action impossible. R\xe9essaie.",null,null,null,null,null)
+B.aeh=new A.hm(B.anU,null,null,null,null,null,null,null,null,null,null,null,null,B.F,!1,null,null,null,B.o,null)
 B.alF=new A.bi("Code copi\xe9",null,null,null,null,null,null,null,null,null,null)
 B.aei=new A.hm(B.alF,null,null,null,null,null,null,null,null,null,null,null,null,B.F,!1,null,null,null,B.o,null)
-B.anJ=new A.J("Code promo valid\xe9 !",null,null,null,null,null)
-B.aej=new A.hm(B.anJ,null,null,null,null,null,null,null,null,null,null,null,null,B.F,!1,null,null,null,B.o,null)
-B.amL=new A.J("Le jeu en ligne est indisponible.",null,null,null,null,null)
-B.aek=new A.hm(B.amL,null,null,null,null,null,null,null,null,null,null,null,null,B.F,!1,null,null,null,B.o,null)
+B.anI=new A.J("Code promo valid\xe9 !",null,null,null,null,null)
+B.aej=new A.hm(B.anI,null,null,null,null,null,null,null,null,null,null,null,null,B.F,!1,null,null,null,B.o,null)
+B.amK=new A.J("Le jeu en ligne est indisponible.",null,null,null,null,null)
+B.aek=new A.hm(B.amK,null,null,null,null,null,null,null,null,null,null,null,null,B.F,!1,null,null,null,B.o,null)
 B.alT=new A.J("Tu es d\xe9connect\xe9.",null,null,null,null,null)
 B.ael=new A.hm(B.alT,null,null,null,null,null,null,null,null,null,null,null,null,B.F,!1,null,null,null,B.o,null)
-B.amH=new A.bi("Lien copi\xe9",null,null,null,null,null,null,null,null,null,null)
-B.aem=new A.hm(B.amH,null,null,null,null,null,null,null,null,null,null,null,null,B.F,!1,null,null,null,B.o,null)
-B.amB=new A.J("Code copi\xe9",null,null,null,null,null)
-B.KY=new A.hm(B.amB,null,null,null,null,null,null,null,null,null,null,null,null,B.F,!1,null,null,null,B.o,null)
-B.anz=new A.J(u.af,null,null,null,null,null)
-B.KZ=new A.hm(B.anz,null,null,null,null,null,null,null,null,null,null,null,null,B.F,!1,null,null,null,B.o,null)
-B.and=new A.J(u.cg,null,null,null,null,null)
-B.aen=new A.hm(B.and,null,null,null,null,null,null,null,null,null,null,null,null,B.ej,!1,null,null,null,B.o,null)
+B.amG=new A.bi("Lien copi\xe9",null,null,null,null,null,null,null,null,null,null)
+B.aem=new A.hm(B.amG,null,null,null,null,null,null,null,null,null,null,null,null,B.F,!1,null,null,null,B.o,null)
+B.amA=new A.J("Code copi\xe9",null,null,null,null,null)
+B.KY=new A.hm(B.amA,null,null,null,null,null,null,null,null,null,null,null,null,B.F,!1,null,null,null,B.o,null)
+B.any=new A.J(u.af,null,null,null,null,null)
+B.KZ=new A.hm(B.any,null,null,null,null,null,null,null,null,null,null,null,null,B.F,!1,null,null,null,B.o,null)
+B.anc=new A.J(u.k,null,null,null,null,null)
+B.aen=new A.hm(B.anc,null,null,null,null,null,null,null,null,null,null,null,null,B.ej,!1,null,null,null,B.o,null)
 B.L_=new A.Lf(0,"permissive")
 B.aeo=new A.Lf(1,"normal")
 B.aep=new A.Lf(2,"forced")
@@ -150179,14 +150186,12 @@ B.alj=new A.J("Ajouter",null,null,null,null,null)
 B.Sp=new A.x(1,0.5411764705882353,0.5764705882352941,0.7215686274509804,B.m)
 B.aic=new A.q(!0,B.Sp,null,null,null,null,11,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null)
 B.alk=new A.J("Tu ne vois que les joueurs de ta ville. Tu ne peux ni modifier les soldes, ni les r\xe9sultats des jeux, ni les taux.",B.aic,null,null,null,null)
-B.LS=new A.q(!0,B.r,null,null,null,null,26,B.y,null,4,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null)
-B.M6=new A.J("FOMEKOU !",B.LS,null,null,null,null)
 B.all=new A.J("Aucune zone ne t'est affect\xe9e pour le moment.",B.bG,null,null,null,null)
 B.alm=new A.J("Un seul partenaire actif par ville : le nouveau remplace l'ancien \xe0 partir de maintenant (l'historique est conserv\xe9).",B.M4,null,null,null,null)
 B.aln=new A.J("Caissi\xe8res",null,null,null,null,null)
 B.uo=new A.J("\u23f3",B.uc,null,null,null,null)
 B.als=new A.J("Bin\xf4mes (2 contre 2)",B.bz,null,null,null,null)
-B.M7=new A.bi("Non",null,null,null,null,null,null,null,null,null,null)
+B.M6=new A.bi("Non",null,null,null,null,null,null,null,null,null,null)
 B.j7=new A.q(!0,null,null,null,null,null,18,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null)
 B.alt=new A.bi("\ud83d\uddfa\ufe0f",null,B.j7,null,null,null,null,null,null,null,null)
 B.Lu=new A.q(!0,B.r,null,null,null,null,28,B.y,null,4,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null)
@@ -150211,14 +150216,14 @@ B.alN=new A.bi("Mon solde",null,B.hI,null,null,null,null,null,null,null,null)
 B.j9=new A.J("Annuler",null,null,null,null,null)
 B.agB=new A.q(!0,B.e,null,null,null,null,16,B.ao,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null)
 B.alP=new A.J("Cr\xe9ateur et concepteur :\nChachouang Kejouboui Yves",B.agB,B.R,null,null,null)
-B.M8=new A.J("Refuser",null,null,null,null,null)
+B.M7=new A.J("Refuser",null,null,null,null,null)
 B.alQ=new A.J("Nombre de joueurs",B.nX,null,null,null,null)
-B.M9=new A.J("Accepter",null,null,null,null,null)
+B.M8=new A.J("Accepter",null,null,null,null,null)
 B.alR=new A.bi("Aucun gain pour le moment.",null,B.bG,null,null,null,null,null,null,null,null)
 B.M3=new A.q(!0,null,null,null,null,null,20,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null)
 B.alS=new A.J("\ud83d\udcb0",B.M3,null,null,null,null)
 B.alU=new A.bi("\ud83e\uddfe",null,B.j7,null,null,null,null,null,null,null,null)
-B.Ma=new A.J("Inviter",null,null,null,null,null)
+B.M9=new A.J("Inviter",null,null,null,null,null)
 B.alV=new A.J("Lancer",null,null,null,null,null)
 B.alW=new A.J("COURAT !",B.Lu,null,null,null,null)
 B.alX=new A.bi("Ajouter une h\xf4tesse",null,B.cA,null,null,null,null,null,null,null,null)
@@ -150258,88 +150263,90 @@ B.LZ=new A.q(!0,B.aA,null,null,null,null,15,B.U,null,null,null,null,null,null,nu
 B.amq=new A.bi("Destinataire",null,B.LZ,null,null,null,null,null,null,null,null)
 B.amr=new A.bi("Le code de parrain se saisit uniquement \xe0 la cr\xe9ation du compte (facultatif). Il ne peut plus \xeatre ajout\xe9 apr\xe8s.",null,B.aT,null,null,null,null,null,null,null,null)
 B.ams=new A.J("Katika",B.j4,null,null,null,null)
-B.amu=new A.J("Connecte-toi pour voir ton solde",B.uk,null,null,null,null)
-B.amv=new A.J("WhatsApp",null,null,null,null,null)
-B.amx=new A.J("Valider",null,null,null,null,null)
-B.amy=new A.J("Menu",B.bT,null,null,null,null)
-B.amz=new A.bi("Aucun joueur inscrit sur cette p\xe9riode.",null,B.a5,null,null,null,null,null,null,null,null)
-B.amA=new A.bi("\ud83d\udc81",null,B.j7,null,null,null,null,null,null,null,null)
-B.Mb=new A.bi("R\xe9essayer",null,null,null,null,null,null,null,null,null,null)
-B.amC=new A.J("Groupe WhatsApp Katika",B.j4,null,null,null,null)
+B.amt=new A.J("Connecte-toi pour voir ton solde",B.uk,null,null,null,null)
+B.amu=new A.J("WhatsApp",null,null,null,null,null)
+B.amw=new A.J("Valider",null,null,null,null,null)
+B.amx=new A.J("Menu",B.bT,null,null,null,null)
+B.amy=new A.bi("Aucun joueur inscrit sur cette p\xe9riode.",null,B.a5,null,null,null,null,null,null,null,null)
+B.amz=new A.bi("\ud83d\udc81",null,B.j7,null,null,null,null,null,null,null,null)
+B.Ma=new A.bi("R\xe9essayer",null,null,null,null,null,null,null,null,null,null)
+B.amB=new A.J("Groupe WhatsApp Katika",B.j4,null,null,null,null)
 B.aiH=new A.q(!0,B.e,null,null,null,null,14,B.ao,null,1.2,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null)
-B.amD=new A.J("D\xe9s et Ludo by CKY",B.aiH,null,null,null,null)
+B.amC=new A.J("D\xe9s et Ludo by CKY",B.aiH,null,null,null,null)
 B.ur=new A.J("Rejoindre",null,null,null,null,null)
-B.amG=new A.J(u.a,B.S,null,null,null,null)
+B.amF=new A.J(u.a,B.S,null,null,null,null)
 B.us=new A.bi("Annuler",null,null,null,null,null,null,null,null,null,null)
-B.amJ=new A.bi("Oui, annuler",null,null,null,null,null,null,null,null,null,null)
-B.amM=new A.J(u.e9,B.fw,null,null,null,null)
-B.amN=new A.bi("Le destinataire est retrouv\xe9 gr\xe2ce \xe0 son pseudo ou \xe0 son code promo. V\xe9rifie bien l'orthographe : un transfert ne peut pas \xeatre annul\xe9.",null,B.aT,null,null,null,null,null,null,null,null)
-B.amO=new A.J("TOUCX !",B.LS,null,null,null,null)
+B.amI=new A.bi("Oui, annuler",null,null,null,null,null,null,null,null,null,null)
+B.amL=new A.J(u.e9,B.fw,null,null,null,null)
+B.amM=new A.bi("Le destinataire est retrouv\xe9 gr\xe2ce \xe0 son pseudo ou \xe0 son code promo. V\xe9rifie bien l'orthographe : un transfert ne peut pas \xeatre annul\xe9.",null,B.aT,null,null,null,null,null,null,null,null)
+B.LS=new A.q(!0,B.r,null,null,null,null,26,B.y,null,4,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null)
+B.amN=new A.J("TOUCX !",B.LS,null,null,null,null)
 B.ah5=new A.q(!0,B.bu,null,null,null,null,11,B.y,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null)
-B.amP=new A.J("SUSPENDUE",B.ah5,null,null,null,null)
-B.amQ=new A.J("Aucune commission sur cette p\xe9riode.",B.bG,null,null,null,null)
-B.amT=new A.bi("Montant (FCFA)",null,B.LZ,null,null,null,null,null,null,null,null)
-B.Mc=new A.bi("Aucune partie pour ces filtres.",null,B.bG,null,null,null,null,null,null,null,null)
-B.amW=new A.J("Joueurs",null,null,null,null,null)
-B.amX=new A.bi("Ton parrain",null,B.aT,null,null,null,null,null,null,null,null)
-B.amY=new A.J("TIAH",B.Lx,null,null,null,null)
-B.amZ=new A.J("Solde",B.aT,null,null,null,null)
-B.an_=new A.bi("Retirer",null,B.u0,null,null,null,null,null,null,null,null)
-B.an2=new A.J("Refuser",B.ey,null,null,null,null)
-B.an3=new A.J(u.bM,B.f1,null,null,null,null)
-B.an4=new A.J("Rejouer",null,null,null,null,null)
-B.an5=new A.bi("Les parties en ligne termin\xe9es avant la date choisie sont ajout\xe9es aux statistiques des joueurs. Choisis la date \xe0 laquelle les statistiques ont commenc\xe9 \xe0 \xeatre compt\xe9es, sinon des parties seraient compt\xe9es deux fois. L'op\xe9ration ne se fait qu'une fois par partie.",null,null,null,null,null,null,null,null,null,null)
+B.amO=new A.J("SUSPENDUE",B.ah5,null,null,null,null)
+B.amP=new A.J("Aucune commission sur cette p\xe9riode.",B.bG,null,null,null,null)
+B.amS=new A.bi("Montant (FCFA)",null,B.LZ,null,null,null,null,null,null,null,null)
+B.Mb=new A.bi("Aucune partie pour ces filtres.",null,B.bG,null,null,null,null,null,null,null,null)
+B.amV=new A.J("Joueurs",null,null,null,null,null)
+B.amW=new A.bi("Ton parrain",null,B.aT,null,null,null,null,null,null,null,null)
+B.amX=new A.J("TIAH",B.Lx,null,null,null,null)
+B.amY=new A.J("Solde",B.aT,null,null,null,null)
+B.amZ=new A.bi("Retirer",null,B.u0,null,null,null,null,null,null,null,null)
+B.an1=new A.J("Refuser",B.ey,null,null,null,null)
+B.an2=new A.J(u.bM,B.f1,null,null,null,null)
+B.an3=new A.J("Rejouer",null,null,null,null,null)
+B.an4=new A.bi("Les parties en ligne termin\xe9es avant la date choisie sont ajout\xe9es aux statistiques des joueurs. Choisis la date \xe0 laquelle les statistiques ont commenc\xe9 \xe0 \xeatre compt\xe9es, sinon des parties seraient compt\xe9es deux fois. L'op\xe9ration ne se fait qu'une fois par partie.",null,null,null,null,null,null,null,null,null,null)
+B.Mc=new A.J("MILLION !",B.LS,null,null,null,null)
 B.akq=new A.q(!0,B.aL,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null)
 B.Md=new A.J("Fermer",B.akq,null,null,null,null)
-B.an6=new A.J("Rattacher les joueurs existants",null,null,null,null,null)
-B.an8=new A.J("Joueur suivant",null,null,null,null,null)
-B.an9=new A.J("Capture obligatoire",B.W,null,null,null,null)
-B.ana=new A.bi("Filleuls",null,B.aT,null,null,null,null,null,null,null,null)
-B.anb=new A.J("Param\xe8tres",B.LN,null,null,null,null)
-B.ane=new A.J("\u2014",B.la,null,null,null,null)
-B.anf=new A.bi("\ud83e\udd1d Compte partenaire",null,B.cM,null,null,null,null,null,null,null,null)
-B.ang=new A.J("Aucune commission pour le moment.",null,null,null,null,null)
-B.anh=new A.J("Classement",B.W,null,null,null,null)
-B.ani=new A.bi("Confirmer",null,null,null,null,null,null,null,null,null,null)
-B.anj=new A.J("Retirer",null,null,null,null,null)
-B.ank=new A.J("Plus tard",B.a5,null,null,null,null)
+B.an5=new A.J("Rattacher les joueurs existants",null,null,null,null,null)
+B.an7=new A.J("Joueur suivant",null,null,null,null,null)
+B.an8=new A.J("Capture obligatoire",B.W,null,null,null,null)
+B.an9=new A.bi("Filleuls",null,B.aT,null,null,null,null,null,null,null,null)
+B.ana=new A.J("Param\xe8tres",B.LN,null,null,null,null)
+B.and=new A.J("\u2014",B.la,null,null,null,null)
+B.ane=new A.bi("\ud83e\udd1d Compte partenaire",null,B.cM,null,null,null,null,null,null,null,null)
+B.anf=new A.J("Aucune commission pour le moment.",null,null,null,null,null)
+B.ang=new A.J("Classement",B.W,null,null,null,null)
+B.anh=new A.bi("Confirmer",null,null,null,null,null,null,null,null,null,null)
+B.ani=new A.J("Retirer",null,null,null,null,null)
+B.anj=new A.J("Plus tard",B.a5,null,null,null,null)
 B.afK=new A.q(!0,B.cX,null,null,null,null,22,B.y,null,0.5,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null)
-B.anl=new A.J("KATIKA",B.afK,null,null,null,null)
+B.ank=new A.J("KATIKA",B.afK,null,null,null,null)
 B.akd=new A.q(!0,B.e,null,null,null,null,15,B.U,B.iw,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null)
-B.anm=new A.J("Katika d\xe9charge les caisses",B.akd,null,null,null,null)
-B.ano=new A.J("Retour",null,null,null,null,null)
-B.anp=new A.bi("Charger des parties plus anciennes",null,null,null,null,null,null,null,null,null,null)
+B.anl=new A.J("Katika d\xe9charge les caisses",B.akd,null,null,null,null)
+B.ann=new A.J("Retour",null,null,null,null,null)
+B.ano=new A.bi("Charger des parties plus anciennes",null,null,null,null,null,null,null,null,null,null)
 B.ut=new A.J("Fermer",null,null,null,null,null)
 B.aj3=new A.q(!0,null,null,null,null,null,22,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null)
-B.anq=new A.bi("\ud83d\udd14",null,B.aj3,null,null,null,null,null,null,null,null)
-B.anr=new A.bi("Orange Money ou MTN MoMo : l\u2019op\xe9rateur est d\xe9tect\xe9 d\u2019apr\xe8s ton num\xe9ro.",null,B.bk,null,null,null,null,null,null,null,null)
-B.ans=new A.bi("Gains disponibles",null,B.aT,null,null,null,null,null,null,null,null)
-B.ant=new A.J("Salle d'attente",B.dS,null,null,null,null)
-B.anu=new A.bi("H\xf4tesses (inscriptions)",null,B.bT,null,null,null,null,null,null,null,null)
-B.anv=new A.bi("Gains de parrainage",null,B.aT,null,null,null,null,null,null,null,null)
-B.anx=new A.bi("Chaque joueur qui cr\xe9e son compte avec ce code est compt\xe9 ici.",null,B.S,null,null,null,null,null,null,null,null)
-B.any=new A.J("Partie priv\xe9e",B.bS,null,null,null,null)
-B.anB=new A.bi("Ton code promo",null,B.cM,null,null,null,null,null,null,null,null)
-B.anC=new A.bi("Joueurs inscrits",null,B.cA,null,null,null,null,null,null,null,null)
-B.anD=new A.J("Connect\xe9",B.S,null,null,null,null)
+B.anp=new A.bi("\ud83d\udd14",null,B.aj3,null,null,null,null,null,null,null,null)
+B.anq=new A.bi("Orange Money ou MTN MoMo : l\u2019op\xe9rateur est d\xe9tect\xe9 d\u2019apr\xe8s ton num\xe9ro.",null,B.bk,null,null,null,null,null,null,null,null)
+B.anr=new A.bi("Gains disponibles",null,B.aT,null,null,null,null,null,null,null,null)
+B.ans=new A.J("Salle d'attente",B.dS,null,null,null,null)
+B.ant=new A.bi("H\xf4tesses (inscriptions)",null,B.bT,null,null,null,null,null,null,null,null)
+B.anu=new A.bi("Gains de parrainage",null,B.aT,null,null,null,null,null,null,null,null)
+B.anw=new A.bi("Chaque joueur qui cr\xe9e son compte avec ce code est compt\xe9 ici.",null,B.S,null,null,null,null,null,null,null,null)
+B.anx=new A.J("Partie priv\xe9e",B.bS,null,null,null,null)
+B.anA=new A.bi("Ton code promo",null,B.cM,null,null,null,null,null,null,null,null)
+B.anB=new A.bi("Joueurs inscrits",null,B.cA,null,null,null,null,null,null,null,null)
+B.anC=new A.J("Connect\xe9",B.S,null,null,null,null)
 B.ahS=new A.q(!0,B.bI,null,null,null,null,20,B.y,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null)
-B.anE=new A.J("?",B.ahS,null,null,null,null)
-B.anF=new A.bi("Annuler cette partie ?",null,null,null,null,null,null,null,null,null,null)
-B.anG=new A.bi("P\xe9riode",null,B.cA,null,null,null,null,null,null,null,null)
-B.anI=new A.bi("Payer le gagnant",null,null,null,null,null,null,null,null,null,null)
+B.anD=new A.J("?",B.ahS,null,null,null,null)
+B.anE=new A.bi("Annuler cette partie ?",null,null,null,null,null,null,null,null,null,null)
+B.anF=new A.bi("P\xe9riode",null,B.cA,null,null,null,null,null,null,null,null)
+B.anH=new A.bi("Payer le gagnant",null,null,null,null,null,null,null,null,null,null)
 B.Me=new A.bi("Ajouter",null,null,null,null,null,null,null,null,null,null)
-B.anK=new A.bi("WhatsApp",null,null,null,null,null,null,null,null,null,null)
-B.anL=new A.bi("Envoyer",null,null,null,null,null,null,null,null,null,null)
-B.anN=new A.bi("Lancer",null,null,null,null,null,null,null,null,null,null)
-B.anO=new A.J("Affecter",null,null,null,null,null)
-B.anP=new A.J("\ud83d\ude00",B.uc,null,null,null,null)
-B.anS=new A.J("Mise de chaque joueur (jetons)",B.bz,null,null,null,null)
-B.anT=new A.J("Pr\xe9parer la partie",B.dS,null,null,null,null)
-B.anU=new A.bi("Disponibles \xe0 retirer",null,B.aT,null,null,null,null,null,null,null,null)
-B.anW=new A.J("Pilotage automatique",B.W,null,null,null,null)
-B.anX=new A.bi("Aucun partenaire pour le moment.",null,B.aT,null,null,null,null,null,null,null,null)
-B.anY=new A.J(u.dp,B.S,null,null,null,null)
-B.anZ=new A.bi("Gains \xe0 retirer",null,B.aT,null,null,null,null,null,null,null,null)
+B.anJ=new A.bi("WhatsApp",null,null,null,null,null,null,null,null,null,null)
+B.anK=new A.bi("Envoyer",null,null,null,null,null,null,null,null,null,null)
+B.anM=new A.bi("Lancer",null,null,null,null,null,null,null,null,null,null)
+B.anN=new A.J("Affecter",null,null,null,null,null)
+B.anO=new A.J("\ud83d\ude00",B.uc,null,null,null,null)
+B.anR=new A.J("Mise de chaque joueur (jetons)",B.bz,null,null,null,null)
+B.anS=new A.J("Pr\xe9parer la partie",B.dS,null,null,null,null)
+B.anT=new A.bi("Disponibles \xe0 retirer",null,B.aT,null,null,null,null,null,null,null,null)
+B.anV=new A.J("Pilotage automatique",B.W,null,null,null,null)
+B.anW=new A.bi("Aucun partenaire pour le moment.",null,B.aT,null,null,null,null,null,null,null,null)
+B.anX=new A.J(u.dp,B.S,null,null,null,null)
+B.anY=new A.bi("Gains \xe0 retirer",null,B.aT,null,null,null,null,null,null,null,null)
 B.ao_=new A.bi("Historique des parties",null,B.dS,null,null,null,null,null,null,null,null)
 B.ao0=new A.J("TCHEK ",B.fx,null,null,null,null)
 B.ao1=new A.bi("\ud83d\udd14",null,B.M3,null,null,null,null,null,null,null,null)
@@ -150552,32 +150559,32 @@ B.aqk=new A.My(1,"end")
 B.aql=new A.My(2,"center")
 B.bA=new A.CS(0,"forward")
 B.le=new A.CS(1,"reverse")
+B.a46=s(["4","\u2660"],t.s)
+B.a3V=s(["6","\u2665"],t.s)
+B.a4F=s(["9","\u2666"],t.s)
+B.a2V=s([B.a46,B.a3V,B.a4F],t.rj)
+B.a5i=s(["3","\u2665"],t.s)
+B.Ac=s(["3","\u2660"],t.s)
+B.a3W=s([B.a5i,B.Ac],t.rj)
+B.a3m=s([B.a2V,B.a3W],t.yt)
+B.aqo=new A.tf(B.a3m,"MILLION",null)
 B.zQ=s(["A","\u2660"],t.s)
 B.a2y=s(["K","\u2665"],t.s)
 B.a50=s(["Q","\u2666"],t.s)
 B.a2O=s(["J","\u2663"],t.s)
 B.a3L=s([B.zQ,B.a2y,B.a50,B.a2O],t.rj)
 B.a32=s([B.a3L],t.yt)
-B.aqo=new A.tf(B.a32,null,null)
-B.Ac=s(["3","\u2660"],t.s)
+B.aqp=new A.tf(B.a32,null,null)
 B.a2W=s(["5","\u2665"],t.s)
 B.a2E=s(["7","\u2663"],t.s)
 B.a3J=s(["8","\u2666"],t.s)
 B.rs=s(["10","\u2665"],t.s)
 B.a2Q=s([B.Ac,B.a2W,B.a2E,B.a3J,B.rs],t.rj)
 B.a5n=s([B.a2Q],t.yt)
-B.aqp=new A.tf(B.a5n,null,null)
+B.aqq=new A.tf(B.a5n,null,null)
 B.a0v=s([B.zQ,B.rs],t.rj)
 B.a02=s([B.a0v],t.yt)
-B.aqq=new A.tf(B.a02,null,null)
-B.a46=s(["4","\u2660"],t.s)
-B.a3V=s(["6","\u2665"],t.s)
-B.a4F=s(["9","\u2666"],t.s)
-B.a2V=s([B.a46,B.a3V,B.a4F],t.rj)
-B.a5i=s(["3","\u2665"],t.s)
-B.a3W=s([B.a5i,B.Ac],t.rj)
-B.a3m=s([B.a2V,B.a3W],t.yt)
-B.aqr=new A.tf(B.a3m,"FOMEKOU",null)
+B.aqr=new A.tf(B.a02,null,null)
 B.a51=s(["4","\u2666"],t.s)
 B.a35=s(["7","\u2660"],t.s)
 B.a3X=s([B.a51,B.a35,B.rs],t.rj)
@@ -151427,7 +151434,7 @@ s($,"bYJ","bmE",()=>A.bHR(null,A.aP("BE")))
 s($,"bYs","TZ",()=>A.bx1("fr"))
 s($,"bY_","bDW",()=>A.a([A.Qu(A.cK("^(\\d) ! Aucun d\xe9placement possible\\.$",!0,!1),new A.bjM()),A.Qu(A.cK("^Pilotage automatique : (\\d)\\.$",!0,!1),new A.bjN()),A.Qu(A.cK("^\ud83c\udfc6 (.+) remporte la partie !$",!0,!1),new A.bjO()),A.Qu(A.cK("^\ud83c\udfc6 (.+) gagne : (.+) (a abandonn\xe9|est d\xe9clar\xe9 forfait \\(connexion perdue\\))\\.$",!0,!1),new A.bjP()),A.Qu(A.cK("^(.+) (a abandonn\xe9|est d\xe9clar\xe9 forfait \\(connexion perdue\\))\\. Au tour de (.+)\\.$",!0,!1),new A.bjQ()),A.Qu(A.cK("^(.+) (a abandonn\xe9|est d\xe9clar\xe9 forfait \\(connexion perdue\\))\\.$",!0,!1),new A.bjR())],A.aP("Q<a96>")))
 s($,"bXc","brz",()=>{var q=t.N
-return A.V(["D\xe9s et Ludo by CKY","Dice and Ludo by CKY","Reprendre la partie","Resume the game","Le pilote automatique joue en attendant","The autopilot plays in the meantime","En pr\xe9sentiel","In person","Chaque joueur se connecte \xe0 son compte","Each player signs in to their own account","En ligne","Online","Cr\xe9e un compte pour jouer \xe0 distance","Create an account to play remotely","Deux d\xe9s","Two dice","Lance deux d\xe9s","Roll two dice","Refuser","Decline","Accepter","Accept","Bin\xf4mes","Partners","Inviter","Invite","Annuler","Cancel","Mise de chaque joueur (jetons)","Each player's stake (tokens)",u.ax,u.fG,"Rouge","Red","Vert","Green","Bleu","Blue","Jaune","Yellow","Joueur","Player","Ce compte joue d\xe9j\xe0 dans la partie.","This account is already playing in the game.","Choisis ton avatar","Choose your avatar","Pr\xe9parer la partie","Set up the game","Nombre de joueurs","Number of players","Nombre de pions par joueur","Pawns per player",u.T,"Players (everyone signs in to their own account)",u.O,"Players (tap the circle to change avatar)","Jouer en \xe9quipe (2 contre 2)","Play in teams (2 vs 2)",u.g5,"Partners can't capture each other. The team wins when both have finished.","Protection des portes","Door protection",u.v,"A pawn on a starting square cannot be captured","Protection des \xe9toiles","Star protection",u.W,"A pawn on a star cannot be captured","Mise en cours...","Placing stakes...","Tous les joueurs doivent se connecter","All players must sign in","Forme les bin\xf4mes","Form the partners","Lancer \xb7 partie gratuite","Start \xb7 free game","Lancer la partie","Start the game","Un 6 ! Tu rejoues.","A 6! You roll again.","Attends la fin du coup en cours.","Wait for the current move to finish.","Abandonner la partie ?","Forfeit the game?","Abandonner","Forfeit",u.ci,"Autopilot: move played for you.",u.M,"Tap your die or drag it to roll!","Le d\xe9 roule...","The die is rolling...",u.f,"6! No move possible, but you roll again.",u.dn,"Capture is mandatory! Move played automatically.",u.aq,"Only one move possible: played automatically.",u.eq,"Capture is mandatory: choose the pawn that captures.","Un 6 ! Sors un pion ou avance.","A 6! Bring out a pawn or move forward.","Touche un pion pour le d\xe9placer.","Tap a pawn to move it.","Il faut un 6 pour sortir ce pion.","You need a 6 to bring this pawn out.",u.c6,"This pawn can't finish with this roll.",u.eG,"Capture is mandatory: take an opponent pawn!","Capture ! Tu rejoues.","Capture! You roll again.","Un pion est arriv\xe9 ! Tu rejoues.","A pawn has arrived! You roll again.","Pas de nouvelle partie en ligne.","No new game online.","VICTOIRE","VICTORY","Katika d\xe9charge les caisses","Katika empties the tills","Quitter la partie","Leave the game","Retour \xe0 l'accueil","Back to home","Abandonner la partie","Forfeit the game","Mode : Spectateur","Mode: Spectator","Mode : En ligne","Mode: Online","Mode : \xc9quipes 2v2","Mode: Teams 2v2","Mode : Pr\xe9sentiel","Mode: In person","Lente","Slow","Normale","Normal","Rapide","Fast","Param\xe8tres","Settings","Capture obligatoire","Mandatory capture",u.ft,"You must take an opponent pawn when possible","Coup unique automatique","Automatic single move",u.dp,"The game plays for you when there is only one choice","Pilotage automatique","Autopilot","Vitesse des pions","Pawn speed",u.bM,"Changing these two settings resets the game.","Mode : en ligne","Mode: online","Mode : \xe9quipes 2 contre 2 (m\xeame plateau)","Mode: teams 2 vs 2 (same board)",u.e4,"Mode: in person (all players on the same board)","Accueil","Home","Classement","Ranking","Fermer","Close","\ud83c\udfc1 Partie termin\xe9e","\ud83c\udfc1 Game over","Rejouer","Play again",u.cg,"Press back again to go to the home screen","Cette partie n'existe plus.","This game no longer exists.","Cette partie est d\xe9j\xe0 compl\xe8te.","This game is already full.","Impossible de rejoindre la partie.","Couldn't join the game.","Entre le code \xe0 6 caract\xe8res.","Enter the 6-character code.","Aucune partie avec ce code.","No game with this code.","Impossible de chercher la partie.","Couldn't look up the game.",u.d2,"Couldn't create the game. Check that Firestore is enabled and that the rules allow signed-in players.","Mes parties","My games","Ouvrir","Open","Reprendre","Resume",u.eP,"Couldn't load the games. Check the Firestore rules.",u.Z,"No open games right now. Create your own!","Rejoindre","Join",u.Y,"Couldn't load the ongoing games.",u.i,"No ongoing games to watch right now.","Regarder","Watch","Rejoindre avec un code","Join with a code","Parties en ligne","Online games","Cr\xe9er une partie","Create a game",u.eX,"Partners are chosen by invitation and cannot capture each other","Partie priv\xe9e","Private game",u.m,"Hidden from the list: join it with a code","Patiente...","Please wait...","Cr\xe9er la partie","Create the game","Parties ouvertes","Open games","Parties en cours","Ongoing games","Retour","Back","Code de la salle priv\xe9e","Private room code","Code de la salle","Room code","Code copi\xe9","Code copied","Action impossible. R\xe9essaie.","Action not possible. Try again.","Bin\xf4mes (2 contre 2)","Partners (2 vs 2)","Invitation envoy\xe9e \xb7 Annuler","Invitation sent \xb7 Cancel",u.a,"Wait for other players to join so you can invite a partner.","Salle d'attente","Waiting room","La partie d\xe9marre quand les 4 joueurs sont l\xe0 et que les bin\xf4mes sont form\xe9s.","The game starts when all 4 players are here and the partners are set.","La partie d\xe9marre d\xe8s que tout le monde est l\xe0.","The game starts as soon as everyone is here.","Partie gratuite","Free game","Valider ma participation","Confirm my participation","En attente d'un joueur...","Waiting for a player...","Annuler la partie","Cancel the game","Tu dois \xeatre connect\xe9.","You must be signed in.","Erreur de connexion \xe0 la partie.","Error connecting to the game.",u.n,"This game is not (or no longer) in progress.","Tu ne fais pas partie de cette partie.","You're not part of this game.","Cet e-mail est d\xe9j\xe0 utilis\xe9.","This email is already in use.","E-mail invalide.","Invalid email.",u.I,"Password too weak (6 characters minimum).","E-mail ou mot de passe incorrect.","Incorrect email or password.",u.J,"Too many attempts. Try again in a few minutes.","Pas de connexion internet.","No internet connection.",u.cE,"Email sign-in is not enabled in Firebase.",u.q,"The online server is not configured in the app.","Choisis un pseudo.","Choose a nickname.","Mot de passe : 6 caract\xe8res minimum.","Password: 6 characters minimum.","Une erreur est survenue. R\xe9essaie.","An error occurred. Try again.","Connect\xe9","Signed in","Recharger mon compte","Top up my account","Jouer en ligne","Play online","Historique des parties","Game history","Se d\xe9connecter","Sign out","Cr\xe9er un compte","Create an account","Se connecter","Sign in","Pseudo","Nickname","E-mail","Email","Mot de passe","Password","Cr\xe9er mon compte","Create my account","Me connecter","Sign me in","Connexion","Sign in","Jeu en ligne","Online game",u.bd,"The online server is not configured: Firebase did not start. In-person mode is still available.",u.dl,"Sign in to your account before starting an in-person game.","Cr\xe9e un compte ou connecte-toi pour jouer en ligne.","Create an account or sign in to play online.","Gratuit","Free","Connexion requise.","Sign-in required.","Pas de connexion. R\xe9essaie.","No connection. Try again.","E-mail ou mot de passe invalide.","Invalid email or password.",u.h,"Goal: bring all your pawns to the finish (56 squares to travel) before the others.\n\nStart: you need a 6 to bring a pawn out of the base (except with the \u201cPosition 54\u201d or \u201cStart on the starting square\u201d options, where the pawns are already on the board).\n\nMoving: move your pawn forward by the number shown on the die. At the finish you need the exact number: you can't overshoot.\n\nRolling again: a 6, a capture, or a pawn reaching home gives you another roll.\n\nCapture: if your pawn lands on an opponent's pawn, it goes back to its base and must roll a 6 again to come out. Doors and stars protect pawns (depending on the game options). With paid captures, every capture earns money.\n\nTeams: in 2 vs 2 mode, partners can't capture each other and the team wins when both players have finished.\n\nStakes: the pot (everyone's stakes) goes to the winner, minus Katika's commission.",u.F,"Goal: get the highest total with your dice.\n\nHow it works: in turn, each player rolls their two dice once. The total of the two dice is their score. When everyone has rolled, the game is over.\n\nWinner: the player with the highest score wins. In case of a tie, the pot is shared between the winners.\n\nTime: if a player doesn't roll within 30 seconds, the game rolls for them.\n\nStakes: the pot (everyone's stakes) goes to the winner, minus Katika's commission. A jackpot may also be won.\n\nBets between players (games with stakes): Duel (the highest score wins) and 7 Challenge (over or under 7). You must bet before rolling your dice; on a tie or exactly 7, stakes are refunded.","Plateau : 14 cases (7 par joueur), 5 graines par case.\nOn prend toutes les graines d'une de ses cases et on les s\xe8me une \xe0 une dans le sens des aiguilles d'une montre. La case de d\xe9part est saut\xe9e quand le semis fait le tour.\nCapture : si la derni\xe8re graine tombe chez l'adversaire et que la case compte 2, 3 ou 4 graines, on les prend, puis on remonte en arri\xe8re tant que les cases ont 2, 3 ou 4 graines. La premi\xe8re case du camp adverse n'est jamais prise.\nInterdit d'affamer : une rafle qui viderait tout le camp adverse est annul\xe9e, et si l'adversaire n'a plus de graines il faut lui en envoyer.\nFin : 36 graines captur\xe9es, ou moins de 10 graines sur le plateau, ou plus aucun coup possible (chacun garde les graines de son camp).","Board: 14 pits (7 per player), 5 seeds per pit.\nYou take all the seeds from one of your pits and sow them one by one, clockwise. The starting pit is skipped when the sowing goes all the way around.\nCapture: if the last seed lands on the opponent's side and the pit then holds 2, 3 or 4 seeds, you take them, then work backwards as long as the pits hold 2, 3 or 4 seeds. The first pit of the opponent's side is never taken.\nNo starving: a sweep that would empty the opponent's whole side is cancelled, and if the opponent has no seeds left you must send them some.\nEnd: 36 seeds captured, or fewer than 10 seeds on the board, or no possible move left (each player keeps the seeds on their side).","R\xe8gles du Ludo","Ludo rules","R\xe8gles de Deux d\xe9s","Two dice rules","R\xe8gles du Song\xf4","Song\xf4 rules","R\xe8gles","Rules","Pivoter l'\xe9cran","Rotate the screen","Son","Sound","Connecte-toi pour voir ton solde","Sign in to see your balance","Mon solde","My balance","Chachouang Kejouboui Yves","Creator and designer:","Recharge","Top up","Transf\xe9rer de l'argent","Transfer money","Retrait","Withdrawal","Le retrait vers Mobile Money arrive bient\xf4t. Tes gains de parrainage se transf\xe8rent d\xe9j\xe0 vers ton solde depuis \xab Code promo \xbb.","Withdrawal to Mobile Money is coming soon. Your referral earnings can already be transferred to your balance from \u201cPromo code\u201d.","Groupe WhatsApp","WhatsApp group","Code promo","Promo code","D\xe9tails","Details","Modifier le mot de passe","Change password","Tu es d\xe9connect\xe9.","You are signed out.","En pr\xe9sentiel ou en ligne","In person or online","Jeu de graines \xb7 pr\xe9sentiel ou en ligne","Seed game \xb7 in person or online","Damier","Draughts","Dames 10x10 \xb7 pr\xe9sentiel ou en ligne","10x10 draughts \xb7 in person or online",u.X,"Position 54: the game is played with 2 pawns each.","Chacun joue depuis son t\xe9l\xe9phone","Everyone plays from their own phone","Le jeu en ligne est indisponible.","Online play is unavailable.",u.af,"Finish the game to collect your winnings.","Termine la partie pour r\xe9gler les mises.","Finish the game to settle the stakes.","Termine la partie (ou abandonne) pour r\xe9gler la mise.","Finish the game (or forfeit) to settle the stake.","Terminer","Finish","Abandonner ?","Forfeit?","Tu perds la partie et ta mise.","You lose the game and your stake.","Non","No","Le cr\xe9ateur lance la partie quand les deux joueurs ont pay\xe9 leur mise.","The host starts the game once both players have paid their stake.",u.gR,"The host starts the game whenever they want, from 2 players (even if the room isn't full) and once everyone has paid their stake.","Lancer","Roll","Joueur suivant","Next player","Chat indisponible pour le moment.","Chat unavailable right now.","Aucun message. Dis bonjour \ud83d\udc4b","No messages. Say hello \ud83d\udc4b","Violet","Purple","Rose","Pink","Solde","Balance","Ton solde","Your balance","Parties jou\xe9es","Games played","Pourcentage de victoires","Win rate","Parties gagn\xe9es","Games won","Parties perdues","Games lost","Total montant jou\xe9","Total amount played","Total montant gagn\xe9","Total amount won","Total montant perdu","Total amount lost",u.e9,"Counters are updated at the end of every finished game with a winner (online and in person). Total played = stakes committed; total won = winnings received; total lost = stakes of lost games.","\ud83d\udcca Mes d\xe9tails","\ud83d\udcca My details","Connecte-toi pour voir tes d\xe9tails.","Sign in to see your details.","\ud83d\udc64 Joueur","\ud83d\udc64 Player","\ud83d\udc65 Joueurs inscrits","\ud83d\udc65 Registered players","R\xe9essayer","Try again","R\xe9cents","Recent","Parties","Games","Victoires","Wins","Aucun joueur trouv\xe9.","No player found.","D\xe9poser par Mobile Money","Deposit with Mobile Money","MTN ou Orange. 1 FCFA = 1 jeton.","MTN or Orange. 1 FCFA = 1 token.","Montant \xe0 d\xe9poser","Amount to deposit","Ou choisis un montant rapide :","Or pick a quick amount:","D\xe9poser","Deposit","\ud83d\udcb0 D\xe9poser","\ud83d\udcb0 Deposit","\u2705 D\xe9p\xf4t r\xe9ussi !","\u2705 Deposit successful!","\u274c Le paiement a \xe9chou\xe9 ou a \xe9t\xe9 refus\xe9. Aucun montant n'a \xe9t\xe9 ajout\xe9.","\u274c The payment failed or was declined. No amount was added.","\u26a0\ufe0f Le montant re\xe7u ne correspond pas \xe0 la demande. Contacte le support.","\u26a0\ufe0f The amount received doesn't match the request. Contact support.","Confirme le paiement sur ton t\xe9l\xe9phone","Confirm the payment on your phone","Nouveau d\xe9p\xf4t","New deposit","Nouvelle version disponible","New version available","Plus tard","Later","T\xe9l\xe9charger","Download","Impossible d'ouvrir WhatsApp.","Couldn't open WhatsApp.","Rejoindre le groupe WhatsApp des joueurs","Join the players' WhatsApp group","Groupe WhatsApp Katika","Katika WhatsApp group",u.fI,"Join the players' group: games, tournaments, tips and news. You can always join it from the green button on the home screen."],q,q)})
+return A.V(["D\xe9s et Ludo by CKY","Dice and Ludo by CKY","Reprendre la partie","Resume the game","Le pilote automatique joue en attendant","The autopilot plays in the meantime","En pr\xe9sentiel","In person","Chaque joueur se connecte \xe0 son compte","Each player signs in to their own account","En ligne","Online","Cr\xe9e un compte pour jouer \xe0 distance","Create an account to play remotely","Deux d\xe9s","Two dice","Lance deux d\xe9s","Roll two dice","Refuser","Decline","Accepter","Accept","Bin\xf4mes","Partners","Inviter","Invite","Annuler","Cancel","Mise de chaque joueur (jetons)","Each player's stake (tokens)",u.ax,u.fG,"Rouge","Red","Vert","Green","Bleu","Blue","Jaune","Yellow","Joueur","Player","Ce compte joue d\xe9j\xe0 dans la partie.","This account is already playing in the game.","Choisis ton avatar","Choose your avatar","Pr\xe9parer la partie","Set up the game","Nombre de joueurs","Number of players","Nombre de pions par joueur","Pawns per player",u.T,"Players (everyone signs in to their own account)",u.O,"Players (tap the circle to change avatar)","Jouer en \xe9quipe (2 contre 2)","Play in teams (2 vs 2)",u.g5,"Partners can't capture each other. The team wins when both have finished.","Protection des portes","Door protection",u.v,"A pawn on a starting square cannot be captured","Protection des \xe9toiles","Star protection",u.W,"A pawn on a star cannot be captured","Mise en cours...","Placing stakes...","Tous les joueurs doivent se connecter","All players must sign in","Forme les bin\xf4mes","Form the partners","Lancer \xb7 partie gratuite","Start \xb7 free game","Lancer la partie","Start the game","Un 6 ! Tu rejoues.","A 6! You roll again.","Attends la fin du coup en cours.","Wait for the current move to finish.","Abandonner la partie ?","Forfeit the game?","Abandonner","Forfeit",u.eg,"Autopilot: move played for you.",u.M,"Tap your die or drag it to roll!","Le d\xe9 roule...","The die is rolling...",u.d,"6! No move possible, but you roll again.",u.dn,"Capture is mandatory! Move played automatically.",u.aq,"Only one move possible: played automatically.",u.eq,"Capture is mandatory: choose the pawn that captures.","Un 6 ! Sors un pion ou avance.","A 6! Bring out a pawn or move forward.","Touche un pion pour le d\xe9placer.","Tap a pawn to move it.","Il faut un 6 pour sortir ce pion.","You need a 6 to bring this pawn out.",u.c6,"This pawn can't finish with this roll.",u.eG,"Capture is mandatory: take an opponent pawn!","Capture ! Tu rejoues.","Capture! You roll again.","Un pion est arriv\xe9 ! Tu rejoues.","A pawn has arrived! You roll again.","Pas de nouvelle partie en ligne.","No new game online.","VICTOIRE","VICTORY","Katika d\xe9charge les caisses","Katika empties the tills","Quitter la partie","Leave the game","Retour \xe0 l'accueil","Back to home","Abandonner la partie","Forfeit the game","Mode : Spectateur","Mode: Spectator","Mode : En ligne","Mode: Online","Mode : \xc9quipes 2v2","Mode: Teams 2v2","Mode : Pr\xe9sentiel","Mode: In person","Lente","Slow","Normale","Normal","Rapide","Fast","Param\xe8tres","Settings","Capture obligatoire","Mandatory capture",u.ft,"You must take an opponent pawn when possible","Coup unique automatique","Automatic single move",u.dp,"The game plays for you when there is only one choice","Pilotage automatique","Autopilot","Vitesse des pions","Pawn speed",u.bM,"Changing these two settings resets the game.","Mode : en ligne","Mode: online","Mode : \xe9quipes 2 contre 2 (m\xeame plateau)","Mode: teams 2 vs 2 (same board)",u.e4,"Mode: in person (all players on the same board)","Accueil","Home","Classement","Ranking","Fermer","Close","\ud83c\udfc1 Partie termin\xe9e","\ud83c\udfc1 Game over","Rejouer","Play again",u.k,"Press back again to go to the home screen","Cette partie n'existe plus.","This game no longer exists.","Cette partie est d\xe9j\xe0 compl\xe8te.","This game is already full.","Impossible de rejoindre la partie.","Couldn't join the game.","Entre le code \xe0 6 caract\xe8res.","Enter the 6-character code.","Aucune partie avec ce code.","No game with this code.","Impossible de chercher la partie.","Couldn't look up the game.",u.d2,"Couldn't create the game. Check that Firestore is enabled and that the rules allow signed-in players.","Mes parties","My games","Ouvrir","Open","Reprendre","Resume",u.eP,"Couldn't load the games. Check the Firestore rules.",u.Z,"No open games right now. Create your own!","Rejoindre","Join",u.Y,"Couldn't load the ongoing games.",u.i,"No ongoing games to watch right now.","Regarder","Watch","Rejoindre avec un code","Join with a code","Parties en ligne","Online games","Cr\xe9er une partie","Create a game",u.eX,"Partners are chosen by invitation and cannot capture each other","Partie priv\xe9e","Private game",u.m,"Hidden from the list: join it with a code","Patiente...","Please wait...","Cr\xe9er la partie","Create the game","Parties ouvertes","Open games","Parties en cours","Ongoing games","Retour","Back","Code de la salle priv\xe9e","Private room code","Code de la salle","Room code","Code copi\xe9","Code copied","Action impossible. R\xe9essaie.","Action not possible. Try again.","Bin\xf4mes (2 contre 2)","Partners (2 vs 2)","Invitation envoy\xe9e \xb7 Annuler","Invitation sent \xb7 Cancel",u.a,"Wait for other players to join so you can invite a partner.","Salle d'attente","Waiting room","La partie d\xe9marre quand les 4 joueurs sont l\xe0 et que les bin\xf4mes sont form\xe9s.","The game starts when all 4 players are here and the partners are set.","La partie d\xe9marre d\xe8s que tout le monde est l\xe0.","The game starts as soon as everyone is here.","Partie gratuite","Free game","Valider ma participation","Confirm my participation","En attente d'un joueur...","Waiting for a player...","Annuler la partie","Cancel the game","Tu dois \xeatre connect\xe9.","You must be signed in.","Erreur de connexion \xe0 la partie.","Error connecting to the game.",u.n,"This game is not (or no longer) in progress.","Tu ne fais pas partie de cette partie.","You're not part of this game.","Cet e-mail est d\xe9j\xe0 utilis\xe9.","This email is already in use.","E-mail invalide.","Invalid email.",u.I,"Password too weak (6 characters minimum).","E-mail ou mot de passe incorrect.","Incorrect email or password.",u.J,"Too many attempts. Try again in a few minutes.","Pas de connexion internet.","No internet connection.",u.cE,"Email sign-in is not enabled in Firebase.",u.q,"The online server is not configured in the app.","Choisis un pseudo.","Choose a nickname.","Mot de passe : 6 caract\xe8res minimum.","Password: 6 characters minimum.","Une erreur est survenue. R\xe9essaie.","An error occurred. Try again.","Connect\xe9","Signed in","Recharger mon compte","Top up my account","Jouer en ligne","Play online","Historique des parties","Game history","Se d\xe9connecter","Sign out","Cr\xe9er un compte","Create an account","Se connecter","Sign in","Pseudo","Nickname","E-mail","Email","Mot de passe","Password","Cr\xe9er mon compte","Create my account","Me connecter","Sign me in","Connexion","Sign in","Jeu en ligne","Online game",u.bd,"The online server is not configured: Firebase did not start. In-person mode is still available.",u.dl,"Sign in to your account before starting an in-person game.","Cr\xe9e un compte ou connecte-toi pour jouer en ligne.","Create an account or sign in to play online.","Gratuit","Free","Connexion requise.","Sign-in required.","Pas de connexion. R\xe9essaie.","No connection. Try again.","E-mail ou mot de passe invalide.","Invalid email or password.",u.h,"Goal: bring all your pawns to the finish (56 squares to travel) before the others.\n\nStart: you need a 6 to bring a pawn out of the base (except with the \u201cPosition 54\u201d or \u201cStart on the starting square\u201d options, where the pawns are already on the board).\n\nMoving: move your pawn forward by the number shown on the die. At the finish you need the exact number: you can't overshoot.\n\nRolling again: a 6, a capture, or a pawn reaching home gives you another roll.\n\nCapture: if your pawn lands on an opponent's pawn, it goes back to its base and must roll a 6 again to come out. Doors and stars protect pawns (depending on the game options). With paid captures, every capture earns money.\n\nTeams: in 2 vs 2 mode, partners can't capture each other and the team wins when both players have finished.\n\nStakes: the pot (everyone's stakes) goes to the winner, minus Katika's commission.",u.F,"Goal: get the highest total with your dice.\n\nHow it works: in turn, each player rolls their two dice once. The total of the two dice is their score. When everyone has rolled, the game is over.\n\nWinner: the player with the highest score wins. In case of a tie, the pot is shared between the winners.\n\nTime: if a player doesn't roll within 30 seconds, the game rolls for them.\n\nStakes: the pot (everyone's stakes) goes to the winner, minus Katika's commission. A jackpot may also be won.\n\nBets between players (games with stakes): Duel (the highest score wins) and 7 Challenge (over or under 7). You must bet before rolling your dice; on a tie or exactly 7, stakes are refunded.","Plateau : 14 cases (7 par joueur), 5 graines par case.\nOn prend toutes les graines d'une de ses cases et on les s\xe8me une \xe0 une dans le sens des aiguilles d'une montre. La case de d\xe9part est saut\xe9e quand le semis fait le tour.\nCapture : si la derni\xe8re graine tombe chez l'adversaire et que la case compte 2, 3 ou 4 graines, on les prend, puis on remonte en arri\xe8re tant que les cases ont 2, 3 ou 4 graines. La premi\xe8re case du camp adverse n'est jamais prise.\nInterdit d'affamer : une rafle qui viderait tout le camp adverse est annul\xe9e, et si l'adversaire n'a plus de graines il faut lui en envoyer.\nFin : 36 graines captur\xe9es, ou moins de 10 graines sur le plateau, ou plus aucun coup possible (chacun garde les graines de son camp).","Board: 14 pits (7 per player), 5 seeds per pit.\nYou take all the seeds from one of your pits and sow them one by one, clockwise. The starting pit is skipped when the sowing goes all the way around.\nCapture: if the last seed lands on the opponent's side and the pit then holds 2, 3 or 4 seeds, you take them, then work backwards as long as the pits hold 2, 3 or 4 seeds. The first pit of the opponent's side is never taken.\nNo starving: a sweep that would empty the opponent's whole side is cancelled, and if the opponent has no seeds left you must send them some.\nEnd: 36 seeds captured, or fewer than 10 seeds on the board, or no possible move left (each player keeps the seeds on their side).","R\xe8gles du Ludo","Ludo rules","R\xe8gles de Deux d\xe9s","Two dice rules","R\xe8gles du Song\xf4","Song\xf4 rules","R\xe8gles","Rules","Pivoter l'\xe9cran","Rotate the screen","Son","Sound","Connecte-toi pour voir ton solde","Sign in to see your balance","Mon solde","My balance","Chachouang Kejouboui Yves","Creator and designer:","Recharge","Top up","Transf\xe9rer de l'argent","Transfer money","Retrait","Withdrawal","Le retrait vers Mobile Money arrive bient\xf4t. Tes gains de parrainage se transf\xe8rent d\xe9j\xe0 vers ton solde depuis \xab Code promo \xbb.","Withdrawal to Mobile Money is coming soon. Your referral earnings can already be transferred to your balance from \u201cPromo code\u201d.","Groupe WhatsApp","WhatsApp group","Code promo","Promo code","D\xe9tails","Details","Modifier le mot de passe","Change password","Tu es d\xe9connect\xe9.","You are signed out.","En pr\xe9sentiel ou en ligne","In person or online","Jeu de graines \xb7 pr\xe9sentiel ou en ligne","Seed game \xb7 in person or online","Damier","Draughts","Dames 10x10 \xb7 pr\xe9sentiel ou en ligne","10x10 draughts \xb7 in person or online",u.X,"Position 54: the game is played with 2 pawns each.","Chacun joue depuis son t\xe9l\xe9phone","Everyone plays from their own phone","Le jeu en ligne est indisponible.","Online play is unavailable.",u.af,"Finish the game to collect your winnings.","Termine la partie pour r\xe9gler les mises.","Finish the game to settle the stakes.","Termine la partie (ou abandonne) pour r\xe9gler la mise.","Finish the game (or forfeit) to settle the stake.","Terminer","Finish","Abandonner ?","Forfeit?","Tu perds la partie et ta mise.","You lose the game and your stake.","Non","No","Le cr\xe9ateur lance la partie quand les deux joueurs ont pay\xe9 leur mise.","The host starts the game once both players have paid their stake.",u.gR,"The host starts the game whenever they want, from 2 players (even if the room isn't full) and once everyone has paid their stake.","Lancer","Roll","Joueur suivant","Next player","Chat indisponible pour le moment.","Chat unavailable right now.","Aucun message. Dis bonjour \ud83d\udc4b","No messages. Say hello \ud83d\udc4b","Violet","Purple","Rose","Pink","Solde","Balance","Ton solde","Your balance","Parties jou\xe9es","Games played","Pourcentage de victoires","Win rate","Parties gagn\xe9es","Games won","Parties perdues","Games lost","Total montant jou\xe9","Total amount played","Total montant gagn\xe9","Total amount won","Total montant perdu","Total amount lost",u.e9,"Counters are updated at the end of every finished game with a winner (online and in person). Total played = stakes committed; total won = winnings received; total lost = stakes of lost games.","\ud83d\udcca Mes d\xe9tails","\ud83d\udcca My details","Connecte-toi pour voir tes d\xe9tails.","Sign in to see your details.","\ud83d\udc64 Joueur","\ud83d\udc64 Player","\ud83d\udc65 Joueurs inscrits","\ud83d\udc65 Registered players","R\xe9essayer","Try again","R\xe9cents","Recent","Parties","Games","Victoires","Wins","Aucun joueur trouv\xe9.","No player found.","D\xe9poser par Mobile Money","Deposit with Mobile Money","MTN ou Orange. 1 FCFA = 1 jeton.","MTN or Orange. 1 FCFA = 1 token.","Montant \xe0 d\xe9poser","Amount to deposit","Ou choisis un montant rapide :","Or pick a quick amount:","D\xe9poser","Deposit","\ud83d\udcb0 D\xe9poser","\ud83d\udcb0 Deposit","\u2705 D\xe9p\xf4t r\xe9ussi !","\u2705 Deposit successful!","\u274c Le paiement a \xe9chou\xe9 ou a \xe9t\xe9 refus\xe9. Aucun montant n'a \xe9t\xe9 ajout\xe9.","\u274c The payment failed or was declined. No amount was added.","\u26a0\ufe0f Le montant re\xe7u ne correspond pas \xe0 la demande. Contacte le support.","\u26a0\ufe0f The amount received doesn't match the request. Contact support.","Confirme le paiement sur ton t\xe9l\xe9phone","Confirm the payment on your phone","Nouveau d\xe9p\xf4t","New deposit","Nouvelle version disponible","New version available","Plus tard","Later","T\xe9l\xe9charger","Download","Impossible d'ouvrir WhatsApp.","Couldn't open WhatsApp.","Rejoindre le groupe WhatsApp des joueurs","Join the players' WhatsApp group","Groupe WhatsApp Katika","Katika WhatsApp group",u.fI,"Join the players' group: games, tournaments, tips and news. You can always join it from the green button on the home screen."],q,q)})
 s($,"bYM","bmF",()=>A.bx1(!1))
 r($,"bIx","bBC",()=>new A.aqn())
 s($,"bT3","ae",()=>A.c9(0,null,!1,t.Nw))
