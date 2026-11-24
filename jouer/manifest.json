@@ -1,13 +1,22 @@
 {
-    "name": "katika",
-    "short_name": "katika",
-    "start_url": ".",
+    "id": "/jouer/",
+    "name": "Katika - Ludo et Dés",
+    "short_name": "Katika",
+    "description": "Katika : jouer au Ludo, aux Dés et aux jeux de cartes en ligne.",
+    "lang": "fr",
+    "start_url": "/jouer/",
+    "scope": "/jouer/",
     "display": "standalone",
-    "background_color": "#0175C2",
-    "theme_color": "#0175C2",
-    "description": "A new Flutter project.",
+    "display_override": ["standalone", "minimal-ui"],
+    "background_color": "#061A66",
+    "theme_color": "#061A66",
     "orientation": "portrait-primary",
     "prefer_related_applications": false,
+    "launch_handler": {
+        "client_mode": ["navigate-existing", "auto"]
+    },
+    "handle_links": "preferred",
+    "capture_links": "existing-client-navigate",
     "icons": [
         {
             "src": "icons/Icon-192.png",
